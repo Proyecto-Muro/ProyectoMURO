@@ -29,6 +29,7 @@ def htmlproblems(contestname, year):
             dic[enunciado] = open("./concursos/%s/%s/enunciados/%s.tex" % (contestname, year, i[:-4])).read()
             ProblemsList.append(dic[enunciado])
             open("./concursos/%s/%s/enunciados/%s.tex" % (contestname, year, i[:-4])).close()
+            # remember to do the same thing for solution pages
 
     numproblems = len(ProblemsList)
 
@@ -46,7 +47,7 @@ def htmlproblems(contestname, year):
         # don't forget to check for images
         pstring = str(int(year) % 100) + contestname + str(i)
         if pstring in os.listdir("./aops-script/asy-imgs"):
-            # do the thing
+            # do the thing (images)
             img = 1
         # create file problemindex.html, replace
         problempageraw = open("generator/formats/problem-page.txt", "r").read()
@@ -65,26 +66,33 @@ def htmlproblems(contestname, year):
                   "w") as g:
             g.write(solutionpage)
         open("generator/formats/problem-page.txt", "r").close()
+        open("generator/formats/solution-page.txt", "r").close()
 
 
-def GenerateYearLinks(yearnumber):
+def GenerateYearLinks(year_start, year_end):
     text = ''
-    for i in range(yearnumber):
+    for i in range(year_start, year_end + 1):
         text += r"<h3><a href=./%s>%s</a></h3>\n" % (i, i)
     return text
 
 
-def ReloadContestIndex():
-
+def ReloadContestText():
+    from contestinfo import contestList
     indexraw = open("/generator/formats/contest-index.txt").read()  # this is the format
     # We need a text and format for each contest.
-    dic = {
-        "[concurso]": concurso,
-        "[yearlinks]": yearlinks,  # yearlinks must come from a list from each contest, and generate
-        "[contestText]": contestText,
-    }
-    for i in contests:
-    replace_all(indexraw, dic)
+    for i in contestList:
+        yearRefs = GenerateYearLinks(i[1], 1[2])
+        concurso = i[0]
+        contestText = open("generator/texts/%s.txt" % concurso).read()
+        dic = {
+            "[concurso]": concurso,
+            "[yearlinks]": yearRefs,  # yearlinks must come from a list from each contest, and generate
+            "[contestText]": contestText,
+        }
+        index = replace_all(indexraw, dic)
+        with open("ProyectoMURO/public_html/%s/index.html" % concurso) as f:
+            f.write(index)
+        open("generator/texts/%s.txt" % concurso).close()
 
     open("/generator/formats/contest-index.txt").close()
 
@@ -104,3 +112,4 @@ def ReloadPages():
             htmlproblems(i[0], j)
 
     # Reload Contest Indexes, including text
+    ReloadContestText()

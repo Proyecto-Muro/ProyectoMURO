@@ -28,7 +28,7 @@
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
       
       <meta charset="utf-8">
-      <title>Proyecto MURO</title>
+      <title>Proyecto MURO - [concurso]</title>
   </head>
     
     
@@ -90,8 +90,11 @@
                           <div class="entrywrap">
 
                               <!-- (Begin writing here) -->
-                              [contestText]<br>
+                              <p>[contestText]</p>
                               [yearlinks]
+                              <hr>
+                               • <a href="./..">Regresar a [concurso]</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
                               <!-- (End writing here) -->
 
                           </div>
