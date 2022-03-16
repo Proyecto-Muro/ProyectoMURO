@@ -75,14 +75,16 @@ def GenerateYearLinks(yearnumber):
 
 
 def ReloadContestIndex():
+
     indexraw = open("/generator/formats/contest-index.txt").read()  # this is the format
     # We need a text and format for each contest.
     dic = {
         "[concurso]": concurso,
         "[yearlinks]": yearlinks,  # yearlinks must come from a list from each contest, and generate
         "[contestText]": contestText,
-
     }
+    for i in contests:
+    replace_all(indexraw, dic)
 
     open("/generator/formats/contest-index.txt").close()
 
