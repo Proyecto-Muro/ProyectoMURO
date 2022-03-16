@@ -1,6 +1,12 @@
 import os
 
 
+# To do list:
+# Finish the solution page generator (add to dic)
+# Add the generator for images
+# Create a generator for ISL pages once it is needed
+
+
 def replace_all(text, dic):
     for i, j in dic.items():
         text = text.replace(str(i), str(j))
@@ -8,6 +14,7 @@ def replace_all(text, dic):
 
 
 # define all problems from /concursos/contest/[year]/enunciados
+
 
 def htmlproblems(contestname, year):
     # define the problems, set as empty if problem does not exist
@@ -71,30 +78,30 @@ def htmlproblems(contestname, year):
 
 def GenerateYearLinks(year_start, year_end):
     text = ''
-    for i in range(year_start, year_end + 1):
-        text += r"<h3><a href=./%s>%s</a></h3>\n" % (i, i)
+    for i in range(year_end, year_start - 1, -1):
+        text += r"<h3><a href=./%s>%s</a></h3>" % (i, i)
     return text
 
 
 def ReloadContestText():
     from contestinfo import contestList
-    indexraw = open("/generator/formats/contest-index.txt").read()  # this is the format
+    indexraw = open("generator/formats/contest-index.txt", "r").read()  # this is the format
     # We need a text and format for each contest.
     for i in contestList:
-        yearRefs = GenerateYearLinks(i[1], 1[2])
+        yearRefs = GenerateYearLinks(i[1], i[2])
         concurso = i[0]
-        contestText = open("generator/texts/%s.txt" % concurso).read()
+        contestText = open("generator/texts/%s.txt" % concurso , "r").read()
         dic = {
             "[concurso]": concurso,
             "[yearlinks]": yearRefs,  # yearlinks must come from a list from each contest, and generate
             "[contestText]": contestText,
         }
         index = replace_all(indexraw, dic)
-        with open("ProyectoMURO/public_html/%s/index.html" % concurso) as f:
+        with open("ProyectoMURO/public_html/%s/index.html" % concurso, "w") as f:
             f.write(index)
         open("generator/texts/%s.txt" % concurso).close()
 
-    open("/generator/formats/contest-index.txt").close()
+    open("generator/formats/contest-index.txt").close()
 
 
 def ReloadPages():

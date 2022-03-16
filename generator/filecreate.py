@@ -8,8 +8,8 @@ a=[
   # ["EGMO",2012,6],
   # ["OIM",1985,6],
   # ["RMM",2008,6],
-  #  ["APMO",1989,5]
-  ["OMCC", 1999, 6]
+    ["APMO",1989,5]
+  #["OMCC", 1999, 6]
 
    ]
 
@@ -17,7 +17,10 @@ for i in a:
     for j in range(i[1],2022):
         newpath = "%s/%s/soluciones"%(i[0], j)
         if not os.path.exists(newpath):
-            os.makedirs(newpath)        
+            os.makedirs(newpath)
+        newpath = "%s/%s/enunciados"%(i[0], j)
+        if not os.path.exists(newpath):
+            os.makedirs(newpath)
         for k in range(1,(i[2]+1)):
             if not os.path.exists("%s/%s/enunciados/%s.tex"%(i[0], j, k)):
                 fp=open("%s/%s/enunciados/%s.tex"%(i[0], j, k),"w")
