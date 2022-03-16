@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./../">
+                               EGMO<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+                              <h3>
+                                  EGMO 2019 problema 6
+                              </h3>
+                              <div class="alert-secondary alert">
+                                  Alina traza $2019$ cuerdas en una circunferencia. Los puntos extremos de éstas son
+todos diferentes. Un punto se considera marcado si es de uno de los siguientes tipos:
+(i) uno de los $4038$ puntos extremos de las cuerdas; o
+(ii) un punto de intersección de al menos dos de las cuerdas.
+Alina etiqueta con un número cada punto marcado. De los $4038$ puntos del tipo (i), $2019$ son etiquetados con un $0$ y los otros $2019$ puntos con un $1$. Ella etiqueta cada punto del tipo (ii) con un entero
+arbitrario, no necesariamente positivo.
+En cada cuerda, Alina considera todos los segmentos entre puntos marcados consecutivos (si una
+cuerda tiene $k$ puntos marcados, entonces tiene $k − 1$ de estos segmentos). Sobre cada uno de estos
+segmentos, Alina escribe dos números: en amarillo escribe la suma de las etiquetas de los puntos
+extremos del segmento, mientras que en azul escribe el valor absoluto de su diferencia.
+Alina se da cuenta que los $N + 1$ números amarillos son exactamente los números $0, 1,\dots , N$.
+Muestre que al menos uno de los números azules es múltiplo de tres.
+Nota: Una cuerda es el segmento de recta que une dos puntos distintos en una circunferencia.
+                              </div>
+                              <hr>
+                               • <a href="./sol6.html">Solución</a><br>
+                               • <a href="./">Regreso a EGMO 2019</a><br>
+                              
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

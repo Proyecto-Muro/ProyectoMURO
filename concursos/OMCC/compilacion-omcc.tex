@@ -1,0 +1,67 @@
+\documentclass[11pt]{scrartcl}
+\usepackage{muro}
+\usepackage[inline]{asymptote}
+
+
+%%fancyhdr
+\pagestyle{fancy}
+\lfoot{\sffamily\bfseries\hyperlink{tabla}{Índice}}
+\rfoot{\thepage}
+\cfoot{}
+\lhead{\color{jampmDate}{\sffamily\today}}
+\rhead{\rmfamily{Proyecto MURO}}
+\chead{{\sffamily\large Compilación OMCC}}
+
+%HyperSETUP
+\hypersetup{
+colorlinks= true,
+urlcolor= cyan,
+linkcolor= jampmLinks,
+citecolor=red,
+pdftitle={Compilación OMCC},
+bookmarks = true,
+pdfpagemode = FullScreen,
+}
+
+
+\newenvironment{problema}{
+\stepcounter{Problemas}
+\noindent{\bfseries\sffamily\large Problema \theProblemas.}
+}{
+
+
+\vspace{15pt}
+
+
+}
+\begin{document}
+\newcounter{Problemas}[subsection]
+
+\title{Compilación OMCC}
+\author{cosa 1, 2 y 3}
+\date{\today}
+\maketitle
+\epigraph{Baby la vida es un ciclo hamiltoniano}{Juan}
+\noindent{\bfseries\Large\sffamily Introducción}
+
+\noindent Somos el proyecto MURO, y nuestro objetivo es conformar un Movimiento Unificado de Recursos Olímpicos (el nombrecito es un meme ngl). Esta es una compilación con todos los problemas de la Olimpiada de Matemáticas de Centroamérica y el Caribe, (en un futuro agregaremos pistas y soluciones). Esperamos la disfrutes! y no dudes en compartirnos cualquier comentario o crítica constructiva. Nos puedes contactar por aquí: jamperezmondragon@gmail.com. 
+\hypertarget{tabla}{\tableofcontents}
+\vfill
+\eject
+
+\section{Problemas}
+
+\foreach \j in {1999,2000,...,2021} {%
+    \subsection{\j}
+    \foreach \i in {1,2,...,6} {%
+        \begin{problema}
+            \enunciado{\j}{centro}{\i}
+            %\sacapistas{\j}{centro}{\i}
+        \end{problema}
+    }
+    \eject
+}
+
+
+
+\end{document}

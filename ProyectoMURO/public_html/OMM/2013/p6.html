@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./../">
+                               OMM<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+                              <h3>
+                                  OMM 2013 problema 6
+                              </h3>
+                              <div class="alert-secondary alert">
+                                  Sea $A_1A_2 \dots A_8$ un octágono convexo, es decir, un octágono donde todos sus ángulos internos son menores que $180^{\circ}$. Además los lados del octágono tienen la misma longitud y cada par de lados opuestos son paralelos. Para cada $i = 1, \dots , 8$, definamos el punto $B_i$ como la intersección del segmento $A_iA_{i+4}$ con el segmento $A_{i−1}A_{i+1}$, donde $A_{j+8} = A_{j}$ y $B_{j+8} = B_j$ , para todo número entero $j$. Muestra que para algún número $i$, de entre los números $1, 2, 3$ y $4$, se cumple que
+\[\frac{A_iA_{i+4}}{B_iB_{i+4}} \leq \frac{3}{2}\]
+                              </div>
+                              <hr>
+                               • <a href="./sol6.html">Solución</a><br>
+                               • <a href="./">Regreso a OMM 2013</a><br>
+                              
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

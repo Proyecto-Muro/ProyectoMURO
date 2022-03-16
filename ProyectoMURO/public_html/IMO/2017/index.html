@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               IMO 2017<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Para cada entero $a_0 \gt 1$, se define la sucesión $a_0, a_1, a_2, \dots$ tal que para cada $n \ge 0$:
+\[
+a_{n+1} =
+\begin{cases}
+\sqrt{a_n} & \text{si } \sqrt{a_n} \text{ es entero,} \\
+a_n + 3 & \text{en otro caso.}
+\end{cases}
+\]
+Determinar todos los valores de $a_0$ para los que existe un número $A$ tal que $a_n = A$ para infinitos valores de $n$.
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $\mathbb{R}$ el conjunto de los números reales. Determinar todas las funciones $f : \mathbb{R} \to \mathbb{R}$
+tales que, para cualesquiera números reales $x, y$,
+\[f(f(x)f(y))+f(x+y)=f(xy).\]
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Un conejo invisible y un cazador juegan como sigue en el plano euclideano. El punto de partida $A_0$ del conejo, y el punto de partida $B_0$ del cazador son el mismo. Después de $n−1$ rondas del juego, el conejo se encuentra en el punto $A_{n−1}$ y el cazador se encuentra en el punto $B_{n−1}$. En la $n$-ésima ronda del juego, ocurren tres hechos en el siguiente orden: <br>
+(i) El conejo se mueve de forma invisible a un punto $A_n$ tal que la distancia entre $A_{n−1}$ y $A_n$ es exactamente $1$. <br>
+(ii) Un dispositivo de rastreo reporta un punto $P_n$ al cazador. La única información segura que da el dispositivo al cazador es que la distancia entre $P_n$ y $A_n$ es menor o igual que $1$. <br>
+(iii) El cazador se mueve de forma visible a un punto $B_n$ tal que la distancia entre $B_{n−1}$ y $B_n$ es exactamente $1$. <br>
+¿Es siempre posible que, cualquiera que sea la manera en que se mueva el conejo y cualesquiera que sean los puntos que reporte el dispositivo de rastreo, el cazador pueda escoger sus movimientos de modo que después de $10^9$ rondas el cazador pueda garantizar que la distancia entre él mismo y el conejo sea menor o igual que $100$?
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sean $R$ y $S$ puntos distintos sobre la circunferencia $\Omega$ tales que $RS$ no es un diámetro de $\Omega$. Sea $\ell$ la recta tangente a $\Omega$ en $R$. El punto $T$ es tal que $S$ es el punto medio del segmento $RT$. El punto $J$ se elige en el menor arco $RS$ de $\Omega$ de manera que $\Gamma$, la circunferencia circunscrita al triángulo $JST$, intersecta a $\ell$ en dos puntos distintos. Sea $A$ el punto común de $\Gamma$ y $\ell$ más cercano a $R$. La recta $AJ$ corta por segunda vez a $\Omega$ en $K$. Demostrar que la recta $KT$ es tangente a $\Gamma$.
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $N \ge 2$ un entero dado. Los $N(N + 1)$ jugadores de un grupo de futbolistas, todos de distinta estatura, se colocan en fila. El técnico desea quitar $N(N − 1)$ jugadores de esta fila, de modo que la fila resultante formada por los 2N jugadores restantes satisfaga las $N$ condiciones siguientes:<br>
+
+(1) Que no quede nadie ubicado entre los dos jugadores más altos.<br>
+(2) Que no quede nadie ubicado entre el tercer jugador más alto y el cuarto jugador más alto.<br>
+$\vdots$<br>
+(N) Que no quede nadie ubicado entre los dos jugadores de menor estatura. <br>
+
+Demostrar que esto siempre es posible.
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Un par ordenado $(x, y)$ de enteros es un punto "primitivo" si el máximo común divisor de $x, y$ es $1$. Dado un conjunto finito $S$ de puntos primitivos, demostrar que existen un entero positivo $n$ y enteros $a_0, a_1, \dots , a_n$ tales que, para cada $(x, y)$ de $S$, se cumple:
+
+\[a_0x^n + a_1x^{n-1} y + a_2x^{n-2}y^2 + \cdots + a_{n-1}xy^{n-1} + a_ny^n = 1.\]
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a IMO</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

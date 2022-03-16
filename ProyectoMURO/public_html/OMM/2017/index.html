@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               OMM 2017<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  En un tablero de ajedrez de $2017 \times 2017$, se han colocado en la primera columna $2017$
+caballos de ajedrez, uno en cada casilla de la columna. Una tirada consiste en elegir dos
+caballos distintos y de manera simulátnea moverlos como se mueven los caballos de ajedrez.
+Encuentra todos los posibles valores enteros de $k$ con $1 \leq k \leq 2017$, para los cuales es
+posible llegar a través de varias tiradas, a que todos los caballos están en la columna $k$, uno
+en cada casilla.
+Nota. Un caballo se mueve de una casilla $X$ a otra $Y$, solamente si $X$ y $Y$ son las esquinas
+opuestas de un rectángulo de $3 \times 2$ o de $2 \times 3$.
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Un conjunto de $n$ números enteros positivos distintos es equilibrado, si el promedio de
+cualesquiera $k$ números del conjunto es un número entero, para toda $1 \leq k \leq n$. Encuentra
+la mayor suma que pueden tener los elementos de un conjunto equilibrado, con todos sus
+elementos menores o iguales que $2017$.
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo acutángulo cuyo ortocentro es el punto $H$. La circunferencia que
+pasa por los puntos $B$, $H$ y $C$ vuelve a intersectar a las rectas $AB$ y $AC$ en los puntos $D$ y
+$E$, respectivamente. Sean $P$ y $Q$ los puntos de intersección de $HB$ y $HC$ con el segmento
+$DE$, respectivamente. Se consideran los puntos $X$ e $Y$ (distintos de $A$) que están sobre
+las recta $AP$ y $AQ$, respectivamente, de manera que los puntos $X$, $A$, $H$ y $B$ están sobre
+un círculo y los puntos $Y$, $A$, $H$ y $C$ están sobre un círculo. Muestra que las rectas $XY$
+y $BC$ son paralelas.
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  Un subconjunto $B$ de $\{1, 2, \dots, 2017\}$, tiene la propiedad $T$ si cada tres números de $B$ son las longitudes de los lados de un triángulo (de área positiva).
+Determina la mayor cantidad de números que puede tener un conjunto $B$ que tenga la
+propiedad $T$.
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sobre una circunferencia $\Gamma$ se encuentran los puntos $A, B, N , C, D$ y $M$ colocados en el
+sentido de las manecillas del reloj de manera que $M$ y $N$ son los puntos medios de los
+arcos $DA$ y $BC$ (recorridos en el sentido de las manecillas del reloj). Sea $P$ la intersección
+de los segmentos $AC$ y $BD$; y sea $Q$ un punto sobre $MB$ de manera que las rectas $PQ$
+y $MN$ son perpendiculares. Sobre el segmento $MC$ se considera un punto $R$ de manera
+que $QB = RC$. Muestra que $AC$ pasa por el punto medio del segmento $QR$.
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sean $n \geq 2$ y $m \geq 2$ enteros positivos. Se tienen $m$ urnas dispuestas en fila. Los jugadores
+$A$ y $B$ juegan por turnos, comenzando por $A$, de la siguiente manera. En cada turno, $A$
+elige dos urnas y coloca un voto en cada una de ellas. Posteriormente, $B$ elige una urna,
+y elimina todos los votos de esa. $A$ gana si logra que haya una urna con $n$ votos después
+de algún turno de $B$. Determina para cada $n$ el mínimo valor de $m$ para el cual $A$ puede
+garantizar ganar, sin importar los movimientos que haga $B$.
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a OMM</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

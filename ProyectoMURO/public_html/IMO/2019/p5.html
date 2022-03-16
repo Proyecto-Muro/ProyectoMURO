@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./../">
+                               IMO<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+                              <h3>
+                                  IMO 2019 problema 5
+                              </h3>
+                              <div class="alert-secondary alert">
+                                  El Banco de Bath emite monedas con una $H$ en una cara y una $T$ en la otra. Harry tiene $n$ monedas de este tipo alineadas de izquierda a derecha. Él realiza repetidamente la siguiente operación: si hay exactamente $k \gt 0$ monedas con la $H$ hacia arriba, Harry voltea la $k$-ésima moneda contando desde la izquierda; en caso contrario, todas las monedas tienen la $T$ hacia arriba y él se detiene. Por ejemplo, si $n = 3$ y la configuración inicial es $THT$, el proceso sería $THT \to HHT \to HTT \to TTT$, que se detiene después de tres operaciones.
+(a) Demostrar que para cualquier configuración inicial que tenga Harry, el proceso se detiene después de un número finito de operaciones.
+(b) Para cada configuración inicial $C$, sea $L(C)$ el número de operaciones que se realizan hasta que Harry se detiene. Por ejemplo, $L(THT) = 3$ y $L(TTT) = 0$. Determinar el valor promedio de $L(C)$ sobre todas las $2n$ posibles configuraciones iniciales de $C$.
+                              </div>
+                              <hr>
+                               • <a href="./sol5.html">Solución</a><br>
+                               • <a href="./">Regreso a IMO 2019</a><br>
+                              
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

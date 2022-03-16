@@ -1,0 +1,549 @@
+
+OMM 2019 
+
+OMM 2019 problem 1:  An integer number $m\geq 1$ is \textit{mexica} if it's of the form $n^{d(n)}$, where $n$ is a positive integer and $d(n)$ is the number of positive integers which divide $n$. Find all mexica numbers less than $2019$. \\\\
+Note. The divisors of $n$ include $1$ and $n$; for example, $d(12)=6$, since $1, 2, 3, 4, 6, 12$ are all the positive divisors of $12$. \\\\
+\textit{Proposed by Cuauhtémoc Gómez} 
+OMM 2019 problem 2:  Let $H$ be the orthocenter of acute-angled triangle $ABC$ and $M$ be the midpoint of $AH$. Line $BH$ cuts $AC$ at $D$. Consider point $E$ such that $BC$ is the perpendicular bisector of $DE$. Segments $CM$ and $AE$ intersect at $F$. Show that $BF$ is perpendicular to $CM$. \\\\
+\textit{Proposed by Germán Puga} 
+OMM 2019 problem 3:  Let $n\geq 2$ be an integer. Consider $2n$ points around a circle. Each vertex has been tagged with one integer from $1$ to $n$, inclusive, and each one of these integers has been used exactly two times. Isabel divides the points into $n$ pairs, and draws the segments joining them, with the condition that the segments do not intersect. Then, she assigns to each segment the greatest integer between its endpoints.
+\begin{enumerate}[a)]
+  \item Show that, no matter how the points have been tagged, Isabel can always choose the pairs in such a way that she uses exactly $\lceil n/2\rceil$ numbers to tag the segments.
+  \item Can the points be tagged in such a way that, no matter how Isabel divides the points into pairs, she always uses exactly $\lceil n/2\rceil$ numbers to tag the segments?
+\end{enumerate}
+Note. For each real number $x$, $\lceil x\rceil$ denotes the least integer greater than or equal to $x$. For example, $\lceil 3.6\rceil=4$ and $\lceil 2\rceil=2$. \\\\
+\textit{Proposed by Victor Domínguez} 
+OMM 2019 problem 4:  A list of positive integers is called good if the maximum element of the list appears exactly once. A sublist is a list formed by one or more consecutive elements of a list. For example, the list $10,34,34,22,30,22$ the sublist $22,30,22$ is good and $10,34,34,22$ is not. A list is very good if all its sublists are good. Find the minimum value of $k$ such that there exists a very good list of length $2019$ with $k$ different values on it. 
+OMM 2019 problem 5:  Let $a > b$ be relatively prime positive integers. A grashopper stands at point $0$ in a number line. Each minute, the grashopper jumps according to the following rules:
+\begin{itemize}
+  \item If the current minute is a multiple of $a$ and not a multiple of $b$, it jumps $a$ units forward.
+  \item If the current minute is a multiple of $b$ and not a multiple of $a$, it jumps $b$ units backward.
+  \item If the current minute is both a multiple of $b$ and a multiple of $a$, it jumps $a - b$ units forward.
+  \item If the current minute is neither a multiple of $a$ nor a multiple of $b$, it doesn't move.
+\end{itemize}
+Find all positions on the number line that the grasshopper will eventually reach. 
+OMM 2019 problem 6:  Let $ABC$ be a triangle such that $\angle BAC = 45^{\circ}$. Let $H,O$ be the orthocenter and circumcenter of $ABC$, respectively. Let $\omega$ be the circumcircle of $ABC$ and $P$ the point on $\omega$ such that the circumcircle of $PBH$ is tangent to $BC$. Let $X$ and $Y$ be the circumcenters of $PHB$ and $PHC$ respectively. Let $O_1,O_2$ be the circumcenters of $PXO$ and $PYO$ respectively. Prove that $O_1$ and $O_2$ lie on $AB$ and $AC$, respectively. 
+
+OMM 2018 
+
+OMM 2018 problem 1:  Let $A$ and $B$ be two points on a line $\ell$, $M$ the midpoint of $AB$, and $X$ a point on segment $AB$ other than $M$. Let $\Omega$ be a semicircle with diameter $AB$. Consider a point $P$ on $\Omega$ and let $\Gamma$ be the circle through $P$ and $X$ that is tangent to $AB$. Let $Q$ be the second intersection point of $\Omega$ and $\Gamma$. The internal angle bisector of $\angle PXQ$ intersects $\Gamma$ at a point $R$. Let $Y$ be a point on $\ell$ such that $RY$ is perpendicular to $\ell$. Show that $MX > XY$ 
+OMM 2018 problem 2:  For each positive integer $m$, we define $L_m$ as the figure that is obtained by overlapping two $1 \times m$ and $m \times 1$ rectangles in such a way that they coincide at the $1 \times 1$ square at their ends, as shown in the figure.
+\begin{center}
+\begin{asy}[width=151pt]
+size(151, 51);
+pair h = (1, 0), v = (0, 1), o = (0, 0);
+for(int i = 1; i < 5; ++i)
+{
+  o = (i*i/2 + i, 0);
+  draw(o -- o + i*v -- o + i*v + h -- o + h + v -- o + i*h + v -- o + i*h -- cycle);
+  string s = '$L_' + (string)(i) + '$';
+  label(s, o + ((i / 2), -1));
+  for(int j = 1; j < i; ++j)
+  {
+    draw(o + j*v -- o + j*v + h);
+    draw(o + j*h -- o + j*h + v);
+  }
+}
+label('...', (18, 0.5));
+\end{asy}
+\end{center}
+Using some figures $L_{m_1}, L_{m_2}, \dots, L_{m_k}$, we cover an $n \times n$ board completely, in such a way that the edges of the figure coincide with lines in the board. Among all possible coverings of the board, find the minimal possible value of $m_1 + m_2 + \dots + m_k$. \\\\
+Note: In covering the board, the figures may be rotated or reflected, and they may overlap or not be completely contained within the board. 
+OMM 2018 problem 3:  A sequence $a_2, a_3, \dots, a_n$ of positive integers is said to be \textit{campechana}, if for each $i$ such that $2 \leq i \leq n$ it holds that exactly $a_i$ terms of the sequence are relatively prime to $i$. We say that the \textit{size} of such a sequence is $n - 1$. Let $m = p_1p_2 \dots p_k$, where $p_1, p_2, \dots, p_k$ are pairwise distinct primes and $k \geq 2$. Show that there exist at least two different campechana sequences of size $m$. 
+OMM 2018 problem 4:  Let $n\geq 2$ be an integer. For each $k$-tuple of positive integers $a_1, a_2, \ldots, a_k$ such that $a_1+a_2+\cdots +a_k=n$, consider the sums $S_i=1+2+\ldots +a_i$ for $1\leq i\leq k$. Determine, in terms of $n$, the maximum possible value of the product $S_1S_2\cdots S_k$. \\\\
+\textit{Proposed by Misael Pelayo} 
+OMM 2018 problem 5:  Let $n\geq 5$ an integer and consider a regular $n$-gon. Initially, Nacho is situated in one of the vertices of the $n$-gon, in which he puts a flag. He will start moving clockwise. First, he moves one position and puts another flag, then, two positions and puts another flag, etcetera, until he finally moves $n-1$ positions and puts a flag, in such a way that he puts $n$ flags in total. ¿For which values of $n$, Nacho will have put a flag in each of the $n$ vertices? 
+OMM 2018 problem 6:  Let $ABC$ be an acute-angled triangle with circumference $\Omega$. Let the angle bisectors of $\angle B$ and $\angle C$ intersect $\Omega$ again at $M$ and $N$. Let $I$ be the intersection point of these angle bisectors. Let $M'$ and $N'$ be the respective reflections of $M$ and $N$ in $AC$ and $AB$. Prove that the center of the circle passing through $I$, $M'$, $N'$ lies on the altitude of triangle $ABC$ from $A$. \\\\
+\textit{Proposed by Victor Domínguez and Ariel García} 
+
+OMM 2017 
+
+OMM 2017 problem 1:  A knight is placed on each square of the first column of a $2017 \times 2017$ board. A \textit{move} consists in choosing two different knights and moving each of them to a square which is one knight-step away. Find all integers $k$ with $1 \leq k \leq 2017$ such that it is possible for each square in the $k$-th column to contain one knight after a finite number of moves. \\\\
+Note: Two squares are a knight-step away if they are opposite corners of a $2 \times 3$ or $3 \times 2$ board. 
+OMM 2017 problem 2:  A set of $n$ positive integers is said to be \textit{balanced} if for each integer $k$ with $1 \leq k \leq n$, the average of any $k$ numbers in the set is an integer. Find the maximum possible sum of the elements of a balanced set, all of whose elements are less than or equal to $2017$. 
+OMM 2017 problem 3:  Let $ABC$ be an acute triangle with orthocenter $H$. The circle through $B, H$, and $C$ intersects lines $AB$ and $AC$ at $D$ and $E$ respectively, and segment $DE$ intersects $HB$ and $HC$ at $P$ and $Q$ respectively. Two points $X$ and $Y$, both different from $A$, are located on lines $AP$ and $AQ$ respectively such that $X, H, A, B$ are concyclic and $Y, H, A, C$ are concyclic. Show that lines $XY$ and $BC$ are parallel. 
+OMM 2017 problem 4:  A subset $B$ of $\{1, 2, \dots, 2017\}$ is said to have property $T$ if any three elements of $B$ are the sides of a nondegenerate triangle. Find the maximum number of elements that a set with property $T$ may contain. 
+OMM 2017 problem 5:  On a circle $\Gamma$, points $A, B, N, C, D, M$ are chosen in a clockwise order in such a way that $N$ and $M$ are the midpoints of clockwise arcs $BC$ and $AD$ respectively. Let $P$ be the intersection of $AC$ and $BD$, and let $Q$ be a point on line $MB$ such that $PQ$ is perpendicular to $MN$. Point $R$ is chosen on segment $MC$ such that $QB = RC$, prove that the midpoint of $QR$ lies on $AC$. 
+OMM 2017 problem 6:  Let $n \geq 2$ and $m$ be positive integers. $m$ ballot boxes are placed in a line. Two players $A$ and $B$ play by turns, beginning with $A$, in the following manner. Each turn, $A$ chooses two boxes and places a ballot in each of them. Afterwards, $B$ chooses one of the boxes, and removes every ballot from it. $A$ wins if after some turn of $B$, there exists a box containing $n$ ballots. For each $n$, find the minimum value of $m$ such that $A$ can guarantee a win independently of how $B$ plays. 
+
+OMM 2016 
+
+OMM 2016 problem 1:  Let $C_1$ and $C_2$ be two circumferences externally tangents at $S$ such that the radius of $C_2$ is the triple of the radius of $C_1$. Let a line be tangent to $C_1$ at $P \neq S$ and to $C_2$ at $Q \neq S$. Let $T$ be a point on $C_2$ such that $QT$ is diameter of $C_2$. Let the angle bisector of $\angle SQT$ meet $ST$ at $R$. Prove that $QR=RT$ 
+OMM 2016 problem 2:  A pair of positive integers $m, n$ is called $guerrera$, if there exists positive integers $a, b, c, d$ such that $m=ab$, $n=cd$ and $a+b=c+d$. For example the pair $8, 9$ is $guerrera$ cause $8= 4 \cdot 2$, $9= 3 \cdot 3$ and $4+2=3+3$. We paint the positive integers if the following order: \\\\
+We start painting the numbers $3$ and $5$. \\\\
+If a positive integer $x$ is not painted and a positive $y$ is painted such that the pair $x, y$ is $guerrera$, we paint $x$. \\\\
+Find all positive integers $x$ that can be painted. 
+OMM 2016 problem 3:  Find the minimum real x that satisfies [x]<[x^2]<[x^3)<...<[x^n]<[x^n+1]<... 
+OMM 2016 problem 4:  We say a non-negative integer $n$ "\textit{contains}" another non-negative integer $m$, if the digits of its decimal expansion appear consecutively in the decimal expansion of $n$. For example, $2016$ \textit{contains} $2$, $0$, $1$, $6$, $20$, $16$, $201$, and $2016$. Find the largest integer $n$ that does not \textit{contain} a multiple of $7$. 
+OMM 2016 problem 5:  The numbers from $1$ to $n^2$ are written in order in a grid of $n \times n$, one number in each square, in such a way that the first row contains the numbers from $1$ to $n$ from left to right; the second row contains the numbers $n + 1$ to $2n$ from left to right, and so on and so forth. An allowed move on the grid consists in choosing any two adjacent squares (i.e. two squares that share a side), and add (or subtract) the same integer to both of the numbers that appear on those squares. \\\\
+Find all values of $n$ for which it is possible to make every squares to display $0$ after making any number of moves as necessary and, for those cases in which it is possible, find the minimum number of moves that are necessary to do this. 
+OMM 2016 problem 6:  Let $ABCD$ a quadrilateral inscribed in a circumference, $l_1$ the parallel to $BC$ through $A$, and $l_2$ the parallel to $AD$ through $B$. The line $DC$ intersects $l_1$ and $l_2$ at $E$ and $F$, respectively. The perpendicular to $l_1$ through $A$ intersects $BC$ at $P$, and the perpendicular to $l_2$ through $B$ cuts $AD$ at $Q$. Let $\Gamma_1$ and $\Gamma_2$ be the circumferences that pass through the vertex of triangles $ADE$ and $BFC$, respectively. Prove that $\Gamma_1$ and $\Gamma_2$ are tangent to each other if and only if $DP$ is perpendicular to $CQ$. 
+
+OMM 2015 
+
+OMM 2015 problem 1:  Let $ABC$ be an acuted-angle triangle and let $H$ be it's orthocenter. Let $PQ$ be a segment through $H$ such that $P$ lies on $AB$ and $Q$ lies on $AC$ and such that $ \angle PHB= \angle CHQ$. Finally, in the circumcircle of $\triangle ABC$, consider $M$ such that $M$ is the mid point of the arc $BC$ that doesn't contain $A$. Prove that $MP=MQ$ \\\\
+Proposed by Eduardo Velasco/Marco Figueroa 
+OMM 2015 problem 2:  Let $n$ be a positive integer and let $k$ be an integer between $1$ and $n$ inclusive. There is a white board of $n \times n$. We do the following process. We draw $k$ rectangles with integer sides lenghts and sides parallel to the ones of the $n \times n$ board, and such that each rectangle covers the top-right corner of the $n \times n$ board. Then, the $k$ rectangles are painted of black. This process leaves a white figure in the board. \\\\
+How many different white figures are possible to do with $k$ rectangles that can't be done with less than $k$ rectangles? \\\\
+Proposed by David Torres Flores 
+OMM 2015 problem 3:  Let $\mathbb{N} =\{1, 2, 3, ...\}$ be the set of positive integers. Let $f : \mathbb{N} \rightarrow \mathbb{N}$ be a function that gives a positive integer value, to every positive integer. Suppose that $f$ satisfies the following conditions: \\\\
+$f(1)=1$ \\
+$f(a+b+ab)=a+b+f(ab)$ \\\\
+Find the value of $f(2015)$ \\\\
+Proposed by Jose Antonio Gomez Ortega 
+OMM 2015 problem 4:  Let $n$ be a positive integer. Mary writes the $n^3$ triples of not necessarily distinct integers, each between $1$ and $n$ inclusive on a board. Afterwards, she finds the greatest (possibly more than one), and erases the rest. For example, in the triple $(1, 3, 4)$ she erases the numbers 1 and 3, and in the triple $(1, 2, 2)$ she erases only the number 1, \\\\
+Show after finishing this process, the amount of remaining numbers on the board cannot be a perfect square. 
+OMM 2015 problem 5:  Let $I$ be the incenter of an acute-angled triangle $ABC$. Line $AI$ cuts the circumcircle of $BIC$ again at $E$. Let $D$ be the foot of the altitude from $A$ to $BC$, and let $J$ be the reflection of $I$ across $BC$. Show $D$, $J$ and $E$ are collinear. 
+OMM 2015 problem 6:  Let $n$ be a positive integer and let $d_1, d_2, \dots, d_k$ be its positive divisors. Consider the number
+\[ f(n) = (-1)^{d_1}d_1 + (-1)^{d_2}d_2 + \dots + (-1)^{d_k}d_k \]
+Assume $f(n)$ is a power of 2. Show if $m$ is an integer greater than 1, then $m^2$ does not divide $n$. 
+
+OMM 2014 
+
+OMM 2014 problem 1:  Each of the integers from 1 to 4027 has been colored either green or red. Changing the color of a number is making it red  if it was green and making it green if it was red. Two positive integers $m$ and $n$ are said to be \textit{cuates} if either $\frac{m}{n}$ or $\frac{n}{m}$ is a prime number. A \textit{step} consists in choosing two numbers that are cuates and changing the color of each of them. Show it is possible to apply a sequence of steps such that every integer from 1 to 2014 is green. 
+OMM 2014 problem 2:  A positive integer $a$ is said to \textit{reduce} to a positive integer $b$ if when dividing $a$ by its units digits the result is $b$. For example, 2015 reduces to $\frac{2015}{5} = 403$. \\
+Find all the positive integers that become 1 after some amount of reductions. For example, 12 is one such number because 12 reduces to 6 and 6 reduces to 1. 
+OMM 2014 problem 3:  Let $\Gamma_1$ be a circle and $P$ a point outside of $\Gamma_1$. The tangents from $P$ to $\Gamma_1$ touch the circle at $A$ and $B$. Let $M$ be the midpoint of $PA$ and $\Gamma_2$ the circle through $P$, $A$ and $B$. Line $BM$ cuts $\Gamma_2$ at $C$, line $CA$ cuts $\Gamma_1$ at $D$, segment $DB$ cuts $\Gamma_2$ at $E$ and line $PE$ cuts $\Gamma_1$ at $F$, with $E$ in segment $PF$. Prove lines $AF$, $BP$, and $CE$ are concurrent. 
+OMM 2014 problem 4:  \\\\
+Let $ABCD$ be a rectangle with diagonals $AC$ and $BD$. Let $E$ be the intersection of the bisector of $\angle CAD$ with segment $CD$, $F$ on $CD$ such that $E$ is midpoint of $DF$, and $G$ on $BC$ such that $BG = AC$ (with $C$ between $B$ and $G$). Prove that the circumference through $D$, $F$ and $G$ is tangent to $BG$. 
+OMM 2014 problem 5:  Let $a, b, c$ be positive reals such that $a + b + c = 3$. Prove:
+\[
+\frac{a^2}{a + \sqrt[3]{bc}} + \frac{b^2}{b + \sqrt[3]{ca}} + \frac{c^2}{c + \sqrt[3]{ab}} \geq \frac{3}{2}
+\]
+And determine when equality holds. 
+OMM 2014 problem 6:  Let $d(n)$ be the number of positive divisors of a positive integer $n$ (including $1$ and $n$). Find all values of $n$ such that $n + d(n) = d(n)^2$. 
+
+OMM 2013 
+
+OMM 2013 problem 1:  All the prime numbers are written in order, $p_1 = 2, p_2 = 3, p_3 = 5, ...$ \\
+Find all pairs of positive integers $a$ and $b$ with $a - b \geq 2$, such that $p_a - p_b$ divides $2(a-b)$. 
+OMM 2013 problem 2:  Let $ABCD$ be a parallelogram with the angle at $A$ obtuse. Let $P$ be a point on segment $BD$. The circle with center $P$ passing through $A$ cuts line $AD$ at $A$ and $Y$ and cuts line $AB$ at $A$ and $X$. Line $AP$ intersects $BC$ at $Q$ and $CD$ at $R$. Prove $\angle XPY = \angle XQY + \angle XRY$. 
+OMM 2013 problem 3:  What is the largest amount of elements that can be taken from the set $\{1, 2, ... , 2012, 2013\}$, such that within them there are no distinct three, say $a$, $b$,and $c$, such that $a$ is a divisor or multiple of $b-c$? 
+OMM 2013 problem 4:  A $n \times n \times n$ cube is constructed using $1 \times 1 \times 1$ cubes, some of them black and others white, such that in each $n \times 1 \times 1$, $1 \times n \times 1$, and $1 \times 1 \times n$ subprism there are exactly two black cubes, and they are separated by an even number of white cubes (possibly 0). \\
+Show it is possible to replace half of the black cubes with white cubes such that each $n \times 1 \times 1$, $1 \times n \times 1$ and $1 \times 1 \times n$ subprism contains exactly one black cube. 
+OMM 2013 problem 5:  A pair of integers is special if it is of the form $(n, n-1)$ or $(n-1, n)$ for some positive integer $n$. Let $n$ and $m$ be positive integers such that pair $(n, m)$ is not special. Show $(n, m)$ can be expressed as a sum of two or more different special pairs if and only if $n$ and $m$ satisfy the inequality $ n+m\geq (n-m)^2 $. \\
+Note: The sum of two pairs is defined as $ (a, b)+(c, d) = (a+c, b+d) $. 
+OMM 2013 problem 6:  Let $A_1A_2 ... A_8$ be a convex octagon such that all of its sides are equal and its opposite sides are parallel. For each $i = 1, ... , 8$, define $B_i$ as the intersection between segments $A_iA_{i+4}$ and $A_{i-1}A_{i+1}$, where $A_{j+8} = A_j$ and $B_{j+8} = B_j$ for all $j$. Show some number $i$, amongst 1, 2, 3, and 4 satisfies
+\[ \frac{A_iA_{i+4}}{B_iB_{i+4}} \leq \frac{3}{2} \] 
+
+OMM 2012 
+
+OMM 2012 problem 1:  Let $\mathcal{C}_1$ be a circumference with center $O$, $P$ a point on it and $\ell$ the line tangent to $\mathcal{C}_1$ at $P$. Consider a point $Q$ on $\ell$ different from $P$, and let $\mathcal{C}_2$ be the circumference passing through $O$, $P$ and $Q$. Segment $OQ$ cuts $\mathcal{C}_1$ at $S$ and line $PS$ cuts $\mathcal{C}_2$ at a point $R$ diffferent from $P$. If $r_1$ and $r_2$ are the radii of $\mathcal{C}_1$ and $\mathcal{C}_2$ respectively, Prove
+\[ \frac{PS}{SR} = \frac{r_1}{r_2}. \] 
+OMM 2012 problem 2:  Let $n \geq 4$ be an even integer. Consider an $n \times n$ grid. Two cells ($1 \times 1$ squares) are \textit{neighbors} if they share a side, are in opposite ends of a row, or are in opposite ends of a column. In this way, each cell in the grid has exactly four neighbors. \\
+An integer from 1 to 4 is written inside each square according to the following rules:
+\begin{itemize}
+  \item If a cell has a 2 written on it, then at least two of its neighbors contain a 1.
+  \item If a cell has a 3 written on it, then at least three of its neighbors contain a 1.
+  \item If a cell has a 4 written on it, then all of its neighbors contain a 1.
+\end{itemize}
+Among all arrangements satisfying these conditions, what is the maximum number that can be obtained by adding all of the numbers on the grid? 
+OMM 2012 problem 3:  Prove among any $14$ consecutive positive integers there exist $6$ which are pairwise relatively prime. 
+OMM 2012 problem 4:  The following process is applied to each positive integer: the sum of its digits is subtracted from the number, and the result is divided by $9$. For example, the result of the process applied to $938$ is $102$, since $\frac{938-(9 + 3 + 8)}{9} = 102.$ Applying the process twice to $938$ the result is $11$, applied three times the result is $1$, and applying it four times the result is $0$. When the process is applied one or more times to an integer $n$, the result is eventually $0$. The number obtained before obtaining $0$ is called the \textit{house} of $n$. \\\\
+How many integers less than $26000$ share the same \textit{house} as $2012$? 
+OMM 2012 problem 5:  Some frogs, some red and some others green, are going to move in an $11 \times 11$ grid, according to the following rules. If a frog is located, say, on the square marked with # in the following diagram, then
+\begin{itemize}
+  \item If it is red, it can jump to any square marked with an x.
+  \item if it is green, it can jump to any square marked with an o.
+\end{itemize}
+\[
+\begin{tabular}{| p{0.08cm} | p{0.08cm} | p{0.08cm} | p{0.08cm} | p{0.08cm} | p{0.08cm} | p{0.08cm} | p{0.08cm} | p{0.08cm} | l}
+\hline
+\&\&\&\&\&\&\\ \hline
+\&\&x\&\&o\&\&\\ \hline
+\&o\&\&\&\&x\&\\ \hline
+\&\&\&\small{\#}\&\&\&\\ \hline
+\&x\&\&\&\&o\&\\ \hline
+\&\&o\&\&x\&\&\\ \hline
+\&\&\&\&\&\&\\ \hline
+\end{tabular}
+\]
+We say 2 frogs (of any color) can meet at a square if both can get to the same square in one or more jumps, not neccesarily with the same amount of jumps.
+\begin{enumerate}[a.]
+  \item Prove if 6 frogs are placed, then there exist at least 2 that can meet at a square.
+  \item For which values of $k$ is it possible to place one green and one red frog such that they can meet at exactly $k$ squares?
+\end{enumerate} 
+OMM 2012 problem 6:  Consider an acute triangle $ABC$ with circumcircle $\mathcal{C}$. Let $H$ be the orthocenter of $ABC$ and $M$ the midpoint of $BC$. Lines $AH$, $BH$ and $CH$ cut $\mathcal{C}$ again at points $D$, $E$, and $F$ respectively; line $MH$ cuts $\mathcal{C}$ at $J$ such that $H$ lies between $J$ and $M$. Let $K$ and $L$ be the incenters of triangles $DEJ$ and $DFJ$ respectively. Prove $KL$ is parallel to $BC$. 
+
+OMM 2011 
+
+OMM 2011 problem 1:  $25$ lightbulbs are distributed in the following way: the first $24$ are placed on a circumference, placing a bulb at each vertex of a regular $24$-gon, and the remaining bulb is placed on the center of said circumference. \\
+At any time, the following operations may be applied:
+\begin{itemize}
+  \item Take two vertices on the circumference with an odd amount of vertices between them, and change the state of the bulbs on those vertices and the center bulb.
+  \item Take three vertices on the circumference that form an equilateral triangle, change the state of the bulbs on those vertices and the center bulb.
+\end{itemize}
+Prove from any starting configuration of on and off lightbulbs, it is always possible to reach a configuration where all the bulbs are on. 
+OMM 2011 problem 2:  Let $ABC$ be an acute triangle and $\Gamma$ its circumcircle. Let $l$ be the line tangent to $\Gamma$ at $A$. Let $D$ and $E$ be the intersections of the circumference with center $B$ and radius $AB$ with lines $l$ and $AC$, respectively. Prove the orthocenter of $ABC$ lies on line $DE$. 
+OMM 2011 problem 3:  Let $n$ be a positive integer. Find all real solutions $(a_1, a_2, \dots, a_n)$ to the system:
+\[ a_1^2 + a_1 - 1 = a_2 \]
+\[ a_2^2 + a_2 - 1 = a_3 \]
+\[ \hspace*{3.3em} \vdots \]
+\[ a_n^2 + a_n - 1 = a_1 \] 
+OMM 2011 problem 4:  Find the smallest positive integer that uses exactly two different digits when written in decimal notation and is divisible by all the numbers from $1$ to $9$. 
+OMM 2011 problem 5:  A $(2^n - 1) \times (2^n +1)$ board is to be divided into rectangles with sides parallel to the sides of the board and integer side lengths such that the area of each rectangle is a power of 2. Find the minimum number of rectangles that the board may be divided into. 
+OMM 2011 problem 6:  Let $\mathcal{C}_1$ and $\mathcal{C}_2$ be two circumferences intersecting at points $A$ and $B$. Let $C$ be a point on line $AB$ such that $B$ lies between $A$ and $C$. Let $P$ and $Q$ be points on $\mathcal{C}_1$ and $\mathcal{C}_2$ respectively such that $CP$ and $CQ$ are tangent to $\mathcal{C}_1$ and $\mathcal{C}_2$ respectively, $P$ is not inside $\mathcal{C}_2$ and $Q$ is not inside $\mathcal{C}_1$. Line $PQ$ cuts $\mathcal{C}_1$ at $R$ and $\mathcal{C}_2$ at $S$, both points different from $P$, $Q$ and $B$. Suppose $CR$ cuts $\mathcal{C}_1$ again at $X$ and $CS$ cuts $\mathcal{C}_2$ again at $Y$. Let $Z$ be a point on line $XY$. Prove $SZ$ is parallel to $QX$ if and only if $PZ$ is parallel to $RX$. 
+
+OMM 2010 
+
+OMM 2010 problem 1:  Find all triplets of natural numbers $(a,b,c)$ that satisfy the equation $abc=a+b+c+1$. 
+OMM 2010 problem 2:  In each cell of an $n\times n$ board is a lightbulb. Initially, all of the lights are off. Each move consists of changing the state of all of the lights in a row or of all of the lights in a column (off lights are turned on and on lights are turned off). \\\\
+Show that if after a certain number of moves, at least one light is on, then at this moment at least $n$ lights are on. 
+OMM 2010 problem 3:  Let $\mathcal{C}_1$ and $\mathcal{C}_2$ be externally tangent at a point $A$. A line tangent to $\mathcal{C}_1$ at $B$ intersects $\mathcal{C}_2$ at $C$ and $D$; then the segment $AB$ is extended to intersect $\mathcal{C}_2$ at a point $E$. Let $F$ be the midpoint of $\overarc{CD}$ that does not contain $E$, and let $H$ be the intersection of $BF$ with $\mathcal{C}_2$. Show that $CD$, $AF$, and $EH$ are concurrent. 
+OMM 2010 problem 4:  Let $n$ be a positive integer. In an $n\times4$ table, each row is equal to
+\[
+\begin{tabular}{| c | c | c | c |}
+\hline
+2 \& 0 \& 1 \& 0 \\
+\hline
+\end{tabular}
+\]
+A \textit{change} is taking three consecutive boxes in the same row with different digits in them and changing the digits in these boxes as follows:
+\[ 0\to1\text{, }1\to2\text{, }2\to0\text{.} \]
+For example, a row $
+\begin{tabular}{| c | c | c | c |}\hline 2 \& 0 \& 1 \& 0 \\ \hline\end{tabular}
+$ can be changed to the row $
+\begin{tabular}{| c | c | c | c |}\hline 0 \& 1 \& 2 \& 0 \\ \hline\end{tabular}
+$ but not to $
+\begin{tabular}{| c | c | c | c |}\hline 2 \& 1 \& 2 \& 1 \\ \hline\end{tabular}
+$ because $0$, $1$, and $0$ are not distinct. \\\\
+Changes can be applied as often as wanted, even to items already changed. Show that for $n<12$, it is not possible to perform a finite number of changes so that the sum of the elements in each column is equal. 
+OMM 2010 problem 5:  Let $ABC$ be an acute triangle with $AB\neq AC$, $M$ be the median of $BC$, and $H$ be the orthocenter of $\triangle ABC$. The circumcircle of $B$, $H$, and $C$ intersects the median $AM$ at $N$. Show that $\angle ANH=90^\circ$. 
+OMM 2010 problem 6:  Let $p$, $q$, and $r$ be distinct positive prime numbers. Show that if
+\[ pqr\mid (pq)^r+(qr)^p+(rp)^q-1, \]
+then
+\[ (pqr)^3\mid 3((pq)^r+(qr)^p+(rp)^q-1). \] 
+
+OMM 2009 
+
+OMM 2009 problem 1:  In $\triangle ABC$, let $D$ be the foot of the altitude from $A$ to $BC$. A circle centered at $D$ with radius $AD$ intersects lines $AB$ and $AC$ at $P$ and $Q$, respectively. Show that $\triangle AQP\sim\triangle ABC$. 
+OMM 2009 problem 2:  In boxes labeled $0$, $1$, $2$, $\dots$, we place integers according to the following rules: \\\\
+$\bullet$ If $p$ is a prime number, we place it in box $1$. \\\\
+$\bullet$ If $a$ is placed in box $m_a$ and $b$ is placed in box $m_b$, then $ab$ is placed in the box labeled $am_b+bm_a$. \\\\
+Find all positive integers $n$ that are placed in the box labeled $n$. 
+OMM 2009 problem 3:  Let $a$, $b$, and $c$ be positive numbers satisfying $abc=1$. Show that
+\[
+\frac{a^3}{a^3+2}+\frac{b^3}{b^3+2}+\frac{c^3}{c^3+2}\ge1\text{ and }\frac1{a^3+2}+\frac1{b^3+2}+\frac1{c^3+2}\le1
+\] 
+OMM 2009 problem 4:  Let $n>1$ be an odd integer, and let $a_1$, $a_2$, $\dots$, $a_n$ be distinct real numbers. Let $M$ be the maximum of these numbers and $m$ the minimum. Show that it is possible to choose the signs of the expression $s=\pm a_1\pm a_2\pm\dots\pm a_n$ so that
+\[ m<s<M \] 
+OMM 2009 problem 5:  Consider a triangle $ABC$ and a point $M$ on side $BC$. Let $P$ be the intersection of the perpendiculars from $M$ to $AB$ and from $B$ to $BC$, and let $Q$ be the intersection of the perpendiculars from $M$ to $AC$ and from $C$ to $BC$. Show that $PQ$ is perpendicular to $AM$ if and only if $M$ is the midpoint of $BC$. 
+OMM 2009 problem 6:  At a party with $n$ people, it is known that among any $4$ people, there are either $3$ people who all know one another or $3$ people none of which knows another. Show that the $n$ people can be separated into two rooms, so that everyone in one room knows one another and no two people in the other room know each other. 
+
+OMM 2008 
+
+OMM 2008 problem 1:  Let $1=d_1<d_2<d_3<\dots<d_k=n$ be the divisors of $n$. Find all values of $n$ such that $n=d_2^2+d_3^3$. 
+OMM 2008 problem 2:  Consider a circle $\Gamma$, a point $A$ on its exterior, and the points of tangency $B$ and $C$ from $A$ to $\Gamma$. Let $P$ be a point on the segment $AB$, distinct from $A$ and $B$, and let $Q$ be the point on $AC$ such that $PQ$ is tangent to $\Gamma$. Points $R$ and $S$ are on lines $AB$ and $AC$, respectively, such that $PQ\parallel RS$ and $RS$ is tangent to $\Gamma$ as well. Prove that $[APQ]\cdot[ARS]$ does not depend on the placement of point $P$. 
+OMM 2008 problem 3:  Consider a chess board, with the numbers $1$ through $64$ placed in the squares as in the diagram below.
+\[
+\begin{tabular}{| c | c | c | c | c | c | c | c |}
+\hline
+1 \& 2 \& 3 \& 4 \& 5 \& 6 \& 7 \& 8 \\
+\hline
+9 \& 10 \& 11 \& 12 \& 13 \& 14 \& 15 \& 16 \\
+\hline
+17 \& 18 \& 19 \& 20 \& 21 \& 22 \& 23 \& 24 \\
+\hline
+25 \& 26 \& 27 \& 28 \& 29 \& 30 \& 31 \& 32 \\
+\hline
+33 \& 34 \& 35 \& 36 \& 37 \& 38 \& 39 \& 40 \\
+\hline
+41 \& 42 \& 43 \& 44 \& 45 \& 46 \& 47 \& 48 \\
+\hline
+49 \& 50 \& 51 \& 52 \& 53 \& 54 \& 55 \& 56 \\
+\hline
+57 \& 58 \& 59 \& 60 \& 61 \& 62 \& 63 \& 64 \\
+\hline
+\end{tabular}
+\]
+Assume we have an infinite supply of knights. We place knights in the chess board squares such that no two knights attack one another and compute the sum of the numbers of the cells on which the knights are placed. What is the maximum sum that we can attain? \\\\
+Note. For any $2\times3$ or $3\times2$ rectangle that has the knight in its corner square, the knight can attack the square in the opposite corner. 
+OMM 2008 problem 4:  A king decides to reward one of his knights by making a game. He sits the knights at a round table and has them call out $1,2,3,1,2,3,\dots$ around the circle (that is, clockwise, and each person says a number). The people who say $2$ or $3$ immediately lose, and this continues until the last knight is left, the winner. \\\\
+Numbering the knights initially as $1,2,\dots,n$, find all values of $n$ such that knight $2008$ is the winner. 
+OMM 2008 problem 5:  We place $8$ distinct integers in the vertices of a cube and then write the greatest common divisor of each pair of adjacent vertices on the edge connecting them. Let $E$ be the sum of the numbers on the edges and $V$ the sum of the numbers on the vertices.
+\begin{enumerate}[a)]
+  \item Prove that $\frac23E\le V$.
+  \item Can $E=V$?
+\end{enumerate} 
+OMM 2008 problem 6:  The internal angle bisectors of $A$, $B$, and $C$ in $\triangle ABC$ concur at $I$ and intersect the circumcircle of $\triangle ABC$ at $L$, $M$, and $N$, respectively. The circle with diameter $IL$ intersects $BC$ at $D$ and $E$; the circle with diameter $IM$ intersects $CA$ at $F$ and $G$; the circle with diameter $IN$ intersects $AB$ at $H$ and $J$. Show that $D$, $E$, $F$, $G$, $H$, and $J$ are concyclic. 
+
+OMM 2007 
+
+OMM 2007 problem 1:  Find all integers $N$ with the following property: for $10$ but not $11$ consecutive positive integers, each one is a divisor of $N$. 
+OMM 2007 problem 2:  Given an equilateral $\triangle ABC$, find the locus of points $P$ such that $\angle APB=\angle BPC$. 
+OMM 2007 problem 3:  Given $a$, $b$, and $c$ be positive real numbers with $a+b+c=1$, prove that
+\[ \sqrt{a+bc}+\sqrt{b+ca}+\sqrt{c+ab}\le2 \] 
+OMM 2007 problem 4:  The fraction $\frac1{10}$ can be expressed as the sum of two unit fraction in many ways, for example, $\frac1{30}+\frac1{15}$ and $\frac1{60}+\frac1{12}$. \\\\
+Find the number of ways that $\frac1{2007}$ can be expressed as the sum of two distinct positive unit fractions. 
+OMM 2007 problem 5:  In each square of a $6\times6$ grid there is a lightning bug on or off. One move is to choose three consecutive squares, either horizontal or vertical, and change the lightning bugs in those $3$ squares from off to on or from on to off. Show if at the beginning there is one lighting bug on and the rest of them off, it is not possible to make some moves so that at the end they are all turned off. 
+OMM 2007 problem 6:  Let $ABC$ be a triangle with $AB>BC>CA$. Let $D$ be a point on $AB$ such that $CD=BC$, and let $M$ be the midpoint of $AC$. Show that $BD=AC$ and that $\angle BAC=2\angle ABM.$ 
+
+OMM 2006 
+
+OMM 2006 problem 1:  Let $ab$ be a two digit number. A positive integer $n$ is a \textit{relative} of $ab$ if:
+\begin{itemize}
+  \item The units digit of $n$ is $b$.
+  \item The remaining digits of $n$ are nonzero and add up to $a$.
+\end{itemize}
+Find all two digit numbers which divide all of their relatives. 
+OMM 2006 problem 2:  Let $ABC$ be a right triangle with a right angle at $A$, such that $AB < AC$. Let $M$ be the midpoint of $BC$ and $D$ the intersection of $AC$ with the perpendicular on $BC$ passing through $M$. Let $E$ be the intersection of the parallel to $AC$ that passes through $M$, with the perpendicular on $BD$ passing through $B$. Show that the triangles  $AEM$ and $MCA$ are similar if and only if $\angle ABC = 60^o$. 
+OMM 2006 problem 3:  Let $n$ be an integer greater than $1$. In how many ways can we fill all the numbers $1, 2,..., 2n$ in the boxes of a grid of $2\times n$, one in each box, so that any two consecutive numbers are they in squares that share one side of the grid? 
+OMM 2006 problem 4:  For which positive integers $n$ can be covered a ladder like that of the figure (but with $n$ steps instead of $4$) with $n$ squares of integer sides, not necessarily the same size, without these squares overlapping and without standing out from the edge of the figure ? 
+OMM 2006 problem 5:  Let $ABC$ be an acute triangle , with altitudes $AD,BE$ and $CF$. Circle of diameter $AD$ intersects the sides $AB,AC$ in $M,N$ respevtively. Let $P,Q$ be the intersection points of $AD$ with $EF$ and $MN$ respectively. Show that $Q$ is the midpoint of $PD$. 
+OMM 2006 problem 6:  Let n be the sum of the digits in a natural number A. The number A it's said to be ``surtido" if every number 1,2,3,4....,n can be expressed as a sum of digits in A.
+\begin{enumerate}[a)]
+  \item Prove that, if 1,2,3,4,5,6,7,8 are sums of digits in A, then A is ``Surtido"
+  \item If 1,2,3,4,5,6,7 are sums of digits in A, does it follow that A is ``Surtido"?
+\end{enumerate} 
+
+OMM 2005 
+
+OMM 2005 problem 1:  Let $O$ be the center of the circumcircle of an acute triangle $ABC$, let $P$ be any point inside the segment $BC$. Suppose the circumcircle of triangle $BPO$ intersects the segment $AB$ at point $R$ and the circumcircle of triangle $COP$ intersects $CA$ at point $Q$.
+\begin{enumerate}[(i)]
+  \item Consider the triangle $PQR$, show that it is similar to triangle $ABC$ and that $O$ is its orthocenter.
+  \item Show that the circumcircles of triangles $BPO$, $COP$, $PQR$ have the same radius.
+\end{enumerate} 
+OMM 2005 problem 2:  Given several matrices of the same size. Given a positive integer $N$, let's say that a matrix is $N$-balanced if the entries of the matrix are integers and the difference between any two adjacent entries of the matrix is less than or equal to $N$.
+\begin{enumerate}[(i)]
+  \item Show that every $2N$-balanced matrix can be written as a sum of two $N$-balanced matrices.
+  \item Show that every $3N$-balanced matrix can be written as a sum of three $N$-balanced matrices.
+\end{enumerate} 
+OMM 2005 problem 3:  Already the complete problem: \\\\
+Determine all pairs $(a,b)$ of integers different from $0$ for which it is possible to find a positive integer $x$ and an integer $y$ such that $x$ is relatively prime to $b$ and in the following list there is an infinity of integers: \\\\
+$\rightarrow\qquad\frac{a + xy}{b}$, $\frac{a + xy^2}{b^2}$, $\frac{a + xy^3}{b^3}$, $\ldots$, $\frac{a + xy^n}{b^n}$, $\ldots$ \\\\
+One idea? \\\\
+:arrow: 
+OMM 2005 problem 4:  A list of numbers $a_1,a_2,\ldots,a_m$ contains an arithmetic trio $a_i, a_j, a_k$ if $i < j < k$ and $2a_j = a_i + a_k$. \\
+Let $n$ be a positive integer. Show that the numbers $1, 2, 3, \ldots, n$ can be reordered in a list that does not contain arithmetic trios. 
+OMM 2005 problem 5:  Let $N$ be an integer greater than $1$. A deck has $N^3$ cards, each card has one of $N$ colors, has one of $N$ figures and has one of $N$ numbers (there are no two identical cards). A collection of cards of the deck is ``complete" if it has cards of every color, or if it has cards of every figure or of all numbers. How many non-complete collections are there such that, if you add any other card from the deck, the collection becomes complete? 
+OMM 2005 problem 6:  Let $ABC$ be a triangle and $AD$ be the angle bisector of $<BAC$, with $D$ on $BC$. Let $E$ be a point on segment $BC$ such that $BD = EC$. Through $E$ draw $l$ a parallel line to $AD$ and let $P$ be a point in $l$ inside the triangle. Let $G$ be the point where $BP$ intersects $AC$ and $F$ be the point where $CP$ intersects $AB$. Show $BF = CG$. 
+
+OMM 2004 
+
+OMM 2004 problem 1:  Find all the prime number $p, q$ and r with $p < q < r$, such that $25pq + r = 2004$ and $pqr + 1 $ is a perfect square. 
+OMM 2004 problem 2:  Find the maximum number of positive integers such that any two of them $a, b$ (with $a \ne b$) satisfy that$ |a - b| \ge \frac{ab}{100} .$ 
+OMM 2004 problem 3:  Let $Z$ and $Y$ be the tangency points of the incircle of the triangle $ABC$ with the sides $AB$ and $CA$, respectively. The parallel line to $Y Z$ through the midpoint $M$ of $BC$, meets $CA$ in $N$. Let $L$ be the point in $CA$ such that $NL = AB$ (and $L$ on the same side of $N$ than $A$). The line $ML$ meets $AB$ in $K$. Prove that $KA = NC$. 
+OMM 2004 problem 4:  At the end of a soccer tournament in which any pair of teams played between them exactly once, and in which there were not draws, it was observed that for any three teams $A, B$ and C, if $A$ defeated $B$ and $B$ defeated $C$, then $A$ defeated $C$. Any team calculated the difference (positive) between the number of games that it won and the number of games it lost. The sum of all these differences was $5000$. How many teams played in the tournament? Find all possible answers. 
+OMM 2004 problem 5:  Let $\omega_1$ and $\omega_2$ be two circles such that the center $O$ of $\omega_2$ lies in $\omega_1$. Let $C$ and $D$ be the two intersection points of the circles. Let $A$ be a point on $\omega_1$ and let $B$ be a point on $\omega_2$ such that $AC$ is tangent to $\omega_2$ in C and BC is tangent to $\omega_1$ in $C$. The line segment $AB$ meets $\omega_2$ again in $E$ and also meets $\omega_1$ again in F. The line $CE$ meets $\omega_1$ again in $G$ and the line $CF$ meets the line $GD$ in $H$. Prove that the intersection point of $GO$ and $EH$ is the center of the circumcircle of the triangle $DEF$. 
+OMM 2004 problem 6:  What is the maximum number of possible change of directions in a path traveling on the edges of a rectangular array of $2004 \times 2004$, if the path does not cross the same place twice?. 
+
+OMM 2003 
+
+OMM 2003 problem 1:  Find all positive integers with two or more digits such that if we insert a $0$ between the units and tens digits we get a multiple of the original number. 
+OMM 2003 problem 2:  $A, B, C$ are collinear with $B$ betweeen $A$ and $C$. $K_1$ is the circle with diameter $AB$, and $K_2$ is the circle with diameter $BC$. Another circle touches $AC$ at $B$ and meets $K_1$ again at $P$ and $K_2$ again at $Q$. The line $PQ$ meets $K_1$ again at $R$ and $K_2$ again at $S$. Show that the lines $AR$ and $CS$ meet on the perpendicular to $AC$ at $B$. 
+OMM 2003 problem 3:  At a party there are $n$ women and $n$ men. Each woman likes $r$ of the men, and each man likes $s$ of then women. For which $r$ and $s$ must there be a man and a woman who like each other? 
+OMM 2003 problem 4:  The quadrilateral $ABCD$ has $AB$ parallel to $CD$. $P$ is on the side $AB$ and $Q$ on the side $CD$ such that $\frac{AP}{PB}= \frac{DQ}{CQ}$. M is the intersection of $AQ$ and $DP$, and $N$ is the intersection of $PC$ and $QB$. Find $MN$ in terms of $AB$ and $CD$. 
+OMM 2003 problem 5:  Some cards each have a pair of numbers written on them. There is just one card for each pair $(a,b)$ with $1 \leq a < b \leq 2003$. Two players play the following game. Each removes a card in turn and writes the product $ab$ of its numbers on the blackboard. The first player who causes the greatest common divisor of the numbers on the blackboard to fall to $1$ loses. Which player has a winning strategy? 
+OMM 2003 problem 6:  Given a positive integer $n$, an allowed move is to form $2n+1$ or $3n+2$. The set $S_n$ is the set of all numbers that can be obtained by a sequence of allowed moves starting with $n$. For example, we can form $5 \rightarrow 11 \rightarrow 35$ so $5, 11$ and $35$ belong to $S_5$. We call $m$ and $n$ compatible if $S_m$ and $S_n$ has a common element. Which members of $\{1, 2, 3, ... , 2002\}$ are compatible with $2003$? 
+
+OMM 2002 
+
+OMM 2002 problem 1:  The numbers $1$ to $1024$ are written one per square on a $32 \times  32$ board, so that the first row is $1, 2, ... , 32$, the second row is $33, 34, ... , 64$ and so on. Then the board is divided into four $16 \times  16$ boards and the position of these boards is moved round clockwise, so that \\\\
+$AB$ goes to $DA$ \\
+$DC \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, \,  CB$ \\\\
+then each of the $16 \times  16 $ boards is divided into four equal $8 \times  8$ parts and each of these is moved around in the same way (within the $ 16 \times 16$ board). Then each of the $8 \times  8$ boards is divided into four $4 \times 4$ parts and these are moved around, then each $4 \times 4$ board is divided into $2 \times  2$ parts which are moved around, and finally the squares of each $2 \times  2$ part are moved around. What numbers end up on the main diagonal (from the top left to bottom right)? 
+OMM 2002 problem 2:  $ABCD$ is a parallelogram. $K$ is the circumcircle of $ABD$. The lines $BC$ and $CD$ meet $K$ again at $E$ and $F$. Show that the circumcenter of $CEF$ lies on $K$. 
+OMM 2002 problem 3:  Let $n$ be a positive integer. Does $n^2$ has more positive divisors of the form $4k+1$ or of the form $4k-1$? 
+OMM 2002 problem 4:  A domino has two numbers (which may be equal) between $0$ and $6$, one at each end. The domino may be turned around. There is one domino of each type, so $28$ in all. We want to form a chain in the usual way, so that adjacent dominos have the same number at the adjacent ends. Dominos can be added to the chain at either end. We want to form the chain so that after each domino has been added the total of all the numbers is odd. For example, we could place first the domino $(3,4)$, total $3 + 4 = 7$. Then $(1,3)$, total $1 + 3 + 3 + 4 = 11$, then $(4,4)$, total $11 + 4 + 4 = 19$. What is the largest number of dominos that can be placed in this way? How many maximum-length chains are there? 
+OMM 2002 problem 5:  A \textit{trio } is a set of three distinct integers such that two of the numbers are divisors or multiples of the third. Which \textit{trio } contained in $\{1, 2, ... , 2002\}$ has the largest possible sum? Find all \textit{trios } with the maximum sum. 
+OMM 2002 problem 6:  Let $ABCD$ be a quadrilateral with $\measuredangle DAB=\measuredangle ABC=90^{\circ}$. Denote by $M$ the midpoint of the side $AB$, and assume that $\measuredangle CMD=90^{\circ}$. Let $K$ be the foot of the perpendicular from the point $M$ to the line $CD$. The line $AK$ meets $BD$ at $P$, and the line $BK$ meets $AC$ at $Q$. Show that $\angle{AKB}=90^{\circ}$ and $\frac{KP}{PA}+\frac{KQ}{QB}=1$. \\\\
+[Moderator edit: The proposed solution can be found at http://erdos.fciencias.unam.mx/mexproblem3.pdf .] 
+
+OMM 2001 
+
+OMM 2001 problem 1:  Find all $7$-digit numbers which are multiples of $21$ and which have each digit $3$ or $7$. 
+OMM 2001 problem 2:  Given some colored balls (at least three different colors) and at least three boxes. The balls are put into the boxes so that no box is empty and we cannot find three balls of different colors which are in three different boxes. Show that there is a box such that all the balls in all the other boxes have the same color. 
+OMM 2001 problem 3:  $ABCD$ is a cyclic quadrilateral. $M$ is the midpoint of $CD$. The diagonals meet at $P$. The circle through $P$ which touches $CD$ at $M$ meets $AC$ again at $R$ and $BD$ again at $Q$. The point $S$ on $BD$ is such that $BS = DQ$. The line through $S$ parallel to $AB$ meets $AC$ at $T$. Show that $AT = RC$. 
+OMM 2001 problem 4:  For positive integers $n, m$ define $f(n,m)$ as follows. Write a list of $ 2001$ numbers $a_i$, where $a_1 = m$, and $a_{k+1}$ is the residue of $a_k^2$ $mod \, n$ (for $k = 1, 2,..., 2000$). Then put $f(n,m) = a_1-a_2 + a_3 -a_4 + a_5- ... + a_{2001}$. For which $n \ge 5$ can we find m such that $2 \le  m \le n/2$ and $f(m,n) > 0$? 
+OMM 2001 problem 5:  $ABC$ is a triangle with $AB < AC$ and $\angle A = 2 \angle C$. $D$ is the point on $AC$ such that $CD = AB$. Let L be the line through $B$ parallel to $AC$. Let $L$ meet the external bisector of $\angle A$ at $M$ and the line through $C$ parallel to $AB$ at $N$. Show that $MD = ND$. 
+OMM 2001 problem 6:  A collector of rare coins has coins of denominations $1, 2,..., n$ (several coins for each denomination). \\
+He wishes to put the coins into $5$ boxes so that:
+\begin{enumerate}[(1)]
+  \item in each box there is at most one coin of each denomination;
+  \item each box has the same number of coins and the same denomination total;
+  \item any two boxes contain all the denominations;
+  \item no denomination is in all $5$ boxes.
+\end{enumerate}
+For which $n$ is this possible? 
+
+OMM 2000 
+
+OMM 2000 problem 1:  Circles $A,B,C,D$ are given on the plane such that circles $A$ and $B$ are externally tangent at $P, B$ and $C$ at $Q, C$ and $D$ at $R$, and $D$ and $A$ at $S$. Circles $A$ and $C$ do not meet, and so do not $B$ and $D$.
+\begin{enumerate}[(a)]
+  \item Prove that the points $P,Q,R,S$ lie on a circle.
+  \item Suppose that $A$ and $C$ have radius $2, B$ and $D$ have radius $3$, and the distance between the centers of $A$ and $C$ is $6$. Compute the area of the quadrilateral $PQRS$.
+\end{enumerate} 
+OMM 2000 problem 2:  A triangle of numbers is constructed as follows. The first row consists of the numbers from $1$ to $2000$ in increasing order, and under any two consecutive numbers their sum is written. (See the example corresponding to $5$ instead of $2000$ below.) What is the number in the lowermost row? \\\\
+1 2 3 4 5 \\
+3 5 7 9 \\
+8 12 16 \\
+20 28 \\
+4 
+OMM 2000 problem 3:  Given a set $A$ of positive integers, the set $A'$ is composed from the elements of $A$ and all positive integers that can be obtained in the following way: \\
+Write down some elements of $A$ one after another without repeating, write a sign $+ $ or $-$ before each of them, and evaluate the obtained expression. The result is included in $A'$. \\
+For example, if $A = \{2,8,13,20\}$, numbers $8$ and $14 = 20-2+8$ are elements of $A'$. \\
+Set $A''$ is constructed from $A'$ in the same manner. \\
+Find the smallest possible number of elements of $A$, if $A''$ contains all the integers from $1$ to $40$. 
+OMM 2000 problem 4:  Let $a$ and $b$ be positive integers not divisible by $5$. A sequence of integers is constructed as follows: the first term is $5$, and every consequent term is obtained by multiplying its precedent by $a$ and adding $b$. (For example, if $a = 2$ and $b = 4$, the first three terms are $5,14,32$.) What is the maximum possible number  of primes that can occur before encoutering the first composite term? 
+OMM 2000 problem 5:  A board $n$×$n$ is coloured black and white like a chessboard. The following steps are permitted: Choose a rectangle inside the board (consisting of entire cells)whose side lengths are both odd or both even, but not both equal to $1$, and invert the colours of all cells inside the rectangle. Determine the values of $n$ for which it is possible to make all the cells have the same colour in a finite number of such steps. 
+OMM 2000 problem 6:  Let $ABC$ be a triangle with $\angle B > 90^o$ such that there is a point $H$ on side $AC$ with $AH = BH$ and BH perpendicular to $BC$. Let $D$ and $E$ be the midpoints of $AB$ and $BC$ respectively. A line through $H$ parallel to $AB$ cuts $DE$ at $F$. Prove that $\angle BCF = \angle ACD$. 
+
+OMM 1999 
+
+OMM 1999 problem 1:  On a table there are $1999$ counters, red on one side and black on the other side, arranged arbitrarily. Two people alternately make moves, where each move is of one of the following two types:
+\begin{enumerate}[(1)]
+  \item Remove several counters which all have the same color up;
+  \item Reverse several counters which all have the same color up.
+\end{enumerate}
+The player who takes the last counter wins. Decide which of the two players (the one playing first or the other one) has a wining strategy. 
+OMM 1999 problem 2:  Prove that there are no $1999$ primes in an arithmetic progression that are all less than $12345$. 
+OMM 1999 problem 3:  A point $P$ is given inside a triangle $ABC$. Let $D,E,F$ be the midpoints of $AP,BP,CP$, and let $L,M,N$ be the intersection points of $ BF$ and $CE, AF$ and $CD, AE$ and $BD$, respectively.
+\begin{enumerate}[(a)]
+  \item Prove that the area of hexagon $DNELFM$ is equal to one third of the area of triangle $ABC$.
+  \item Prove that $DL,EM$, and $FN$ are concurrent.
+\end{enumerate} 
+OMM 1999 problem 4:  An $8 \times 8$ board is divided into unit squares. Ten of these squares have their centers marked. Prove that either there exist two marked points on the distance at most $\sqrt2$, or there is a point on the distance $1/2$ from the edge of the board. 
+OMM 1999 problem 5:  In a quadrilateral $ABCD$ with $AB  // CD$, the external bisectors of the angles at $B$ and $C$ meet at $P$, while the external bisectors of the angles at $A$ and $D$ meet at $Q$. Prove that the length of $PQ$ equals the semiperimeter of $ABCD$. 
+OMM 1999 problem 6:  A polygon has each side integral and each pair of adjacent sides perpendicular (it is not necessarily convex). Show that if it can be covered by non-overlapping $2 x 1$ dominos, then at least one of its sides has even length. 
+
+OMM 1998 
+
+OMM 1998 problem 1:  A number is called lucky if computing the sum of the squares of its digits and repeating this operation sufficiently many times leads to number $1$. For example, $1900$ is lucky, as $1900 \to 82 \to 68 \to 100 \to 1$. Find infinitely many pairs of consecutive numbers each of which is lucky. 
+OMM 1998 problem 2:  Rays $l$ and $m$ forming an angle of $a$ are drawn from the same point. Let $P$ be a fixed point on $l$. For each circle $C$ tangent to $l$ at $P$ and intersecting $m$ at $Q$ and $R$, let $T$ be the intersection point of the bisector of angle $QPR$ with $C$. Describe the locus of $T$ and justify your answer. 
+OMM 1998 problem 3:  \textbf{Every side and diagonal of a regular octagon is color with red or black. Show that there is at least seven triangles whose vertices are vertices of the octagon and its three sides are of the same color.} 
+OMM 1998 problem 4:  Find all integers that can be written in the form $\frac{1}{a_1}+\frac{2}{a_2}+...+\frac{9}{a_9}$ where $a_1,a_2, ...,a_9$ are nonzero digits, not necessarily different. 
+OMM 1998 problem 5:  The tangents at points $B$ and $C$ on a given circle meet at point $A$. Let $Q$ be a point on segment $AC$ and let $BQ$ meet the circle again at $P$. The line through $Q $ parallel to $AB$ intersects $BC$ at $J$. Prove that $PJ$ is parallel to $AC$ if and only if $BC^2 = AC\cdot QC$. 
+OMM 1998 problem 6:  A plane in space is equidistant from a set of points if its distances from the points in the set are equal. What is the largest possible number of equidistant planes from five points, no four of which are coplanar? 
+
+OMM 1997 
+
+OMM 1997 problem 1:  Determine all prime numbers $p$ for which $8p^4-3003$ is a positive prime number. 
+OMM 1997 problem 2:  In a triangle $ABC, P$ and $P'$ are points on side $BC, Q$ on side $CA$, and $R $ on side $AB$, such that $\frac{AR}{RB}=\frac{BP}{PC}=\frac{CQ}{QA}=\frac{CP'}{P'B}$ . Let $G$ be the centroid of triangle $ABC$ and $K$ be the intersection point of $AP'$ and $RQ$. Prove that points $P,G,K$ are collinear. 
+OMM 1997 problem 3:  The numbers $1$ through $16$ are to be written in the cells of a $4\times 4$ board.
+\begin{enumerate}[(a)]
+  \item Prove that this can be done in such a way that any two numbers in cells that share a side differ by at most $4$.
+  \item Prove that this cannot be done in such a way that any two numbers in cells that share a side differ by at most $3$.
+\end{enumerate} 
+OMM 1997 problem 4:  What is the minimum number of planes determined by $6$ points in space which are not all coplanar, and among which no three are collinear? 
+OMM 1997 problem 5:  Let $P,Q,R$ be points on the sides $BC,CA,AB$ respectively of a triangle $ABC$. Suppose that $BQ$ and $CR$ meet at $A', AP$ and $CR$ meet at $B'$, and $AP$ and $BQ$ meet at $C'$, such that $AB' = B'C', BC' =C'A'$, and $CA'= A'B'$. Compute the ratio of the area of $\triangle PQR$ to the area of $\triangle ABC$. 
+OMM 1997 problem 6:  Prove that number $1$ has infinitely many representations of the form
+\[ 1 =\frac{1}{5}+\frac{1}{a_1}+\frac{1}{a_2}+ ...+\frac{1}{a_n} \]
+, where$ n$ and $a_i $ are positive integers with $5 < a_1 < a_2 < ... < a_n$. 
+
+OMM 1996 
+
+OMM 1996 problem 1:  Let $P$ and $Q$ be the points on the diagonal $BD$ of a quadrilateral $ABCD$ such that $BP = PQ = QD$. Let $AP$ and $BC$ meet at $E$, and let $AQ$ meet $DC$ at $F$.
+\begin{enumerate}[(a)]
+  \item Prove that if $ABCD$ is a parallelogram, then $E$ and $F$ are the midpoints of the corresponding sides.
+  \item Prove the converse of (a).
+\end{enumerate} 
+OMM 1996 problem 2:  There are $64$ booths around a circular table and on each one there is a chip. The chips and the corresponding booths are numbered $1$ to $64$ in this order. At the center of the table there are $1996$ light bulbs which are all turned off. Every minute the chips move simultaneously in a circular way (following the numbering sense) as follows: chip $1$ moves one booth, chip $2$ moves two booths, etc., so that more than one chip can be in the same booth. At any minute, for each chip sharing a booth with chip $1$ a bulb is lit. Where is chip $1$ on the first minute in which all bulbs are lit? 
+OMM 1996 problem 3:  Prove that it is not possible to cover a $6\times  6$ square board with eighteen $2\times 1$ rectangles, in such a way that each of the lines going along the interior gridlines cuts at least one of the rectangles. Show also that it is possible to cover a $6\times 5$ rectangle with fifteen $2\times 1 $ rectangles so that the above condition is fulfilled. 
+OMM 1996 problem 4:  For which integers $n\ge 2$ can the numbers $1$ to $16$ be written each in one square of a squared $4\times 4$ paper such that the $8$ sums of the numbers in rows and columns are all different and divisible by $n$? 
+OMM 1996 problem 5:  The numbers $1$ to $n^2$ are written in an n×n squared paper in the usual ordering. Any sequence of  right and downwards steps from a square to an adjacent one (by side) starting at square $1$ and ending at square $n^2$ is called a path. Denote by $L(C)$ the sum of the numbers through which path $C$ goes.
+\begin{enumerate}[(a)]
+  \item For a fixed $n$, let $M$ and $m$ be the largest and smallest $L(C)$ possible. Prove that $M-m$ is a perfect cube.
+  \item Prove that for no $n$ can one find a path $C$ with $L(C ) = 1996$.
+\end{enumerate} 
+OMM 1996 problem 6:  In a triangle $ABC$ with $AB < BC < AC$, points $A' ,B' ,C'$ are such that $AA' \perp BC$ and $AA' = BC, BB' \perp  CA$ and $BB'=CA$, and $CC' \perp AB$ and $CC'= AB$, as shown on the picture. Suppose that $\angle AC'B$ is a right angle. Prove that the points $A',B' ,C' $ are collinear. 
+
+OMM 1995 
+
+OMM 1995 problem 1:  $N$ students are seated at desks in an $m \times  n$ array, where $m, n \ge  3$. Each student shakes hands with the students who are adjacent horizontally, vertically or diagonally. If there are $1020 $handshakes, what is $N$? 
+OMM 1995 problem 2:  Consider 6 points on a plane such that 8 of the distances between them are equal to 1. Prove that there are at least 3 points that form an equilateral triangle. 
+OMM 1995 problem 3:  $A, B, C, D$ are consecutive vertices of a regular $7$-gon. $AL$ and $AM$ are tangents to the circle center $C$ radius $CB$. $N$ is the point of intersection of $AC$ and $BD$. Show that $L, M, N$ are collinear. 
+OMM 1995 problem 4:  Find $26$ elements of $\{1, 2, 3, ... , 40\}$ such that the product of two of them is never a square. \\
+Show that one cannot find $27$ such elements. 
+OMM 1995 problem 5:  $ABCDE$ is a convex pentagon such that the triangles $ABC, BCD, CDE, DEA$ and $EAB$ have equal areas. Show that $(1/4)$ area $(ABCDE) <$ area $(ABC) < (1/3)$ area $(ABCDE)$. 
+OMM 1995 problem 6:  A $1$ or $0$ is placed on each square of a $4 \times  4$ board. One is allowed to change each symbol in a row, or change each symbol in a column, or change each symbol in a diagonal (there are $14$ diagonals of lengths $1$ to $4$). For which arrangements can one make changes which end up with all $0$s? 
+
+OMM 1994 
+
+OMM 1994 problem 1:  The sequence $1, 2, 4, 5, 7, 9 ,10, 12, 14, 16, 17, ... $ is formed as follows. First we take one odd number, then two even numbers, then three odd numbers, then four even numbers, and so on. Find the number in the sequence which is closest to $1994$. 
+OMM 1994 problem 2:  The $12$ numbers on a clock face are rearranged. Show that we can still find three adjacent numbers whose sum is $21$ or more. 
+OMM 1994 problem 3:  $ABCD$ is a parallelogram. Take $E$ on the line $AB$ so that $BE = BC$ and $B$ lies between $A$ and $E$. Let the line through $C$ perpendicular to $BD$ and the line through $E$ perpendicular to $AB$ meet at $F$. Show that $\angle DAF = \angle BAF$. 
+OMM 1994 problem 4:  A capricious mathematician writes a book with pages numbered from $2$ to $400$. The pages are to be read in the following order. Take the last unread page ($400$), then read (in the usual order) all pages which are not relatively prime to it and which have not been read before. Repeat until all pages are read. So, the order would be $2, 4, 5, ... , 400, 3, 7, 9, ... , 399, ...$. What is the last page to be read? 
+OMM 1994 problem 5:  $ABCD$ is a convex quadrilateral. Take the $12$ points which are the feet of the altitudes in the triangles $ABC, BCD, CDA, DAB$. Show that at least one of these points must lie on the sides of $ABCD$. 
+OMM 1994 problem 6:  Show that we cannot tile a $10 x 10$ board with $25$ pieces of type $A$, or with $25$ pieces of type $B$, or with $25$ pieces of type $C$. 
+
+OMM 1993 
+
+OMM 1993 problem 1:  $ABC$ is a triangle with $\angle A = 90^o$. Take $E$ such that the triangle $AEC$ is outside $ABC$ and $AE = CE$ and $\angle AEC = 90^o$. Similarly, take $D$ so that $ADB$ is outside $ABC$ and similar to $AEC$. $O$ is the midpoint of $BC$. Let the lines $OD$ and $EC$ meet at $D'$, and the lines $OE$ and $BD$ meet at $E'$. Find area $DED'E'$ in terms of the sides of $ABC$. 
+OMM 1993 problem 2:  Find all numbers between $100$ and $999$ which equal the sum of the cubes of their digits. 
+OMM 1993 problem 3:  Given a pentagon of area $1993$ and $995$ points inside the pentagon, let $S$ be the set containing the vertices of the pentagon and the $995$ points. Show that we can find three points of $S$ which form a triangle of area $\le 1$. 
+OMM 1993 problem 4:  $f(n,k)$ is defined by
+\begin{enumerate}[(1)]
+  \item $f(n,0) = f(n,n) = 1$ and
+  \item $f(n,k) = f(n-1,k-1) + f(n-1,k)$ for $0 < k < n$.
+\end{enumerate}
+How many times do we need to use (2) to find $f(3991,1993)$? 
+OMM 1993 problem 5:  $OA, OB, OC$ are three chords of a circle. The circles with diameters $OA, OB$ meet again at $Z$, the circles with diameters $OB, OC$ meet again at $X$, and the circles with diameters $OC, OA$ meet again at $Y$. Show that $X, Y, Z$ are collinear. 
+OMM 1993 problem 6:  $p$ is an odd prime. Show that $p$ divides $n(n+1)(n+2)(n+3) + 1$ for some integer $n$ iff $p$ divides $m^2 - 5$ for some integer $m$. 
+
+OMM 1992 
+
+OMM 1992 problem 1:  The tetrahedron $OPQR$ has the $\angle POQ = \angle POR = \angle QOR = 90^o$. $X, Y, Z$ are the midpoints of $PQ, QR$ and $RP.$ Show that the four faces of the tetrahedron $OXYZ$ have equal area. 
+OMM 1992 problem 2:  Given a prime number $p$, how many $4$-tuples $(a, b, c, d)$ of positive integers with $0 \le a, b, c, d \le p-1$ satisfy $ad = bc$ mod $p$? 
+OMM 1992 problem 3:  Given $7$ points inside or on a regular hexagon, show that three of them form a triangle with area $\le 1/6$ the area of the hexagon. 
+OMM 1992 problem 4:  Show that $1 + 11^{11} + 111^{111} + 1111^{1111} +...+ 1111111111^{1111111111}$ is divisible by $100$. 
+OMM 1992 problem 5:  $x, y, z$ are positive reals with sum $3$. Show that
+\[ 6 < \sqrt{2x+3} + \sqrt{2y+3} + \sqrt{2z+3}\le 3\sqrt5 \] 
+OMM 1992 problem 6:  $ABCD$ is a rectangle. $I$ is the midpoint of $CD$. $BI$ meets $AC$ at $M$. Show that the line $DM$ passes through the midpoint of $BC$. $E$ is a point outside the rectangle such that $AE = BE$ and $\angle AEB = 90^o$. If $BE = BC = x$, show that $EM$ bisects $\angle AMB$. Find the area of $AEBM$ in terms of $x$. 
+
+OMM 1991 
+
+OMM 1991 problem 1:  Evaluate the sum of all positive irreducible fractions less than $1$ and having the denominator $1991$. 
+OMM 1991 problem 2:  A company of $n$ soldiers is such that
+\begin{enumerate}[(i)]
+  \item $n$ is a palindrome number (read equally in both directions);
+  \item if the soldiers arrange in rows of $3, 4$ or $5$ soldiers, then the last row contains $2, 3$ and $5$ soldiers, respectively.
+\end{enumerate}
+Find the smallest $n$ satisfying these conditions and prove that there are infinitely many such numbers $n$. 
+OMM 1991 problem 3:  Four balls of radius $1$ are placed in space so that each of them touches the other three. What is the radius of the smallest sphere containing all of them? 
+OMM 1991 problem 4:  The diagonals $AC$ and $BD$ of a convex quarilateral $ABCD$ are orthogonal. Let $M,N,R,S$ be the midpoints of the sides $AB,BC,CD$ and $DA$ respectively, and let $W,X,Y,Z$ be the projections of the points $M,N,R$ and $S$ on the lines $CD,DA,AB$ and $BC$, respectively. Prove that the points $M,N,R,S,W,X,Y$ and $Z$ lie on a circle. 
+OMM 1991 problem 5:  The sum of squares of two consecutive integers can be a square, as in $3^2+4^2 =5^2$. Prove that the sum of squares of $m$ consecutive integers cannot be a square for $m = 3$ or $6$ and find an example of $11$ consecutive integers the sum of whose squares is a square. 
+OMM 1991 problem 6:  Given an $n$-gon ($n\ge 4$), consider a set $T$ of triangles formed by vertices of the polygon having the following property: Every two triangles in T have either two common vertices, or none. Prove that $T$ contains at most $n$ triangles. 
+
+OMM 1990 
+
+OMM 1990 problem 1:  How many paths are there from$ A$ to the line $BC$ if the path does not go through any vertex twice and always moves to the left? 
+OMM 1990 problem 2:  $ABC$ is a triangle with $\angle B = 90^o$ and altitude $BH$. The inradii of $ABC, ABH, CBH$ are $r, r_1, r_2$. Find a relation between them. 
+OMM 1990 problem 3:  Show that $n^{n-1}-1$ is divisible by$ (n-1)^2$ for $n > 2$. 
+OMM 1990 problem 4:  Find $0/1 + 1/1 + 0/2 + 1/2 + 2/2 + 0/3 + 1/3 + 2/3 + 3/3 + 0/4 + 1/4 + 2/4 + 3/4 + 4/4 + 0/5 + 1/5 + 2/5 + 3/5 + 4/5 + 5/5 + 0/6 + 1/6 + 2/6 + 3/6 + 4/6 + 5/6 + 6/6$ 
+OMM 1990 problem 5:  Given $19$ points in the plane with integer coordinates, no three collinear, show that we can always find three points whose centroid has integer coordinates. 
+OMM 1990 problem 6:  $ABC$ is a triangle with $\angle C = 90^o$. $E$ is a point on $AC$, and $F$ is the midpoint of $EC$. $CH$ is an altitude. $I$ is the circumcenter of $AHE$, and $G$ is the midpoint of $BC$. Show that $ABC$ and $IGF$ are similar. 
+
+OMM 1989 
+
+OMM 1989 problem 1:  In a triangle $ABC$ the area is $18$, the length $AB$ is $5$, and the medians from $A$ and $B$ are orthogonal. Find the lengths of the sides $BC,AC$. 
+OMM 1989 problem 2:  Find two positive integers $a,b$ such that $a | b^2, b^2 | a^3, a^3 | b^4, b^4 | a^5$, but $a^5$  does not divide $b^6$ 
+OMM 1989 problem 3:  Prove that there is no $1989$-digit natural number at least three of whose digits are equal to $5$ and such that the product of its digits equals their sum. 
+OMM 1989 problem 4:  Find the smallest possible natural number $n = \overline{a_m ...a_2a_1a_0} $ (in decimal system) such that the number $r =  \overline{a_1a_0a_m ..._20} $ equals $2n$. 
+OMM 1989 problem 5:  Let $C_1$ and $C_2$ be two tangent unit circles inside a circle $C$ of radius $2$. Circle $C_3$ inside $C$ is tangent to the circles $C,C_1,C_2$, and circle $C_4$ inside $C$ is tangent to $C,C_1,C_3$. Prove that the centers of $C,C_1,C_3$ and $C_4$ are vertices of a rectangle. 
+OMM 1989 problem 6:  Determine the number of paths from $A$ to $B$ on the picture that go along gridlines only, do not pass through any \\
+point twice, and never go upwards? 
+
+OMM 1988 
+
+OMM 1988 problem 1:  In how many ways can one arrange seven white and five black balls in a line in such a way that there are no two neighboring black balls? 
+OMM 1988 problem 2:  If $a$ and $b$ are positive integers, prove that $11a+2b$ is a multiple of $19$ if and only if so is $18a+5b$ . 
+OMM 1988 problem 3:  Two externally tangent circles with different radii are given. Their common tangents form a triangle. Find the area of this triangle in terms of the radii of the two circles. 
+OMM 1988 problem 4:  In how many ways can one select eight integers $a_1,a_2, ... ,a_8$, not necesarily distinct, such that $1 \le  a_1 \le ... \le a_8 \le 8$? 
+OMM 1988 problem 5:  If $a$ and $b$ are coprime positive integers and $n$ an integer, prove that the greatest common divisor of $a^2+b^2-nab$ and $a+b$ divides $n+2$. 
+OMM 1988 problem 6:  Consider two fixed points $B,C$ on a circle $w$. Find the locus of the incenters of all triangles $ABC$ when point $A$ describes $w$. 
+OMM 1988 problem 7:  Two disjoint subsets of the set $\{1,2, ... ,m\}$ have the same sums of elements. Prove that each of the subsets $A,B$ has less than $m / \sqrt2$ elements. 
+OMM 1988 problem 8:  Compute the volume of a regular octahedron circumscribed about a sphere of radius $1$. 
+
+OMM 1987 
+
+OMM 1987 problem 1:  Prove that if the sum of two irreducible fractions is an integer then the two fractions have the same denominator. 
+OMM 1987 problem 2:  How many positive divisors does number $20!$ have? 
+OMM 1987 problem 3:  Consider two lines $\ell$ and $\ell ' $ and a fixed point $P$ equidistant from these lines. What is the locus of projections $M$ of $P$ on $AB$, where $A$ is on  $\ell $, $B$ on  $\ell ' $, and angle $\angle APB$ is right? 
+OMM 1987 problem 4:  Calculate the product of all positive integers less than $100$ and having exactly three positive divisors. Show that this product is a square. 
+OMM 1987 problem 5:  In a right triangle $ABC$, M is a point on the hypotenuse $BC$ and $P$ and $Q$ the projections of $M$ on $AB$ and $AC$ respectively. Prove that for no such point $M$ do the triangles $BPM, MQC$ and the rectangle $AQMP$ have the same area. 
+OMM 1987 problem 6:  Prove that for every positive integer n the number $(n^3 -n)(5^{8n+4} +3^{4n+2})$ is a multiple of $3804$. 
+OMM 1987 problem 7:  Show that the fraction $ \frac{n^2+n-1}{n^2+2n}$ is irreducible for every positive integer n. 
+OMM 1987 problem 8:  \begin{enumerate}[(a)]
+  \item Three lines $l,m,n$ in space pass through point $S$. A plane perpendicular to $m$ intersects $l,m,n $ at $A,B,C$ respectively. Suppose that $\angle ASB = \angle BSC = 45^o$ and $\angle ABC = 90^o$. Compute $\angle ASC$.
+  \item Furthermore, if a plane perpendicular to $l$ intersects  $l,m,n$  at $P,Q,R$ respectively and $SP = 1$, find the sides of triangle $PQR$.
+\end{enumerate} 

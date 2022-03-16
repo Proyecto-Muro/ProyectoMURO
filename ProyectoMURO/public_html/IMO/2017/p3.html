@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./../">
+                               IMO<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+                              <h3>
+                                  IMO 2017 problema 3
+                              </h3>
+                              <div class="alert-secondary alert">
+                                  Un conejo invisible y un cazador juegan como sigue en el plano euclideano. El punto de partida $A_0$ del conejo, y el punto de partida $B_0$ del cazador son el mismo. Después de $n−1$ rondas del juego, el conejo se encuentra en el punto $A_{n−1}$ y el cazador se encuentra en el punto $B_{n−1}$. En la $n$-ésima ronda del juego, ocurren tres hechos en el siguiente orden: <br>
+(i) El conejo se mueve de forma invisible a un punto $A_n$ tal que la distancia entre $A_{n−1}$ y $A_n$ es exactamente $1$. <br>
+(ii) Un dispositivo de rastreo reporta un punto $P_n$ al cazador. La única información segura que da el dispositivo al cazador es que la distancia entre $P_n$ y $A_n$ es menor o igual que $1$. <br>
+(iii) El cazador se mueve de forma visible a un punto $B_n$ tal que la distancia entre $B_{n−1}$ y $B_n$ es exactamente $1$. <br>
+¿Es siempre posible que, cualquiera que sea la manera en que se mueva el conejo y cualesquiera que sean los puntos que reporte el dispositivo de rastreo, el cazador pueda escoger sus movimientos de modo que después de $10^9$ rondas el cazador pueda garantizar que la distancia entre él mismo y el conejo sea menor o igual que $100$?
+                              </div>
+                              <hr>
+                               • <a href="./sol3.html">Solución</a><br>
+                               • <a href="./">Regreso a IMO 2017</a><br>
+                              
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

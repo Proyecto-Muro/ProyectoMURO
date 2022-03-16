@@ -1,0 +1,2 @@
+import PagesGenerator
+PagesGenerator.ReloadPages()

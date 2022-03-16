@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               EGMO 2019<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Encuentre todas las ternas $(a, b, c)$ de números reales tales que $ab + bc + ca = 1$ y
+\[a^2b + c = b^2c + a = c^2a + b.\]
+
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $n$ un entero positivo. En un tablero de $2n \times 2n$ casillas se colocan dominós de
+manera que cada casilla del tablero sea adyacente a exactamente una casilla cubierta por un dominó.
+Para cada n, determine la mayor cantidad de dominós que se pueden poner de esa manera.
+Nota: Un dominó es una ficha de $1 \times 2$ o de $2 \times 1$ cuadrados unitarios. Los dominós son colocados
+en el tablero de manera que cada dominó cubre exactamente dos casillas del tablero y los dominós no
+se superponen (no se traslapan). Decimos que dos casillas son adyacentes si son diferentes y tienen
+un lado en común.
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo tal que $\angle CAB \gt \angle ABC$, y sea $I$ su incentro. Sea $D$ el punto
+en el segmento $BC$ tal que $\angle CAD = \angle ABC$. Sea $\gamma$ la circunferencia que pasa por $I$ y es tangente
+a la recta $AC$ en el punto $A$. Sea $X$ el segundo punto de intersección de ω con la circunferencia
+circunscrita de $ABC$. Muestre que las bisectrices de los ángulos $\angle DAB$ y $\angle CXB$ se intersecan en un
+punto de la recta $BC$.
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo con incentro $I$. La circunferencia que pasa por $B$ y es tangente
+a la recta $AI$ en el punto $I$ corta al lado $AB$ por segunda vez en $P$. La circunferencia que pasa por $C$
+y es tangente a la recta $AI$ en el punto $I$ corta al lado $AC$ por segunda vez en $Q$. Muestre que $PQ$ es
+tangente a la circunferencia inscrita del triángulo $ABC$.
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea n ≥ 2 un número entero, y sean $a_1, a_2, \dots , a_n$ enteros positivos. Muestre que
+existen enteros positivos $b_1, b_2, \dots , b_n$ que cumplen las siguientes tres condiciones: $a_i \le b_i$ para todo $i = 1, 2, \dots , n$; los residuos de $b_1, b_2, \dots , b_n$ al dividirlos entre $n$ son todos diferentes; y
+\[b_1+b_2+\cdots b_n \le n\left(\frac{n-1}{2}+\left\lfloor \frac{a_1+a_2+\cdots a_n}{n}\right \rfloor \right)\]
+Nota: Denotamos por $\lfloor x\rfloor$ a la parte entera del número real $x$, es decir, al mayor entero que es menor
+o igual a $x$.
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Alina traza $2019$ cuerdas en una circunferencia. Los puntos extremos de éstas son
+todos diferentes. Un punto se considera marcado si es de uno de los siguientes tipos:
+(i) uno de los $4038$ puntos extremos de las cuerdas; o
+(ii) un punto de intersección de al menos dos de las cuerdas.
+Alina etiqueta con un número cada punto marcado. De los $4038$ puntos del tipo (i), $2019$ son etiquetados con un $0$ y los otros $2019$ puntos con un $1$. Ella etiqueta cada punto del tipo (ii) con un entero
+arbitrario, no necesariamente positivo.
+En cada cuerda, Alina considera todos los segmentos entre puntos marcados consecutivos (si una
+cuerda tiene $k$ puntos marcados, entonces tiene $k − 1$ de estos segmentos). Sobre cada uno de estos
+segmentos, Alina escribe dos números: en amarillo escribe la suma de las etiquetas de los puntos
+extremos del segmento, mientras que en azul escribe el valor absoluto de su diferencia.
+Alina se da cuenta que los $N + 1$ números amarillos son exactamente los números $0, 1,\dots , N$.
+Muestre que al menos uno de los números azules es múltiplo de tres.
+Nota: Una cuerda es el segmento de recta que une dos puntos distintos en una circunferencia.
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a EGMO</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

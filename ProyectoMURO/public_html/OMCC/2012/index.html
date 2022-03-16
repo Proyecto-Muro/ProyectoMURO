@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               OMCC 2012<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Encuentra todos los números enteros positivos que son iguales a $700$ veces la suma de sus dígitos.
+
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $\gamma$ la circunferencia del triángulo agudo $ABC$. Sea $P$ el punto medio del arco menor $BC$. La paralela a $AB$ que pasa por $P$ corta a $BC, AC$ y $\gamma$ en los puntos $R,S$ y $T$, respectivamente. Sean $K \equiv AP \cap BT$ y $L \equiv BS \cap AR$.  Demostrar que $KL$ pasa por el punto medio de $AB$ si y sólo si $CS = PR$.
+
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sean $a,b,c$ números reales que satisfacen $\frac{1}{a+b}+\frac{1}{b+c}+\frac{1}{a+c} =1$ y $ab+bc+ac >0$. \\\\
+Demuestre que
+\[ a+b+c - \frac{abc}{ab+bc+ac} \ge 4 .\]
+
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  Trilandia es una ciudad muy singular. La ciudad tiene la forma de un triángulo equilátero de lado 2012. Las calles dividen la ciudad en varias manzanas con forma de triángulo equilátero de lado 1. También hay calles en la frontera de Trilandia. Hay 6036 calles en total. El alcalde quiere poner puestos de vigilancia en algunas intersecciones de la ciudad para controlar las calles. Un punto de control puede vigilar todas las calles en las que se encuentra. ¿Cuál es el menor número de puntos de control necesarios para vigilar todas las calles de Trilandia?
+
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Alex y luisa son una pareja de ladrones. Todas las mañanas, Luisa roba un tercio del dinero de Alex, pero por la tarde siente remordimientos y le da la mitad de todo el dinero que tiene. Si Luisa no tiene dinero al principio y empieza a robar el primer día, ¿cuál es la menor cantidad entera positiva de dinero que debe tener Alex para que al final del día 2012 ambos tengan una cantidad entera de dinero?
+
+
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo con $AB < BC$, y sean $E$ y $F$ puntos en $AC$ y $AB$ tales que $BF = BC = CE$, ambos en el mismo semiplano que $A$ respecto a $BC$. \\\\
+Sea $G$ la intersección de $BE$ y $CF$. Sea $H$ un punto de la paralela que pasa por $G$ a $AC$ tal que $HG = AF$ (con $H$ y $C$ en semiplanos opuestos respecto a $BG$). Demostrar que $\angle EHG = \frac{\angle BAC}{2}$.
+
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a OMCC</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

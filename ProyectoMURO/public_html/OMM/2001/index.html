@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               OMM 2001<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Encuentra todos los números enteros de $7$ dígitos que son múltiplos de $3$ y de $7$, y cada uno de cuyos dígitos es $3$ o $7$.
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Se tienen algunas pelotas de colores (son por lo menos tres colores), y por lo menos tres cajas. Las pelotas se ponen en las cajas de manera que no quede vacía ninguna caja y que no haya tres pelotas de colores distintos que estén en tres cajas distintas. Muestra que hay una caja tal que todas las pelotas que están fuera de ella son del mismo color.
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  En un cuadrilátero $ABCD$ inscrito en una circunferencia llamemos $P$ al punto de intersección de las diagonales $AC$ y $BD$, y sea $M$ el punto medio de $CD$. Una circunferencia que pasa por $P$ y que es tangente a $CD$ en $M$ corta a $BD$ y a $AC$ en los puntos $Q$ y $R$, respectivamente. Se toma un punto $S$ en el segmento $BD$ de tal manera que $BS=DQ$. Por $S$ se traza una paralela a $AB$ que corta a $AC$ en un punto $T$. Muestra que $AT=RC$.
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  Dados dos enteros positivos $n$ y $a$ se forma una lista de $2001$ números enteros como sigue: El primer número es $a$; a partir del segundo, cada número es el residuo que se obtiene al dividir el cuadrado del anterior entre $n$. A los números de la lista se les ponen los signos $+$ y $-$ alternadamente empezando con $+$. Los números con signo así obtenidos se suman y a esa suma se le llama suma final para $n$ y $a$. ¿Para qué números enteros $n\geq 5$ existe alguna $a$ tal que $2\leq a \leq \frac{n}{2}$ y la suma final para $n$ y $a$ es positiva?
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo tal que $AB\lt AC$ y el ángulo $\angle BAC$ es el doble del ángulo $\angle BCA$. EN el lado $AC$ se toma un punto $D$ tal que $CD=AB$. Por el punto $B$ se traza una recta $\ell$ paralela a $AC$. La bisectriz exterior del ángulo en $A$ intersecta a $\ell$ en el punto $M$, y la paralela a $AB$ por el punto $C$ intersecta a $\ell$ en el punto $N$. Muestra que $MD=ND$.
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Un coleccionista de monedas raras tiene monedas de denominaciones $1,2,3,\dots,n$ (tiene muchas monedas dude cada denominación). Desea poner algunas de sus monedas en $5$ cajas de manera que se cumplan las siguientes condiciones:
+
+a) En cada caja hay a lo más una moneda de cada denominación.
+
+b) Todas las cajas tienen el mismo número de monedas y la misma cantidad de dinero.
+
+c) Para cualesquiera dos cajas sucede que entre las dos tienen por lo menos una moneda de cada denominación.
+
+d) No existe una denominación tal que todas las cajas tengan una moneda de esta denominación
+
+¿Para qué valores de $n$ puede el coleccionista hacer lo que se propone?
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a OMM</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

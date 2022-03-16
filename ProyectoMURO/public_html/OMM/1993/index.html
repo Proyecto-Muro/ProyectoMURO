@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               OMM 1993<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo con $\angle A = 90^o$. Sea $E$ un punto tal que $AEC$ es exterior a $ABC$, $AE = CE$ y $\angle AEC = 90^o$. Análogamente, tomamos $D$ de manera que $ADB$ es exterior a $ABC$ y semejante a $AEC$. $O$ es el punto medio de $BC$. Las rectas $OD$ y $EC$ se intersectan en $D'$, y las rectas $OE$ y $BD$ se intersectan $E'$. Encuentra el área $DED'E'$ en términos de los lados de $ABC$. 
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Encuentre todos los enteros positivos entre $100$ y $999$ tales que son iguales a la suma de los cubos de sus dígitos.
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Dado un pentágono de área $1993$ y $995$ puntos dentro del pentágono, sea $S$ el conjunto que contiene los vértices del pentágono y los $995$ punto. Muestra que existen tres puntos de $S$ que formen un triángulo de área menor o igual a $1$. 
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  La función $f(n,k)$ se define de la siguiente manera:
+\begin{align*}
+  &(1)\ f(n,0)= f(n,n) = 1 \text{ y }  \\
+  &(2)\ f(n,k)= f(n-1,k-1) + f(n-1,k)\text{ para }0 < k < n.
+\end{align*}
+¿Cuántas veces tenemos que usar $(2)$ para encontrar $f(3991,1993)$?
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  $OA, OB, OC$ son tres cuerdas de una circunferencia. Las circunferencias con diámetros $OA, OB$ se intersectan por segunda vez en $Z$, las circunferencias de diámetros $OB, OC$ se intersectan por segunda vez en $X$, y las circunferencias de diámetros $OC, OA$ se intersectan por segunda vez $Y$. Muestra que los puntos $X, Y, Z$ son colineales. 
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $p$ un primo impar. Muestra que $p$ divide a $n(n+1)(n+2)(n+3) + 1$ para algún número entero $n$ si y solo si $p$ divide a $m^2 - 5$ para algún número entero $m$. 
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a OMM</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

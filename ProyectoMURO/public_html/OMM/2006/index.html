@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               OMM 2006<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ab$ un número entero d dos dígitos. Un entero positivo $n$ es "pariente" de $ab$ si el dígito de las unidades de $n$ también es $b$, y los otros dígitos de $n$ son distintos de cero y suman $a$. Por ejemplo, los parientes de $31$ son $31$, $121$, $211$ y $1111$. Encuentra todos los números de dos dígitos que dividen a todos sus parientes.
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ABC$ un triángulo rectángulo con ángulo recto en $A$, tal que $AB\lt AC$. Sean $M$ el punto medio de $BC$ y $D$ la intersección de $AC$ con la perpendicular a $BC$ que pasa por $M$. Sea $E$ la intersección de la paralela a $AC$ que pasa por $M$ con la perpendicular a $BD$ que pasa por $B$. Muestra que los triángulos $AEM$ y $MCA$ son semejantes si y solo si $\angle ABC=60^o$.
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $n$ un número entero mayor que $1$. ¿De cuántas formas se pueden acomodar todos los números $1,2,3,\dots 2n$ en las casillas de una cuadrícula de $2\times n$, uno en cada casilla, de manera que cualesquiera dos números consecutivos se encuentren en casillas que comparten un lado en la cuadrícula?
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  ¿Para qué enteros positivos $n$ puede cubrirse una escalera como la de la figura (pero con $n$ escalones en vez de $4$) con $n$ cuadrados de lados enteros, no necesariamente del mismo tamaño, sin que estos cuadrados se encimen y sin que sobresalgan del borde de la figura?
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sean $ABC$ un triángulo acutángulo y $AD$, $BE$ y $CF$ sus alturas. La circunferencia con diámetro $AD$ corta a los lados $AB$ y $AC$ en $M$ y $N$, respectivamente. Sean $P$ u $Q$ los puntos de intersección de $AD$ con $EF$ y $MN$, respectivamente. Muestra que $Q$ es el punto medio de $PD$.
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $n$ la suma de los dígitos de un entero positivo $A$. Decimos que $A$ es "surtido" si cada uno de los enteros $1,2,3,\dots ,n$ es la suma de algunos dígitos de $A$. Muestra que si $1,2,\dots ,8$ son sumas de algunos dígitos de un entero $A$, entonces $A$ es surtido. Si $1,2,\dots ,7$ son sumas de algunos dígitos de un entero $A$, ¿es $A$ necesariamente surtido?
+
+Nota: El número $117$ no es surtido porque no se puede sumar $3$ con algunos de sus dígitos, y $3<1+1+7$.
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a OMM</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+  </head>
+    
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content", class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               OMCC 2009<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+
+                              <h3><a href="./p1.html">Problema 1</a></h3>
+                              <div class="alert-secondary alert">
+                                  Sea $ P$ el producto de todos los dígitos no nulos del entero positivo $ n$. Por ejemplo, $ P(4) = 4$, $ P(50) = 5$, $ P(123) = 6$, $ P(2009) = 18$. 
+Encuentra el valor de la suma: $P(1) + P(2) + ... + P(2008) + P(2009)$.
+
+                              </div>
+                              <h3><a href="./p2.html">Problema 2</a></h3>
+                              <div class="alert-secondary alert">
+                                  Dos circunferencias $ \Gamma_1$ y $ \Gamma_2$ se cruzan en los puntos $ A$ y $ B$. Consideremos una circunferencia $ \Gamma$ contenida en $ \Gamma_1$ y $ \Gamma_2$, que es tangente a ambas en $ D$ y $ E$ respectivamente. Sea $ C$ uno de los puntos de intersección de la recta $ AB$ con $ \Gamma$, $ F$ la intersección de la recta $ EC$ con $ \Gamma_2$ y $ G$ la intersección de la recta $ DC$ con $ \Gamma_1$. Sean $ H$ e $ I$ los puntos de intersección de la recta $ ED$ con $ \Gamma_1$ y $ \Gamma_2$ respectivamente. Demostrar que $ F$, $ G$, $ H$ e $ I$ están en la misma circunferencia.
+
+                              </div>
+                              <h3><a href="./p3.html">Problema 3</a></h3>
+                              <div class="alert-secondary alert">
+                                  Hay 2009 casillas numeradas del 1 al 2009, algunas de las cuales contienen piedras. Dos jugadores, $ A$ y $ B$, juegan alternativamente, empezando por $ A$. Una jugada consiste en seleccionar una casilla no vacía $ i$, tomar una o varias piedras de esa casilla y colocarlas en la casilla $ i + 1$. Si $ i = 2009$, las piedras seleccionadas se eliminan. El jugador que elimina la última piedra gana. Si hay 2009 piedras en la caja 2 y las otras están vacías, determina qué jugador tiene una estrategia ganadora. Si hay exactamente una piedra en cada casilla, determina qué jugador tiene una estrategia ganadora.
+
+
+                              </div>
+                              <h3><a href="./p4.html">Problema 4</a></h3>
+                              <div class="alert-secondary alert">
+                                  Queremos colocar números naturales alrededor de un círculo de forma que los valores absolutos de las diferencias de cada par de números vecinos son todos diferentes. ¿Es posible colocar los números del 1 al 2009 satisfaciendo esta propiedad? ¿Es posible quitar uno de los números del 1 al 2009 de forma que los restantes números del 2008 puedan colocarse satisfaciendo la propiedad?
+
+
+                              </div>
+                              <h3><a href="./p5.html">Problema 5</a></h3>
+                              <div class="alert-secondary alert">
+                                  Dado un triángulo agudo y escaleno $ ABC$, sea $ H$ su ortocentro, $ O$ su circuncentro, $ E$ y $ F$ los pies de las altitudes trazadas desde $ B$ y $ C$, respectivamente. La recta $ AO$ vuelve a cortar la circunferencia del triángulo en el punto $ G$ y los segmentos $ FE$ y $ BC$ en los puntos $ X$ e $ Y$ respectivamente. Sea $ Z$ el punto de intersección de la recta $ AH$ y la recta tangente a la circunferencia en $ G$. Demostrar que $ HX$ es paralela a $ YZ$.
+
+                              </div>
+                              <h3><a href="./p6.html">Problema 6</a></h3>
+                              <div class="alert-secondary alert">
+                                  Encuentre todos los números primos $ p$ y $ q$ tales que $ p^3 - q^5 = (p + q)^2$.
+
+                              </div>
+                              
+                              <hr>
+                               • <a href="./..">Regresar a OMCC</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>
