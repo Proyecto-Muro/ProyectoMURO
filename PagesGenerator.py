@@ -5,6 +5,7 @@ import os
 # Finish the solution page generator (add to dic)
 # Add the generator for images
 # Create a generator for ISL pages once it is needed
+# Generate all high-level pages, and all folder pages
 
 
 def replace_all(text, dic):
@@ -27,7 +28,6 @@ def htmlproblems(contestname, year):
         "[año]": str(year),
         "[numproblema]": str(ProblemPosition)
     }
-    pcount = 0
     Plist = os.listdir("./concursos/%s/%s/enunciados" % (contestname, year))
     Plist.sort()
     for i in Plist:
@@ -37,8 +37,6 @@ def htmlproblems(contestname, year):
             ProblemsList.append(dic[enunciado])
             open("./concursos/%s/%s/enunciados/%s.tex" % (contestname, year, i[:-4])).close()
             # remember to do the same thing for solution pages
-
-    numproblems = len(ProblemsList)
 
     # YEAR FILE CREATION
     # copy file index.txt as a variable
@@ -90,7 +88,7 @@ def ReloadContestText():
     for i in contestList:
         yearRefs = GenerateYearLinks(i[1], i[2])
         concurso = i[0]
-        contestText = open("generator/texts/%s.txt" % concurso , "r").read()
+        contestText = open("generator/texts/%s.txt" % concurso, "r").read()
         dic = {
             "[concurso]": concurso,
             "[yearlinks]": yearRefs,  # yearlinks must come from a list from each contest, and generate
@@ -102,6 +100,13 @@ def ReloadContestText():
         open("generator/texts/%s.txt" % concurso).close()
 
     open("generator/formats/contest-index.txt").close()
+
+
+def GenerateOthers():
+    import pageslist
+    p_list = pageslist.p_list
+    f_list = pageslist.f_list
+    # Generate all high-level pages, and all folder pages
 
 
 def ReloadPages():

@@ -12,8 +12,11 @@
       <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="/styles/style.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet" type="text/css"/>
 
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script>
+      
 
       <!-- MathJax Script -->
       <script>
@@ -25,10 +28,9 @@
       </script>
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
       
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <link href="/styles/style.css" rel="stylesheet">
       <meta charset="utf-8">
-      <title>Proyecto</title>
+      <title>Proyecto MURO</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
     
     
@@ -37,31 +39,40 @@
       <div class="container">
 
           <!-- PAGE HEADER -->
+          <object align="right">
+            <br>
+            <label class="switch">
+             <input type="checkbox">
+            <span class="slider"> </span>
+            </label>
+        </object> 
           <div>
               <div class="row align-items-center">
                   <div class="col-12">
                       <div id="header">
                           <div id="header-placeholder"></div>
+                          
                       </div>
                   </div>
               </div>
               <script>
                   $(function(){
-                      $("#header-placeholder").load("/header.html");
+                      $("#header-placeholder").load("./header.html");
                   });
               </script>
           </div>
+          
 
           <!-- PAGE SUBTITLE -->
           <div>
-              <div class="row" id="sub-placeholder"> 
-
-              </div>
+              <div class="row" id="sub-placeholder"> </div>
               <script>
                   $(function(){
-                      $("#sub-placeholder").load("/subtitle.html");
+                      $("#sub-placeholder").load("./subtitle.html");
                   });
               </script>
+              
+
           </div>
 
           <!-- PAGE CONTENT -->
@@ -73,7 +84,7 @@
               </div>
               <script>
                   $(function(){
-                      $("#nav-placeholder").load("/nav.html");
+                      $("#nav-placeholder").load("./nav.html");
                   });
               </script>
 
@@ -124,5 +135,6 @@
       <!-- SCRIPTS -->
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src = /scripts/main.js></script>
   </body>
 </html>
