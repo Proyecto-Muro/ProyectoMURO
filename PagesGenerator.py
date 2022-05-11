@@ -5,7 +5,7 @@ import os
 # Finish the solution page generator (add to dic)
 # Add the generator for images
 # Create a generator for ISL pages once it is needed
-# Generate all high-level pages, and all folder pages
+# Generate text for all high-level pages, and all folder pages
 
 
 def replace_all(text, dic):
@@ -103,9 +103,24 @@ def ReloadContestText():
 
 
 def GenerateOthers():
-    import pageslist
-    p_list = pageslist.p_list
-    f_list = pageslist.f_list
+    from pageslist import pages_list
+    with open("generator/formats/normal-page.txt", "r") as pagecontentraw:
+        for i in pages_list:
+            pagename = i[0]
+            with open("generator/texts/%s.txt" % pagename, "r") as contestText:
+                dic = {
+                    "[HrefPag]": i[2],
+                    "[TituloPag]": i[1],  # yearlinks must come from a list from each contest, and generate
+                    "[TextoPag]": contestText,
+                }
+                pagecontent = replace_all(pagecontentraw, dic)
+                if i[3] == 2:
+                    with open("ProyectoMURO/public_html/%s/index.html" % pagename, "w") as f:
+                        f.write(pagecontent)
+                if i[3] == 1:
+                    with open("ProyectoMURO/public_html/%s.html" % pagename, "w") as f:
+                        f.write(pagecontent)
+
     # Generate all high-level pages, and all folder pages
 
 

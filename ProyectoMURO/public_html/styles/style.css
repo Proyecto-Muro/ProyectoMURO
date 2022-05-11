@@ -69,8 +69,9 @@ input:checked + .slider:before {
  transform: translateX(1.5em);
 }
 
-/*
 
+
+/*
 v_Enhance's CSS Stylesheet
 Theme Name: SIMPLE-53544
 Last edited 22 Oct 2021
