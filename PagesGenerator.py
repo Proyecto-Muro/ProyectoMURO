@@ -126,17 +126,21 @@ def GenerateOthers():
 
 def ReloadPages():
     # Reload Problem and Solution Pages
+    # The third entry in the dict is for years that need to be omitted.
     contestinfo = [
-        ["IMO", 1959],
-        ["OMCC", 1999],
-        ["OMM", 1987],
-        ["EGMO", 2012],
-        ["OIM", 1985],
-        ["OMCC", 1999]
+        ["IMO", 1959, [1980]],
+        ["OMCC", 1999, []],
+        ["OMM", 1987, []],
+        ["EGMO", 2012, []],
+        ["OIM", 1985, [1986]],
     ]
     for i in contestinfo:
         for j in range(i[1], 2022):
-            htmlproblems(i[0], j)
+            if j not in i[2]:
+                htmlproblems(i[0], j)
+            else:
+                # Add a page: Contest did not take place said year.
+                pass
 
     # Reload Contest Indexes, including text
     ReloadContestText()
