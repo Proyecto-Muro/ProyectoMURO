@@ -1,5 +1,4 @@
 
-
 .RightSideBadge{
     display:inline-block;
     padding:.35em .65em;
@@ -10,7 +9,7 @@
     white-space:nowrap;
     vertical-align:baseline;
     float: right;
-    border-radius:.25rem
+    border-radius:.25rem;
 }
 
 
@@ -108,6 +107,7 @@ body {
     display: block;
     float: none;
     font-size: 16px;
+    background-image: url('/images/bg.jpg');
 }
 
 strong {
@@ -131,12 +131,11 @@ a:link, a:visited
 }
 a:hover {
     color: #006b57;
-    text-shadow: 0 0 5px #ff0;
-    text-decoration: underline;
+    text-shadow: 0 0 5px rgb(203, 203, 203);;
 }
 
 h1 a:link, h1 a:visited {
-    color: #3333FF;
+    color: rgb(75, 75, 235);
 }
 h2 a:link, h2 a:visited {
     color: #078a03;
@@ -173,7 +172,7 @@ h1 {
     font-weight: normal;
     letter-spacing: 1px;
     font-size: 22px;
-    color: #3333FF; /* Bluish, matches link color */
+    color: rgb(75, 75, 235); /* Bluish, matches link color */
     font-weight: 500;
     font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
 
@@ -213,13 +212,18 @@ h5, h6 {
 
 #main {
     padding: 5px;
-    border: 1px solid #2E8B57;
+    border: 1px solid #000;
     border-radius: 11px;
     moz-border-radius: 11px;
     -webkit-border-radius: 11px;
-    background-color: #B2FEE1; /* light green color */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    background-color: #CAEBF2; 
     margin-top: 12px;
     margin-left: 0px;
+}
+#main:hover {
+    background-color: #ace5f1;
 }
 
 #header {
@@ -233,10 +237,10 @@ h5, h6 {
     vertical-align: middle;
     white-space: nowrap;
     overflow: hidden;
-    background-color: #FAEBD7;
+    background-color: #EFEFEF;
     border-top: 5px solid #cccccc;
     border-bottom: 5px solid #cccccc;
-    border: 2px solid #B22222;
+    border: 2px solid #A9A9A9;
     border-radius: 11px;
     -moz-border-radius: 11px;
     -webkit-border-radius: 11px;
@@ -254,7 +258,7 @@ h5, h6 {
     top: 10px;
     left: 3px;
     margin: 0;
-    color: #FF6600; /* reddish, for head */
+    color: #A9A9A9; 
     line-height: 2.4;
     font-weight: 500;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -266,14 +270,14 @@ h5, h6 {
 }
 
 #side {
-    border: 1px solid #6A5ACD;
+    border: 1px solid #000;
     border-radius: 11px;
     -moz-border-radius: 11px;
     -webkit-border-radius: 11px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
-    background-color: #AFEEEE;
+    background-color: #CAEBF2;
     /* light blue background for side */
     line-height: 20px;
     padding: 12px;
@@ -281,11 +285,8 @@ h5, h6 {
 }
 
 /* Brighten side box on hover */
-#side {
-    opacity: 0.6;
-}
 #side:hover {
-    opacity: 1.0;
+    background-color: #ace5f1
 }
 #side h4, #side h5, #side h6 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -326,7 +327,7 @@ h5, h6 {
 }
 
 #navtitle {
-    color: blue;
+    color: rgb(75, 75, 235);
     font-weight: 700;
     font-size: 18px;
     margin-left: 10px;
@@ -343,8 +344,7 @@ div.entry {
     padding-bottom: 16px;
 }
 div.entrywrap {
-    background-color: #ffffff;
-    border: 1px solid black;
+    background-color: #efefef;
     margin: 8px;
     overflow: auto;
     padding-top: 12px;

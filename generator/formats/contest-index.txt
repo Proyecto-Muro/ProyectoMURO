@@ -29,10 +29,9 @@
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
       
       <meta charset="utf-8">
-      <title>Proyecto MURO - [concurso]</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+      <title>[concurso] - Proyecto MURO</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
-    
     
     
   <body> 
@@ -101,6 +100,7 @@
                               <!-- (Begin writing here) -->
                               <p>[contestText]</p>
                               [yearlinks]
+                              <p><i>Nota: </i> El concurso no se llevó a cabo en los años marcados con *.</p>
                               <hr>
                                • <a href="/">Regresar a la página de inicio</a><br>
                               <!-- (End writing here) -->
