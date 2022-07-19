@@ -1,0 +1,22 @@
+<p>
+  <span style="float:left;padding:10px;">
+    <img src="/images/triangle-image-header.png" alt="triangle-image" width="150" height="150">
+  </span>
+</p>
+<p>
+  El propósito del proyecto MURO es 
+  facilitar el acceso a recursos de 
+  preparación en español a concursantes 
+  de las Olimpiadas de Matemáticas 
+  alrededor del mundo.<br><br> 
+  En este sitio, podrás encontrar 
+  problemas de varios concursos pasados 
+  a nivel nacional e internacional, 
+  junto con algunas pistas para 
+  resolverlos y soluciones. 
+  ¡Esperamos que disfrutes el sitio! 
+  No dudes en compartirnos cualquier 
+  comentario, pregunta o crítica constructiva.
+</p>
+<p>
+</p>

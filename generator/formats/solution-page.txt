@@ -101,7 +101,7 @@
                                   Solución [concurso] [año] problema [numproblema]
                               </h3>
                               <div class="alert-secondary alert">
-                                  Aún no hay una solución para este problema. Si quisieras añadir una solución, manda un correo a proyectomuro@protonmail.com con el concurso, año y número del problema. Gracias!
+                                  [SolucionProblema]
                               </div>
                               <hr>
                                • <a href="./p[numproblema].html">Regresar a [concurso] [año] problema [numproblema]</a><br>

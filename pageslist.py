@@ -1,6 +1,6 @@
 pages_list = [
     ["index", "Movimiento Unificador de Recursos Olímpicos", "/", 1],
-    ["inicio", "Página de Inicio", "/inicio.html", 1],
+    ["inicio", "Página de Inicio", "./inicio.html", 1],
     ["recursos", "Recursos de Olimpiada", "./recursos.html", 1],
     ["sobrenosotros", "Sobre Nosotros", "./sobrenosotros.html", 1],
     ["test", "Test", "/test.html", 1],
