@@ -96,13 +96,13 @@
                           </h1>
                           <div class="entrywrap">
 
+                               • <a href="./..">Regresar a [concurso]</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
+
                               <!-- (Begin writing here) -->
 
                               [Enunciados]
                               
-                              <hr>
-                               • <a href="./..">Regresar a [concurso]</a><br>
-                               • <a href="/">Regresar a la página de inicio</a><br>
                               <!-- (End writing here) -->
 
                           </div>

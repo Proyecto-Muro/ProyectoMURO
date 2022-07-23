@@ -1,0 +1,12 @@
+<p>En esta página encontrarás varios recursos olímpicos, como  listas y temas que hemos publicado, videos, sitios, etc... ¡Próximamente agregaremos más recursos olímpicos!</p>
+<p> Presiona el título de las listas para acceder al archivo.</p>
+<hr>
+<h3> Geometría </h3>
+<p>
+<h3><a href="/docs/Complejos.pdf">Números Complejos</a></h3> Técnica computacional para resolver problemas de geometría olímpica utilizando números complejos.
+</p>
+<p> Nivel Recomendado: OMM</p>
+<p>
+<h3><a href="/docs/LaHack.pdf"> La Hack</a></h3> Truco trigonométrico, útil para resolver problemas con ángulos y construcciones de respuesta cerrada. 
+</p>
+<p> Nivel recomendado: OMMEB/IWYMIC </p>

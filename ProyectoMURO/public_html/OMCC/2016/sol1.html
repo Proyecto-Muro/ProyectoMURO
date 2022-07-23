@@ -101,7 +101,24 @@
                                   Solución OMCC 2016 problema 1
                               </h3>
                               <div class="alert-secondary alert">
-                                  Aún no hay una solución para este problema. Si quisieras añadir una solución, manda un correo a proyectomuro@protonmail.com con el concurso, año y número del problema. También, añade tu nombre si quieres que te demos crédito. Gracias!
+                                  Los únicos dígitos que son cuadrados perfectos son $0,1,4,9$. 
+Como $n$ es múltiplo de $2$ y $5$, es múltiplo de $10$, entonces termina en $0$. 
+Como $n$ es múltiplo de $3$, la suma de los dígitos debe ser múltiplo de $3$. Los dígitos $0,1,4,9$ 
+son congruentes a $0,1,1,0$ módulo $3$, entonces deben sumar $0+0+0$ o $1+1+1$.
+Esto significa que los dígitos deben ser todos $0$ o $9$, o todos $1$ o $4$. 
+
+Entonces los primeros $3$ dígitos de $n$ son: 
+\[(9,0,0),(9,9,0),(9,9,9),(1,1,1),(4,1,1),(4,4,1),(4,4,4),\]
+o algunas de sus permutaciones. Estos números son 
+\begin{align*}
+&9000, 9900, 9090, \\
+&9990, 1110, 4110, \\
+&1410, 1140, 4410, \\
+&4140, 1440, 4440
+\end{align*}
+Revisando uno por uno, vemos que el único de estos números 
+que es múltiplo de $7$ es \boxed{4410}. 
+
                               </div>
                               <hr>
                                • <a href="./p1.html">Regresar a OMCC 2016 problema 1</a><br>

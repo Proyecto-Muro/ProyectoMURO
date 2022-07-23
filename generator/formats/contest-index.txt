@@ -100,7 +100,7 @@
                               <!-- (Begin writing here) -->
                               <p>[contestText]</p>
                               [yearlinks]
-                              <p><i>Nota: </i> El concurso no se llevó a cabo en los años marcados con *.</p>
+                              [NotaOmitido]
                               <hr>
                                • <a href="/">Regresar a la página de inicio</a><br>
                               <!-- (End writing here) -->

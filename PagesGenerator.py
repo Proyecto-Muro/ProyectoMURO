@@ -16,6 +16,9 @@ contestinfo = [
     ["OMM", 1987, 2021, []],
     ["EGMO", 2012, 2022, []],
     ["OIM", 1985, 2021, [1986]],
+    #["ISL", 1998, 2021, []],
+    ["APMO", 1989, 2022, []],
+    ["RMM", 2008, 2021, []]
 ]
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -48,7 +51,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     ProblemsList = []
     ProblemText = ""
     ProblemPosition = "1"
-    SolucionProblema = ""
+    SolProb = ""
     dic = {
         "[Enunciadoproblema]": str(ProblemText),
         "[concurso]": str(contestname),
@@ -56,7 +59,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         "[numproblema]": str(ProblemPosition),
         "[añoantes]": r'<a href="./../' + str(year - 1) + r'">◄</a>',
         "[añodespues]": r'<a href="./../' + str(year + 1) + r'">►</a>',
-        "[SolucionProblema]": str(SolucionProblema)
+        "[SolucionProblema]": SolProb
     }
 
     # This is to remove the arrows for first and last years.
@@ -91,6 +94,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
     # Here we create a dummy dict to add the number of problems, use GenProbDiv
     # This is to account for contests with different number of problems
+
     enunciadostring = ""
     for pnum in range(len(Plist)):
         enunciadostring += GenProbDiv(pnum + 1)
@@ -120,7 +124,12 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
         # Open problem format, replace with problem
         problempageraw = open("generator/formats/problem-page.txt", "r").read()
+
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum])
+        if img == 1:
+            pass
+            #dic["[Enunciadoproblema]"] += # Agregar link imagen
+            # Agregar imagen a /public_html/images/asy/
         dic["[numproblema]"] = str(pnum + 1)
         problempage = replace_all(problempageraw, dic)
 
@@ -129,24 +138,22 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         with open(linkprob, "w") as f:
             f.write(problempage)
 
-        # Create file sol{i}.html, open format
-        for i in Plist:
+        # Import content
+        SolucionProblema = open("./concursos/%s/%s/soluciones/%s.tex" % (contestname, str(year), str(pnum + 1)), "r").read()
+        if SolucionProblema !="":
+            dic["[SolucionProblema]"] = SolucionProblema
+        else:
+            # If empty add empty format
+            dic["[SolucionProblema]"] = open("generator/texts/emptysol.txt", "r").read()
 
-            # Creates [Enunciado_i] and adds enties to dict
-            SolucionProblema = open("concursos/%s/%s/soluciones/%s.tex" % (contestname, year, i[:-4]), "r").read()
-            if SolucionProblema != "":
-                dic["[SolucionProblema]"] = SolucionProblema
-            else:
-                dic["[SolucionProblema]"] = open("generator/texts/emptysol.txt", "r").read()
+        # Open format, replace all content
+        solutionpageraw = open("generator/formats/solution-page.txt", "r").read()
+        solutionpage = replace_all(solutionpageraw, dic)
 
-
-            solutionpageraw = open("generator/formats/solution-page.txt", "r").read()
-            solutionpage = replace_all(solutionpageraw, dic)
-
-            # Create link to add file, write
-            linksol = "ProyectoMURO/public_html/{0}/{1}/sol{2}.html".format(str(contestname), str(year), str(pnum + 1))
-            with open(linksol, "w") as g:
-                g.write(solutionpage)
+        # Create link to add file, write
+        linksol = "ProyectoMURO/public_html/{0}/{1}/sol{2}.html".format(str(contestname), str(year), str(pnum + 1))
+        with open(linksol, "w") as g:
+            g.write(solutionpage)
 
 # ---------------------------------------------------------------------------------------------------------------------
 # GenerateYearLinks
@@ -183,8 +190,14 @@ def ReloadContestText():
             "[concurso]": concurso,
             "[yearlinks]": yearRefs,  # yearlinks must come from a list from each contest, and generate
             "[contestText]": contestText,
+            "[NotaOmitido]": ""
         }
 
+        # Add note at bottom if a contest year was ommited
+        if len(i[3]) != 0:
+            dic["[NotaOmitido]"]="<p><i>Nota: </i> El concurso no se llevó a cabo en los años marcados con *.</p>"
+
+        # Replace text
         indexraw = open("generator/formats/contest-index.txt", "r").read()
         index = replace_all(indexraw, dic) # This is the format, gets replaced with dic
 

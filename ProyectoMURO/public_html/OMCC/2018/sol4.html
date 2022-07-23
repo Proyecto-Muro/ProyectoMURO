@@ -101,7 +101,44 @@
                                   Solución OMCC 2018 problema 4
                               </h3>
                               <div class="alert-secondary alert">
-                                  Aún no hay una solución para este problema. Si quisieras añadir una solución, manda un correo a proyectomuro@protonmail.com con el concurso, año y número del problema. También, añade tu nombre si quieres que te demos crédito. Gracias!
+                                  Multiplicando para deshacernos del denominador, 
+la condición del problema se vuelve $r^2-5q^2=2p^2-2$, 
+o $2=2p^2+5q^2-r^2$. Observemos que los residuos cuadráticos
+mod $8$ son:
+\begin{align*}
+0^2&\equiv0\pmod 8
+1^2&\equiv1\pmod 8
+2^2&\equiv4\pmod 8
+3^2&\equiv1\pmod 8
+4^2&\equiv0\pmod 8
+5^2&\equiv1\pmod 8
+6^2&\equiv4\pmod 8
+7^2&\equiv1\pmod 8
+\end{align*}
+Entonces, asumiendo que $p\neq 2$ y $q \neq 2$, 
+\[2p^2+5q^2-r^2\equiv 2+5-r^2\equiv 7-r^2 \pmod 8\]
+Pero esto es equivalente a $2\pmod 8$, por la condición del problema.
+Entonces $r^2\equiv 5 \pmod 8$, que es imposible.
+Esto significa que alguno de $p$ o $q$ es $2$.
+
+Caso 1, $p=2$:
+
+Si $p=2$, tenemos que \[0=r^2-5q^2-6\equiv r^2-11\equiv r^2-3 \pmod 8,\] 
+a menos que $q=2$. Pero es imposible que $r^2-3\equiv 0 \pmod 8$, entonces 
+llegamos a una contradicción, y $q=2$.
+
+Caso 2, $q=2$:
+
+Si $q=2$, tenemos que 
+\[r^2-20=2p^2-2\implies r^2-2p^2=18.\]
+Los residuos cuadráticos mod $3$ son $0$ o $1$, entonces si $p\neq 3$, 
+$r^2-2\equiv 0 \pmod 3$, que es imposible. Por lo tanto, $p=3$.
+
+Ahora, $r^2-18=18\implies r=6$.  
+
+Entonces la única solución del problema es $(p,q,r)=(3,2,6)$.
+
+
                               </div>
                               <hr>
                                • <a href="./p4.html">Regresar a OMCC 2018 problema 4</a><br>
