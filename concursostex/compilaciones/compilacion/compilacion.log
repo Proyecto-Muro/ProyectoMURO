@@ -1,0 +1,1514 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  3 AUG 2022 08:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**compilacion.tex
+(./compilacion.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2021/03/17 v3.33 KOMA-Script document class (article)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     93.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     173.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     191.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 234.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 242.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 247.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 261.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     274.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 298.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+)))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+Skipping: [2021/05/01] Usage of raw option list on input line 252.
+Applying: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 
+337.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box47
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 135.
+Package scrartcl Info: You've used standard option `11pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=11pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=11pt' there
+(scrartcl)             instead of `11pt', too.
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
+ine 2239.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt
+)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count179
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1741.
+)
+\c@part=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4846.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4846.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4854.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4864.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4864.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4874.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4874.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4885.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4885.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4895.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4895.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box48
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6127.
+
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count186
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6139.
+
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count187
+Class scrartcl Info: Redefining `\numberline' on input line 6303.
+\bibindent=\dimen138
+)
+(/Users/diegocaballero/Library/texmf/tex/latex/muro/muro.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count188
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen139
+\pgfutil@tempdimb=\dimen140
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box49
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen143
+\pgf@y=\dimen144
+\pgf@xa=\dimen145
+\pgf@ya=\dimen146
+\pgf@xb=\dimen147
+\pgf@yb=\dimen148
+\pgf@xc=\dimen149
+\pgf@yc=\dimen150
+\pgf@xd=\dimen151
+\pgf@yd=\dimen152
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count189
+\c@pgf@countb=\count190
+\c@pgf@countc=\count191
+\c@pgf@countd=\count192
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+\pgf@sys@id@count=\count193
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count194
+\pgfsyssoftpath@bigbuffer@items=\count195
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen153
+\pgfmath@count=\count196
+\pgfmath@box=\box50
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count197
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen154
+\pgf@picmaxx=\dimen155
+\pgf@picminy=\dimen156
+\pgf@picmaxy=\dimen157
+\pgf@pathminx=\dimen158
+\pgf@pathmaxx=\dimen159
+\pgf@pathminy=\dimen160
+\pgf@pathmaxy=\dimen161
+\pgf@xx=\dimen162
+\pgf@xy=\dimen163
+\pgf@yx=\dimen164
+\pgf@yy=\dimen165
+\pgf@zx=\dimen166
+\pgf@zy=\dimen167
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen168
+\pgf@path@lasty=\dimen169
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen170
+\pgf@shorten@start@additional=\dimen171
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
+\pgf@picture@serial@count=\count198
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen172
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen173
+\pgf@pt@y=\dimen174
+\pgf@pt@temp=\dimen175
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen176
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen177
+\pgf@sys@shading@range@num=\count199
+\pgf@shadingcount=\count266
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box54
+))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box55
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen178
+\pgf@nodesepend=\dimen179
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen180
+\pgffor@skip=\dimen181
+\pgffor@stack=\toks26
+\pgffor@toks=\toks27
+))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count267
+\pgfplotmarksize=\dimen182
+)
+\tikz@lastx=\dimen183
+\tikz@lasty=\dimen184
+\tikz@lastxsaved=\dimen185
+\tikz@lastysaved=\dimen186
+\tikz@lastmovetox=\dimen187
+\tikz@lastmovetoy=\dimen188
+\tikzleveldistance=\dimen189
+\tikzsiblingdistance=\dimen190
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count268
+\tikznumberofchildren=\count269
+\tikznumberofcurrentchild=\count270
+\tikz@fig@count=\count271
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count272
+\pgfmatrixcurrentcolumn=\count273
+\pgf@matrix@numberofcolumns=\count274
+)
+\tikz@expandcount=\count275
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/answers/answers.sty
+Package: answers 2014/08/24 v2.16 Production of solution sheets in LaTeX2e
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read3
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip63
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks30
+\ex@=\dimen191
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen192
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count276
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count277
+\leftroot@=\count278
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count279
+\DOTSCASE@=\count280
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+\big@size=\dimen193
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count281
+\c@MaxMatrixCols=\count282
+\dotsspace@=\muskip16
+\c@parentequation=\count283
+\dspbrk@lvl=\count284
+\tag@help=\toks31
+\row@=\count285
+\column@=\count286
+\maxfields@=\count287
+\andhelp@=\toks32
+\eqnshift@=\dimen194
+\alignsep@=\dimen195
+\tagshift@=\dimen196
+\tagwidth@=\dimen197
+\totwidth@=\dimen198
+\lineht@=\dimen199
+\@envbody=\toks33
+\multlinegap=\skip64
+\multlinetaggap=\skip65
+\mathdisplay@stack=\toks34
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks35
+\thm@bodyfont=\toks36
+\thm@headfont=\toks37
+\thm@notefont=\toks38
+\thm@headpunct=\toks39
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
+\dth@everypar=\toks40
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box62
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
+01.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex))))
+Class scrartcl Info: amsthm's \deferred@thm@head patched.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2020/08/01 v0.72
+\thmt@toks=\toks41
+\c@thmt@dummyctr=\count289
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2020/08/01 v0.72
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2020/08/01 v0.72
+\@parsespec=\toks42
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2020/08/01 v0.72
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2020/08/01 v0.72
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2020/08/01 v0.72
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2020/08/01 v0.72
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2020/08/01 v0.72
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2020/08/01 v0.72
+\thmt@style@headstyle=\toks43
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\c@abspage=\count290
+Package zref Info: New property: abspage on input line 66.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip69
+\c@mdf@globalstyle@cnt=\count291
+\mdf@skipabove@length=\skip70
+\mdf@skipbelow@length=\skip71
+\mdf@leftmargin@length=\skip72
+\mdf@rightmargin@length=\skip73
+\mdf@innerleftmargin@length=\skip74
+\mdf@innerrightmargin@length=\skip75
+\mdf@innertopmargin@length=\skip76
+\mdf@innerbottommargin@length=\skip77
+\mdf@splittopskip@length=\skip78
+\mdf@splitbottomskip@length=\skip79
+\mdf@outermargin@length=\skip80
+\mdf@innermargin@length=\skip81
+\mdf@linewidth@length=\skip82
+\mdf@innerlinewidth@length=\skip83
+\mdf@middlelinewidth@length=\skip84
+\mdf@outerlinewidth@length=\skip85
+\mdf@roundcorner@length=\skip86
+\mdf@footenotedistance@length=\skip87
+\mdf@userdefinedwidth@length=\skip88
+\mdf@needspace@length=\skip89
+\mdf@frametitleaboveskip@length=\skip90
+\mdf@frametitlebelowskip@length=\skip91
+\mdf@frametitlerulewidth@length=\skip92
+\mdf@frametitleleftmargin@length=\skip93
+\mdf@frametitlerightmargin@length=\skip94
+\mdf@shadowsize@length=\skip95
+\mdf@extratopheight@length=\skip96
+\mdf@subtitleabovelinewidth@length=\skip97
+\mdf@subtitlebelowlinewidth@length=\skip98
+\mdf@subtitleaboveskip@length=\skip99
+\mdf@subtitlebelowskip@length=\skip100
+\mdf@subtitleinneraboveskip@length=\skip101
+\mdf@subtitleinnerbelowskip@length=\skip102
+\mdf@subsubtitleabovelinewidth@length=\skip103
+\mdf@subsubtitlebelowlinewidth@length=\skip104
+\mdf@subsubtitleaboveskip@length=\skip105
+\mdf@subsubtitlebelowskip@length=\skip106
+\mdf@subsubtitleinneraboveskip@length=\skip107
+\mdf@subsubtitleinnerbelowskip@length=\skip108
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box63
+\mdf@footnotebox=\box64
+\mdf@splitbox@one=\box65
+\mdf@splitbox@two=\box66
+\mdf@splitbox@save=\box67
+\mdfsplitboxwidth=\skip109
+\mdfsplitboxtotalwidth=\skip110
+\mdfsplitboxheight=\skip111
+\mdfsplitboxdepth=\skip112
+\mdfsplitboxtotalheight=\skip113
+\mdfframetitleboxwidth=\skip114
+\mdfframetitleboxtotalwidth=\skip115
+\mdfframetitleboxheight=\skip116
+\mdfframetitleboxdepth=\skip117
+\mdfframetitleboxtotalheight=\skip118
+\mdffootnoteboxwidth=\skip119
+\mdffootnoteboxtotalwidth=\skip120
+\mdffootnoteboxheight=\skip121
+\mdffootnoteboxdepth=\skip122
+\mdffootnoteboxtotalheight=\skip123
+\mdftotallinewidth=\skip124
+\mdfboundingboxwidth=\skip125
+\mdfboundingboxtotalwidth=\skip126
+\mdfboundingboxheight=\skip127
+\mdfboundingboxdepth=\skip128
+\mdfboundingboxtotalheight=\skip129
+\mdf@freevspace@length=\skip130
+\mdf@horizontalwidthofbox@length=\skip131
+\mdf@verticalmarginwhole@length=\skip132
+\mdf@horizontalspaceofbox=\skip133
+\mdfsubtitleheight=\skip134
+\mdfsubsubtitleheight=\skip135
+\c@mdfcountframes=\count292
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count293
+\c@mdf@env@i=\count294
+\c@mdf@env@ii=\count295
+\c@mdf@zref@counter=\count296
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count297
+\Gm@cntv=\count298
+\c@Gm@tempcnt=\count299
+\Gm@bindingoffset=\dimen256
+\Gm@wd@mp=\dimen257
+\Gm@odd@mp=\dimen258
+\Gm@even@mp=\dimen259
+\Gm@layoutwidth=\dimen260
+\Gm@layoutheight=\dimen261
+\Gm@layouthoffset=\dimen262
+\Gm@layoutvoffset=\dimen263
+\Gm@dimlist=\toks44
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/03/24 3.56 The Babel package
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/03/24 3.56 Babel common definitions
+\babel@savecnt=\count300
+\U@D=\dimen264
+\l@babelnohyphens=\language87
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read4
+)
+\bbl@dirlevel=\count301
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+\es@quottoks=\toks45
+\es@quotdepth=\count302
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks46
+\inpenc@posthook=\toks47
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+\@linkdim=\dimen265
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count305
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count306
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen266
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count307
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+\Hy@abspage=\count308
+\c@Item=\count309
+\c@Hfootnote=\count310
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\HyAnn@Count=\count311
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip136
+)
+
+Class scrartcl Warning: Usage of package `fancyhdr' together
+(scrartcl)              with a KOMA-Script class is not recommended.
+(scrartcl)              I'd suggest to use 
+(scrartcl)              package `scrlayer' or `scrlayer-scrpage', because
+(scrartcl)              they support KOMA-Script classes.
+(scrartcl)              With `fancyhdr' several features of class `scrartcl'
+(scrartcl)              like options `headsepline', `footsepline' or command
+(scrartcl)              `\MakeMarkcase' and the commands `\setkomafont' and
+(scrartcl)              `\addtokomafont' for the page style elements need
+(scrartcl)              explicite user intervention to work.
+(scrartcl)              Nevertheless, using requested
+(scrartcl)              package `fancyhdr' on input line 18.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip137
+\f@nch@O@elh=\skip138
+\f@nch@O@erh=\skip139
+\f@nch@O@olh=\skip140
+\f@nch@O@orh=\skip141
+\f@nch@O@elf=\skip142
+\f@nch@O@erf=\skip143
+\f@nch@O@olf=\skip144
+\f@nch@O@orf=\skip145
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip146
+\enit@outerparindent=\dimen269
+\enit@toks=\toks48
+\enit@inbox=\box68
+\enit@count@id=\count314
+\enitdp@description=\count315
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/nextpage/nextpage.sty
+Package: nextpage 2009/09/03 v1.1a additional page commands
+)
+\beforeepigraphskip=\skip147
+\afterepigraphskip=\skip148
+\epigraphwidth=\skip149
+\epigraphrule=\skip150
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box69
+\UL@hyphenbox=\box70
+\UL@skip=\skip151
+\UL@hook=\toks49
+\UL@height=\dimen270
+\UL@pe=\count316
+\UL@pixel=\dimen271
+\ULC@box=\box71
+Package: ulem 2019/11/18
+\ULdepth=\dimen272
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+\c@hindex=\count317
+\c@hintcounter=\count318
+\c@Problemas=\count319
+\c@Solutions=\count320
+\c@Claims=\count321
+\c@Lemma=\count322
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/asymptote/asymptote.sty
+Package: asymptote 2021/02/06 v1.36 Asymptote style file for LaTeX
+
+(./compilacion.pre)
+\ASYbox=\box72
+\ASYdimen=\dimen273
+\c@asy=\count323
+\AsyStream=\write4
+\AsyPreStream=\write5
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+\openout5 = `compilacion.pre'.
+
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 25.
+
+(./compilacion.aux
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+)
+\openout1 = `compilacion.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count324
+\scratchdimen=\dimen274
+\scratchbox=\box73
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen275
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks51
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.96796pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50696pt, 72.26999pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=452.96796pt
+* \textheight=700.50696pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-34.40001pt
+* \headheight=14.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+Package hyperref Info: Link coloring ON on input line 28.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count330
+)
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
+ (./compilacion.out) (./compilacion.out)
+\@outlinefile=\write6
+\openout6 = `compilacion.out'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 28.
+Class scrartcl Info: temporary deactivation of babel-spanish quoting  on input 
+line 28.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count331
+))
+Class scrartcl Info: reactivation of babel-spanish quoting  on input line 28.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
+4.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./compilacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+Package tocbasic Info: Using my definition of `\numberline' on input line 2.
+Package tocbasic Info: Using my definition of `\numberline' on input line 3.
+Package tocbasic Info: Using my definition of `\numberline' on input line 4.
+)
+\tf@toc=\write7
+\openout7 = `compilacion.toc'.
+
+ [1
+
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (..
+/../OMM/2021/enunciados/1.tex)
+(../../OMM/2021/enunciados/2.tex) (../../OMM/2021/enunciados/3.tex)
+(../../OMM/2021/enunciados/4.tex) (../../OMM/2021/enunciados/5.tex)
+(../../OMM/2021/enunciados/6.tex) [3] (../../OMM/2020/enunciados/1.tex)
+(../../OMM/2020/enunciados/2.tex) (../../OMM/2020/enunciados/3.tex)
+(../../OMM/2020/enunciados/4.tex) (../../OMM/2020/enunciados/5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 138--2
+
+ []
+
+) (../../OMM/2020/enunciados/6.tex) [4] (../../OMM/2019/enunciados/1.tex)
+(../../OMM/2019/enunciados/2.tex) (../../OMM/2019/enunciados/3.tex)
+(../../OMM/2019/enunciados/4.tex) (../../OMM/2019/enunciados/5.tex)
+(../../OMM/2019/enunciados/6.tex) [5] (../../OMM/2018/enunciados/1.tex)
+(../../OMM/2018/enunciados/2.tex) (../../OMM/2018/enunciados/3.tex)
+(../../OMM/2018/enunciados/4.tex) (../../OMM/2018/enunciados/5.tex)
+(../../OMM/2018/enunciados/6.tex) [6] (../../OMM/2017/enunciados/1.tex)
+(../../OMM/2017/enunciados/2.tex) (../../OMM/2017/enunciados/3.tex)
+(../../OMM/2017/enunciados/4.tex) (../../OMM/2017/enunciados/5.tex)
+(../../OMM/2017/enunciados/6.tex) [7] (../../OMM/2016/enunciados/1.tex)
+(../../OMM/2016/enunciados/2.tex) (../../OMM/2016/enunciados/3.tex)
+(../../OMM/2016/enunciados/4.tex) (../../OMM/2016/enunciados/5.tex)
+(../../OMM/2016/enunciados/6.tex) [8] (../../OMM/2015/enunciados/1.tex)
+(../../OMM/2015/enunciados/2.tex) (../../OMM/2015/enunciados/3.tex)
+(../../OMM/2015/enunciados/4.tex) (../../OMM/2015/enunciados/5.tex)
+(../../OMM/2015/enunciados/6.tex) [9] (../../OMM/2014/enunciados/1.tex)
+(../../OMM/2014/enunciados/2.tex) (../../OMM/2014/enunciados/3.tex)
+(../../OMM/2014/enunciados/4.tex) (../../OMM/2014/enunciados/5.tex)
+(../../OMM/2014/enunciados/6.tex) [10] (../../OMM/2013/enunciados/1.tex)
+(../../OMM/2013/enunciados/2.tex) (../../OMM/2013/enunciados/3.tex)
+(../../OMM/2013/enunciados/4.tex) (../../OMM/2013/enunciados/5.tex)
+(../../OMM/2013/enunciados/6.tex) [11] (../../OMM/2012/enunciados/1.tex)
+(../../OMM/2012/enunciados/2.tex) (../../OMM/2012/enunciados/3.tex)
+(../../OMM/2012/enunciados/4.tex) (../../OMM/2012/enunciados/5.tex)
+(../../OMM/2012/enunciados/6.tex) [12] (../../OMM/2011/enunciados/1.tex)
+(../../OMM/2011/enunciados/2.tex) (../../OMM/2011/enunciados/3.tex)
+(../../OMM/2011/enunciados/4.tex) (../../OMM/2011/enunciados/5.tex)
+(../../OMM/2011/enunciados/6.tex) [13] (../../OMM/2010/enunciados/1.tex)
+(../../OMM/2010/enunciados/2.tex) (../../OMM/2010/enunciados/3.tex)
+(../../OMM/2010/enunciados/4.tex) (../../OMM/2010/enunciados/5.tex)
+(../../OMM/2010/enunciados/6.tex) [14] (../../OMM/2009/enunciados/1.tex)
+(../../OMM/2009/enunciados/2.tex) (../../OMM/2009/enunciados/3.tex)
+(../../OMM/2009/enunciados/4.tex) (../../OMM/2009/enunciados/5.tex)
+(../../OMM/2009/enunciados/6.tex) [15] (../../OMM/2008/enunciados/1.tex)
+(../../OMM/2008/enunciados/2.tex) (../../OMM/2008/enunciados/3.tex)
+(../../OMM/2008/enunciados/4.tex) (../../OMM/2008/enunciados/5.tex)
+(../../OMM/2008/enunciados/6.tex) [16] (../../OMM/2007/enunciados/1.tex)
+(../../OMM/2007/enunciados/2.tex) (../../OMM/2007/enunciados/3.tex)
+(../../OMM/2007/enunciados/4.tex) (../../OMM/2007/enunciados/5.tex)
+(../../OMM/2007/enunciados/6.tex) [17] (../../OMM/2006/enunciados/1.tex)
+(../../OMM/2006/enunciados/2.tex) (../../OMM/2006/enunciados/3.tex)
+(../../OMM/2006/enunciados/4.tex) (../../OMM/2006/enunciados/5.tex)
+(../../OMM/2006/enunciados/6.tex) [18] (../../OMM/2005/enunciados/1.tex)
+(../../OMM/2005/enunciados/2.tex) (../../OMM/2005/enunciados/3.tex)
+(../../OMM/2005/enunciados/4.tex) (../../OMM/2005/enunciados/5.tex)
+(../../OMM/2005/enunciados/6.tex) [19] (../../OMM/2004/enunciados/1.tex)
+(../../OMM/2004/enunciados/2.tex) (../../OMM/2004/enunciados/3.tex)
+(../../OMM/2004/enunciados/4.tex) (../../OMM/2004/enunciados/5.tex)
+(../../OMM/2004/enunciados/6.tex) [20] (../../OMM/2003/enunciados/1.tex)
+(../../OMM/2003/enunciados/2.tex) (../../OMM/2003/enunciados/3.tex)
+(../../OMM/2003/enunciados/4.tex) (../../OMM/2003/enunciados/5.tex)
+(../../OMM/2003/enunciados/6.tex) [21] (../../OMM/2002/enunciados/1.tex)
+(../../OMM/2002/enunciados/2.tex) (../../OMM/2002/enunciados/3.tex)
+(../../OMM/2002/enunciados/4.tex) (../../OMM/2002/enunciados/5.tex)
+(../../OMM/2002/enunciados/6.tex) [22] (../../OMM/2001/enunciados/1.tex)
+(../../OMM/2001/enunciados/2.tex) (../../OMM/2001/enunciados/3.tex)
+(../../OMM/2001/enunciados/4.tex) (../../OMM/2001/enunciados/5.tex)
+(../../OMM/2001/enunciados/6.tex) [23] (../../OMM/2000/enunciados/1.tex)
+(../../OMM/2000/enunciados/2.tex) (../../OMM/2000/enunciados/3.tex)
+(../../OMM/2000/enunciados/4.tex) (../../OMM/2000/enunciados/5.tex)
+(../../OMM/2000/enunciados/6.tex) [24] (../../OMM/1999/enunciados/1.tex)
+(../../OMM/1999/enunciados/2.tex) (../../OMM/1999/enunciados/3.tex)
+(../../OMM/1999/enunciados/4.tex) (../../OMM/1999/enunciados/5.tex)
+(../../OMM/1999/enunciados/6.tex) [25] (../../OMM/1998/enunciados/1.tex)
+(../../OMM/1998/enunciados/2.tex) (../../OMM/1998/enunciados/3.tex)
+(../../OMM/1998/enunciados/4.tex) (../../OMM/1998/enunciados/5.tex)
+(../../OMM/1998/enunciados/6.tex) [26] (../../OMM/1997/enunciados/1.tex)
+(../../OMM/1997/enunciados/2.tex) (../../OMM/1997/enunciados/3.tex)
+(../../OMM/1997/enunciados/4.tex) (../../OMM/1997/enunciados/5.tex)
+(../../OMM/1997/enunciados/6.tex) [27] (../../OMM/1996/enunciados/1.tex)
+(../../OMM/1996/enunciados/2.tex) (../../OMM/1996/enunciados/3.tex)
+(../../OMM/1996/enunciados/4.tex) (../../OMM/1996/enunciados/5.tex)
+(../../OMM/1996/enunciados/6.tex) [28] (../../OMM/1995/enunciados/1.tex)
+(../../OMM/1995/enunciados/2.tex) (../../OMM/1995/enunciados/3.tex)
+(../../OMM/1995/enunciados/4.tex) (../../OMM/1995/enunciados/5.tex)
+Overfull \hbox (0.87134pt too wide) in paragraph at lines 138--138
+\T1/cmss/bx/n/12 Problema 5.  $\OML/cmm/m/it/10.95 ABCDE$ \T1/cmr/m/n/10.95 es 
+un pen-tá-gono con-ve-xo tal que los trián-gu-los $\OML/cmm/m/it/10.95 ABC; BCD
+; CDE; DEA$
+ []
+
+(../../OMM/1995/enunciados/6.tex) [29] (../../OMM/1994/enunciados/1.tex)
+(../../OMM/1994/enunciados/2.tex) (../../OMM/1994/enunciados/3.tex)
+(../../OMM/1994/enunciados/4.tex) (../../OMM/1994/enunciados/5.tex)
+(../../OMM/1994/enunciados/6.tex) [30] (../../OMM/1993/enunciados/1.tex)
+(../../OMM/1993/enunciados/2.tex) (../../OMM/1993/enunciados/3.tex)
+(../../OMM/1993/enunciados/4.tex) (../../OMM/1993/enunciados/5.tex)
+(../../OMM/1993/enunciados/6.tex) [31] (../../OMM/1992/enunciados/1.tex)
+(../../OMM/1992/enunciados/2.tex) (../../OMM/1992/enunciados/3.tex)
+(../../OMM/1992/enunciados/4.tex) (../../OMM/1992/enunciados/5.tex)
+(../../OMM/1992/enunciados/6.tex) [32] (../../OMM/1991/enunciados/1.tex)
+(../../OMM/1991/enunciados/2.tex) (../../OMM/1991/enunciados/3.tex)
+(../../OMM/1991/enunciados/4.tex) (../../OMM/1991/enunciados/5.tex)
+(../../OMM/1991/enunciados/6.tex) [33] (../../OMM/1990/enunciados/1.tex)
+(../../OMM/1990/enunciados/2.tex)
+Overfull \hbox (10.67883pt too wide) in paragraph at lines 138--138
+\T1/cmss/bx/n/12 Problema 2.  $\OML/cmm/m/it/10.95 ABC$ \T1/cmr/m/n/10.95 es un
+ trián-gu-lo con $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 B \OT1/cmr/m/n/10.95 = 
+90[]$ \T1/cmr/m/n/10.95 y al-tu-ra $\OML/cmm/m/it/10.95 BH$\T1/cmr/m/n/10.95 . 
+Los in-ra-dios de $\OML/cmm/m/it/10.95 ABC; ABH; CBH$
+ []
+
+(../../OMM/1990/enunciados/3.tex) (../../OMM/1990/enunciados/4.tex)
+(../../OMM/1990/enunciados/5.tex) (../../OMM/1990/enunciados/6.tex) [34]
+(../../OMM/1989/enunciados/1.tex) (../../OMM/1989/enunciados/2.tex)
+(../../OMM/1989/enunciados/3.tex) (../../OMM/1989/enunciados/4.tex)
+(../../OMM/1989/enunciados/5.tex) (../../OMM/1989/enunciados/6.tex) [35]
+(../../OMM/1988/enunciados/1.tex) (../../OMM/1988/enunciados/2.tex)
+(../../OMM/1988/enunciados/3.tex) (../../OMM/1988/enunciados/4.tex)
+(../../OMM/1988/enunciados/5.tex) (../../OMM/1988/enunciados/6.tex)
+(../../OMM/1988/enunciados/7.tex) (../../OMM/1988/enunciados/8.tex) [36]
+(../../OMM/1987/enunciados/1.tex) (../../OMM/1987/enunciados/2.tex)
+(../../OMM/1987/enunciados/3.tex) (../../OMM/1987/enunciados/4.tex)
+(../../OMM/1987/enunciados/5.tex) (../../OMM/1987/enunciados/6.tex)
+(../../OMM/1987/enunciados/7.tex) (../../OMM/1987/enunciados/8.tex) [37]
+[38] (../../EGMO/2022/enunciados/1.tex) (../../EGMO/2022/enunciados/2.tex)
+(../../EGMO/2022/enunciados/3.tex) (../../EGMO/2022/enunciados/4.tex)
+(../../EGMO/2022/enunciados/5.tex) (../../EGMO/2022/enunciados/6.tex) [39]
+(../../EGMO/2021/enunciados/1.tex) (../../EGMO/2021/enunciados/2.tex)
+(../../EGMO/2021/enunciados/3.tex) (../../EGMO/2021/enunciados/4.tex)
+(../../EGMO/2021/enunciados/5.tex) (../../EGMO/2021/enunciados/6.tex) [40]
+(../../EGMO/2020/enunciados/1.tex) (../../EGMO/2020/enunciados/2.tex)
+(../../EGMO/2020/enunciados/3.tex) (../../EGMO/2020/enunciados/4.tex)
+(../../EGMO/2020/enunciados/5.tex) (../../EGMO/2020/enunciados/6.tex) [41]
+(../../EGMO/2019/enunciados/1.tex) (../../EGMO/2019/enunciados/2.tex)
+(../../EGMO/2019/enunciados/3.tex) (../../EGMO/2019/enunciados/4.tex)
+(../../EGMO/2019/enunciados/5.tex) (../../EGMO/2019/enunciados/6.tex) [42]
+(../../EGMO/2018/enunciados/1.tex) (../../EGMO/2018/enunciados/2.tex)
+(../../EGMO/2018/enunciados/3.tex) (../../EGMO/2018/enunciados/4.tex)
+(../../EGMO/2018/enunciados/5.tex) (../../EGMO/2018/enunciados/6.tex) [43]
+(../../EGMO/2017/enunciados/1.tex) (../../EGMO/2017/enunciados/2.tex)
+(../../EGMO/2017/enunciados/3.tex) (../../EGMO/2017/enunciados/4.tex)
+(../../EGMO/2017/enunciados/5.tex) (../../EGMO/2017/enunciados/6.tex) [44]
+(../../EGMO/2016/enunciados/1.tex) (../../EGMO/2016/enunciados/2.tex)
+(../../EGMO/2016/enunciados/3.tex) (../../EGMO/2016/enunciados/4.tex)
+(../../EGMO/2016/enunciados/5.tex) (../../EGMO/2016/enunciados/6.tex) [45]
+(../../EGMO/2015/enunciados/1.tex) (../../EGMO/2015/enunciados/2.tex)
+(../../EGMO/2015/enunciados/3.tex) (../../EGMO/2015/enunciados/4.tex)
+(../../EGMO/2015/enunciados/5.tex) (../../EGMO/2015/enunciados/6.tex) [46]
+(../../EGMO/2014/enunciados/1.tex) (../../EGMO/2014/enunciados/2.tex)
+(../../EGMO/2014/enunciados/3.tex) (../../EGMO/2014/enunciados/4.tex)
+(../../EGMO/2014/enunciados/5.tex) (../../EGMO/2014/enunciados/6.tex) [47]
+(../../EGMO/2013/enunciados/1.tex) (../../EGMO/2013/enunciados/2.tex)
+(../../EGMO/2013/enunciados/3.tex) (../../EGMO/2013/enunciados/4.tex)
+(../../EGMO/2013/enunciados/5.tex) (../../EGMO/2013/enunciados/6.tex) [48]
+(../../EGMO/2012/enunciados/1.tex) (../../EGMO/2012/enunciados/2.tex)
+(../../EGMO/2012/enunciados/3.tex) (../../EGMO/2012/enunciados/4.tex)
+(../../EGMO/2012/enunciados/5.tex) (../../EGMO/2012/enunciados/6.tex)
+(../../EGMO/2012/enunciados/7.tex) (../../EGMO/2012/enunciados/8.tex) [49]
+[50] [51] (../../OMCC/2021/enunciados/1.tex) (../../OMCC/2021/enunciados/2.tex)
+(../../OMCC/2021/enunciados/3.tex) (../../OMCC/2021/enunciados/4.tex)
+(../../OMCC/2021/enunciados/5.tex) (../../OMCC/2021/enunciados/6.tex) [52]
+(../../OMCC/2020/enunciados/1.tex) (../../OMCC/2020/enunciados/2.tex)
+(../../OMCC/2020/enunciados/3.tex) (../../OMCC/2020/enunciados/4.tex)
+(../../OMCC/2020/enunciados/5.tex) (../../OMCC/2020/enunciados/6.tex) [53]
+(../../OMCC/2019/enunciados/1.tex) (../../OMCC/2019/enunciados/2.tex)
+(../../OMCC/2019/enunciados/3.tex) (../../OMCC/2019/enunciados/4.tex)
+(../../OMCC/2019/enunciados/5.tex) (../../OMCC/2019/enunciados/6.tex) [54]
+(../../OMCC/2018/enunciados/1.tex) (../../OMCC/2018/enunciados/2.tex)
+(../../OMCC/2018/enunciados/3.tex) (../../OMCC/2018/enunciados/4.tex)
+(../../OMCC/2018/enunciados/5.tex) (../../OMCC/2018/enunciados/6.tex) [55]
+(../../OMCC/2017/enunciados/1.tex) (../../OMCC/2017/enunciados/2.tex)
+(../../OMCC/2017/enunciados/3.tex) (../../OMCC/2017/enunciados/4.tex)
+(../../OMCC/2017/enunciados/5.tex
+Overfull \hbox (23.58253pt too wide) in paragraph at lines 3--5
+\T1/cmr/m/n/10.95 En ge-ne-ral, en el turno $\OML/cmm/m/it/10.95 k$\T1/cmr/m/n/
+10.95 , el ju-ga-dor res-pec-ti-vo eli-ge un nú-me-ro en-te-ro $\OML/cmm/m/it/1
+0.95 n[]$\T1/cmr/m/n/10.95 , di-fe-ren-te de $\OML/cmm/m/it/10.95 n[]; n[]; [] 
+; n[]$\T1/cmr/m/n/10.95 ,
+ []
+
+) (../../OMCC/2017/enunciados/6.tex) [56] (../../OMCC/2016/enunciados/1.tex)
+(../../OMCC/2016/enunciados/2.tex) (../../OMCC/2016/enunciados/3.tex)
+(../../OMCC/2016/enunciados/4.tex) (../../OMCC/2016/enunciados/5.tex)
+(../../OMCC/2016/enunciados/6.tex) [57] (../../OMCC/2015/enunciados/1.tex)
+(../../OMCC/2015/enunciados/2.tex) (../../OMCC/2015/enunciados/3.tex)
+(../../OMCC/2015/enunciados/4.tex) (../../OMCC/2015/enunciados/5.tex)
+(../../OMCC/2015/enunciados/6.tex) [58] (../../OMCC/2014/enunciados/1.tex)
+(../../OMCC/2014/enunciados/2.tex) (../../OMCC/2014/enunciados/3.tex)
+(../../OMCC/2014/enunciados/4.tex) (../../OMCC/2014/enunciados/5.tex)
+(../../OMCC/2014/enunciados/6.tex) [59] (../../OMCC/2013/enunciados/1.tex)
+(../../OMCC/2013/enunciados/2.tex) (../../OMCC/2013/enunciados/3.tex)
+(../../OMCC/2013/enunciados/4.tex) (../../OMCC/2013/enunciados/5.tex)
+(../../OMCC/2013/enunciados/6.tex) [60] (../../OMCC/2012/enunciados/1.tex)
+(../../OMCC/2012/enunciados/2.tex) (../../OMCC/2012/enunciados/3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 293--3
+
+ []
+
+) (../../OMCC/2012/enunciados/4.tex) (../../OMCC/2012/enunciados/5.tex)
+(../../OMCC/2012/enunciados/6.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+
+ []
+
+[61] (../../OMCC/2011/enunciados/1.tex) (../../OMCC/2011/enunciados/2.tex)
+(../../OMCC/2011/enunciados/3.tex) (../../OMCC/2011/enunciados/4.tex)
+(../../OMCC/2011/enunciados/5.tex) (../../OMCC/2011/enunciados/6.tex) [62]
+(../../OMCC/2010/enunciados/1.tex) (../../OMCC/2010/enunciados/2.tex)
+(../../OMCC/2010/enunciados/3.tex) (../../OMCC/2010/enunciados/4.tex)
+(../../OMCC/2010/enunciados/5.tex) (../../OMCC/2010/enunciados/6.tex) [63]
+(../../OMCC/2009/enunciados/1.tex) (../../OMCC/2009/enunciados/2.tex)
+(../../OMCC/2009/enunciados/3.tex) (../../OMCC/2009/enunciados/4.tex)
+(../../OMCC/2009/enunciados/5.tex) (../../OMCC/2009/enunciados/6.tex) [64]
+(../../OMCC/2008/enunciados/1.tex) (../../OMCC/2008/enunciados/2.tex)
+(../../OMCC/2008/enunciados/3.tex) (../../OMCC/2008/enunciados/4.tex)
+(../../OMCC/2008/enunciados/5.tex) (../../OMCC/2008/enunciados/6.tex) [65]
+(../../OMCC/2007/enunciados/1.tex) (../../OMCC/2007/enunciados/2.tex)
+(../../OMCC/2007/enunciados/3.tex) (../../OMCC/2007/enunciados/4.tex)
+(../../OMCC/2007/enunciados/5.tex) (../../OMCC/2007/enunciados/6.tex) [66]
+(../../OMCC/2006/enunciados/1.tex) (../../OMCC/2006/enunciados/2.tex)
+(../../OMCC/2006/enunciados/3.tex) (../../OMCC/2006/enunciados/4.tex)
+(../../OMCC/2006/enunciados/5.tex) (../../OMCC/2006/enunciados/6.tex) [67]
+(../../OMCC/2005/enunciados/1.tex) (../../OMCC/2005/enunciados/2.tex)
+(../../OMCC/2005/enunciados/3.tex) (../../OMCC/2005/enunciados/4.tex)
+(../../OMCC/2005/enunciados/5.tex) (../../OMCC/2005/enunciados/6.tex) [68]
+(../../OMCC/2004/enunciados/1.tex) (../../OMCC/2004/enunciados/2.tex)
+(../../OMCC/2004/enunciados/3.tex) (../../OMCC/2004/enunciados/4.tex)
+(../../OMCC/2004/enunciados/5.tex) (../../OMCC/2004/enunciados/6.tex) [69]
+(../../OMCC/2003/enunciados/1.tex) (../../OMCC/2003/enunciados/2.tex)
+(../../OMCC/2003/enunciados/3.tex) (../../OMCC/2003/enunciados/4.tex)
+(../../OMCC/2003/enunciados/5.tex) (../../OMCC/2003/enunciados/6.tex) [70]
+(../../OMCC/2002/enunciados/1.tex) (../../OMCC/2002/enunciados/2.tex)
+(../../OMCC/2002/enunciados/3.tex) (../../OMCC/2002/enunciados/4.tex)
+(../../OMCC/2002/enunciados/5.tex) (../../OMCC/2002/enunciados/6.tex) [71]
+(../../OMCC/2001/enunciados/1.tex) (../../OMCC/2001/enunciados/2.tex)
+(../../OMCC/2001/enunciados/3.tex) (../../OMCC/2001/enunciados/4.tex)
+(../../OMCC/2001/enunciados/5.tex) (../../OMCC/2001/enunciados/6.tex) [72]
+(../../OMCC/2000/enunciados/1.tex) (../../OMCC/2000/enunciados/2.tex)
+(../../OMCC/2000/enunciados/3.tex) (../../OMCC/2000/enunciados/4.tex)
+(../../OMCC/2000/enunciados/5.tex) (../../OMCC/2000/enunciados/6.tex) [73]
+(../../OMCC/1999/enunciados/1.tex) (../../OMCC/1999/enunciados/2.tex)
+(../../OMCC/1999/enunciados/3.tex) (../../OMCC/1999/enunciados/4.tex)
+(../../OMCC/1999/enunciados/5.tex) (../../OMCC/1999/enunciados/6.tex) [74]
+(./compilacion.aux
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+)
+Package rerunfilecheck Info: File `compilacion.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 28244 strings out of 478994
+ 535953 string characters out of 5858185
+ 971832 words of memory out of 5000000
+ 44144 multiletter control sequences out of 15000+600000
+ 422664 words of font info for 73 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,11n,130p,10623b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on compilacion.pdf (74 pages, 495773 bytes).
+PDF statistics:
+ 611 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+

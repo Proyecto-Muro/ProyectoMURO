@@ -1,0 +1,15 @@
+<p>
+  <span style="float:left;padding:10px;">
+    <img src="/images/PAGMOLOGO.png" alt="PAGMO-Logo" height="150">
+  </span>
+</p>
+<p>
+  La Olimpiada Panamericana Femenil de Matemáticas (PAGMO, por sus siglas en inglés) es una olimpiada internacional femenil de matemáticas. Comenzó en 2021 con varios países de América. Consiste en dos exámenes de 4.5 horas, con 3 problemas cada uno. <a href="https://pagmo.mat.uc.cl/">Sitio oficial</a>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+

@@ -7,4 +7,4 @@
   La Olimpiada Mexicana de Matemáticas (OMM, por sus siglas) es el concurso nacional en México, que se utiliza para seleccionar a los equipos que representan al país en la IMO, OMCC, EGMO, RMM y OIM. Consiste en dos exámenes de 4.5 horas, con 3 problemas cada uno. <a href="https://www.ommenlinea.org/">Sitio oficial</a>
 </p>
 <br>
-<br>
+<hr>

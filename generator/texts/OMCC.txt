@@ -1,1 +1,2 @@
 <p> La Olimpiada de Matemáticas de Centroamérica y el Caribe (OMCC, por sus siglas) es una olimpiada internacional. Se lleva a cabo desde 1999, y participan 4 estudiantes menores de 17 años por país. Consiste en dos exámenes de 4.5 horas, con 3 problemas cada uno. </p>
+<hr>

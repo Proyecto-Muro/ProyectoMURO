@@ -12,14 +12,16 @@ replacedict = {
 	"<ol>": r" \begin{enumerate} ",
 	"</ol>": r" \end{enumerate} ",
 	"<li>": r" \item ",
-	"</li>": ""
+	"</li>": "",
+	"<i>": r"\emph{",
+	"</i>": r"}"
 }
 
 def htmltotex(text):
 	return replace_all(text,replacedict)
 
 #counter=0
-contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM"]
+contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM", "OMMFem", "PAGMO"]
 for i in contestlist:
 	for j in os.listdir("concursos/"+i):
 		if j[0]!=".":

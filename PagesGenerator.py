@@ -18,7 +18,9 @@ contestinfo = [
     ["OIM", 1985, 2021, [1986]],
     # ["ISL", 1998, 2021, []],
     ["APMO", 1989, 2022, []],
-    ["RMM", 2008, 2021, []]
+    ["RMM", 2008, 2021, []],
+    ["PAGMO", 2021, 2021, []]
+    # ["OMMFem", 2021, 2021, []]
 ]
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -74,7 +76,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     PlistDot = os.listdir("concursos/%s/%s/enunciados" % (contestname, year))
     PlistDot.sort()
     Plist = []
-    for i in PlistDot: # To avoid dotfiles like .DS_Storage
+    for i in PlistDot: # To avoid dotfiles like .DS_Store
         if i[0]!= ".":
             Plist.append(i)
 

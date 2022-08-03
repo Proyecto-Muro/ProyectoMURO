@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1659499626 "OMM-compilacion.tex" "OMM-compilacion.pdf" "OMM-compilacion" 1659499629
+["pdflatex"] 1659530602 "OMM-compilacion.tex" "OMM-compilacion.pdf" "OMM-compilacion" 1659530605
   "../../OMM/1987/enunciados/1.tex" 1659497566 134 a0eef20640ddb6de07f5d568d8da4bd6 ""
   "../../OMM/1987/enunciados/2.tex" 1659497566 55 954e210c85164e84dc99b842159bf6be ""
   "../../OMM/1987/enunciados/3.tex" 1659497566 248 a988c6d4c0c62831c2c6ed40092fe2b6 ""
@@ -447,15 +447,15 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1641523418 2724738 5e0bc2a537a4356250108dc1af76e782 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "OMM-compilacion.aux" 1659499629 10505 12966c726ecfa8b3c8086979b0e7c350 "pdflatex"
-  "OMM-compilacion.out" 1659499628 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "OMM-compilacion.pre" 1659499628 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "OMM-compilacion.aux" 1659530605 10505 12966c726ecfa8b3c8086979b0e7c350 "pdflatex"
+  "OMM-compilacion.out" 1659530604 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "OMM-compilacion.pre" 1659530604 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "OMM-compilacion.tex" 1659499588 2169 47db27f8c7b0e8819f4dae4f0b105ee5 ""
-  "OMM-compilacion.toc" 1659499629 2063 3b6de5a6df67f40a796c7d60259c46a3 "pdflatex"
+  "OMM-compilacion.toc" 1659530605 2063 3b6de5a6df67f40a796c7d60259c46a3 "pdflatex"
   (generated)
   "OMM-compilacion.log"
-  "OMM-compilacion.pre"
-  "OMM-compilacion.aux"
-  "OMM-compilacion.toc"
   "OMM-compilacion.out"
+  "OMM-compilacion.aux"
+  "OMM-compilacion.pre"
   "OMM-compilacion.pdf"
+  "OMM-compilacion.toc"

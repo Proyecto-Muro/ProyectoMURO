@@ -1,0 +1,374 @@
+\documentclass[11pt]{scrartcl}
+\usepackage{muro}
+\usepackage[inline]{asymptote}
+
+\usepackage{pgffor} % para voltear lista de años
+
+%%fancyhdr
+\pagestyle{fancy}
+\lfoot{\sffamily\bfseries\hyperlink{tabla}{Índice}}
+\rfoot{\thepage}
+\cfoot{}
+\rhead{\rmfamily{Diego Caballero}}
+%name of the handout, create variable with that string package on the macros page in wikibook
+\chead{{\sffamily\large Compilación de concursos}}
+
+%HyperSETUP
+\hypersetup{
+colorlinks= true,
+urlcolor= cyan,
+linkcolor= jampmLinks,
+citecolor=red,
+pdftitle={Compilación de concursos},
+bookmarks = true,
+pdfpagemode = FullScreen,
+}
+
+
+\begin{document}
+
+\title{Compilación de concursos}
+\author{Diego Caballero}
+\date{2022}
+\maketitle
+
+\hypertarget{tabla}{\tableofcontents}
+\vfill
+\eject
+
+\section{Problemas OMM}
+
+    \subsection*{Problemas Resueltos}
+    % Cuadritos OMM
+    \begin{center} 
+        \begin{tabular}{| c | c | c | c | c | c | c |}
+            \hline
+            OMM & P1 & P2 & P3 & P4 & P5 & P6 \\
+            \hline
+            2021 & & & & & & \\
+            \hline
+            2020 & & & & & & \\
+            \hline
+            2019 & & & & & & \\
+            \hline
+            2018 & & & & & & \\
+            \hline
+            2017 & & & & & & \\
+            \hline
+            2016 & & & & & & \\
+            \hline
+            2015 & & & & & & \\
+            \hline
+            2014 & & & & & & \\
+            \hline
+            2013 & & & & & & \\
+            \hline
+            2012 & & & & & & \\
+            \hline
+            2011 & & & & & & \\
+            \hline
+            2010 & & & & & & \\
+            \hline
+            2009 & & & & & & \\
+            \hline
+            2008 & & & & & & \\
+            \hline
+            2007 & & & & & & \\
+            \hline
+            2006 & & & & & & \\
+            \hline
+            2005 & & & & & & \\
+            \hline
+            2004 & & & & & & \\
+            \hline
+            2003 & & & & & & \\
+            \hline
+            2002 & & & & & & \\
+            \hline
+            2001 & & & & & & \\
+            \hline
+            2000 & & & & & & \\
+            \hline
+            1999 & & & & & & \\
+            \hline
+            1998 & & & & & & \\
+            \hline
+            1997 & & & & & & \\
+            \hline
+            1996 & & & & & & \\
+            \hline
+            1995 & & & & & & \\
+            \hline
+            1994 & & & & & & \\
+            \hline
+            1993 & & & & & & \\
+            \hline
+            1992 & & & & & & \\
+            \hline
+            1991 & & & & & & \\
+            \hline
+            1990 & & & & & & \\
+            \hline
+            1989 & & & & & & \\
+            \hline
+            1988 & & & & & & \\
+            \hline
+            1987 & & & & & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \eject
+
+    \let\mylist\empty
+    \foreach\x in {1989,1990,...,2021} {
+      \ifx\mylist\empty
+        \xdef\mylist{\x}%
+      \else
+        \xdef\mylist{\x,\mylist}%
+      \fi
+    }
+    \foreach \j in \mylist {%
+        \subsection*{OMM \j}
+        \foreach \i in {1,2,...,6} {%
+            \begin{problema}
+                \enunciado{\j}{OMM}{\i}
+            \end{problema}
+        }
+        \eject
+    }
+
+    \subsection*{OMM 1988} 
+    \foreach \i in {1,2,...,8} {%
+        \begin{problema}
+            \enunciado{1988}{OMM}{\i}
+        \end{problema}
+    }
+    \eject
+
+    \subsection*{OMM 1987}
+    \foreach \i in {1,2,...,8} {%
+        \begin{problema}
+            \enunciado{1987}{OMM}{\i}
+        \end{problema}
+    }
+    \eject
+
+\section{Problemas EGMO}
+    
+    \subsection*{Problemas Resueltos}
+
+        % Cuadritos EGMO
+        \begin{center} 
+            \begin{tabular}{| c | c | c | c | c | c | c |}
+                \hline
+                EGMO & P1 & P2 & P3 & P4 & P5 & P6 \\
+                \hline
+                2022 & & & & & & \\
+                \hline
+                2021 & & & & & & \\
+                \hline
+                2020 & & & & & & \\
+                \hline
+                2019 & & & & & & \\
+                \hline
+                2018 & & & & & & \\
+                \hline
+                2017 & & & & & & \\
+                \hline
+                2016 & & & & & & \\
+                \hline
+                2015 & & & & & & \\
+                \hline
+                2014 & & & & & & \\
+                \hline
+                2013 & & & & & & \\
+                \hline
+                2012 & & & & & & \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \eject
+
+    \let\mylist\empty
+    \foreach\x in {2013,2014,...,2022} {
+      \ifx\mylist\empty
+        \xdef\mylist{\x}%
+      \else
+        \xdef\mylist{\x,\mylist}%
+      \fi
+    }
+    \foreach \j in \mylist {%
+        \subsection*{EGMO \j}
+        \foreach \i in {1,2,...,6} {
+            \begin{problema}
+                \enunciado{\j}{EGMO}{\i}
+            \end{problema}
+        }
+        \eject
+    }
+
+    \subsection*{EGMO 2012} 
+    \foreach \i in {1,2,...,8} {%
+        \begin{problema}
+            \enunciado{2012}{EGMO}{\i}
+        \end{problema}
+    }
+    \eject
+
+\section{Problemas OMCC}
+
+    \subsection*{Problemas Resueltos}
+    % Cuadritos  OMCC
+    \begin{center} 
+        \begin{tabular}{| c | c | c | c | c | c | c |}
+            \hline
+            OMCC & P1 & P2 & P3 & P4 & P5 & P6 \\
+            \hline
+            2021 & & & & & & \\
+            \hline
+            2020 & & & & & & \\
+            \hline
+            2019 & & & & & & \\
+            \hline
+            2018 & & & & & & \\
+            \hline
+            2017 & & & & & & \\
+            \hline
+            2016 & & & & & & \\
+            \hline
+            2015 & & & & & & \\
+            \hline
+            2014 & & & & & & \\
+            \hline
+            2013 & & & & & & \\
+            \hline
+            2012 & & & & & & \\
+            \hline
+            2011 & & & & & & \\
+            \hline
+            2010 & & & & & & \\
+            \hline
+            2009 & & & & & & \\
+            \hline
+            2008 & & & & & & \\
+            \hline
+            2007 & & & & & & \\
+            \hline
+            2006 & & & & & & \\
+            \hline
+            2005 & & & & & & \\
+            \hline
+            2004 & & & & & & \\
+            \hline
+            2003 & & & & & & \\
+            \hline
+            2002 & & & & & & \\
+            \hline
+            2001 & & & & & & \\
+            \hline
+            2000 & & & & & & \\
+            \hline
+            1999 & & & & & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \eject
+
+    \let\mylist\empty
+    \foreach\x in {1999,2000,...,2021} {
+      \ifx\mylist\empty
+        \xdef\mylist{\x}%
+      \else
+        \xdef\mylist{\x,\mylist}%
+      \fi
+    }
+    \foreach \j in \mylist {%
+        \subsection*{OMCC \j}
+        \foreach \i in {1,2,...,6} {%
+            \begin{problema}
+                \enunciado{\j}{OMCC}{\i}
+            \end{problema}
+        }
+        \eject
+    }
+
+\section{Problemas IMO}
+
+    \subsection*{Problemas Resueltos}
+    % Cuadritos  IMO
+    \begin{center} 
+        \begin{tabular}{| c | c | c | c | c | c | c |}
+            \hline
+            IMO & P1 & P2 & P3 & P4 & P5 & P6 \\
+            \hline
+            2022 & & & & & & \\
+            \hline
+            2021 & & & & & & \\
+            \hline
+            2020 & & & & & & \\
+            \hline
+            2019 & & & & & & \\
+            \hline
+            2018 & & & & & & \\
+            \hline
+            2017 & & & & & & \\
+            \hline
+            2016 & & & & & & \\
+            \hline
+            2015 & & & & & & \\
+            \hline
+            2014 & & & & & & \\
+            \hline
+            2013 & & & & & & \\
+            \hline
+            2012 & & & & & & \\
+            \hline
+            2011 & & & & & & \\
+            \hline
+            2010 & & & & & & \\
+            \hline
+            2009 & & & & & & \\
+            \hline
+            2008 & & & & & & \\
+            \hline
+            2007 & & & & & & \\
+            \hline
+            2006 & & & & & & \\
+            \hline
+            2005 & & & & & & \\
+            \hline
+            2004 & & & & & & \\
+            \hline
+            2003 & & & & & & \\
+            \hline
+            2002 & & & & & & \\
+            \hline
+            2001 & & & & & & \\
+            \hline
+            2000 & & & & & & \\
+            \hline
+            1999 & & & & & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \eject
+
+    \let\mylist\empty
+    \foreach\x in {2000,2001,...,2022} {
+      \ifx\mylist\empty
+        \xdef\mylist{\x}%
+      \else
+        \xdef\mylist{\x,\mylist}%
+      \fi
+    }
+    \foreach \j in \mylist {%
+        \subsection*{IMO \j}
+        \foreach \i in {1,2,...,6} {%
+            \begin{problema}
+                \enunciado{\j}{IMO}{\i}
+            \end{problema}
+        }
+        \eject
+    }
+
+\end{document}
