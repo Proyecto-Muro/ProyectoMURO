@@ -1,0 +1,25 @@
+Digamos que $n=abc$. $a^2+b^2+c^2$ divide a $26$, entonces debe ser igual a algún divisor de $26$. Los divisores de $26$ son 
+$1,2,13,$ y $26$. Haremos los 4 casos para el valor de $a^2+b^2c^2$.
+
+Caso 1, $a^2+b^2+c^2=1$:
+
+Como $a>0$, la única solución es $n=100$.
+
+Caso 2, $a^2+b^2+c^2=2$:
+
+Si algún dígito es mayor o igual a $2$, la suma de los cuadrados será mayor a $2$. Entonces las 
+soluciones son $n=110$ y $n=101$.
+
+Caso 3, $a^2+b^2+c^2=13$:
+
+Todos los dígitos deben ser menores o iguales a $3$. De lo contrario, la suma de cuadrados será 
+mayor a $13$. Los únicos cuadrados perfectos que suman 13 son $3^2+2^2$, entonces las soluciones son $n=320,302,230,203$. 
+
+Caso 4, $a^2+b^2+c^2=26$:
+
+Todos los dígitos deben ser menores o iguales a $5$. De lo contrario, la suma de cuadrados será 
+mayor a $26$. Los únicos cuadrados perfectos que suman $26$ son $5^2+1^2$ o $4^2+3^2+1^2$. Entonces las soluciones son 
+\[n=510,501,150,105,431,413,341,314,143,134\].
+
+Finalmente, juntando todas las soluciones obtenemos:
+\[(110,101,320,302,230,203,510,501,150,105,431,413,341,314,143,134).\]

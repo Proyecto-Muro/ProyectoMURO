@@ -1,0 +1,79 @@
+\documentclass[11pt]{scrartcl}
+\usepackage{muro}
+\usepackage[inline]{asymptote}
+
+\usepackage{pgffor} % para voltear lista de años
+
+%%fancyhdr
+\pagestyle{fancy}
+\lfoot{\sffamily\bfseries\hyperlink{tabla}{Índice}}
+\rfoot{\thepage}
+\cfoot{}
+\lhead{\color{jampmDate}{\sffamily\today}}
+\rhead{\rmfamily{Proyecto MURO}}
+%name of the handout, create variable with that string package on the macros page in wikibook
+\chead{{\sffamily\large Compilación EGMO}}
+
+%HyperSETUP
+\hypersetup{
+colorlinks= true,
+urlcolor= cyan,
+linkcolor= jampmLinks,
+citecolor=red,
+pdftitle={Compilación EGMO},
+bookmarks = true,
+pdfpagemode = FullScreen,
+}
+
+
+\begin{document}
+
+\title{Compilación EGMO}
+\author{Proyecto MURO}
+\date{\today}
+\maketitle
+\noindent{\bfseries\Large\sffamily Introducción}
+
+\noindent 
+Somos el proyecto MURO, y nuestro objetivo es conformar un Movimiento Unificador de Recursos Olímpicos.
+
+Esta es una compilación con todos los problemas de la European Girls' Mathematical Olympiad, (en un futuro agregaremos pistas y soluciones). Esperamos la disfrutes! y no dudes en compartirnos cualquier comentario o crítica constructiva. 
+
+Nos puedes contactar por aquí: \href{https://proyectomuro.com}{proyectomuro.com}. 
+
+\hypertarget{tabla}{\tableofcontents}
+\vfill
+\eject
+
+\section{Problemas}
+
+\let\mylist\empty
+\foreach\x in {2013,2014,...,2021} {
+  \ifx\mylist\empty
+    \xdef\mylist{\x}%
+  \else
+    \xdef\mylist{\x,\mylist}%
+  \fi
+}
+\foreach \j in \mylist {%
+    \addsubsec{EGMO \j}
+    \foreach \i in {1,2,...,6} {
+        \begin{problema}
+            \enunciado{\j}{EGMO}{\i}
+        \end{problema}
+    }
+    \eject
+}
+
+\addsubsec{EGMO 2012} 
+\foreach \i in {1,2,...,8} {%
+    \begin{problema}
+        \enunciado{2012}{EGMO}{\i}
+    \end{problema}
+}
+\eject
+
+
+
+
+\end{document}

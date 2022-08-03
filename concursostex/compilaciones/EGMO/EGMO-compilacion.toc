@@ -1,0 +1,13 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {I}Problemas}{2}{section.1}%
+\contentsline {subsection}{EGMO 2021}{2}{section*.2}%
+\contentsline {subsection}{EGMO 2020}{3}{section*.3}%
+\contentsline {subsection}{EGMO 2019}{4}{section*.4}%
+\contentsline {subsection}{EGMO 2018}{5}{section*.5}%
+\contentsline {subsection}{EGMO 2017}{6}{section*.6}%
+\contentsline {subsection}{EGMO 2016}{7}{section*.7}%
+\contentsline {subsection}{EGMO 2015}{8}{section*.8}%
+\contentsline {subsection}{EGMO 2014}{9}{section*.9}%
+\contentsline {subsection}{EGMO 2013}{10}{section*.10}%
+\contentsline {subsection}{EGMO 2012}{11}{section*.11}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

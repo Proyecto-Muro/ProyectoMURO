@@ -1,0 +1,108 @@
+\documentclass[11pt]{scrartcl}
+\usepackage{muro}
+\usepackage[inline]{asymptote}
+
+\usepackage{pgffor} % para voltear lista de años
+
+%%fancyhdr
+\pagestyle{fancy}
+\lfoot{\sffamily\bfseries\hyperlink{tabla}{Índice}}
+\rfoot{\thepage}
+\cfoot{}
+\lhead{\color{jampmDate}{\sffamily\today}}
+\rhead{\rmfamily{Proyecto MURO}}
+%name of the handout, create variable with that string package on the macros page in wikibook
+\chead{{\sffamily\large Compilación OMM}}
+
+%HyperSETUP
+\hypersetup{
+colorlinks= true,
+urlcolor= cyan,
+linkcolor= jampmLinks,
+citecolor=red,
+pdftitle={Compilación OMM},
+bookmarks = true,
+pdfpagemode = FullScreen,
+}
+
+
+\begin{document}
+
+\title{Compilación OMM}
+\author{Proyecto MURO}
+\date{\today}
+\maketitle
+\noindent{\bfseries\Large\sffamily Introducción}
+
+\noindent 
+Somos el proyecto MURO, y nuestro objetivo es conformar un Movimiento Unificador de Recursos Olímpicos.
+
+Esta es una compilación con todos los problemas de la Olimpiada Mexicana de Matemáticas, (en un futuro agregaremos pistas y soluciones). Esperamos la disfrutes! y no dudes en compartirnos cualquier comentario o crítica constructiva. 
+
+Nos puedes contactar por aquí: \href{https://proyectomuro.com}{proyectomuro.com}. 
+
+\hypertarget{tabla}{\tableofcontents}
+\vfill
+\eject
+
+\section{Problemas}
+
+\let\mylist\empty
+\foreach\x in {1989,1990,...,2021} {
+  \ifx\mylist\empty
+    \xdef\mylist{\x}%
+  \else
+    \xdef\mylist{\x,\mylist}%
+  \fi
+}
+\foreach \j in \mylist {%
+    \addsubsec{OMM \j}
+    \foreach \i in {1,2,...,6} {%
+        \begin{problema}
+            \enunciado{\j}{OMM}{\i}
+            %\sacapistas{\j}{centro}{\i}
+        \end{problema}
+    }
+    \eject
+}
+
+\addsubsec{OMM 1988} 
+\foreach \i in {1,2,...,8} {%
+    \begin{problema}
+        \enunciado{1988}{OMM}{\i}
+    \end{problema}
+}
+\eject
+
+\addsubsec{OMM 1987}
+\foreach \i in {1,2,...,8} {%
+    \begin{problema}
+        \enunciado{1987}{OMM}{\i}
+    \end{problema}
+}
+\eject
+
+
+%\section{Soluciones}
+%
+%\foreach \j in {1999,2000,...,2021} {%
+
+%\subsection{\j}
+
+%\foreach \i in {1,2,...,6} {%
+    
+%\begin{solution}{\j}{CENTRO}
+    
+%%\sacasolucion{\j}{CENTRO}{\i}
+    
+%\end{solution}
+
+%}
+
+%\eject
+%}
+
+
+
+
+\end{document}

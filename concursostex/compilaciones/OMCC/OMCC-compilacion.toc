@@ -1,0 +1,26 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {I}Problemas}{2}{section.1}%
+\contentsline {subsection}{OMCC 2021}{2}{section*.2}%
+\contentsline {subsection}{OMCC 2020}{3}{section*.3}%
+\contentsline {subsection}{OMCC 2019}{4}{section*.4}%
+\contentsline {subsection}{OMCC 2018}{5}{section*.5}%
+\contentsline {subsection}{OMCC 2017}{6}{section*.6}%
+\contentsline {subsection}{OMCC 2016}{7}{section*.7}%
+\contentsline {subsection}{OMCC 2015}{8}{section*.8}%
+\contentsline {subsection}{OMCC 2014}{9}{section*.9}%
+\contentsline {subsection}{OMCC 2013}{10}{section*.10}%
+\contentsline {subsection}{OMCC 2012}{11}{section*.11}%
+\contentsline {subsection}{OMCC 2011}{12}{section*.12}%
+\contentsline {subsection}{OMCC 2010}{13}{section*.13}%
+\contentsline {subsection}{OMCC 2009}{14}{section*.14}%
+\contentsline {subsection}{OMCC 2008}{15}{section*.15}%
+\contentsline {subsection}{OMCC 2007}{16}{section*.16}%
+\contentsline {subsection}{OMCC 2006}{17}{section*.17}%
+\contentsline {subsection}{OMCC 2005}{18}{section*.18}%
+\contentsline {subsection}{OMCC 2004}{19}{section*.19}%
+\contentsline {subsection}{OMCC 2003}{20}{section*.20}%
+\contentsline {subsection}{OMCC 2002}{21}{section*.21}%
+\contentsline {subsection}{OMCC 2001}{22}{section*.22}%
+\contentsline {subsection}{OMCC 2000}{23}{section*.23}%
+\contentsline {subsection}{OMCC 1999}{24}{section*.24}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
