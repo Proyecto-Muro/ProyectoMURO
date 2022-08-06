@@ -2,4 +2,5 @@
 \contentsline {section}{\numberline {I}Problemas OMM}{2}{section.1}%
 \contentsline {section}{\numberline {II}Problemas EGMO}{38}{section.2}%
 \contentsline {section}{\numberline {III}Problemas OMCC}{51}{section.3}%
+\contentsline {section}{\numberline {IV}Problemas IMO}{75}{section.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

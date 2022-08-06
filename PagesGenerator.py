@@ -80,11 +80,23 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         if i[0]!= ".":
             Plist.append(i)
 
-    for i in Plist:
+    for pnum in range(len(Plist)):
 
         # Creates [Enunciado_i] and adds enties to dict
-        enunciado = "[Enunciado" + str(i[:-4]) + "]" 
-        EnunciadoProblema = open("concursos/%s/%s/enunciados/%s.tex" % (contestname, year, i[:-4]), "r").read()
+        enunciado = "[Enunciado" + str(Plist[pnum][:-4]) + "]" 
+        EnunciadoProblema = open("concursos/%s/%s/enunciados/%s.tex" % (contestname, year, Plist[pnum][:-4]), "r").read()
+
+        # Image check
+        yearmod100 = str(int(year) % 100)
+        if len(yearmod100)==1:
+            yearmod100 = "0" + yearmod100
+        pstring = yearmod100 + contestname + str(pnum + 1)
+        if pstring in os.listdir("concursos/asy-imgs"):
+            # Add image html to problem 
+            # print("Image found:" + pstring)
+            imgstr = "\n"+r'<p>' + r'<img src="/images/asy-imgs/{0}.png" alt="{0}.png" height="100" class="center"></p>'.format(pstring)
+            EnunciadoProblema += imgstr
+            
         dic[enunciado] = EnunciadoProblema
         ProblemsList.append(dic[enunciado]) # Add to ProblemsList for later use
 
@@ -117,21 +129,10 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
     for pnum in range(len(Plist)):
 
-        # Image check
-        img = 0
-        pstring = str(int(year) % 100) + contestname + str(pnum + 1)
-        if pstring in os.listdir("concursos/asy-imgs"):
-            # With this variable, we add images to text
-            img = 1
-
         # Open problem format, replace with problem
         problempageraw = open("generator/formats/problem-page.txt", "r").read()
 
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum])
-        if img == 1:
-            pass
-            #dic["[Enunciadoproblema]"] += # Agregar link imagen
-            # Agregar imagen a /public_html/images/asy/
         dic["[numproblema]"] = str(pnum + 1)
         problempage = replace_all(problempageraw, dic)
 

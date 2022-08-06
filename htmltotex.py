@@ -21,7 +21,7 @@ def htmltotex(text):
 	return replace_all(text,replacedict)
 
 #counter=0
-contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM", "OMMFem", "PAGMO"]
+contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM"]#, "OMMFem", "PAGMO"]
 for i in contestlist:
 	for j in os.listdir("concursos/"+i):
 		if j[0]!=".":
