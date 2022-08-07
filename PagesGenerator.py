@@ -99,7 +99,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             
         dic[enunciado] = EnunciadoProblema
         ProblemsList.append(dic[enunciado]) # Add to ProblemsList for later use
-
+ 
     # -----------------------------------------------------------------------------------------------------------------
     # Year index creation
 
