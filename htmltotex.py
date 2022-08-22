@@ -35,3 +35,4 @@ for i in contestlist:
 					if testempty =="":
 						with open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "w") as file:
 							file.write(ftex)
+							

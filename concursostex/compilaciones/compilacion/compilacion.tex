@@ -15,9 +15,9 @@
 
 %HyperSETUP
 \hypersetup{
-colorlinks= true,
-urlcolor= cyan,
-linkcolor= jampmLinks,
+    colorlinks= true,
+    urlcolor= cyan,
+    linkcolor= jampmLinks,
 citecolor=red,
 pdftitle={Compilación de concursos},
 bookmarks = true,
@@ -368,5 +368,116 @@ pdfpagemode = FullScreen,
         }
         \eject
     }
+
+\section{Problemas OIM}
+
+    \subsection*{Problemas Resueltos}
+    % Cuadritos OIM
+    \begin{center} 
+        \begin{tabular}{| c | c | c | c | c | c | c |}
+            \hline
+            OIM & P1 & P2 & P3 & P4 & P5 & P6 \\
+            \hline
+            2021 & & & & & & \\
+            \hline
+            2020 & & & & & & \\
+            \hline
+            2019 & & & & & & \\
+            \hline
+            2018 & & & & & & \\
+            \hline
+            2017 & & & & & & \\
+            \hline
+            2016 & & & & & & \\
+            \hline
+            2015 & & & & & & \\
+            \hline
+            2014 & & & & & & \\
+            \hline
+            2013 & & & & & & \\
+            \hline
+            2012 & & & & & & \\
+            \hline
+            2011 & & & & & & \\
+            \hline
+            2010 & & & & & & \\
+            \hline
+            2009 & & & & & & \\
+            \hline
+            2008 & & & & & & \\
+            \hline
+            2007 & & & & & & \\
+            \hline
+            2006 & & & & & & \\
+            \hline
+            2005 & & & & & & \\
+            \hline
+            2004 & & & & & & \\
+            \hline
+            2003 & & & & & & \\
+            \hline
+            2002 & & & & & & \\
+            \hline
+            2001 & & & & & & \\
+            \hline
+            2000 & & & & & & \\
+            \hline
+            1999 & & & & & & \\
+            \hline
+            1998 & & & & & & \\
+            \hline
+            1997 & & & & & & \\
+            \hline
+            1996 & & & & & & \\
+            \hline
+            1995 & & & & & & \\
+            \hline
+            1994 & & & & & & \\
+            \hline
+            1993 & & & & & & \\
+            \hline
+            1992 & & & & & & \\
+            \hline
+            1991 & & & & & & \\
+            \hline
+            1990 & & & & & & \\
+            \hline
+            1989 & & & & & & \\
+            \hline
+            1988 & & & & & & \\
+            \hline
+            1987 & & & & & & \\
+            \hline
+            1985 & & & & & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \eject
+
+    \let\mylist\empty
+    \foreach\x in {1989,1990,...,2021} {
+      \ifx\mylist\empty
+        \xdef\mylist{\x}%
+      \else
+        \xdef\mylist{\x,\mylist}%
+      \fi
+    }
+    \foreach \j in \mylist {%
+        \subsection*{OIM \j}
+        \foreach \i in {1,2,...,6} {%
+            \begin{problema}
+                \enunciado{\j}{OIM}{\i}
+            \end{problema}
+        }
+        \eject
+    }
+    \subsection*{OIM 1985} 
+    \foreach \i in {1,2,...,6} {%
+        \begin{problema}
+            \enunciado{1985}{OIM}{\i}
+        \end{problema}
+    }
+    \eject
+
 
 \end{document}

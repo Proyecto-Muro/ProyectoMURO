@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  5 AUG 2022 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  22 AUG 2022 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,6 +1216,12 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 2.
 Package tocbasic Info: Using my definition of `\numberline' on input line 3.
 Package tocbasic Info: Using my definition of `\numberline' on input line 4.
 Package tocbasic Info: Using my definition of `\numberline' on input line 5.
+Package tocbasic Info: Using my definition of `\numberline' on input line 6.
+
+Overfull \hbox (1.21701pt too wide) detected at line 6
+ []\T1/cmss/bx/n/10.95 100
+ []
+
 )
 \tf@toc=\write7
 \openout7 = `compilacion.toc'.
@@ -1223,13 +1229,13 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 5.
  [1
 
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (..
-/../OMM/2021/enunciados/1.tex)
-(../../OMM/2021/enunciados/2.tex) (../../OMM/2021/enunciados/3.tex)
-(../../OMM/2021/enunciados/4.tex) (../../OMM/2021/enunciados/5.tex)
-(../../OMM/2021/enunciados/6.tex) [3] (../../OMM/2020/enunciados/1.tex)
-(../../OMM/2020/enunciados/2.tex) (../../OMM/2020/enunciados/3.tex)
-(../../OMM/2020/enunciados/4.tex) (../../OMM/2020/enunciados/5.tex
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (../../OMM/2021/enunciados/1.tex) (../../OMM/2021/enunciados/2.tex)
+(../../OMM/2021/enunciados/3.tex) (../../OMM/2021/enunciados/4.tex)
+(../../OMM/2021/enunciados/5.tex) (../../OMM/2021/enunciados/6.tex) [3]
+(../../OMM/2020/enunciados/1.tex) (../../OMM/2020/enunciados/2.tex)
+(../../OMM/2020/enunciados/3.tex) (../../OMM/2020/enunciados/4.tex)
+(../../OMM/2020/enunciados/5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 138--2
 
  []
@@ -1555,7 +1561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--2
 \openout4 = `compilacion-1.asy'.
 
  (./compilacion-1.tex
-<compilacion-1_0.pdf, id=634, 43.18132pt x 43.18132pt>
+<compilacion-1_0.pdf, id=636, 43.18132pt x 43.18132pt>
 File: compilacion-1_0.pdf Graphic file (type pdf)
 <use compilacion-1_0.pdf>
 Package pdftex.def Info: compilacion-1_0.pdf  used on input line 9.
@@ -1580,6 +1586,126 @@ Package amsmath Warning: Foreign command \over;
 (../../IMO/2000/enunciados/1.tex) (../../IMO/2000/enunciados/2.tex)
 (../../IMO/2000/enunciados/3.tex) (../../IMO/2000/enunciados/4.tex)
 (../../IMO/2000/enunciados/5.tex) (../../IMO/2000/enunciados/6.tex) [99]
+[100] (../../OIM/2021/enunciados/1.tex) (../../OIM/2021/enunciados/2.tex)
+(../../OIM/2021/enunciados/3.tex) (../../OIM/2021/enunciados/4.tex)
+(../../OIM/2021/enunciados/5.tex) (../../OIM/2021/enunciados/6.tex) [101]
+(../../OIM/2020/enunciados/1.tex) (../../OIM/2020/enunciados/2.tex)
+(../../OIM/2020/enunciados/3.tex) (../../OIM/2020/enunciados/4.tex)
+(../../OIM/2020/enunciados/5.tex) (../../OIM/2020/enunciados/6.tex) [102]
+(../../OIM/2019/enunciados/1.tex) (../../OIM/2019/enunciados/2.tex)
+(../../OIM/2019/enunciados/3.tex) (../../OIM/2019/enunciados/4.tex)
+(../../OIM/2019/enunciados/5.tex) (../../OIM/2019/enunciados/6.tex) [103]
+(../../OIM/2018/enunciados/1.tex) (../../OIM/2018/enunciados/2.tex)
+(../../OIM/2018/enunciados/3.tex) (../../OIM/2018/enunciados/4.tex)
+(../../OIM/2018/enunciados/5.tex)
+Overfull \hbox (1.31783pt too wide) in paragraph at lines 2--473
+\T1/cmr/m/n/10.95 para ca-da $\OML/cmm/m/it/10.95 k \OT1/cmr/m/n/10.95 = 1\OML/
+cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ; []  ; n$\T1/cmr/m/n/
+10.95 . De-ci-mos que la per-mu-ta-ción $\OML/cmm/m/it/10.95 a[]; a[]; []  ; a[
+]$\T1/cmr/m/n/10.95 , es <em>guadiana</em>si
+ []
+
+(../../OIM/2018/enunciados/6.tex) [104] (../../OIM/2017/enunciados/1.tex)
+(../../OIM/2017/enunciados/2.tex) (../../OIM/2017/enunciados/3.tex)
+(../../OIM/2017/enunciados/4.tex) (../../OIM/2017/enunciados/5.tex)
+(../../OIM/2017/enunciados/6.tex) [105] (../../OIM/2016/enunciados/1.tex)
+(../../OIM/2016/enunciados/2.tex) (../../OIM/2016/enunciados/3.tex)
+(../../OIM/2016/enunciados/4.tex) (../../OIM/2016/enunciados/5.tex)
+(../../OIM/2016/enunciados/6.tex) [106] (../../OIM/2015/enunciados/1.tex)
+(../../OIM/2015/enunciados/2.tex) (../../OIM/2015/enunciados/3.tex)
+(../../OIM/2015/enunciados/4.tex) (../../OIM/2015/enunciados/5.tex)
+(../../OIM/2015/enunciados/6.tex) [107] (../../OIM/2014/enunciados/1.tex)
+(../../OIM/2014/enunciados/2.tex) (../../OIM/2014/enunciados/3.tex)
+(../../OIM/2014/enunciados/4.tex) (../../OIM/2014/enunciados/5.tex)
+(../../OIM/2014/enunciados/6.tex) [108] (../../OIM/2013/enunciados/1.tex)
+(../../OIM/2013/enunciados/2.tex) (../../OIM/2013/enunciados/3.tex)
+(../../OIM/2013/enunciados/4.tex) (../../OIM/2013/enunciados/5.tex)
+(../../OIM/2013/enunciados/6.tex) [109] (../../OIM/2012/enunciados/1.tex)
+(../../OIM/2012/enunciados/2.tex) (../../OIM/2012/enunciados/3.tex)
+(../../OIM/2012/enunciados/4.tex) (../../OIM/2012/enunciados/5.tex)
+(../../OIM/2012/enunciados/6.tex) [110] (../../OIM/2011/enunciados/1.tex)
+(../../OIM/2011/enunciados/2.tex) (../../OIM/2011/enunciados/3.tex)
+(../../OIM/2011/enunciados/4.tex) (../../OIM/2011/enunciados/5.tex)
+(../../OIM/2011/enunciados/6.tex) [111] (../../OIM/2010/enunciados/1.tex)
+(../../OIM/2010/enunciados/2.tex) (../../OIM/2010/enunciados/3.tex)
+(../../OIM/2010/enunciados/4.tex) (../../OIM/2010/enunciados/5.tex)
+(../../OIM/2010/enunciados/6.tex) [112] (../../OIM/2009/enunciados/1.tex)
+(../../OIM/2009/enunciados/2.tex) (../../OIM/2009/enunciados/3.tex)
+(../../OIM/2009/enunciados/4.tex) (../../OIM/2009/enunciados/5.tex)
+(../../OIM/2009/enunciados/6.tex) [113] (../../OIM/2008/enunciados/1.tex)
+(../../OIM/2008/enunciados/2.tex) (../../OIM/2008/enunciados/3.tex)
+(../../OIM/2008/enunciados/4.tex) (../../OIM/2008/enunciados/5.tex)
+(../../OIM/2008/enunciados/6.tex) [114] (../../OIM/2007/enunciados/1.tex)
+(../../OIM/2007/enunciados/2.tex) (../../OIM/2007/enunciados/3.tex)
+(../../OIM/2007/enunciados/4.tex) (../../OIM/2007/enunciados/5.tex)
+(../../OIM/2007/enunciados/6.tex) [115] [116] (../../OIM/2006/enunciados/1.tex)
+(../../OIM/2006/enunciados/2.tex) (../../OIM/2006/enunciados/3.tex)
+(../../OIM/2006/enunciados/4.tex) (../../OIM/2006/enunciados/5.tex)
+(../../OIM/2006/enunciados/6.tex) [117] (../../OIM/2005/enunciados/1.tex)
+(../../OIM/2005/enunciados/2.tex) (../../OIM/2005/enunciados/3.tex)
+(../../OIM/2005/enunciados/4.tex) (../../OIM/2005/enunciados/5.tex)
+(../../OIM/2005/enunciados/6.tex) [118] (../../OIM/2004/enunciados/1.tex)
+(../../OIM/2004/enunciados/2.tex) (../../OIM/2004/enunciados/3.tex)
+(../../OIM/2004/enunciados/4.tex) (../../OIM/2004/enunciados/5.tex)
+(../../OIM/2004/enunciados/6.tex) [119] (../../OIM/2003/enunciados/1.tex)
+(../../OIM/2003/enunciados/2.tex) (../../OIM/2003/enunciados/3.tex)
+(../../OIM/2003/enunciados/4.tex) (../../OIM/2003/enunciados/5.tex)
+(../../OIM/2003/enunciados/6.tex) [120] (../../OIM/2002/enunciados/1.tex)
+(../../OIM/2002/enunciados/2.tex) (../../OIM/2002/enunciados/3.tex)
+(../../OIM/2002/enunciados/4.tex) (../../OIM/2002/enunciados/5.tex)
+(../../OIM/2002/enunciados/6.tex) [121] (../../OIM/2001/enunciados/1.tex)
+(../../OIM/2001/enunciados/2.tex) (../../OIM/2001/enunciados/3.tex)
+(../../OIM/2001/enunciados/4.tex) (../../OIM/2001/enunciados/5.tex)
+(../../OIM/2001/enunciados/6.tex) [122] (../../OIM/2000/enunciados/1.tex)
+(../../OIM/2000/enunciados/2.tex) (../../OIM/2000/enunciados/3.tex)
+(../../OIM/2000/enunciados/4.tex) (../../OIM/2000/enunciados/5.tex)
+(../../OIM/2000/enunciados/6.tex) [123] (../../OIM/1999/enunciados/1.tex)
+(../../OIM/1999/enunciados/2.tex) (../../OIM/1999/enunciados/3.tex)
+(../../OIM/1999/enunciados/4.tex) (../../OIM/1999/enunciados/5.tex)
+(../../OIM/1999/enunciados/6.tex) [124] (../../OIM/1998/enunciados/1.tex)
+(../../OIM/1998/enunciados/2.tex) (../../OIM/1998/enunciados/3.tex)
+(../../OIM/1998/enunciados/4.tex) (../../OIM/1998/enunciados/5.tex)
+Overfull \hbox (24.11328pt too wide) in paragraph at lines 473--473
+\T1/cmss/bx/n/12 Problema 5.  \T1/cmr/m/n/10.95 Ha-llar el má-xi-mo va-lor po-s
+i-ble de $\OML/cmm/m/it/10.95 n$ \T1/cmr/m/n/10.95 pa-ra que exis-tan pun-tos d
+is-tin-tos $\OML/cmm/m/it/10.95 P[]; P[]; P[]; []  ; P[]$
+ []
+
+(../../OIM/1998/enunciados/6.tex) [125] (../../OIM/1997/enunciados/1.tex)
+(../../OIM/1997/enunciados/2.tex) (../../OIM/1997/enunciados/3.tex)
+(../../OIM/1997/enunciados/4.tex) (../../OIM/1997/enunciados/5.tex)
+(../../OIM/1997/enunciados/6.tex) [126] [127] (../../OIM/1996/enunciados/1.tex)
+(../../OIM/1996/enunciados/2.tex) (../../OIM/1996/enunciados/3.tex)
+(../../OIM/1996/enunciados/4.tex) (../../OIM/1996/enunciados/5.tex)
+(../../OIM/1996/enunciados/6.tex) [128] (../../OIM/1995/enunciados/1.tex)
+(../../OIM/1995/enunciados/2.tex) (../../OIM/1995/enunciados/3.tex)
+(../../OIM/1995/enunciados/4.tex) (../../OIM/1995/enunciados/5.tex)
+(../../OIM/1995/enunciados/6.tex) [129] (../../OIM/1994/enunciados/1.tex)
+(../../OIM/1994/enunciados/2.tex) (../../OIM/1994/enunciados/3.tex)
+(../../OIM/1994/enunciados/4.tex) (../../OIM/1994/enunciados/5.tex)
+(../../OIM/1994/enunciados/6.tex) [130] (../../OIM/1993/enunciados/1.tex)
+(../../OIM/1993/enunciados/2.tex) (../../OIM/1993/enunciados/3.tex)
+(../../OIM/1993/enunciados/4.tex) (../../OIM/1993/enunciados/5.tex)
+(../../OIM/1993/enunciados/6.tex) [131] (../../OIM/1992/enunciados/1.tex)
+(../../OIM/1992/enunciados/2.tex) (../../OIM/1992/enunciados/3.tex)
+(../../OIM/1992/enunciados/4.tex) (../../OIM/1992/enunciados/5.tex)
+(../../OIM/1992/enunciados/6.tex) [132] (../../OIM/1991/enunciados/1.tex)
+(../../OIM/1991/enunciados/2.tex) (../../OIM/1991/enunciados/3.tex)
+(../../OIM/1991/enunciados/4.tex) (../../OIM/1991/enunciados/5.tex)
+(../../OIM/1991/enunciados/6.tex
+Underfull \hbox (badness 10000) in paragraph at lines 473--2
+
+ []
+
+) [133] (../../OIM/1990/enunciados/1.tex) (../../OIM/1990/enunciados/2.tex)
+(../../OIM/1990/enunciados/3.tex) (../../OIM/1990/enunciados/4.tex)
+(../../OIM/1990/enunciados/5.tex) (../../OIM/1990/enunciados/6.tex) [134]
+(../../OIM/1989/enunciados/1.tex) (../../OIM/1989/enunciados/2.tex)
+(../../OIM/1989/enunciados/3.tex) (../../OIM/1989/enunciados/4.tex)
+(../../OIM/1989/enunciados/5.tex) (../../OIM/1989/enunciados/6.tex) [135]
+(../../OIM/1985/enunciados/1.tex) (../../OIM/1985/enunciados/2.tex)
+(../../OIM/1985/enunciados/3.tex) (../../OIM/1985/enunciados/4.tex)
+(../../OIM/1985/enunciados/5.tex) (../../OIM/1985/enunciados/6.tex) [136]
 (./compilacion.aux
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
@@ -1588,10 +1714,10 @@ Package rerunfilecheck Info: File `compilacion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28764 strings out of 478994
- 550239 string characters out of 5858185
+ 29554 strings out of 478994
+ 571527 string characters out of 5858185
  973055 words of memory out of 5000000
- 44294 multiletter control sequences out of 15000+600000
+ 44528 multiletter control sequences out of 15000+600000
  422664 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,12n,130p,10623b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1618,10 +1744,10 @@ e/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on compilacion.pdf (99 pages, 587845 bytes).
+Output written on compilacion.pdf (136 pages, 717313 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 672 compressed objects within 7 object streams
- 217 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1100 PDF objects out of 1200 (max. 8388607)
+ 930 compressed objects within 10 object streams
+ 331 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
