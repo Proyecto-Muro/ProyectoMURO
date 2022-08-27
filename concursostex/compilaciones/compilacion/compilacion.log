@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  22 AUG 2022 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  27 AUG 2022 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,11 +1217,6 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 3.
 Package tocbasic Info: Using my definition of `\numberline' on input line 4.
 Package tocbasic Info: Using my definition of `\numberline' on input line 5.
 Package tocbasic Info: Using my definition of `\numberline' on input line 6.
-
-Overfull \hbox (1.21701pt too wide) detected at line 6
- []\T1/cmss/bx/n/10.95 100
- []
-
 )
 \tf@toc=\write7
 \openout7 = `compilacion.toc'.
@@ -1229,13 +1224,13 @@ Overfull \hbox (1.21701pt too wide) detected at line 6
  [1
 
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (../../OMM/2021/enunciados/1.tex) (../../OMM/2021/enunciados/2.tex)
-(../../OMM/2021/enunciados/3.tex) (../../OMM/2021/enunciados/4.tex)
-(../../OMM/2021/enunciados/5.tex) (../../OMM/2021/enunciados/6.tex) [3]
-(../../OMM/2020/enunciados/1.tex) (../../OMM/2020/enunciados/2.tex)
-(../../OMM/2020/enunciados/3.tex) (../../OMM/2020/enunciados/4.tex)
-(../../OMM/2020/enunciados/5.tex
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (..
+/../OMM/2021/enunciados/1.tex)
+(../../OMM/2021/enunciados/2.tex) (../../OMM/2021/enunciados/3.tex)
+(../../OMM/2021/enunciados/4.tex) (../../OMM/2021/enunciados/5.tex)
+(../../OMM/2021/enunciados/6.tex) [3] (../../OMM/2020/enunciados/1.tex)
+(../../OMM/2020/enunciados/2.tex) (../../OMM/2020/enunciados/3.tex)
+(../../OMM/2020/enunciados/4.tex) (../../OMM/2020/enunciados/5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 138--2
 
  []
@@ -1355,52 +1350,18 @@ Los in-ra-dios de $\OML/cmm/m/it/10.95 ABC; ABH; CBH$
 (../../OMM/1987/enunciados/3.tex) (../../OMM/1987/enunciados/4.tex)
 (../../OMM/1987/enunciados/5.tex) (../../OMM/1987/enunciados/6.tex)
 (../../OMM/1987/enunciados/7.tex) (../../OMM/1987/enunciados/8.tex) [37]
-[38] (../../EGMO/2022/enunciados/1.tex) (../../EGMO/2022/enunciados/2.tex)
-(../../EGMO/2022/enunciados/3.tex) (../../EGMO/2022/enunciados/4.tex)
-(../../EGMO/2022/enunciados/5.tex) (../../EGMO/2022/enunciados/6.tex) [39]
-(../../EGMO/2021/enunciados/1.tex) (../../EGMO/2021/enunciados/2.tex)
-(../../EGMO/2021/enunciados/3.tex) (../../EGMO/2021/enunciados/4.tex)
-(../../EGMO/2021/enunciados/5.tex) (../../EGMO/2021/enunciados/6.tex) [40]
-(../../EGMO/2020/enunciados/1.tex) (../../EGMO/2020/enunciados/2.tex)
-(../../EGMO/2020/enunciados/3.tex) (../../EGMO/2020/enunciados/4.tex)
-(../../EGMO/2020/enunciados/5.tex) (../../EGMO/2020/enunciados/6.tex) [41]
-(../../EGMO/2019/enunciados/1.tex) (../../EGMO/2019/enunciados/2.tex)
-(../../EGMO/2019/enunciados/3.tex) (../../EGMO/2019/enunciados/4.tex)
-(../../EGMO/2019/enunciados/5.tex) (../../EGMO/2019/enunciados/6.tex) [42]
-(../../EGMO/2018/enunciados/1.tex) (../../EGMO/2018/enunciados/2.tex)
-(../../EGMO/2018/enunciados/3.tex) (../../EGMO/2018/enunciados/4.tex)
-(../../EGMO/2018/enunciados/5.tex) (../../EGMO/2018/enunciados/6.tex) [43]
-(../../EGMO/2017/enunciados/1.tex) (../../EGMO/2017/enunciados/2.tex)
-(../../EGMO/2017/enunciados/3.tex) (../../EGMO/2017/enunciados/4.tex)
-(../../EGMO/2017/enunciados/5.tex) (../../EGMO/2017/enunciados/6.tex) [44]
-(../../EGMO/2016/enunciados/1.tex) (../../EGMO/2016/enunciados/2.tex)
-(../../EGMO/2016/enunciados/3.tex) (../../EGMO/2016/enunciados/4.tex)
-(../../EGMO/2016/enunciados/5.tex) (../../EGMO/2016/enunciados/6.tex) [45]
-(../../EGMO/2015/enunciados/1.tex) (../../EGMO/2015/enunciados/2.tex)
-(../../EGMO/2015/enunciados/3.tex) (../../EGMO/2015/enunciados/4.tex)
-(../../EGMO/2015/enunciados/5.tex) (../../EGMO/2015/enunciados/6.tex) [46]
-(../../EGMO/2014/enunciados/1.tex) (../../EGMO/2014/enunciados/2.tex)
-(../../EGMO/2014/enunciados/3.tex) (../../EGMO/2014/enunciados/4.tex)
-(../../EGMO/2014/enunciados/5.tex) (../../EGMO/2014/enunciados/6.tex) [47]
-(../../EGMO/2013/enunciados/1.tex) (../../EGMO/2013/enunciados/2.tex)
-(../../EGMO/2013/enunciados/3.tex) (../../EGMO/2013/enunciados/4.tex)
-(../../EGMO/2013/enunciados/5.tex) (../../EGMO/2013/enunciados/6.tex) [48]
-(../../EGMO/2012/enunciados/1.tex) (../../EGMO/2012/enunciados/2.tex)
-(../../EGMO/2012/enunciados/3.tex) (../../EGMO/2012/enunciados/4.tex)
-(../../EGMO/2012/enunciados/5.tex) (../../EGMO/2012/enunciados/6.tex)
-(../../EGMO/2012/enunciados/7.tex) (../../EGMO/2012/enunciados/8.tex) [49]
-[50] [51] (../../OMCC/2021/enunciados/1.tex) (../../OMCC/2021/enunciados/2.tex)
+[38] (../../OMCC/2021/enunciados/1.tex) (../../OMCC/2021/enunciados/2.tex)
 (../../OMCC/2021/enunciados/3.tex) (../../OMCC/2021/enunciados/4.tex)
-(../../OMCC/2021/enunciados/5.tex) (../../OMCC/2021/enunciados/6.tex) [52]
+(../../OMCC/2021/enunciados/5.tex) (../../OMCC/2021/enunciados/6.tex) [39]
 (../../OMCC/2020/enunciados/1.tex) (../../OMCC/2020/enunciados/2.tex)
 (../../OMCC/2020/enunciados/3.tex) (../../OMCC/2020/enunciados/4.tex)
-(../../OMCC/2020/enunciados/5.tex) (../../OMCC/2020/enunciados/6.tex) [53]
+(../../OMCC/2020/enunciados/5.tex) (../../OMCC/2020/enunciados/6.tex) [40]
 (../../OMCC/2019/enunciados/1.tex) (../../OMCC/2019/enunciados/2.tex)
 (../../OMCC/2019/enunciados/3.tex) (../../OMCC/2019/enunciados/4.tex)
-(../../OMCC/2019/enunciados/5.tex) (../../OMCC/2019/enunciados/6.tex) [54]
+(../../OMCC/2019/enunciados/5.tex) (../../OMCC/2019/enunciados/6.tex) [41]
 (../../OMCC/2018/enunciados/1.tex) (../../OMCC/2018/enunciados/2.tex)
 (../../OMCC/2018/enunciados/3.tex) (../../OMCC/2018/enunciados/4.tex)
-(../../OMCC/2018/enunciados/5.tex) (../../OMCC/2018/enunciados/6.tex) [55]
+(../../OMCC/2018/enunciados/5.tex) (../../OMCC/2018/enunciados/6.tex) [42]
 (../../OMCC/2017/enunciados/1.tex) (../../OMCC/2017/enunciados/2.tex)
 (../../OMCC/2017/enunciados/3.tex) (../../OMCC/2017/enunciados/4.tex)
 (../../OMCC/2017/enunciados/5.tex
@@ -1411,90 +1372,124 @@ Overfull \hbox (23.58253pt too wide) in paragraph at lines 3--5
 ; n[]$\T1/cmr/m/n/10.95 ,
  []
 
-) (../../OMCC/2017/enunciados/6.tex) [56] (../../OMCC/2016/enunciados/1.tex)
+) (../../OMCC/2017/enunciados/6.tex) [43] (../../OMCC/2016/enunciados/1.tex)
 (../../OMCC/2016/enunciados/2.tex) (../../OMCC/2016/enunciados/3.tex)
 (../../OMCC/2016/enunciados/4.tex) (../../OMCC/2016/enunciados/5.tex)
-(../../OMCC/2016/enunciados/6.tex) [57] (../../OMCC/2015/enunciados/1.tex)
+(../../OMCC/2016/enunciados/6.tex) [44] (../../OMCC/2015/enunciados/1.tex)
 (../../OMCC/2015/enunciados/2.tex) (../../OMCC/2015/enunciados/3.tex)
 (../../OMCC/2015/enunciados/4.tex) (../../OMCC/2015/enunciados/5.tex)
-(../../OMCC/2015/enunciados/6.tex) [58] (../../OMCC/2014/enunciados/1.tex)
+(../../OMCC/2015/enunciados/6.tex) [45] (../../OMCC/2014/enunciados/1.tex)
 (../../OMCC/2014/enunciados/2.tex) (../../OMCC/2014/enunciados/3.tex)
 (../../OMCC/2014/enunciados/4.tex) (../../OMCC/2014/enunciados/5.tex)
-(../../OMCC/2014/enunciados/6.tex) [59] (../../OMCC/2013/enunciados/1.tex)
+(../../OMCC/2014/enunciados/6.tex) [46] (../../OMCC/2013/enunciados/1.tex)
 (../../OMCC/2013/enunciados/2.tex) (../../OMCC/2013/enunciados/3.tex)
 (../../OMCC/2013/enunciados/4.tex) (../../OMCC/2013/enunciados/5.tex)
-(../../OMCC/2013/enunciados/6.tex) [60] (../../OMCC/2012/enunciados/1.tex)
+(../../OMCC/2013/enunciados/6.tex) [47] (../../OMCC/2012/enunciados/1.tex)
 (../../OMCC/2012/enunciados/2.tex) (../../OMCC/2012/enunciados/3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 293--3
+Underfull \hbox (badness 10000) in paragraph at lines 231--3
 
  []
 
 ) (../../OMCC/2012/enunciados/4.tex) (../../OMCC/2012/enunciados/5.tex)
 (../../OMCC/2012/enunciados/6.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
 
  []
 
-[61] (../../OMCC/2011/enunciados/1.tex) (../../OMCC/2011/enunciados/2.tex)
+[48] (../../OMCC/2011/enunciados/1.tex) (../../OMCC/2011/enunciados/2.tex)
 (../../OMCC/2011/enunciados/3.tex) (../../OMCC/2011/enunciados/4.tex)
-(../../OMCC/2011/enunciados/5.tex) (../../OMCC/2011/enunciados/6.tex) [62]
+(../../OMCC/2011/enunciados/5.tex) (../../OMCC/2011/enunciados/6.tex) [49]
 (../../OMCC/2010/enunciados/1.tex) (../../OMCC/2010/enunciados/2.tex)
 (../../OMCC/2010/enunciados/3.tex) (../../OMCC/2010/enunciados/4.tex)
-(../../OMCC/2010/enunciados/5.tex) (../../OMCC/2010/enunciados/6.tex) [63]
+(../../OMCC/2010/enunciados/5.tex) (../../OMCC/2010/enunciados/6.tex) [50]
 (../../OMCC/2009/enunciados/1.tex) (../../OMCC/2009/enunciados/2.tex)
 (../../OMCC/2009/enunciados/3.tex) (../../OMCC/2009/enunciados/4.tex)
-(../../OMCC/2009/enunciados/5.tex) (../../OMCC/2009/enunciados/6.tex) [64]
+(../../OMCC/2009/enunciados/5.tex) (../../OMCC/2009/enunciados/6.tex) [51]
 (../../OMCC/2008/enunciados/1.tex) (../../OMCC/2008/enunciados/2.tex)
 (../../OMCC/2008/enunciados/3.tex) (../../OMCC/2008/enunciados/4.tex)
-(../../OMCC/2008/enunciados/5.tex) (../../OMCC/2008/enunciados/6.tex) [65]
+(../../OMCC/2008/enunciados/5.tex) (../../OMCC/2008/enunciados/6.tex) [52]
 (../../OMCC/2007/enunciados/1.tex) (../../OMCC/2007/enunciados/2.tex)
 (../../OMCC/2007/enunciados/3.tex) (../../OMCC/2007/enunciados/4.tex)
-(../../OMCC/2007/enunciados/5.tex) (../../OMCC/2007/enunciados/6.tex) [66]
+(../../OMCC/2007/enunciados/5.tex) (../../OMCC/2007/enunciados/6.tex) [53]
 (../../OMCC/2006/enunciados/1.tex) (../../OMCC/2006/enunciados/2.tex)
 (../../OMCC/2006/enunciados/3.tex) (../../OMCC/2006/enunciados/4.tex)
-(../../OMCC/2006/enunciados/5.tex) (../../OMCC/2006/enunciados/6.tex) [67]
+(../../OMCC/2006/enunciados/5.tex) (../../OMCC/2006/enunciados/6.tex) [54]
 (../../OMCC/2005/enunciados/1.tex) (../../OMCC/2005/enunciados/2.tex)
 (../../OMCC/2005/enunciados/3.tex) (../../OMCC/2005/enunciados/4.tex)
-(../../OMCC/2005/enunciados/5.tex) (../../OMCC/2005/enunciados/6.tex) [68]
+(../../OMCC/2005/enunciados/5.tex) (../../OMCC/2005/enunciados/6.tex) [55]
 (../../OMCC/2004/enunciados/1.tex) (../../OMCC/2004/enunciados/2.tex)
 (../../OMCC/2004/enunciados/3.tex) (../../OMCC/2004/enunciados/4.tex)
-(../../OMCC/2004/enunciados/5.tex) (../../OMCC/2004/enunciados/6.tex) [69]
+(../../OMCC/2004/enunciados/5.tex) (../../OMCC/2004/enunciados/6.tex) [56]
 (../../OMCC/2003/enunciados/1.tex) (../../OMCC/2003/enunciados/2.tex)
 (../../OMCC/2003/enunciados/3.tex) (../../OMCC/2003/enunciados/4.tex)
-(../../OMCC/2003/enunciados/5.tex) (../../OMCC/2003/enunciados/6.tex) [70]
+(../../OMCC/2003/enunciados/5.tex) (../../OMCC/2003/enunciados/6.tex) [57]
 (../../OMCC/2002/enunciados/1.tex) (../../OMCC/2002/enunciados/2.tex)
 (../../OMCC/2002/enunciados/3.tex) (../../OMCC/2002/enunciados/4.tex)
-(../../OMCC/2002/enunciados/5.tex) (../../OMCC/2002/enunciados/6.tex) [71]
+(../../OMCC/2002/enunciados/5.tex) (../../OMCC/2002/enunciados/6.tex) [58]
 (../../OMCC/2001/enunciados/1.tex) (../../OMCC/2001/enunciados/2.tex)
 (../../OMCC/2001/enunciados/3.tex) (../../OMCC/2001/enunciados/4.tex)
-(../../OMCC/2001/enunciados/5.tex) (../../OMCC/2001/enunciados/6.tex) [72]
+(../../OMCC/2001/enunciados/5.tex) (../../OMCC/2001/enunciados/6.tex) [59]
 (../../OMCC/2000/enunciados/1.tex) (../../OMCC/2000/enunciados/2.tex)
 (../../OMCC/2000/enunciados/3.tex) (../../OMCC/2000/enunciados/4.tex)
-(../../OMCC/2000/enunciados/5.tex) (../../OMCC/2000/enunciados/6.tex) [73]
+(../../OMCC/2000/enunciados/5.tex) (../../OMCC/2000/enunciados/6.tex) [60]
 (../../OMCC/1999/enunciados/1.tex) (../../OMCC/1999/enunciados/2.tex)
 (../../OMCC/1999/enunciados/3.tex) (../../OMCC/1999/enunciados/4.tex)
-(../../OMCC/1999/enunciados/5.tex) (../../OMCC/1999/enunciados/6.tex) [74]
-[75] (../../IMO/2022/enunciados/1.tex) (../../IMO/2022/enunciados/2.tex)
+(../../OMCC/1999/enunciados/5.tex) (../../OMCC/1999/enunciados/6.tex) [61]
+[62] (../../EGMO/2022/enunciados/1.tex) (../../EGMO/2022/enunciados/2.tex)
+(../../EGMO/2022/enunciados/3.tex) (../../EGMO/2022/enunciados/4.tex)
+(../../EGMO/2022/enunciados/5.tex) (../../EGMO/2022/enunciados/6.tex) [63]
+(../../EGMO/2021/enunciados/1.tex) (../../EGMO/2021/enunciados/2.tex)
+(../../EGMO/2021/enunciados/3.tex) (../../EGMO/2021/enunciados/4.tex)
+(../../EGMO/2021/enunciados/5.tex) (../../EGMO/2021/enunciados/6.tex) [64]
+(../../EGMO/2020/enunciados/1.tex) (../../EGMO/2020/enunciados/2.tex)
+(../../EGMO/2020/enunciados/3.tex) (../../EGMO/2020/enunciados/4.tex)
+(../../EGMO/2020/enunciados/5.tex) (../../EGMO/2020/enunciados/6.tex) [65]
+(../../EGMO/2019/enunciados/1.tex) (../../EGMO/2019/enunciados/2.tex)
+(../../EGMO/2019/enunciados/3.tex) (../../EGMO/2019/enunciados/4.tex)
+(../../EGMO/2019/enunciados/5.tex) (../../EGMO/2019/enunciados/6.tex) [66]
+(../../EGMO/2018/enunciados/1.tex) (../../EGMO/2018/enunciados/2.tex)
+(../../EGMO/2018/enunciados/3.tex) (../../EGMO/2018/enunciados/4.tex)
+(../../EGMO/2018/enunciados/5.tex) (../../EGMO/2018/enunciados/6.tex) [67]
+(../../EGMO/2017/enunciados/1.tex) (../../EGMO/2017/enunciados/2.tex)
+(../../EGMO/2017/enunciados/3.tex) (../../EGMO/2017/enunciados/4.tex)
+(../../EGMO/2017/enunciados/5.tex) (../../EGMO/2017/enunciados/6.tex) [68]
+(../../EGMO/2016/enunciados/1.tex) (../../EGMO/2016/enunciados/2.tex)
+(../../EGMO/2016/enunciados/3.tex) (../../EGMO/2016/enunciados/4.tex)
+(../../EGMO/2016/enunciados/5.tex) (../../EGMO/2016/enunciados/6.tex) [69]
+(../../EGMO/2015/enunciados/1.tex) (../../EGMO/2015/enunciados/2.tex)
+(../../EGMO/2015/enunciados/3.tex) (../../EGMO/2015/enunciados/4.tex)
+(../../EGMO/2015/enunciados/5.tex) (../../EGMO/2015/enunciados/6.tex) [70]
+(../../EGMO/2014/enunciados/1.tex) (../../EGMO/2014/enunciados/2.tex)
+(../../EGMO/2014/enunciados/3.tex) (../../EGMO/2014/enunciados/4.tex)
+(../../EGMO/2014/enunciados/5.tex) (../../EGMO/2014/enunciados/6.tex) [71]
+(../../EGMO/2013/enunciados/1.tex) (../../EGMO/2013/enunciados/2.tex)
+(../../EGMO/2013/enunciados/3.tex) (../../EGMO/2013/enunciados/4.tex)
+(../../EGMO/2013/enunciados/5.tex) (../../EGMO/2013/enunciados/6.tex) [72]
+(../../EGMO/2012/enunciados/1.tex) (../../EGMO/2012/enunciados/2.tex)
+(../../EGMO/2012/enunciados/3.tex) (../../EGMO/2012/enunciados/4.tex)
+(../../EGMO/2012/enunciados/5.tex) (../../EGMO/2012/enunciados/6.tex)
+(../../EGMO/2012/enunciados/7.tex) (../../EGMO/2012/enunciados/8.tex) [73]
+[74] (../../IMO/2022/enunciados/1.tex) (../../IMO/2022/enunciados/2.tex)
 (../../IMO/2022/enunciados/3.tex) (../../IMO/2022/enunciados/4.tex)
-(../../IMO/2022/enunciados/5.tex) (../../IMO/2022/enunciados/6.tex) [76]
+(../../IMO/2022/enunciados/5.tex) (../../IMO/2022/enunciados/6.tex) [75]
 (../../IMO/2021/enunciados/1.tex) (../../IMO/2021/enunciados/2.tex)
 (../../IMO/2021/enunciados/3.tex) (../../IMO/2021/enunciados/4.tex)
-(../../IMO/2021/enunciados/5.tex) (../../IMO/2021/enunciados/6.tex) [77]
+(../../IMO/2021/enunciados/5.tex) (../../IMO/2021/enunciados/6.tex) [76]
 (../../IMO/2020/enunciados/1.tex) (../../IMO/2020/enunciados/2.tex)
 (../../IMO/2020/enunciados/3.tex) (../../IMO/2020/enunciados/4.tex)
-(../../IMO/2020/enunciados/5.tex) (../../IMO/2020/enunciados/6.tex) [78]
+(../../IMO/2020/enunciados/5.tex) (../../IMO/2020/enunciados/6.tex) [77]
 (../../IMO/2019/enunciados/1.tex) (../../IMO/2019/enunciados/2.tex)
 (../../IMO/2019/enunciados/3.tex) (../../IMO/2019/enunciados/4.tex)
-(../../IMO/2019/enunciados/5.tex) (../../IMO/2019/enunciados/6.tex) [79]
+(../../IMO/2019/enunciados/5.tex) (../../IMO/2019/enunciados/6.tex) [78]
 (../../IMO/2018/enunciados/1.tex) (../../IMO/2018/enunciados/2.tex)
 (../../IMO/2018/enunciados/3.tex) (../../IMO/2018/enunciados/4.tex)
-(../../IMO/2018/enunciados/5.tex) (../../IMO/2018/enunciados/6.tex) [80]
+(../../IMO/2018/enunciados/5.tex) (../../IMO/2018/enunciados/6.tex) [79]
 (../../IMO/2017/enunciados/1.tex) (../../IMO/2017/enunciados/2.tex)
 (../../IMO/2017/enunciados/3.tex) (../../IMO/2017/enunciados/4.tex)
-(../../IMO/2017/enunciados/5.tex) (../../IMO/2017/enunciados/6.tex [81])
-[82] (../../IMO/2016/enunciados/1.tex) (../../IMO/2016/enunciados/2.tex)
+(../../IMO/2017/enunciados/5.tex) (../../IMO/2017/enunciados/6.tex) [80]
+(../../IMO/2016/enunciados/1.tex) (../../IMO/2016/enunciados/2.tex)
 (../../IMO/2016/enunciados/3.tex) (../../IMO/2016/enunciados/4.tex)
-(../../IMO/2016/enunciados/5.tex) (../../IMO/2016/enunciados/6.tex) [83]
+(../../IMO/2016/enunciados/5.tex) (../../IMO/2016/enunciados/6.tex) [81]
 (../../IMO/2015/enunciados/1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1507,24 +1502,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) [84] (../../IMO/2014/enunciados/1.tex) (../../IMO/2014/enunciados/2.tex)
+) [82] (../../IMO/2014/enunciados/1.tex) (../../IMO/2014/enunciados/2.tex)
 (../../IMO/2014/enunciados/3.tex) (../../IMO/2014/enunciados/4.tex)
-(../../IMO/2014/enunciados/5.tex) (../../IMO/2014/enunciados/6.tex) [85]
+(../../IMO/2014/enunciados/5.tex) (../../IMO/2014/enunciados/6.tex) [83]
 (../../IMO/2013/enunciados/1.tex) (../../IMO/2013/enunciados/2.tex)
 (../../IMO/2013/enunciados/3.tex) (../../IMO/2013/enunciados/4.tex)
-(../../IMO/2013/enunciados/5.tex) (../../IMO/2013/enunciados/6.tex) [86]
+(../../IMO/2013/enunciados/5.tex) (../../IMO/2013/enunciados/6.tex) [84]
 (../../IMO/2012/enunciados/1.tex) (../../IMO/2012/enunciados/2.tex)
 (../../IMO/2012/enunciados/3.tex) (../../IMO/2012/enunciados/4.tex)
-(../../IMO/2012/enunciados/5.tex) (../../IMO/2012/enunciados/6.tex) [87]
+(../../IMO/2012/enunciados/5.tex) (../../IMO/2012/enunciados/6.tex) [85]
 (../../IMO/2011/enunciados/1.tex) (../../IMO/2011/enunciados/2.tex)
 (../../IMO/2011/enunciados/3.tex) (../../IMO/2011/enunciados/4.tex)
-(../../IMO/2011/enunciados/5.tex) (../../IMO/2011/enunciados/6.tex) [88]
+(../../IMO/2011/enunciados/5.tex) (../../IMO/2011/enunciados/6.tex) [86]
 (../../IMO/2010/enunciados/1.tex) (../../IMO/2010/enunciados/2.tex)
 (../../IMO/2010/enunciados/3.tex) (../../IMO/2010/enunciados/4.tex)
-(../../IMO/2010/enunciados/5.tex) (../../IMO/2010/enunciados/6.tex) [89]
+(../../IMO/2010/enunciados/5.tex) (../../IMO/2010/enunciados/6.tex) [87]
 (../../IMO/2009/enunciados/1.tex) (../../IMO/2009/enunciados/2.tex)
 (../../IMO/2009/enunciados/3.tex) (../../IMO/2009/enunciados/4.tex)
-(../../IMO/2009/enunciados/5.tex) (../../IMO/2009/enunciados/6.tex) [90]
+(../../IMO/2009/enunciados/5.tex) (../../IMO/2009/enunciados/6.tex) [88]
 (../../IMO/2008/enunciados/1.tex) (../../IMO/2008/enunciados/2.tex)
 (../../IMO/2008/enunciados/3.tex) (../../IMO/2008/enunciados/4.tex)
 (../../IMO/2008/enunciados/5.tex
@@ -1542,36 +1537,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-) (../../IMO/2008/enunciados/6.tex) [91] (../../IMO/2007/enunciados/1.tex)
+) (../../IMO/2008/enunciados/6.tex) [89] (../../IMO/2007/enunciados/1.tex)
 (../../IMO/2007/enunciados/2.tex) (../../IMO/2007/enunciados/3.tex)
 (../../IMO/2007/enunciados/4.tex) (../../IMO/2007/enunciados/5.tex)
-(../../IMO/2007/enunciados/6.tex) [92] (../../IMO/2006/enunciados/1.tex)
+(../../IMO/2007/enunciados/6.tex) [90] (../../IMO/2006/enunciados/1.tex)
 (../../IMO/2006/enunciados/2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 370--2
 
  []
 
 ) (../../IMO/2006/enunciados/3.tex) (../../IMO/2006/enunciados/4.tex)
-(../../IMO/2006/enunciados/5.tex) (../../IMO/2006/enunciados/6.tex) [93]
+(../../IMO/2006/enunciados/5.tex) (../../IMO/2006/enunciados/6.tex) [91]
 (../../IMO/2005/enunciados/1.tex) (../../IMO/2005/enunciados/2.tex)
 (../../IMO/2005/enunciados/3.tex) (../../IMO/2005/enunciados/4.tex)
-(../../IMO/2005/enunciados/5.tex) (../../IMO/2005/enunciados/6.tex) [94]
+(../../IMO/2005/enunciados/5.tex) (../../IMO/2005/enunciados/6.tex) [92]
 (../../IMO/2004/enunciados/1.tex) (../../IMO/2004/enunciados/2.tex)
 (../../IMO/2004/enunciados/3.tex
 \openout4 = `compilacion-1.asy'.
 
  (./compilacion-1.tex
-<compilacion-1_0.pdf, id=636, 43.18132pt x 43.18132pt>
+<compilacion-1_0.pdf, id=626, 43.18132pt x 43.18132pt>
 File: compilacion-1_0.pdf Graphic file (type pdf)
 <use compilacion-1_0.pdf>
 Package pdftex.def Info: compilacion-1_0.pdf  used on input line 9.
 (pdftex.def)             Requested size: 43.1812pt x 43.1812pt.
 ))
 (../../IMO/2004/enunciados/4.tex) (../../IMO/2004/enunciados/5.tex)
-(../../IMO/2004/enunciados/6.tex) [95 <./compilacion-1_0.pdf>]
+(../../IMO/2004/enunciados/6.tex) [93 <./compilacion-1_0.pdf>]
 (../../IMO/2003/enunciados/1.tex) (../../IMO/2003/enunciados/2.tex)
 (../../IMO/2003/enunciados/3.tex) (../../IMO/2003/enunciados/4.tex)
-(../../IMO/2003/enunciados/5.tex) (../../IMO/2003/enunciados/6.tex) [96]
+(../../IMO/2003/enunciados/5.tex) (../../IMO/2003/enunciados/6.tex) [94]
 (../../IMO/2002/enunciados/1.tex) (../../IMO/2002/enunciados/2.tex)
 (../../IMO/2002/enunciados/3.tex) (../../IMO/2002/enunciados/4.tex)
 (../../IMO/2002/enunciados/5.tex) (../../IMO/2002/enunciados/6.tex
@@ -1580,21 +1575,21 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 2.
 
-) [97] (../../IMO/2001/enunciados/1.tex) (../../IMO/2001/enunciados/2.tex)
+) [95] (../../IMO/2001/enunciados/1.tex) (../../IMO/2001/enunciados/2.tex)
 (../../IMO/2001/enunciados/3.tex) (../../IMO/2001/enunciados/4.tex)
-(../../IMO/2001/enunciados/5.tex) (../../IMO/2001/enunciados/6.tex) [98]
+(../../IMO/2001/enunciados/5.tex) (../../IMO/2001/enunciados/6.tex) [96]
 (../../IMO/2000/enunciados/1.tex) (../../IMO/2000/enunciados/2.tex)
 (../../IMO/2000/enunciados/3.tex) (../../IMO/2000/enunciados/4.tex)
-(../../IMO/2000/enunciados/5.tex) (../../IMO/2000/enunciados/6.tex) [99]
-[100] (../../OIM/2021/enunciados/1.tex) (../../OIM/2021/enunciados/2.tex)
+(../../IMO/2000/enunciados/5.tex) (../../IMO/2000/enunciados/6.tex) [97]
+[98] (../../OIM/2021/enunciados/1.tex) (../../OIM/2021/enunciados/2.tex)
 (../../OIM/2021/enunciados/3.tex) (../../OIM/2021/enunciados/4.tex)
-(../../OIM/2021/enunciados/5.tex) (../../OIM/2021/enunciados/6.tex) [101]
+(../../OIM/2021/enunciados/5.tex) (../../OIM/2021/enunciados/6.tex) [99]
 (../../OIM/2020/enunciados/1.tex) (../../OIM/2020/enunciados/2.tex)
 (../../OIM/2020/enunciados/3.tex) (../../OIM/2020/enunciados/4.tex)
-(../../OIM/2020/enunciados/5.tex) (../../OIM/2020/enunciados/6.tex) [102]
+(../../OIM/2020/enunciados/5.tex) (../../OIM/2020/enunciados/6.tex) [100]
 (../../OIM/2019/enunciados/1.tex) (../../OIM/2019/enunciados/2.tex)
 (../../OIM/2019/enunciados/3.tex) (../../OIM/2019/enunciados/4.tex)
-(../../OIM/2019/enunciados/5.tex) (../../OIM/2019/enunciados/6.tex) [103]
+(../../OIM/2019/enunciados/5.tex) (../../OIM/2019/enunciados/6.tex) [101]
 (../../OIM/2018/enunciados/1.tex) (../../OIM/2018/enunciados/2.tex)
 (../../OIM/2018/enunciados/3.tex) (../../OIM/2018/enunciados/4.tex)
 (../../OIM/2018/enunciados/5.tex)
@@ -1605,149 +1600,25 @@ cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ; []  ; n$\T1/cmr/m/n/
 ]$\T1/cmr/m/n/10.95 , es <em>guadiana</em>si
  []
 
-(../../OIM/2018/enunciados/6.tex) [104] (../../OIM/2017/enunciados/1.tex)
+(../../OIM/2018/enunciados/6.tex) [102] (../../OIM/2017/enunciados/1.tex)
 (../../OIM/2017/enunciados/2.tex) (../../OIM/2017/enunciados/3.tex)
 (../../OIM/2017/enunciados/4.tex) (../../OIM/2017/enunciados/5.tex)
-(../../OIM/2017/enunciados/6.tex) [105] (../../OIM/2016/enunciados/1.tex)
+(../../OIM/2017/enunciados/6.tex) [103] (../../OIM/2016/enunciados/1.tex)
 (../../OIM/2016/enunciados/2.tex) (../../OIM/2016/enunciados/3.tex)
 (../../OIM/2016/enunciados/4.tex) (../../OIM/2016/enunciados/5.tex)
-(../../OIM/2016/enunciados/6.tex) [106] (../../OIM/2015/enunciados/1.tex)
+(../../OIM/2016/enunciados/6.tex) [104] (../../OIM/2015/enunciados/1.tex)
 (../../OIM/2015/enunciados/2.tex) (../../OIM/2015/enunciados/3.tex)
 (../../OIM/2015/enunciados/4.tex) (../../OIM/2015/enunciados/5.tex)
-(../../OIM/2015/enunciados/6.tex) [107] (../../OIM/2014/enunciados/1.tex)
+(../../OIM/2015/enunciados/6.tex) [105] (../../OIM/2014/enunciados/1.tex)
 (../../OIM/2014/enunciados/2.tex) (../../OIM/2014/enunciados/3.tex)
 (../../OIM/2014/enunciados/4.tex) (../../OIM/2014/enunciados/5.tex)
-(../../OIM/2014/enunciados/6.tex) [108] (../../OIM/2013/enunciados/1.tex)
+(../../OIM/2014/enunciados/6.tex) [106] (../../OIM/2013/enunciados/1.tex)
 (../../OIM/2013/enunciados/2.tex) (../../OIM/2013/enunciados/3.tex)
 (../../OIM/2013/enunciados/4.tex) (../../OIM/2013/enunciados/5.tex)
-(../../OIM/2013/enunciados/6.tex) [109] (../../OIM/2012/enunciados/1.tex)
+(../../OIM/2013/enunciados/6.tex) [107] (../../OIM/2012/enunciados/1.tex)
 (../../OIM/2012/enunciados/2.tex) (../../OIM/2012/enunciados/3.tex)
 (../../OIM/2012/enunciados/4.tex) (../../OIM/2012/enunciados/5.tex)
-(../../OIM/2012/enunciados/6.tex) [110] (../../OIM/2011/enunciados/1.tex)
+(../../OIM/2012/enunciados/6.tex) [108] (../../OIM/2011/enunciados/1.tex)
 (../../OIM/2011/enunciados/2.tex) (../../OIM/2011/enunciados/3.tex)
 (../../OIM/2011/enunciados/4.tex) (../../OIM/2011/enunciados/5.tex)
-(../../OIM/2011/enunciados/6.tex) [111] (../../OIM/2010/enunciados/1.tex)
-(../../OIM/2010/enunciados/2.tex) (../../OIM/2010/enunciados/3.tex)
-(../../OIM/2010/enunciados/4.tex) (../../OIM/2010/enunciados/5.tex)
-(../../OIM/2010/enunciados/6.tex) [112] (../../OIM/2009/enunciados/1.tex)
-(../../OIM/2009/enunciados/2.tex) (../../OIM/2009/enunciados/3.tex)
-(../../OIM/2009/enunciados/4.tex) (../../OIM/2009/enunciados/5.tex)
-(../../OIM/2009/enunciados/6.tex) [113] (../../OIM/2008/enunciados/1.tex)
-(../../OIM/2008/enunciados/2.tex) (../../OIM/2008/enunciados/3.tex)
-(../../OIM/2008/enunciados/4.tex) (../../OIM/2008/enunciados/5.tex)
-(../../OIM/2008/enunciados/6.tex) [114] (../../OIM/2007/enunciados/1.tex)
-(../../OIM/2007/enunciados/2.tex) (../../OIM/2007/enunciados/3.tex)
-(../../OIM/2007/enunciados/4.tex) (../../OIM/2007/enunciados/5.tex)
-(../../OIM/2007/enunciados/6.tex) [115] [116] (../../OIM/2006/enunciados/1.tex)
-(../../OIM/2006/enunciados/2.tex) (../../OIM/2006/enunciados/3.tex)
-(../../OIM/2006/enunciados/4.tex) (../../OIM/2006/enunciados/5.tex)
-(../../OIM/2006/enunciados/6.tex) [117] (../../OIM/2005/enunciados/1.tex)
-(../../OIM/2005/enunciados/2.tex) (../../OIM/2005/enunciados/3.tex)
-(../../OIM/2005/enunciados/4.tex) (../../OIM/2005/enunciados/5.tex)
-(../../OIM/2005/enunciados/6.tex) [118] (../../OIM/2004/enunciados/1.tex)
-(../../OIM/2004/enunciados/2.tex) (../../OIM/2004/enunciados/3.tex)
-(../../OIM/2004/enunciados/4.tex) (../../OIM/2004/enunciados/5.tex)
-(../../OIM/2004/enunciados/6.tex) [119] (../../OIM/2003/enunciados/1.tex)
-(../../OIM/2003/enunciados/2.tex) (../../OIM/2003/enunciados/3.tex)
-(../../OIM/2003/enunciados/4.tex) (../../OIM/2003/enunciados/5.tex)
-(../../OIM/2003/enunciados/6.tex) [120] (../../OIM/2002/enunciados/1.tex)
-(../../OIM/2002/enunciados/2.tex) (../../OIM/2002/enunciados/3.tex)
-(../../OIM/2002/enunciados/4.tex) (../../OIM/2002/enunciados/5.tex)
-(../../OIM/2002/enunciados/6.tex) [121] (../../OIM/2001/enunciados/1.tex)
-(../../OIM/2001/enunciados/2.tex) (../../OIM/2001/enunciados/3.tex)
-(../../OIM/2001/enunciados/4.tex) (../../OIM/2001/enunciados/5.tex)
-(../../OIM/2001/enunciados/6.tex) [122] (../../OIM/2000/enunciados/1.tex)
-(../../OIM/2000/enunciados/2.tex) (../../OIM/2000/enunciados/3.tex)
-(../../OIM/2000/enunciados/4.tex) (../../OIM/2000/enunciados/5.tex)
-(../../OIM/2000/enunciados/6.tex) [123] (../../OIM/1999/enunciados/1.tex)
-(../../OIM/1999/enunciados/2.tex) (../../OIM/1999/enunciados/3.tex)
-(../../OIM/1999/enunciados/4.tex) (../../OIM/1999/enunciados/5.tex)
-(../../OIM/1999/enunciados/6.tex) [124] (../../OIM/1998/enunciados/1.tex)
-(../../OIM/1998/enunciados/2.tex) (../../OIM/1998/enunciados/3.tex)
-(../../OIM/1998/enunciados/4.tex) (../../OIM/1998/enunciados/5.tex)
-Overfull \hbox (24.11328pt too wide) in paragraph at lines 473--473
-\T1/cmss/bx/n/12 Problema 5.  \T1/cmr/m/n/10.95 Ha-llar el má-xi-mo va-lor po-s
-i-ble de $\OML/cmm/m/it/10.95 n$ \T1/cmr/m/n/10.95 pa-ra que exis-tan pun-tos d
-is-tin-tos $\OML/cmm/m/it/10.95 P[]; P[]; P[]; []  ; P[]$
- []
-
-(../../OIM/1998/enunciados/6.tex) [125] (../../OIM/1997/enunciados/1.tex)
-(../../OIM/1997/enunciados/2.tex) (../../OIM/1997/enunciados/3.tex)
-(../../OIM/1997/enunciados/4.tex) (../../OIM/1997/enunciados/5.tex)
-(../../OIM/1997/enunciados/6.tex) [126] [127] (../../OIM/1996/enunciados/1.tex)
-(../../OIM/1996/enunciados/2.tex) (../../OIM/1996/enunciados/3.tex)
-(../../OIM/1996/enunciados/4.tex) (../../OIM/1996/enunciados/5.tex)
-(../../OIM/1996/enunciados/6.tex) [128] (../../OIM/1995/enunciados/1.tex)
-(../../OIM/1995/enunciados/2.tex) (../../OIM/1995/enunciados/3.tex)
-(../../OIM/1995/enunciados/4.tex) (../../OIM/1995/enunciados/5.tex)
-(../../OIM/1995/enunciados/6.tex) [129] (../../OIM/1994/enunciados/1.tex)
-(../../OIM/1994/enunciados/2.tex) (../../OIM/1994/enunciados/3.tex)
-(../../OIM/1994/enunciados/4.tex) (../../OIM/1994/enunciados/5.tex)
-(../../OIM/1994/enunciados/6.tex) [130] (../../OIM/1993/enunciados/1.tex)
-(../../OIM/1993/enunciados/2.tex) (../../OIM/1993/enunciados/3.tex)
-(../../OIM/1993/enunciados/4.tex) (../../OIM/1993/enunciados/5.tex)
-(../../OIM/1993/enunciados/6.tex) [131] (../../OIM/1992/enunciados/1.tex)
-(../../OIM/1992/enunciados/2.tex) (../../OIM/1992/enunciados/3.tex)
-(../../OIM/1992/enunciados/4.tex) (../../OIM/1992/enunciados/5.tex)
-(../../OIM/1992/enunciados/6.tex) [132] (../../OIM/1991/enunciados/1.tex)
-(../../OIM/1991/enunciados/2.tex) (../../OIM/1991/enunciados/3.tex)
-(../../OIM/1991/enunciados/4.tex) (../../OIM/1991/enunciados/5.tex)
-(../../OIM/1991/enunciados/6.tex
-Underfull \hbox (badness 10000) in paragraph at lines 473--2
-
- []
-
-) [133] (../../OIM/1990/enunciados/1.tex) (../../OIM/1990/enunciados/2.tex)
-(../../OIM/1990/enunciados/3.tex) (../../OIM/1990/enunciados/4.tex)
-(../../OIM/1990/enunciados/5.tex) (../../OIM/1990/enunciados/6.tex) [134]
-(../../OIM/1989/enunciados/1.tex) (../../OIM/1989/enunciados/2.tex)
-(../../OIM/1989/enunciados/3.tex) (../../OIM/1989/enunciados/4.tex)
-(../../OIM/1989/enunciados/5.tex) (../../OIM/1989/enunciados/6.tex) [135]
-(../../OIM/1985/enunciados/1.tex) (../../OIM/1985/enunciados/2.tex)
-(../../OIM/1985/enunciados/3.tex) (../../OIM/1985/enunciados/4.tex)
-(../../OIM/1985/enunciados/5.tex) (../../OIM/1985/enunciados/6.tex) [136]
-(./compilacion.aux
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
-)
-Package rerunfilecheck Info: File `compilacion.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
-Here is how much of TeX's memory you used:
- 29554 strings out of 478994
- 571527 string characters out of 5858185
- 973055 words of memory out of 5000000
- 44528 multiletter control sequences out of 15000+600000
- 422664 words of font info for 73 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,12n,130p,10623b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on compilacion.pdf (136 pages, 717313 bytes).
-PDF statistics:
- 1100 PDF objects out of 1200 (max. 8388607)
- 930 compressed objects within 10 object streams
- 331 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+(../../O

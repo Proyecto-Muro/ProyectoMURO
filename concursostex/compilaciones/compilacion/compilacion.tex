@@ -18,10 +18,10 @@
     colorlinks= true,
     urlcolor= cyan,
     linkcolor= jampmLinks,
-citecolor=red,
-pdftitle={Compilación de concursos},
-bookmarks = true,
-pdfpagemode = FullScreen,
+    citecolor=red,
+    pdftitle={Compilación de concursos},
+    bookmarks = true,
+    pdfpagemode = FullScreen,
 }
 
 
@@ -153,68 +153,6 @@ pdfpagemode = FullScreen,
     }
     \eject
 
-\section{Problemas EGMO}
-    
-    \subsection*{Problemas Resueltos}
-
-        % Cuadritos EGMO
-        \begin{center} 
-            \begin{tabular}{| c | c | c | c | c | c | c |}
-                \hline
-                EGMO & P1 & P2 & P3 & P4 & P5 & P6 \\
-                \hline
-                2022 & & & & & & \\
-                \hline
-                2021 & & & & & & \\
-                \hline
-                2020 & & & & & & \\
-                \hline
-                2019 & & & & & & \\
-                \hline
-                2018 & & & & & & \\
-                \hline
-                2017 & & & & & & \\
-                \hline
-                2016 & & & & & & \\
-                \hline
-                2015 & & & & & & \\
-                \hline
-                2014 & & & & & & \\
-                \hline
-                2013 & & & & & & \\
-                \hline
-                2012 & & & & & & \\
-                \hline
-            \end{tabular}
-        \end{center}
-    \eject
-
-    \let\mylist\empty
-    \foreach\x in {2013,2014,...,2022} {
-      \ifx\mylist\empty
-        \xdef\mylist{\x}%
-      \else
-        \xdef\mylist{\x,\mylist}%
-      \fi
-    }
-    \foreach \j in \mylist {%
-        \subsection*{EGMO \j}
-        \foreach \i in {1,2,...,6} {
-            \begin{problema}
-                \enunciado{\j}{EGMO}{\i}
-            \end{problema}
-        }
-        \eject
-    }
-
-    \subsection*{EGMO 2012} 
-    \foreach \i in {1,2,...,8} {%
-        \begin{problema}
-            \enunciado{2012}{EGMO}{\i}
-        \end{problema}
-    }
-    \eject
-
 \section{Problemas OMCC}
 
     \subsection*{Problemas Resueltos}
@@ -291,6 +229,68 @@ pdfpagemode = FullScreen,
         }
         \eject
     }
+
+\section{Problemas EGMO}
+    
+    \subsection*{Problemas Resueltos}
+
+        % Cuadritos EGMO
+        \begin{center} 
+            \begin{tabular}{| c | c | c | c | c | c | c |}
+                \hline
+                EGMO & P1 & P2 & P3 & P4 & P5 & P6 \\
+                \hline
+                2022 & & & & & & \\
+                \hline
+                2021 & & & & & & \\
+                \hline
+                2020 & & & & & & \\
+                \hline
+                2019 & & & & & & \\
+                \hline
+                2018 & & & & & & \\
+                \hline
+                2017 & & & & & & \\
+                \hline
+                2016 & & & & & & \\
+                \hline
+                2015 & & & & & & \\
+                \hline
+                2014 & & & & & & \\
+                \hline
+                2013 & & & & & & \\
+                \hline
+                2012 & & & & & & \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \eject
+
+    \let\mylist\empty
+    \foreach\x in {2013,2014,...,2022} {
+      \ifx\mylist\empty
+        \xdef\mylist{\x}%
+      \else
+        \xdef\mylist{\x,\mylist}%
+      \fi
+    }
+    \foreach \j in \mylist {%
+        \subsection*{EGMO \j}
+        \foreach \i in {1,2,...,6} {
+            \begin{problema}
+                \enunciado{\j}{EGMO}{\i}
+            \end{problema}
+        }
+        \eject
+    }
+
+    \subsection*{EGMO 2012} 
+    \foreach \i in {1,2,...,8} {%
+        \begin{problema}
+            \enunciado{2012}{EGMO}{\i}
+        \end{problema}
+    }
+    \eject
 
 \section{Problemas IMO}
 
