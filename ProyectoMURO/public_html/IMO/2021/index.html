@@ -95,7 +95,7 @@
                               <a href="./../2022">►</a>
                           </h1>
                           <div class="entrywrap">
-
+                              <p> Presiona el título de cualquier problema para ver su página individual. </p>
                                • <a href="./..">Regresar a IMO</a><br>
                                • <a href="/">Regresar a la página de inicio</a><br>
                                <hr>
@@ -107,36 +107,76 @@
     <div class="alert-secondary alert">
 Sea $n \geq 100$ un entero. Iván escribe cada uno de los números $n,n+1,\dots,2n$ en un naipe diferente. Después de barajar estos $n + 1$ naipes, los divide en dos pilas distintas. Probar que al menos una de esas pilas contiene dos naipes tales que la suma de sus números es un cuadrado perfecto.
 </div>
-<h3><a href="./p2.html">Problema 2</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sea $n \\geq 100$ un entero. Iván escribe cada uno de los números $n,n+1,\\dots,2n$ en un naipe diferente. Después de barajar estos $n + 1$ naipes, los divide en dos pilas distintas. Probar que al menos una de esas pilas contiene dos naipes tales que la suma de sus números es un cuadrado perfecto.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p2.html">Problema 2</a></h3>
 
     <div class="alert-secondary alert">
 Probar que la desigualdad
 \[\sum_{i=1}^n \sum_{j=1}^n \sqrt{|x_i-x_j|}\leqslant \sum_{i=1}^n \sum_{j=1}^n \sqrt{|x_i+x_j|}\]
 se satisface para cualquier elección de números reales $x_1, \dots , x_n$.
 </div>
-<h3><a href="./p3.html">Problema 3</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Probar que la desigualdad
+\\[\\sum_{i=1}^n \\sum_{j=1}^n \\sqrt{|x_i-x_j|}\\leqslant \\sum_{i=1}^n \\sum_{j=1}^n \\sqrt{|x_i+x_j|}\\]
+se satisface para cualquier elección de números reales $x_1, \\dots , x_n$.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p3.html">Problema 3</a></h3>
 
     <div class="alert-secondary alert">
 Sea $D$ un punto interior de un triángulo acutángulo $ABC$, con $AB \gt AC$, de forma que $\angle DAB = \angle CAD$. El punto $E$ en el segmento $AC$ satisface que $\angle ADE = \angle BCD$, el punto $F$ en el segmento $AB$ satisface $\angle FDA = \angle DBC$, y el punto $X$ en la recta $AC$ satisface $CX = BX$. Sean $O_1$ y $O_2$ los circuncentros de los triángulos $ADC$ y $EXD$ respectivamente. Probar que las rectas $BC,$ $EF$ y $O_1O_2$ son concurrentes.
 </div>
-<h3><a href="./p4.html">Problema 4</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sea $D$ un punto interior de un triángulo acutángulo $ABC$, con $AB \\gt AC$, de forma que $\\angle DAB = \\angle CAD$. El punto $E$ en el segmento $AC$ satisface que $\\angle ADE = \\angle BCD$, el punto $F$ en el segmento $AB$ satisface $\\angle FDA = \\angle DBC$, y el punto $X$ en la recta $AC$ satisface $CX = BX$. Sean $O_1$ y $O_2$ los circuncentros de los triángulos $ADC$ y $EXD$ respectivamente. Probar que las rectas $BC,$ $EF$ y $O_1O_2$ son concurrentes.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p4.html">Problema 4</a></h3>
 
     <div class="alert-secondary alert">
 Sean $\Gamma$ una circunferencia con centro $I$ y $ABCD$ un cuadrilátero convexo tal que cada uno de los segmentos $AB$, $BC$, $CD$ y $DA$ es tangente a $\Gamma$. Sea $\Omega$ la circunferencia circunscrita del triángulo $AIC$. La prolongación de $BA$ más allá de $A$ corta a $\Omega$ en $X$, y la prolongación de $BC$ más allá de $C$ corta a $\Omega$ en $Z$. Las prolongaciones de $AD$ y $CD$ más allá de $D$ cortan a $\Omega$ en $Y$ y $T$ respectivamente. Probar que
 \[A D+D T+T X+X A=C D+D Y+Y Z+Z C.\]
 
 </div>
-<h3><a href="./p5.html">Problema 5</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sean $\\Gamma$ una circunferencia con centro $I$ y $ABCD$ un cuadrilátero convexo tal que cada uno de los segmentos $AB$, $BC$, $CD$ y $DA$ es tangente a $\\Gamma$. Sea $\\Omega$ la circunferencia circunscrita del triángulo $AIC$. La prolongación de $BA$ más allá de $A$ corta a $\\Omega$ en $X$, y la prolongación de $BC$ más allá de $C$ corta a $\\Omega$ en $Z$. Las prolongaciones de $AD$ y $CD$ más allá de $D$ cortan a $\\Omega$ en $Y$ y $T$ respectivamente. Probar que
+\\[A D+D T+T X+X A=C D+D Y+Y Z+Z C.\\]
+
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p5.html">Problema 5</a></h3>
 
     <div class="alert-secondary alert">
 Dos ardillas, Ardi y Dilla, han recolectado $2021$ nueces para el invierno. Ardi numera las nueces desde $1$ hasta $2021$, y excava $2021$ pequeños hoyos en el suelo en una disposición circular alrededor de su árbol favorito. A la mañana siguiente, Ardi observa que Dilla ha colocado una nuez en cada hoyo, pero sin tener en cuenta la numeración. No contenta con esto, Ardi decide reordenar las nueces realizando una secuencia de $2021$ movimientos. En el $k$-ésimo movimiento Ardi intercambia las posiciones de las dos nueces adyacentes a la nuez con el número $k$. Probar que existe un valor de $k$ tal que, en el $k$-ésimo movimiento, las nueces intercambiadas tienen números $a$ y $b$ tales que $a \lt k \lt b$.
 </div>
-<h3><a href="./p6.html">Problema 6</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Dos ardillas, Ardi y Dilla, han recolectado $2021$ nueces para el invierno. Ardi numera las nueces desde $1$ hasta $2021$, y excava $2021$ pequeños hoyos en el suelo en una disposición circular alrededor de su árbol favorito. A la mañana siguiente, Ardi observa que Dilla ha colocado una nuez en cada hoyo, pero sin tener en cuenta la numeración. No contenta con esto, Ardi decide reordenar las nueces realizando una secuencia de $2021$ movimientos. En el $k$-ésimo movimiento Ardi intercambia las posiciones de las dos nueces adyacentes a la nuez con el número $k$. Probar que existe un valor de $k$ tal que, en el $k$-ésimo movimiento, las nueces intercambiadas tienen números $a$ y $b$ tales que $a \\lt k \\lt b$.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p6.html">Problema 6</a></h3>
 
     <div class="alert-secondary alert">
 Sean $m \ge 2$ un entero, $A$ un conjunto finito de enteros (no necesariamente positivos), y $B_1,B_2,B_3,\dots,B_m$ subconjuntos de $A$. Suponemos que para cada $k = 1,2,\dots,m$, la suma de los elementos de $B_k$ es $m^k$. Probar que $A$ contiene al menos $m/2$ elementos.
 </div>
 
+    <button class="button" onclick=
+    "copyEvent(`
+    Sean $m \\ge 2$ un entero, $A$ un conjunto finito de enteros (no necesariamente positivos), y $B_1,B_2,B_3,\\dots,B_m$ subconjuntos de $A$. Suponemos que para cada $k = 1,2,\\dots,m$, la suma de los elementos de $B_k$ es $m^k$. Probar que $A$ contiene al menos $m/2$ elementos.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> 
                               
                               <!-- (End writing here) -->
 

@@ -110,6 +110,18 @@ Los cambios se pueden aplicar cuantas veces se quiera, aún a renglones ya cambi
 Muestra que para $n < 12$ no es posible hacer un número finito de cambios de forma que
 la suma de los números en cada una de las cuatro columnas sea la misma.
                               </div>
+                              <button class="button" onclick=
+                              "copyEvent(`
+                              Sea $n$ un entero positivo. En una cuadrícula de $n\\times 4$, cada región es igual a 
+\\[\\boxed{2}\\boxed{0}\\boxed{1}\\boxed{0}\\]
+Un "cambio" es tomar tres casillas consecutivas en el mismo renglón y con dígitos distintos escritos en ellas y cambiar los tres dígitos de estas casillas escritas de la siguiente manera
+\\[0\\to 1, \\quad 1\\to 2, \\quad 2\\to 0.\\]
+Por ejemplo, un renglón $\\boxed{2}\\boxed{0}\\boxed{1}\\boxed{0}$ puede cambiarse al renglón $\\boxed{0}\\boxed{1}\\boxed{2}\\boxed{0}$ pero no al renglón $\\boxed{2}\\boxed{1}\\boxed{2}\\boxed{1}$ pues $0$, $1$ y $0$ no son distintos entre sí.
+Los cambios se pueden aplicar cuantas veces se quiera, aún a renglones ya cambiados.
+Muestra que para $n < 12$ no es posible hacer un número finito de cambios de forma que
+la suma de los números en cada una de las cuatro columnas sea la misma.
+                              `)"
+                              >Copiar LaTeX</button> 
                               <hr>
                                • <a href="./sol4.html">Solución</a><br>
                                • <a href="./">Regreso a OMM 2010</a><br>

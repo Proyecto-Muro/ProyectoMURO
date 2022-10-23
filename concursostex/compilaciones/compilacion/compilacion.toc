@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {I}Problemas OMM}{2}{section.1}%
+\contentsline {section}{\numberline {II}Problemas OMCC}{38}{section.2}%
+\contentsline {section}{\numberline {III}Problemas EGMO}{62}{section.3}%
+\contentsline {section}{\numberline {IV}Problemas IMO}{74}{section.4}%
+\contentsline {section}{\numberline {V}Problemas OIM}{98}{section.5}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

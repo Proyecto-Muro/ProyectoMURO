@@ -28,11 +28,12 @@ for i in contestlist:
 			for k in os.listdir("concursos/%s/%s/enunciados"%(i,j)):
 				if k[0]!=".":
 					fhtml = open("concursos/%s/%s/enunciados/%s"%(i,j,k), "r").read()
-					#if f!="":
+					#if fhtml!="":
 					#	counter+=1
-					ftex = htmltotex(fhtml)
-					testempty = open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "r").read()
-					if testempty =="":
-						with open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "w") as file:
-							file.write(ftex)
-							
+					#ftex = htmltotex(fhtml)
+					#testempty = open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "r").read()
+					#if testempty =="":
+					#	with open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "w") as file:
+					#		file.write(ftex)
+
+#print(counter)

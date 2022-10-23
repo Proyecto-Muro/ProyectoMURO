@@ -103,6 +103,11 @@
                               <div class="alert-secondary alert">
                                   [Enunciadoproblema]
                               </div>
+                              <button class="button" onclick=
+                              "copyEvent(`
+                              [EnunciadoLatexproblema]
+                              `)"
+                              >Copiar LaTeX</button> 
                               <hr>
                                • <a href="./sol[numproblema].html">Solución</a><br>
                                • <a href="./">Regreso a [concurso] [año]</a><br>

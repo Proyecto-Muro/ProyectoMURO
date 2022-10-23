@@ -39,7 +39,13 @@ def replace_all(text, dic):
 
 def GenProbDiv(pnum):
     problemdiv = '''<h3><a href="./p{0}.html">Problema {0}</a></h3>\n
-    <div class="alert-secondary alert">\n[Enunciado{0}]\n</div>\n'''.format(pnum)
+    <div class="alert-secondary alert">\n[Enunciado{0}]\n</div>\n
+    <button class="button" onclick=
+    "copyEvent(`
+    [EnunciadoLatex{0}]
+    `)"
+    >Copiar LaTeX</button>
+    <hr> '''.format(pnum)
     return str(problemdiv)
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -51,11 +57,14 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # Declare the problems' info, will be set as empty if problem does not exist
 
     ProblemsList = []
+    ProblemsListLatex = []
     ProblemText = ""
+    ProblemTextLatex = ""
     ProblemPosition = "1"
     SolProb = ""
     dic = {
         "[Enunciadoproblema]": str(ProblemText),
+        "[EnunciadoLatexproblema]": str(ProblemTextLatex),
         "[concurso]": str(contestname),
         "[año]": str(year),
         "[numproblema]": str(ProblemPosition),
@@ -82,9 +91,24 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
     for pnum in range(len(Plist)):
 
-        # Creates [Enunciado_i] and adds enties to dict
+        # Creates [Enunciado_i]
         enunciado = "[Enunciado" + str(Plist[pnum][:-4]) + "]" 
         EnunciadoProblema = open("concursos/%s/%s/enunciados/%s.tex" % (contestname, year, Plist[pnum][:-4]), "r").read()
+
+        # Creates [EnunciadoLatex_i]
+        enunciadolatex = "[EnunciadoLatex" + str(Plist[pnum][:-4]) + "]" 
+        EnunciadoLatexProblema = open("concursostex/%s/%s/enunciados/%s.tex" % (contestname, year, Plist[pnum][:-4]), "r").read()
+
+        # Hay que duplicar los \ en los enunciados porque crean errores con los caracteres al copiarse
+        TempEnunciado = ""
+
+        for i in EnunciadoLatexProblema:
+            if i == "\\": 
+                TempEnunciado += i + i
+            else:
+                TempEnunciado += i
+
+        EnunciadoLatexProblema = TempEnunciado
 
         # Image check
         yearmod100 = str(int(year) % 100)
@@ -97,8 +121,12 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             imgstr = "\n"+r'<p>' + r'<img src="/images/asy-imgs/{0}.png" alt="{0}.png" height="100" class="center"></p>'.format(pstring)
             EnunciadoProblema += imgstr
             
+        # Add entries to dict
         dic[enunciado] = EnunciadoProblema
+        dic[enunciadolatex] = EnunciadoLatexProblema
+
         ProblemsList.append(dic[enunciado]) # Add to ProblemsList for later use
+        ProblemsListLatex.append(dic[enunciadolatex])
  
     # -----------------------------------------------------------------------------------------------------------------
     # Year index creation
@@ -133,6 +161,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         problempageraw = open("generator/formats/problem-page.txt", "r").read()
 
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum])
+        dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum])
         dic["[numproblema]"] = str(pnum + 1)
         problempage = replace_all(problempageraw, dic)
 

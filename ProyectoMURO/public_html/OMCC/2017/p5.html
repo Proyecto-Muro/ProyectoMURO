@@ -110,6 +110,18 @@ En general, en el turno $k$, el jugador respectivo elige un número entero $n_k$
 El primer jugador que escriba un polinomio con al menos una raíz entera gana. Encuentra y describe una estrategia ganadora.
 
                               </div>
+                              <button class="button" onclick=
+                              "copyEvent(`
+                              Susana y Brenda juegan a escribir polinomios en la pizarra. Susana empieza y juegan por turnos.
+ En el turno preparatorio (turno $0$), Susana elige un entero positivo $n_0$ y escribe el polinomio $P_0(x)=n_0$. En el turno $1$, Brenda elige un entero positivo $n_1$, distinto de $n_0$, y escribe el polinomio
+\\[ P_1(x)=n_1x+P_0(x) \\textup{ o } P_1(x)=n_1x-P_0(x). \\]
+En general, en el turno $k$, el jugador respectivo elige un número entero $n_k$, diferente de $n_0, n_1, \\ldots, n_{k-1}$, y escribe el polinomio
+\\[P_k(x)=n_kx^k+P_{k-1}(x) \\textup{ o } P_k(x)=n_kx^k-P_{k-1}(x).\\]
+
+El primer jugador que escriba un polinomio con al menos una raíz entera gana. Encuentra y describe una estrategia ganadora.
+
+                              `)"
+                              >Copiar LaTeX</button> 
                               <hr>
                                • <a href="./sol5.html">Solución</a><br>
                                • <a href="./">Regreso a OMCC 2017</a><br>

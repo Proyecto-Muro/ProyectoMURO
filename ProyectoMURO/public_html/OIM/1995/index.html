@@ -95,7 +95,7 @@
                               <a href="./../1996">►</a>
                           </h1>
                           <div class="entrywrap">
-
+                              <p> Presiona el título de cualquier problema para ver su página individual. </p>
                                • <a href="./..">Regresar a OIM</a><br>
                                • <a href="/">Regresar a la página de inicio</a><br>
                                <hr>
@@ -108,7 +108,14 @@
 Determine los posibles valores de las sumas de los dígitos de todos los cuadrados perfectos.
 
 </div>
-<h3><a href="./p2.html">Problema 2</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Determine los posibles valores de las sumas de los dígitos de todos los cuadrados perfectos.
+
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p2.html">Problema 2</a></h3>
 
     <div class="alert-secondary alert">
 Sea $n$ un entero positivo. Encuentra todos los números reales 
@@ -119,7 +126,19 @@ tales que:
 <li>$\frac{x_1+x_2+\dots+x_n}{n}=x_{n+1}$</li>
 </ul>
 </div>
-<h3><a href="./p3.html">Problema 3</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sea $n$ un entero positivo. Encuentra todos los números reales 
+\\[x_1, x_2, \\dots, x_{n+1} \\geq 1\\]
+tales que:
+ \\begin{itemize} 
+ \\item $x_1^{\\frac{1}{2}}+x_2^{\\frac{1}{3}}+\\dots+x_n^{\\frac{1}{n+1}}=nx_{n+1}^\\frac{1}{2}$
+ \\item $\\frac{x_1+x_2+\\dots+x_n}{n}=x_{n+1}$
+ \\end{itemize} 
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p3.html">Problema 3</a></h3>
 
     <div class="alert-secondary alert">
 Sean $r$ y $s$ dos rectas ortogonales y que no están en el mismo plano.
@@ -128,12 +147,28 @@ Se considera la esfera de diámetro $AB$. Los puntos $M$ de la recta $r$, y $N$ 
 Determine el lugar geométrico de $T$.<br>
 Nota (*): el plano que contiene a $B$ y $r$ es perpendicular a $s$. 
 </div>
-<h3><a href="./p4.html">Problema 4</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sean $r$ y $s$ dos rectas ortogonales y que no están en el mismo plano.
+Sea $AB$ su perpendicular común, donde $A$ pertenece a $r$ y $B$ pertenece a $s$ (*).
+Se considera la esfera de diámetro $AB$. Los puntos $M$ de la recta $r$, y $N$ de la recta $s$, son variables, con la condición de que $MN$ sea tangente a la esfera en un punto $T$.
+Determine el lugar geométrico de $T$. \\newline 
+Nota (*): el plano que contiene a $B$ y $r$ es perpendicular a $s$. 
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p4.html">Problema 4</a></h3>
 
     <div class="alert-secondary alert">
  En un tablero de $m \times n$ casillas se colocan fichas. Cada ficha colocada en el tablero "domina" todas las casillas de la fila, la columna y la diagonal (de arriba a la izquierda a abajo a la derecha) a la que pertenece. Determine el menor número de fichas deben colocarse para que queden "dominadas" todas las casillas del tablero. 
 </div>
-<h3><a href="./p5.html">Problema 5</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+     En un tablero de $m \\times n$ casillas se colocan fichas. Cada ficha colocada en el tablero "domina" todas las casillas de la fila, la columna y la diagonal (de arriba a la izquierda a abajo a la derecha) a la que pertenece. Determine el menor número de fichas deben colocarse para que queden "dominadas" todas las casillas del tablero. 
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p5.html">Problema 5</a></h3>
 
     <div class="alert-secondary alert">
  La circunferencia inscrita en el triángulo $ABC$ es tangente a $BC$, $CA$ y $AB$ en $D$, $E$ y $F$ respectivamente.
@@ -141,12 +176,27 @@ Suponga que dicha circunferencia corta de nuevo a $AD$ en su punto medio $X$, es
 Las rectas $XB$ y $XC$ cortan de nuevo a la circunferencia inscrita en $Y$ y en $Z$, respectivamente.
 Demuestre que $EY=FZ$.
 </div>
-<h3><a href="./p6.html">Problema 6</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+     La circunferencia inscrita en el triángulo $ABC$ es tangente a $BC$, $CA$ y $AB$ en $D$, $E$ y $F$ respectivamente.
+Suponga que dicha circunferencia corta de nuevo a $AD$ en su punto medio $X$, es decir, $AX=XD$.
+Las rectas $XB$ y $XC$ cortan de nuevo a la circunferencia inscrita en $Y$ y en $Z$, respectivamente.
+Demuestre que $EY=FZ$.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p6.html">Problema 6</a></h3>
 
     <div class="alert-secondary alert">
 Una función $f:\mathbb N\to\mathbb N$ es circular si para cada $p$ en $\mathbb N$ existe $n$ en $\mathbb N$ con $n\leq p$ tal que \[f^n(p)=p.\] La función $f$ tiene <i>grado de repulsión</i> $k\gt 0$ si para cada $p$ en $\mathbb N$, $f^i(p)\neq p$ para toda $i=1,2,\dots,\lfloor kp\rfloor$. Encuentra el mayor grado de repulsión que puede tener una función circular.
 </div>
 
+    <button class="button" onclick=
+    "copyEvent(`
+    Una función $f:\\mathbb N\\to\\mathbb N$ es circular si para cada $p$ en $\\mathbb N$ existe $n$ en $\\mathbb N$ con $n\\leq p$ tal que \\[f^n(p)=p.\\] La función $f$ tiene \\emph{grado de repulsión} $k\\gt 0$ si para cada $p$ en $\\mathbb N$, $f^i(p)\\neq p$ para toda $i=1,2,\\dots,\\lfloor kp\\rfloor$. Encuentra el mayor grado de repulsión que puede tener una función circular.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> 
                               
                               <!-- (End writing here) -->
 

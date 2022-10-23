@@ -95,7 +95,7 @@
                               <a href="./../2005">►</a>
                           </h1>
                           <div class="entrywrap">
-
+                              <p> Presiona el título de cualquier problema para ver su página individual. </p>
                                • <a href="./..">Regresar a IMO</a><br>
                                • <a href="/">Regresar a la página de inicio</a><br>
                                <hr>
@@ -107,38 +107,94 @@
     <div class="alert-secondary alert">
 Sea $ABC$ un triángulo acutángulo con $AB\neq AC$. El círculo con diámetro $BC$ corta a los lados $AB$ y $AC$ en $M$ y $N$, respectivamente. Sea $O$ el punto medio del lado $BC$. Las bisectrices de los ángulos $\angle BAC$ y $\angle MON$ se intersecan en $R$. Muestra que los ciruncírculos de los triángulos $BMR$ y $CNR$ tienen un punto en común sobre el lado $BC$.
 </div>
-<h3><a href="./p2.html">Problema 2</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sea $ABC$ un triángulo acutángulo con $AB\\neq AC$. El círculo con diámetro $BC$ corta a los lados $AB$ y $AC$ en $M$ y $N$, respectivamente. Sea $O$ el punto medio del lado $BC$. Las bisectrices de los ángulos $\\angle BAC$ y $\\angle MON$ se intersecan en $R$. Muestra que los ciruncírculos de los triángulos $BMR$ y $CNR$ tienen un punto en común sobre el lado $BC$.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p2.html">Problema 2</a></h3>
 
     <div class="alert-secondary alert">
 Encuentra todos los polinomios $f$ con coeficientes reales tales que para cualesquiera reales $a$, $b$, $c$, con $ab+bc+ca=0$, se cumple que
 \[ f(a-b) + f(b-c) + f(c-a) = 2f(a+b+c). \]
 </div>
-<h3><a href="./p3.html">Problema 3</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Encuentra todos los polinomios $f$ con coeficientes reales tales que para cualesquiera reales $a$, $b$, $c$, con $ab+bc+ca=0$, se cumple que
+\\[ f(a-b) + f(b-c) + f(c-a) = 2f(a+b+c). \\]
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p3.html">Problema 3</a></h3>
 
     <div class="alert-secondary alert">
 Definimos un "gancho" como una figura de 6 cuadritos unitarios como la que está en la imagen, o cualquier figura obtenida al aplicar rotaciones o reflexiones a la imagen. Encuentra todos los rectángulos de $m\times n$ que pueden ser cubiertos completamente sin hoyos ni sobrelaparse con ganchos.
 
 <p><img src="/images/asy-imgs/04IMO3.png" alt="04IMO3.png" height="100" class="center"></p>
 </div>
-<h3><a href="./p4.html">Problema 4</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Definimos un \\emph{gancho} como una figura de 6 cuadritos unitarios como la que está en la imagen, o cualquier figura obtenida por la imagen aplicando rotaciones y reflexiones. Encuentra todos los rectángulos de $m\\times n$ que pueden ser cubiertos completamente sin hoyos ni sobrelaparse con ganchos.
+
+\\begin{center}
+\\begin{asy}[width=45pt]
+size(45, 45);
+unitsize(0.5 cm);
+draw((0,0)--(1,0));
+draw((0,1)--(1,1));
+draw((2,1)--(3,1));
+draw((0,2)--(3,2));
+draw((0,3)--(3,3));
+draw((0,0)--(0,3));
+draw((1,0)--(1,3));
+draw((2,1)--(2,3));
+draw((3,1)--(3,3));
+\\end{asy}
+\\end{center}
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p4.html">Problema 4</a></h3>
 
     <div class="alert-secondary alert">
 Sea $n\geq 3$ un entero. Sean $t_1$, $t_2$, ..., $t_n$ reales positivos tales que \[n^2 + 1 \gt \left( t_1 + t_2 + \cdots + t_n \right) \left( \frac{1}{t_1} + \frac{1}{t_2} + \cdots + \frac{1}{t_n} \right).\] 
 Muestra que $t_i$, $t_j$, $t_k$ pueden ser las longitudes de los lados de un triángulo para toda $i$, $j$, $k$ tales que $1 \leq i \lt j \lt k \leq n$.
 </div>
-<h3><a href="./p5.html">Problema 5</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sea $n\\geq 3$ un entero. Sean $t_1$, $t_2$, ..., $t_n$ reales positivos tales que \\[n^2 + 1 \\gt \\left( t_1 + t_2 + \\cdots + t_n \\right) \\left( \\frac{1}{t_1} + \\frac{1}{t_2} + \\cdots + \\frac{1}{t_n} \\right).\\] 
+Muestra que $t_i$, $t_j$, $t_k$ pueden ser las longitudes de los lados de un triángulo para toda $i$, $j$, $k$ tales que $1 \\leq i \\lt j \\lt k \\leq n$.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p5.html">Problema 5</a></h3>
 
     <div class="alert-secondary alert">
 Sea $ABCD$ un cuadrilátero convexo tal que la diagonal $BD$ no bisecta al ángulo $ABC$ ni al ángulo $CDA$. El punto $P$ está dentro de $ABCD$ y cumple
  \[\angle PBC=\angle DBA\quad\text{and}\quad \angle PDC=\angle BDA.\]
 Muestra que $ABCD$ es cíclico si y sólo si $AP=CP$.
 </div>
-<h3><a href="./p6.html">Problema 6</a></h3>
+
+    <button class="button" onclick=
+    "copyEvent(`
+    Sea $ABCD$ un cuadrilátero convexo tal que la diagonal $BD$ no bisecta al ángulo $ABC$ ni al ángulo $CDA$. El punto $P$ está dentro de $ABCD$ y cumple
+ \\[\\angle PBC=\\angle DBA\\quad\\text{and}\\quad \\angle PDC=\\angle BDA.\\]
+Muestra que $ABCD$ es cíclico si y sólo si $AP=CP$.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> <h3><a href="./p6.html">Problema 6</a></h3>
 
     <div class="alert-secondary alert">
 Decimos que un entero positivo es "alternativo" si cualesquiera dos dígitos consecutivos en su representación decimal tienen paridad distinta. Encuentra todos los enteros positivos $n$ tales que $n$ tiene un múltiplo alternativo.
 </div>
 
+    <button class="button" onclick=
+    "copyEvent(`
+    Decimos que un entero positivo es "alternativo" si cualesquiera dos dígitos consecutivos en su representación decimal tienen paridad distinta. Encuentra todos los enteros positivos $n$ tales que $n$ tiene un múltiplo alternativo.
+    `)"
+    >Copiar LaTeX</button>
+    <hr> 
                               
                               <!-- (End writing here) -->
 
