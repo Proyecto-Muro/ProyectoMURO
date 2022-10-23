@@ -20,20 +20,20 @@ replacedict = {
 def htmltotex(text):
 	return replace_all(text,replacedict)
 
-#counter=0
-contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM"]#, "OMMFem", "PAGMO"]
+counter=0
+contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM", "PAGMO"]#, "OMMFem", "PAGMO"]
 for i in contestlist:
 	for j in os.listdir("concursos/"+i):
 		if j[0]!=".":
 			for k in os.listdir("concursos/%s/%s/enunciados"%(i,j)):
 				if k[0]!=".":
 					fhtml = open("concursos/%s/%s/enunciados/%s"%(i,j,k), "r").read()
-					#if fhtml!="":
-					#	counter+=1
-					#ftex = htmltotex(fhtml)
-					#testempty = open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "r").read()
-					#if testempty =="":
-					#	with open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "w") as file:
-					#		file.write(ftex)
+					if fhtml!="":
+						counter+=1
+					ftex = htmltotex(fhtml)
+					testempty = open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "r").read()
+					if testempty =="":
+						with open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "w") as file:
+							file.write(ftex)
 
-#print(counter)
+print(str(counter) + " problemas en la base de datos.")
