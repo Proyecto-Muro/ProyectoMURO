@@ -2,9 +2,8 @@ import os
 
 # To do list:
 # Finish the solution page generator (add to dic)
-# Add the generator for images 
 # Create a generator for ISL pages once it is needed
-# Generate text for all high-level pages, and all folder pages
+# Create a generator for OMMEB pages
 
 # ---------------------------------------------------------------------------------------------------------------------
 # contestinfo: This list has information on each contest. 
@@ -16,11 +15,12 @@ contestinfo = [
     ["OMM", 1987, 2021, []],
     ["EGMO", 2012, 2022, []],
     ["OIM", 1985, 2021, [1986]],
-    # ["ISL", 1998, 2021, []],
     ["APMO", 1989, 2022, []],
     ["RMM", 2008, 2021, []],
     ["PAGMO", 2021, 2021, []],
-    ["OMMFem", 2021, 2021, []]
+    ["OMMFem", 2021, 2021, []],
+    ["ISL", 1998, 2021, []],
+    ["OMMEB", 2017, 2022 []]
 ]
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -263,6 +263,30 @@ def ReloadOthers():
 
         # TODO: Generate all high-level pages, and all folder pages
 
+# ---------------------------------------------------------------------------------------------------------------------
+# OMMEB Generator
+# Creates all OMMEB pages
+
+def ReloadOMMEB():
+    
+    pass 
+
+# Start by making list of all problems in a contest: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12.tex, n1e5.tex
+# Make loop for years
+# Get problem info with open() function
+# Paste with format
+
+# Make year index
+
+# Generate page index (/OMMEB) and year links
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# ISL Generator
+# Creates all ISL pages
+
+def ReloadISL():
+    pass
 
 # ---------------------------------------------------------------------------------------------------------------------
 # ReloadPages
@@ -272,14 +296,24 @@ def ReloadPages():
 
     # Reload Problem and Solution Pages
     for contest in contestinfo:
-        for year in range(contest[1], contest[2]+1):
-            if year not in contest[3]: # If the year did take place, generate the page
-                # Uses == to check if it is the first or last year.
-                htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
-            else:
-                # Add a page: Contest did not take place said year.
 
-                pass
+        # Reload special contests
+        if contest[0] == "OMMEB":
+            ReloadOMMEB()
+    
+        if contest[0] == "ISL":
+            ReloadISL()
+
+        else:
+
+            for year in range(contest[1], contest[2]+1):
+                if year not in contest[3]: # If the year did take place, generate the page
+                    # Uses == to check if it is the first or last year.
+                    htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
+                else:
+                    # Add a page: Contest did not take place said year.
+                    pass
+
 
     # Reload Contest Indexes, including text
     ReloadContestText()
