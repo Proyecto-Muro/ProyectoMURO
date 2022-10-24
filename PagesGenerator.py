@@ -10,17 +10,17 @@ import os
 # Format: [contest name (str), first contest year (int), last contest year (int), years omitted (list)]
 
 contestinfo = [
-    ["IMO", 1959, 2022, [1980]],
-    ["OMCC", 1999, 2021, []],
-    ["OMM", 1987, 2021, []],
-    ["EGMO", 2012, 2022, []],
-    ["OIM", 1985, 2021, [1986]],
-    ["APMO", 1989, 2022, []],
-    ["RMM", 2008, 2021, []],
-    ["PAGMO", 2021, 2021, []],
-    ["OMMFem", 2021, 2021, []],
-    ["ISL", 1998, 2021, []],
-    ["OMMEB", 2017, 2022 []]
+    ["IMO", 1959, 2022, [1980]],       # 0
+    ["OMCC", 1999, 2021, []],          # 1
+    ["OMM", 1987, 2021, []],           # 2
+    ["EGMO", 2012, 2022, []],          # 3
+    ["OIM", 1985, 2021, [1986]],       # 4
+    ["APMO", 1989, 2022, []],          # 5
+    ["RMM", 2008, 2021, []],           # 6
+    ["PAGMO", 2021, 2021, []],         # 7
+    ["OMMFem", 2021, 2021, []],        # 8
+    ["ISL", 1998, 2021, []],           # 9
+    ["OMMEB", 2017, 2022 []]           # 10
 ]
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -46,6 +46,38 @@ def GenProbDiv(pnum):
     `)"
     >Copiar LaTeX</button>
     <hr> '''.format(pnum)
+    return str(problemdiv)
+
+def GenProbDivISL(problem):
+    problemdiv = '''<h3><a href="./{0}.html">{0}</a></h3>\n
+    <div class="alert-secondary alert">\n[Enunciado{0}]\n</div>\n
+    <button class="button" onclick=
+    "copyEvent(`
+    [EnunciadoLatex{0}]
+    `)"
+    >Copiar LaTeX</button>
+    <hr> '''.format(problem)
+    return str(problemdiv)
+
+def GenProbDivOMMEB(problem):
+    problemname = ""
+    for i in range(len(problem)):
+        if i=="n":
+            problemname += "Nivel "
+        elif i=="e":
+            problemname += " Equipos "
+        elif i=="p":
+            problemname += " Problema "
+        else:
+            pronlemname += i
+    problemdiv = '''<h3><a href="./{0}.html">{1}</a></h3>\n
+    <div class="alert-secondary alert">\n[Enunciado{0}]\n</div>\n
+    <button class="button" onclick=
+    "copyEvent(`
+    [EnunciadoLatex{0}]
+    `)"
+    >Copiar LaTeX</button>
+    <hr> '''.format(problem, problemname)
     return str(problemdiv)
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -87,17 +119,33 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     Plist = []
     for i in PlistDot: # To avoid dotfiles like .DS_Store
         if i[0]!= ".":
-            Plist.append(i)
+            Plist.append(str(i)[:-4])
 
-    for pnum in range(len(Plist)):
+    # Contest check
+
+    # Make list of problems: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12, n1e5
+    if contestname = "OMMEB":
+        Plist = []
+        for i in range(1,4):
+            for j in range(1, 16):
+                Plist.append("n%sp%s"%(i,j))
+            for j in range(1, 9):
+                Plist.append("n%se%s"%(i,j))
+
+    # Make list of ISL problems
+    if contestname = "ISL":
+        pass
+
+
+    for problem in Plist:
 
         # Creates [Enunciado_i]
-        enunciado = "[Enunciado" + str(Plist[pnum][:-4]) + "]" 
-        EnunciadoProblema = open("concursos/%s/%s/enunciados/%s.tex" % (contestname, year, Plist[pnum][:-4]), "r").read()
+        enunciado = "[Enunciado" + problem + "]" 
+        EnunciadoProblema = open("concursos/%s/%s/enunciados/%s.tex" % (contestname, year, problem), "r").read()
 
         # Creates [EnunciadoLatex_i]
-        enunciadolatex = "[EnunciadoLatex" + str(Plist[pnum][:-4]) + "]" 
-        EnunciadoLatexProblema = open("concursostex/%s/%s/enunciados/%s.tex" % (contestname, year, Plist[pnum][:-4]), "r").read()
+        enunciadolatex = "[EnunciadoLatex" + problem + "]" 
+        EnunciadoLatexProblema = open("concursostex/%s/%s/enunciados/%s.tex" % (contestname, year, problem), "r").read()
 
         # Hay que duplicar los \ en los enunciados porque crean errores con los caracteres al copiarse
         TempEnunciado = ""
@@ -114,7 +162,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         yearmod100 = str(int(year) % 100)
         if len(yearmod100)==1:
             yearmod100 = "0" + yearmod100
-        pstring = yearmod100 + contestname + str(pnum + 1)
+        pstring = yearmod100 + contestname + problem
         if pstring in os.listdir("concursos/asy-imgs"):
             # Add image html to problem 
             # print("Image found:" + pstring)
@@ -137,10 +185,23 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # Here we create a dummy dict to add the number of problems, use GenProbDiv
     # This is to account for contests with different number of problems
 
-    enunciadostring = ""
-    for pnum in range(len(Plist)):
-        enunciadostring += GenProbDiv(pnum + 1)
-    enunciadosdict = {"[Enunciados]": enunciadostring}
+    if contestname not in ["ISL", "OMMEB"]: # OMMEB/ISL check
+        enunciadostring = ""
+        for pnum in range(len(Plist)):
+            enunciadostring += GenProbDiv(pnum + 1)
+        enunciadosdict = {"[Enunciados]": enunciadostring}
+
+    elif contesnmane = "OMMEB": #OMMEB
+        enunciadostring = ""
+        for problem in Plist:
+            enunciadostring += GenProbDivOMMEB(problem)
+        enunciadosdict = {"[Enunciados]": enunciadostring}
+
+    elif contestname = "ISL": #ISL
+        enunciadostring = ""
+        for problem in Plist:
+            enunciadostring += GenProbDivISL(problem)
+        enunciadosdict = {"[Enunciados]": enunciadostring}       
 
     index1 = replace_all(indexraw, enunciadosdict)
 
@@ -155,23 +216,51 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # -------------------------------------------------------------------------------------------------------------
     # Individual problem and solution pages creation
 
-    for pnum in range(len(Plist)):
+    pnum = -1 # This is for OMMEB/ISL
+
+    for problem in Plist:
+
+        try:
+            pnum = int(problem)
+        except:
+            pnum += 1 # OMMEB/ISL
 
         # Open problem format, replace with problem
         problempageraw = open("generator/formats/problem-page.txt", "r").read()
 
-        dic["[Enunciadoproblema]"] = str(ProblemsList[pnum])
-        dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum])
-        dic["[numproblema]"] = str(pnum + 1)
+        dic["[Enunciadoproblema]"] = str(ProblemsList[pnum-1])
+        dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum-1])
+        dic["[numproblema]"] = "problema " + problem
+        if contestname = "OMMEB": # Make OMMEB name
+            problemname = ""
+                for i in range(len(problem)):
+                    if i=="n":
+                        problemname += "Nivel "
+                    elif i=="e":
+                        problemname += " Equipos "
+                    elif i=="p":
+                        problemname += " Problema "
+                    else:
+                        pronlemname += i
+            dic["[numproblema]"] = problemname
+
+        if contestname : "ISL": 
+            dic["[numproblema]"] = problem
+
         problempage = replace_all(problempageraw, dic)
 
         # Create link to add to file, write
-        linkprob = "ProyectoMURO/public_html/{0}/{1}/p{2}.html".format(str(contestname), str(year), str(pnum + 1))
+        linkprob = "ProyectoMURO/public_html/{0}/{1}/p{2}.html".format(str(contestname), str(year), problem)
+
+        if contestname in ["OMMEB", "ISL"]: # OMMEB/ISL
+            linkprob = "ProyectoMURO/public_html/{0}/{1}/{2}.html".format(str(contestname), str(year), problem)
+
         with open(linkprob, "w") as f:
             f.write(problempage)
 
         # Import content
-        SolucionProblema = open("./concursos/%s/%s/soluciones/%s.tex" % (contestname, str(year), str(pnum + 1)), "r").read()
+        SolucionProblema = open("./concursos/%s/%s/soluciones/%s.tex" % (contestname, str(year), problem, "r")).read()
+
         if SolucionProblema !="":
             dic["[SolucionProblema]"] = SolucionProblema
         else:
@@ -183,7 +272,8 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         solutionpage = replace_all(solutionpageraw, dic)
 
         # Create link to add file, write
-        linksol = "ProyectoMURO/public_html/{0}/{1}/sol{2}.html".format(str(contestname), str(year), str(pnum + 1))
+        linksol = "ProyectoMURO/public_html/{0}/{1}/sol{2}.html".format(str(contestname), str(year), problem)
+
         with open(linksol, "w") as g:
             g.write(solutionpage)
 
@@ -268,18 +358,31 @@ def ReloadOthers():
 # Creates all OMMEB pages
 
 def ReloadOMMEB():
+
+    ommebinfo = contestinfo[10]
+
+    # Start by making list of all problems in a contest: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12, n1e5
+    plist = []
+    for i in range(1,4):
+        for j in range(1, 16):
+            plist.append("n%sp%s"%(i,j))
+        for j in range(1, 9):
+            plist.append("n%se%s"%(i,j))
+
+    # Make loop for years
+    for year in range(ommebinfo[1], ommebinfo[2] + 1):
+        if year not in ommebinfo[3]:
+
+
     
-    pass 
+            # Get each problem info with open() function
+            # Paste with format
 
-# Start by making list of all problems in a contest: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12.tex, n1e5.tex
-# Make loop for years
-# Get problem info with open() function
-# Paste with format
+            # Make year index
 
-# Make year index
+    # Generate page index (/OMMEB) and year links
 
-# Generate page index (/OMMEB) and year links
-
+  pass 
 
 # ---------------------------------------------------------------------------------------------------------------------
 # ISL Generator
