@@ -1,14 +1,4 @@
-<h2> Mes Día, Año. Versión 1.2 </h2>
-Cosas nuevas en esta actualización de ProyectoMURO: 
-<ul>
-<li> Ahora puedes copiar el LaTeX de cualquier problema, usando el botón de "Copiar LaTeX".
-<li> ¡Concursos nuevos!
-<ul>
-<li> <a href = "/OMMFem">OMMFem</a></li>
-</ul>
-</li>
-</ul>
-<hr>
+
 <h2> Octubre 21, 2022. Versión 1.1</h2>
 <p>
 ¡Hola a tod@s! Después de un descanso, seguimos desarrollando el proyecto.
