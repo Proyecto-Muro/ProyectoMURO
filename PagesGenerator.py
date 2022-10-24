@@ -354,44 +354,6 @@ def ReloadOthers():
         # TODO: Generate all high-level pages, and all folder pages
 
 # ---------------------------------------------------------------------------------------------------------------------
-# OMMEB Generator
-# Creates all OMMEB pages
-
-def ReloadOMMEB():
-
-    ommebinfo = contestinfo[10]
-
-    # Start by making list of all problems in a contest: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12, n1e5
-    plist = []
-    for i in range(1,4):
-        for j in range(1, 16):
-            plist.append("n%sp%s"%(i,j))
-        for j in range(1, 9):
-            plist.append("n%se%s"%(i,j))
-
-    # Make loop for years
-    for year in range(ommebinfo[1], ommebinfo[2] + 1):
-        if year not in ommebinfo[3]:
-
-
-    
-            # Get each problem info with open() function
-            # Paste with format
-
-            # Make year index
-
-    # Generate page index (/OMMEB) and year links
-
-  pass 
-
-# ---------------------------------------------------------------------------------------------------------------------
-# ISL Generator
-# Creates all ISL pages
-
-def ReloadISL():
-    pass
-
-# ---------------------------------------------------------------------------------------------------------------------
 # ReloadPages
 # Reloads all the pages in the website. 
 
@@ -399,23 +361,13 @@ def ReloadPages():
 
     # Reload Problem and Solution Pages
     for contest in contestinfo:
-
-        # Reload special contests
-        if contest[0] == "OMMEB":
-            ReloadOMMEB()
-    
-        if contest[0] == "ISL":
-            ReloadISL()
-
-        else:
-
-            for year in range(contest[1], contest[2]+1):
-                if year not in contest[3]: # If the year did take place, generate the page
-                    # Uses == to check if it is the first or last year.
-                    htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
-                else:
-                    # Add a page: Contest did not take place said year.
-                    pass
+        for year in range(contest[1], contest[2]+1):
+            if year not in contest[3]: # If the year did take place, generate the page
+                # Uses == to check if it is the first or last year.
+                htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
+            else:
+                # Add a page: Contest did not take place said year.
+                pass
 
 
     # Reload Contest Indexes, including text
