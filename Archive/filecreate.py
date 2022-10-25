@@ -1,58 +1,58 @@
 import os
 
-a=[
-    #["IMO",1959,6],
-   #["ISL",1959,30],
-   #["OMCC",1999,6],
-   # ["OMM",1987,6],
-  # ["EGMO",2012,6],
-  # ["OIM",1985,6],
-  # ["RMM",2008,6],
-    ["APMO",1989,5]
-  #["OMCC", 1999, 6]
+islproblems = [ 
+    [5,7,8,8], # 1998
+    [6,7,8,6],
+    [7,6,8,6],
+    [6,8,8,6],
+    [6,7,8,6],
+    [6,6,7,8],
+    [7,8,8,7],
+    [5,8,7,7],
+    [6,7,10,7],
+    [7,8,8,7],
+    [7,6,7,6],
+    [7,8,8,7],
+    [8,7,7,6],
+    [7,7,8,8],
+    [7,7,8,8],
+    [6,8,6,7],
+    [6,9,7,8],
+    [6,7,8,8],
+    [8,8,8,8],
+    [8,8,8,8],
+    [7,7,7,7],
+    [7,9,8,8],
+    [8,8,9,7],
+    [8,8,8,8] # 2021
+]
 
-   ]
+for year in range(1998,2022):
+    Plist = []
+    letters = ["A", "C", "G", "N"]
+    areas = islproblems[year - 1998]
+    for i in range(4): 
+        for j in range(areas[i]):
+            Plist.append(letters[i]+str(j+1))
 
-for i in a:
-    for j in range(i[1],2022):
-        newpath = "%s/%s/soluciones"%(i[0], j)
-        if not os.path.exists(newpath):
-            os.makedirs(newpath)
-        newpath = "%s/%s/enunciados"%(i[0], j)
-        if not os.path.exists(newpath):
-            os.makedirs(newpath)
-        for k in range(1,(i[2]+1)):
-            if not os.path.exists("%s/%s/enunciados/%s.tex"%(i[0], j, k)):
-                fp=open("%s/%s/enunciados/%s.tex"%(i[0], j, k),"w")
-                htext=""
-                fp.write(htext)
-                fp.close
-            if not os.path.exists("%s/%s/soluciones/%s.tex"%(i[0], j, k)):
-                fp=open("%s/%s/soluciones/%s.tex"%(i[0], j, k),"w")
-                htext=""
-                fp.write(htext)
-                fp.close
-
-'''
-i=["ISL",1959,30]
-
-for j in range(1993,2022):
-    newpath = "%s/%s/enunciados"%(i[0], j)
+    newpath = "ISL/%s"%(year)
     if not os.path.exists(newpath):
         os.makedirs(newpath)
-    newpath = "%s/%s/soluciones"%(i[0], j)
-    if not os.path.exists(newpath):
-        os.makedirs(newpath)        
-    for k in range(1,9):
-        for n in ["A","C","G","N"]:
-            fp=open("%s/%s/enunciados/%s%s.tex"%(i[0], j, n, k),"w")
+
+    for k in Plist:
+        if not os.path.exists("ISL/%s/enunciados/%s.html"%(year, k)):
+            fp=open("ISL/%s/%s.html"%(year, k),"w")
             htext=""
             fp.write(htext)
             fp.close
-            fp=open("%s/%s/soluciones/%s%s.tex"%(i[0], j, n, k),"w")
+        if not os.path.exists("ISL/%s/sol%s.html"%(j, k)):
+            fp=open("ISL/%s/sol%s.html"%(year, k),"w")
             htext=""
             fp.write(htext)
             fp.close
 
 
-'''
+    fp=open("ISL/%s/index.html"%(year),"w")
+    htext=""
+    fp.write(htext)
+    fp.close

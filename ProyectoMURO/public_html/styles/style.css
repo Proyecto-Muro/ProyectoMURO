@@ -24,6 +24,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+
+.clear { clear: both; height: 0; }
+
+#col2container { width: 100%; }
+#col2container a { float: left; width: 50%; }
+
+
 .center {
     display: block;
     margin-left: auto;

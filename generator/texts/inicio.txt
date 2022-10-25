@@ -1,10 +1,10 @@
 <h2> Mes Día, Año. Versión 1.2 </h2>
 Cosas nuevas en esta actualización de ProyectoMURO: 
 <ul>
-<li> Ahora puedes copiar el LaTeX de cualquier problema, usando el botón de "Copiar LaTeX".
+<li> </li>
 <li> ¡Concursos nuevos!
 <ul>
-<li> <a href = "/OMMFem">OMMFem</a></li>
+
 </ul>
 </li>
 </ul>
@@ -17,10 +17,12 @@ Cosas nuevas en esta actualización de ProyectoMURO:
  <li>Problemas:</li>
  <ul>
    <li> IMOs de 2000 a 2009</li>
-   <li> Iberos de 1985 a 2021</li>
-   <li>PAGMO </li>
+   <li> <a href="/OIM">Ibero (OIM)</a></li>
+   <li><a href ="/PAGMO">PAGMO</a> </li>
+   <li> <a href = "/OMMFem">OMMFem</a></li>
    </ul>
- <li> Los problemas con diagramas ya incluyen la imagen correcta (OMMs antiguas) </li>
+ <li> Los problemas con diagramas ya incluyen la imagen correcta (OMMs antiguas). </li>
+ <li> Ahora puedes copiar el LaTeX de cualquier problema, usando el botón de "Copiar LaTeX". </li>
  <li> Compilación de varios concursos internacionales y librillo de problemas para imprimir. Los puedes encontrar en <a href = "/recursos.html">Recursos</a>. </li>
  <li> Corrección de varios errores en enunciados.
  </ul>

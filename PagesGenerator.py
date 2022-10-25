@@ -2,8 +2,7 @@ import os
 
 # To do list:
 # Finish the solution page generator (add to dic)
-# Create a generator for ISL pages once it is needed
-# Create a generator for OMMEB pages
+# Adjust generator for IWYMIC pages
 
 # ---------------------------------------------------------------------------------------------------------------------
 # contestinfo: This list has information on each contest. 
@@ -20,8 +19,36 @@ contestinfo = [
     ["PAGMO", 2021, 2021, []],         # 7
     ["OMMFem", 2021, 2021, []],        # 8
     ["ISL", 1998, 2021, []],           # 9
-    ["OMMEB", 2017, 2022 []]           # 10
+    ["OMMEB", 2017, 2022, []]          # 10
+    #["IWYMIC", 1999, 2022, [2020]]        # 11
 ]
+
+islproblems = [ 
+    [5,7,8,8], # 1998
+    [6,7,8,6],
+    [7,6,8,6],
+    [6,8,8,6],
+    [6,7,8,6],
+    [6,6,7,8],
+    [7,8,8,7],
+    [5,8,7,7],
+    [6,7,10,7],
+    [7,8,8,7],
+    [7,6,7,6],
+    [7,8,8,7],
+    [8,7,7,6],
+    [7,7,8,8],
+    [7,7,8,8],
+    [6,8,6,7],
+    [6,9,7,8],
+    [6,7,8,8],
+    [8,8,8,8],
+    [8,8,8,8],
+    [7,7,7,7],
+    [7,9,8,8],
+    [8,8,9,7],
+    [8,8,8,8] # 2021
+] 
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Replace_all
@@ -49,19 +76,26 @@ def GenProbDiv(pnum):
     return str(problemdiv)
 
 def GenProbDivISL(problem):
+    puid = ""
+    if problem in ["A1", "C1", "G1", "N1"]:
+        puid = problem[0]
     problemdiv = '''<h3><a href="./{0}.html">{0}</a></h3>\n
-    <div class="alert-secondary alert">\n[Enunciado{0}]\n</div>\n
+    <div class="alert-secondary alert" id=\"'''.format(problem) + puid + '''">\n[Enunciado{0}]\n</div>\n
     <button class="button" onclick=
     "copyEvent(`
     [EnunciadoLatex{0}]
     `)"
     >Copiar LaTeX</button>
-    <hr> '''.format(problem)
+     '''.format(problem)
+    if puid not in ["", "A"]:
+        problemdiv = "<hr>" + problemdiv
+
     return str(problemdiv)
 
 def GenProbDivOMMEB(problem):
     problemname = ""
-    for i in range(len(problem)):
+    puid = ""
+    for i in problem:
         if i=="n":
             problemname += "Nivel "
         elif i=="e":
@@ -69,15 +103,30 @@ def GenProbDivOMMEB(problem):
         elif i=="p":
             problemname += " Problema "
         else:
-            pronlemname += i
+            problemname += i
+    if problem == "n1p1":
+        puid = "Nivel1"
+    elif problem == "n1e1":
+        puid = "Nivel1Equipos"
+    elif problem == "n2p1":
+        puid = "Nivel2"
+    elif problem == "n2e1":
+        puid = "Nivel2Equipos"
+    elif problem == "n3p1":
+        puid = "Nivel3"
+    elif problem == "n3e1":
+        puid = "Nivel3Equipos"
+
     problemdiv = '''<h3><a href="./{0}.html">{1}</a></h3>\n
-    <div class="alert-secondary alert">\n[Enunciado{0}]\n</div>\n
+    <div class="alert-secondary alert" id=\"'''.format(problem, problemname) + puid + '''\">\n[Enunciado{0}]\n</div>\n
     <button class="button" onclick=
     "copyEvent(`
     [EnunciadoLatex{0}]
     `)"
     >Copiar LaTeX</button>
-    <hr> '''.format(problem, problemname)
+    '''.format(problem, problemname)
+    if puid not in ["", "Nivel1"]:
+        problemdiv = "<hr>" + problemdiv
     return str(problemdiv)
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -102,7 +151,8 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         "[numproblema]": str(ProblemPosition),
         "[añoantes]": r'<a href="./../' + str(year - 1) + r'">◄</a>',
         "[añodespues]": r'<a href="./../' + str(year + 1) + r'">►</a>',
-        "[SolucionProblema]": SolProb
+        "[SolucionProblema]": SolProb,
+        "[YearIndexExtra]": ""
     }
 
     # This is to remove the arrows for first and last years.
@@ -124,7 +174,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # Contest check
 
     # Make list of problems: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12, n1e5
-    if contestname = "OMMEB":
+    if contestname == "OMMEB":
         Plist = []
         for i in range(1,4):
             for j in range(1, 16):
@@ -133,9 +183,13 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
                 Plist.append("n%se%s"%(i,j))
 
     # Make list of ISL problems
-    if contestname = "ISL":
-        pass
-
+    if contestname == "ISL":
+        Plist = []
+        letters = ["A", "C", "G", "N"]
+        areas = islproblems[year - 1998]
+        for i in range(4): 
+            for j in range(areas[i]):
+                Plist.append(letters[i]+str(j+1))
 
     for problem in Plist:
 
@@ -191,18 +245,23 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             enunciadostring += GenProbDiv(pnum + 1)
         enunciadosdict = {"[Enunciados]": enunciadostring}
 
-    elif contesnmane = "OMMEB": #OMMEB
+    elif contestname == "OMMEB": #OMMEB
         enunciadostring = ""
         for problem in Plist:
             enunciadostring += GenProbDivOMMEB(problem)
         enunciadosdict = {"[Enunciados]": enunciadostring}
 
-    elif contestname = "ISL": #ISL
+        dic["[YearIndexExtra]"] = open("generator/texts/ommebyearindex.txt", "r").read()
+
+    elif contestname == "ISL": #ISL
         enunciadostring = ""
         for problem in Plist:
             enunciadostring += GenProbDivISL(problem)
-        enunciadosdict = {"[Enunciados]": enunciadostring}       
+        enunciadosdict = {"[Enunciados]": enunciadostring} 
 
+        dic["[YearIndexExtra]"] = open("generator/texts/islyearindex.txt", "r").read()
+
+    # Here we replace the GenProbDiv
     index1 = replace_all(indexraw, enunciadosdict)
 
     # Now we can replace again with the correct number of problems
@@ -231,20 +290,20 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum-1])
         dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum-1])
         dic["[numproblema]"] = "problema " + problem
-        if contestname = "OMMEB": # Make OMMEB name
+        if contestname == "OMMEB": # Make OMMEB name
             problemname = ""
-                for i in range(len(problem)):
-                    if i=="n":
-                        problemname += "Nivel "
-                    elif i=="e":
-                        problemname += " Equipos "
-                    elif i=="p":
-                        problemname += " Problema "
-                    else:
-                        pronlemname += i
+            for i in problem:
+                if i=="n":
+                    problemname += "Nivel "
+                elif i=="e":
+                    problemname += " Equipos "
+                elif i=="p":
+                    problemname += " Problema "
+                else:
+                    problemname += i
             dic["[numproblema]"] = problemname
 
-        if contestname : "ISL": 
+        if contestname == "ISL": 
             dic["[numproblema]"] = problem
 
         problempage = replace_all(problempageraw, dic)
@@ -259,7 +318,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             f.write(problempage)
 
         # Import content
-        SolucionProblema = open("./concursos/%s/%s/soluciones/%s.tex" % (contestname, str(year), problem, "r")).read()
+        SolucionProblema = open("./concursos/%s/%s/soluciones/%s.tex" % (contestname, str(year), problem), "r").read()
 
         if SolucionProblema !="":
             dic["[SolucionProblema]"] = SolucionProblema
