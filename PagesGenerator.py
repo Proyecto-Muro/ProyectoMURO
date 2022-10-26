@@ -50,7 +50,11 @@ islproblems = [
     [8,8,8,8] # 2021
 ] 
 
+<<<<<<< HEAD
 asyimgs = listdir("ProyectoMURO/public_html/images/asy-imgs")
+=======
+asyimgs = listdir("concursos/asy-imgs")
+>>>>>>> b12dd6f81aff9a779dbabd2fe27a4b306b6baed9
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Replace_all
