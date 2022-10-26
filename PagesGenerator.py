@@ -1,57 +1,27 @@
-from os import listdir
-
 # To do list:
 # Finish the solution page generator (add to dic)
 # Adjust generator for IWYMIC pages
 
 # ---------------------------------------------------------------------------------------------------------------------
-# contestinfo: This list has information on each contest. 
-# Format: [contest name (str), first contest year (int), last contest year (int), years omitted (list)]
+# Imports
 
-contestinfo = [
-    ["IMO", 1959, 2022, [1980]],       # 0
-    ["OMCC", 1999, 2021, []],          # 1
-    ["OMM", 1987, 2021, []],           # 2
-    ["EGMO", 2012, 2022, []],          # 3
-    ["OIM", 1985, 2021, [1986]],       # 4
-    ["APMO", 1989, 2022, []],          # 5
-    ["RMM", 2008, 2021, []],           # 6
-    ["PAGMO", 2021, 2021, []],         # 7
-    ["OMMFem", 2021, 2021, []],        # 8
-    ["ISL", 1998, 2021, []],           # 9
-    ["OMMEB", 2017, 2022, []]          # 10
-    #["IWYMIC", 1999, 2022, [2020]]        # 11
-]
 
-islproblems = [ 
-    [5,7,8,8], # 1998
-    [6,7,8,6],
-    [7,6,8,6],
-    [6,8,8,6],
-    [6,7,8,6],
-    [6,6,7,8],
-    [7,8,8,7],
-    [5,8,7,7],
-    [6,7,10,7],
-    [7,8,8,7],
-    [7,6,7,6],
-    [7,8,8,7],
-    [8,7,7,6],
-    [7,7,8,8],
-    [7,7,8,8],
-    [6,8,6,7],
-    [6,9,7,8],
-    [6,7,8,8],
-    [8,8,8,8],
-    [8,8,8,8],
-    [7,7,7,7],
-    [7,9,8,8],
-    [8,8,9,7],
-    [8,8,8,8] # 2021
-] 
+from os import listdir
+from info import pages_list, contestinfo, islproblems
 
+# Formats and lists import
 
 asyimgs = listdir("ProyectoMURO/public_html/images/asy-imgs")
+
+indexrawcontest = open("generator/formats/contest-index.txt", "r").read() 
+indexrawyear = open("generator/formats/year-index.txt", "r").read()
+ommebyearindex = open("generator/texts/ommebyearindex.txt", "r").read()
+islyearindex = open("generator/texts/islyearindex.txt", "r").read()
+problempageraw = open("generator/formats/problem-page.txt", "r").read()
+emptysoltext = open("generator/texts/emptysol.txt", "r").read()
+solutionpageraw = open("generator/formats/solution-page.txt", "r").read()
+pageformat = open("generator/formats/normal-page.txt", "r").read() 
+
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -239,9 +209,6 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # -----------------------------------------------------------------------------------------------------------------
     # Year index creation
 
-    # Copy file index.txt as a variable
-    indexraw = open("generator/formats/year-index.txt", "r").read()
-
     # Here we create a dummy dict to add the number of problems, use GenProbDiv
     # This is to account for contests with different number of problems
 
@@ -257,7 +224,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             enunciadostring += GenProbDivOMMEB(problem)
         enunciadosdict = {"[Enunciados]": enunciadostring}
 
-        dic["[YearIndexExtra]"] = open("generator/texts/ommebyearindex.txt", "r").read()
+        dic["[YearIndexExtra]"] = ommebyearindex 
 
     elif contestname == "ISL": #ISL
         enunciadostring = ""
@@ -265,10 +232,10 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             enunciadostring += GenProbDivISL(problem)
         enunciadosdict = {"[Enunciados]": enunciadostring} 
 
-        dic["[YearIndexExtra]"] = open("generator/texts/islyearindex.txt", "r").read()
+        dic["[YearIndexExtra]"] = islyearindex
 
     # Here we replace the GenProbDiv
-    index1 = replace_all(indexraw, enunciadosdict)
+    index1 = replace_all(indexrawyear, enunciadosdict)
 
     # Now we can replace again with the correct number of problems
     index2 = replace_all(index1, dic)
@@ -285,9 +252,6 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # Individual problem and solution pages creation
 
     pnum = 0 
-
-    # Open problem format, replace with problem
-    problempageraw = open("generator/formats/problem-page.txt", "r").read()
 
     for problem in Plist:
 
@@ -330,10 +294,10 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             dic["[SolucionProblema]"] = SolucionProblema
         else:
             # If empty add empty format
-            dic["[SolucionProblema]"] = open("generator/texts/emptysol.txt", "r").read()
+            dic["[SolucionProblema]"] = emptysoltext
 
-        # Open format, replace all content
-        solutionpageraw = open("generator/formats/solution-page.txt", "r").read()
+        # Replace all content
+
         solutionpage = replace_all(solutionpageraw, dic)
 
         # Create link to add file, write
@@ -391,8 +355,8 @@ def ReloadContestText():
             dic["[NotaOmitido]"]="<p><i>Nota: </i> El concurso no se llevó a cabo en los años marcados con *.</p>"
 
         # Replace text
-        indexraw = open("generator/formats/contest-index.txt", "r").read()
-        index = replace_all(indexraw, dic) # This is the format, gets replaced with dic
+        
+        index = replace_all(indexrawcontest, dic) # This is the format, gets replaced with dic
 
         with open("ProyectoMURO/public_html/%s/index.html" % concurso, "w") as f:
             f.write(index) # Writes the page onto html file
@@ -403,15 +367,12 @@ def ReloadContestText():
 
 # ---------------------------------------------------------------------------------------------------------------------
 # ReloadOthers 
-# Generates pages from pageslist.py file
+# Generates pages from info.py file
 
 def ReloadOthers(): 
 
     pagecount = 0
 
-    from pageslist import pages_list
-
-    pageformat = open("generator/formats/normal-page.txt", "r").read() # Imports format
     for i in pages_list:
         pagename = i[0]
         pagecontent = open("generator/texts/%s.txt" % pagename, "r").read()
@@ -435,6 +396,33 @@ def ReloadOthers():
     return pagecount
 
 # ---------------------------------------------------------------------------------------------------------------------
+# NoContest
+# Generates pages for contests that did not take place
+
+def NoContest(contestname, year, ismin=False, ismax=False):
+    nocontestindex = open("generator/formats/no-contest.txt","r").read()
+    dic = {
+        "[concurso]": str(contestname),
+        "[año]": str(year),
+        "[añoantes]": r'<a href="./../' + str(year - 1) + r'">◄</a>',
+        "[añodespues]": r'<a href="./../' + str(year + 1) + r'">►</a>'
+    }
+
+    # This is to remove the arrows for first and last years.
+    if ismax:
+        dic["[añodespues]"]="" 
+    if ismin:
+        dic["[añoantes]"]=""
+
+    index = replace_all(nocontestindex, dic)
+
+    indexlink = "ProyectoMURO/public_html/{0}/{1}/index.html".format(str(contestname),str(year))
+    with open(indexlink, "w") as f:
+        f.write(index)
+
+
+
+# ---------------------------------------------------------------------------------------------------------------------
 # ReloadPages
 # Reloads all the pages in the website. 
 
@@ -450,8 +438,8 @@ def ReloadPages():
                 PagesEdited += htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
             else:
                 # Add a page: Contest did not take place said year.
-                pass
-
+                NoContest(contest[0], year, year==contest[2], year==contest[1]) 
+                PagesEdited += 1
 
     # Reload Contest Indexes, including text
     PagesEdited += ReloadContestText()

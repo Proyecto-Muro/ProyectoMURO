@@ -28,11 +28,10 @@
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
       
       <meta charset="utf-8">
-      <title>IMO 1980/3 - Proyecto MURO</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+      <title>[concurso] [año] - MURO</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
-    
-    
+
     
   <body> 
       <div class="container">
@@ -90,25 +89,15 @@
                   <div id="main">
                       <div class="entry">
 
-                          <h1 id="pagetitle"> 
-                              <a href="./../">
-                               IMO<!-- Page Title -->
-                              </a>
+                          <h1 id="pagetitle"> <!-- Page Title -->
+                              [añoantes]
+                              <a href="./">[concurso] [año]</a>
+                              [añodespues]
                           </h1>
                           <div class="entrywrap">
-
-                              <!-- (Begin writing here) -->
-                              <h3>
-                                  IMO 1980 problema 3
-                              </h3>
-                              <div class="alert-secondary alert">
-                                  
-                              </div>
-                              <hr>
-                               • <a href="./sol3.html">Solución</a><br>
-                               • <a href="./">Regreso a IMO 1980</a><br>
-                              
-                              <!-- (End writing here) -->
+                              <p> Este año, el concurso no sucedió. </p>
+                               • <a href="./..">Regresar a [concurso]</a><br>
+                               • <a href="/">Regresar a la página de inicio</a><br>
 
                           </div>
                       </div>
