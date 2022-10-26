@@ -1,0 +1,6 @@
+<div id="col2container">
+<a href="./#A"><h3>Álgebra</h3></a>
+<a href="./#C"><h3>Combinatoria</h3></a>
+<a href="./#G"><h3>Geometría</h3></a>
+<a href="./#N"><h3>Números</h3></a>
+</div>

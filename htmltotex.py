@@ -36,4 +36,4 @@ for i in contestlist:
 						with open("concursostex/%s/%s/enunciados/%s"%(i,j,k), "w") as file:
 							file.write(ftex)
 
-print(str(counter) + " problemas en la base de datos.")
+print("Problems in database: " + str(counter))

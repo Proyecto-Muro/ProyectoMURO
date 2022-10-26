@@ -1,0 +1,9 @@
+<p>
+  <span style="float:left;padding:10px;">
+    <img src="/images/apmologo.gif" alt="APMO-Logo" width="200">
+  </span>
+</p>
+<p>
+	La Olimpiada de Matemáticas de la Cuenca del Pacífico (APMO) es una olimpiada de matemáticas para los países de la región del Pacífico. La APMO comenzó en 1989, y el examen consiste en un examen de 4 horas con 5 problemas. <a href="https://www.apmo-official.org/">Sitio oficial</a>
+</p>
+<hr>

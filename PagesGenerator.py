@@ -135,6 +135,8 @@ def GenProbDivOMMEB(problem):
 
 def htmlproblems(contestname, year, ismax=False, ismin=False):
 
+    pagecount = 0
+
     # Declare the problems' info, will be set as empty if problem does not exist
 
     ProblemsList = []
@@ -229,7 +231,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
         ProblemsList.append(dic[enunciado]) # Add to ProblemsList for later use
         ProblemsListLatex.append(dic[enunciadolatex])
- 
+
     # -----------------------------------------------------------------------------------------------------------------
     # Year index creation
 
@@ -272,20 +274,25 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     with open(indexlink, "w") as f:
         f.write(index2)
 
+    pagecount += 1
+
+
     # -------------------------------------------------------------------------------------------------------------
     # Individual problem and solution pages creation
 
     pnum = -1 # This is for OMMEB/ISL
 
+    # Open problem format, replace with problem
+    problempageraw = open("generator/formats/problem-page.txt", "r").read()
+
     for problem in Plist:
+
+        # Check if problem needs to be changed
 
         try:
             pnum = int(problem)
         except:
             pnum += 1 # OMMEB/ISL
-
-        # Open problem format, replace with problem
-        problempageraw = open("generator/formats/problem-page.txt", "r").read()
 
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum-1])
         dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum-1])
@@ -317,6 +324,8 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         with open(linkprob, "w") as f:
             f.write(problempage)
 
+        pagecount += 1
+
         # Import content
         SolucionProblema = open("./concursos/%s/%s/soluciones/%s.tex" % (contestname, str(year), problem), "r").read()
 
@@ -335,6 +344,10 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
         with open(linksol, "w") as g:
             g.write(solutionpage)
+
+        pagecount += 1
+
+    return pagecount
 
 # ---------------------------------------------------------------------------------------------------------------------
 # GenerateYearLinks
@@ -359,6 +372,8 @@ def GenerateYearLinks(year_start, year_end, exception_list):
 # Writes contest information into main pages, adds links for each year
 
 def ReloadContestText():
+
+    pagecount = 0
 
     for i in contestinfo:
 
@@ -385,11 +400,17 @@ def ReloadContestText():
         with open("ProyectoMURO/public_html/%s/index.html" % concurso, "w") as f:
             f.write(index) # Writes the page onto html file
 
+        pagecount += 1
+
+    return pagecount
+
 # ---------------------------------------------------------------------------------------------------------------------
 # ReloadOthers 
 # Generates pages from pageslist.py file
 
 def ReloadOthers(): 
+
+    pagecount = 0
 
     from pageslist import pages_list
 
@@ -406,11 +427,15 @@ def ReloadOthers():
         if i[3] == 2:
             with open("ProyectoMURO/public_html/%s/index.html" % pagename, "w") as f:
                 f.write(pagehtml)
+
+                pagecount += 1
         if i[3] == 1:
             with open("ProyectoMURO/public_html/%s.html" % pagename, "w") as f:
                 f.write(pagehtml)
 
-        # TODO: Generate all high-level pages, and all folder pages
+                pagecount += 1
+
+    return pagecount
 
 # ---------------------------------------------------------------------------------------------------------------------
 # ReloadPages
@@ -418,19 +443,23 @@ def ReloadOthers():
 
 def ReloadPages():
 
+    PagesEdited = 0
+
     # Reload Problem and Solution Pages
     for contest in contestinfo:
         for year in range(contest[1], contest[2]+1):
             if year not in contest[3]: # If the year did take place, generate the page
                 # Uses == to check if it is the first or last year.
-                htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
+                PagesEdited += htmlproblems(contest[0], year, year==contest[2], year==contest[1]) 
             else:
                 # Add a page: Contest did not take place said year.
                 pass
 
 
     # Reload Contest Indexes, including text
-    ReloadContestText()
+    PagesEdited += ReloadContestText()
 
     # Reload main pages content 
-    ReloadOthers()
+    PagesEdited += ReloadOthers()
+
+    return PagesEdited
