@@ -1,4 +1,4 @@
-import os
+from os import listdir
 
 # To do list:
 # Finish the solution page generator (add to dic)
@@ -49,6 +49,8 @@ islproblems = [
     [8,8,9,7],
     [8,8,8,8] # 2021
 ] 
+
+asyimgs = listdir("concursos/asy-imgs")
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Replace_all
@@ -166,7 +168,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # -----------------------------------------------------------------------------------------------------------------
     # This section adds the problem statements to the dictionary
 
-    PlistDot = os.listdir("concursos/%s/%s/enunciados" % (contestname, year))
+    PlistDot = listdir("concursos/%s/%s/enunciados" % (contestname, year))
     PlistDot.sort()
     Plist = []
     for i in PlistDot: # To avoid dotfiles like .DS_Store
@@ -218,11 +220,11 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         yearmod100 = str(int(year) % 100)
         if len(yearmod100)==1:
             yearmod100 = "0" + yearmod100
-        pstring = yearmod100 + contestname + problem
-        if pstring in os.listdir("concursos/asy-imgs"):
+        pstring = yearmod100 + contestname + problem + ".png"
+        if pstring in asyimgs:
             # Add image html to problem 
             # print("Image found:" + pstring)
-            imgstr = "\n"+r'<p>' + r'<img src="/images/asy-imgs/{0}.png" alt="{0}.png" height="100" class="center"></p>'.format(pstring)
+            imgstr = "\n"+r'<p>' + r'<img src="/images/asy-imgs/{0}" alt="{0}" height="100" class="center"></p>'.format(pstring)
             EnunciadoProblema += imgstr
             
         # Add entries to dict
@@ -280,19 +282,14 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # -------------------------------------------------------------------------------------------------------------
     # Individual problem and solution pages creation
 
-    pnum = -1 # This is for OMMEB/ISL
+    pnum = 0 
 
     # Open problem format, replace with problem
     problempageraw = open("generator/formats/problem-page.txt", "r").read()
 
     for problem in Plist:
 
-        # Check if problem needs to be changed
-
-        try:
-            pnum = int(problem)
-        except:
-            pnum += 1 # OMMEB/ISL
+        pnum += 1 
 
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum-1])
         dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum-1])
