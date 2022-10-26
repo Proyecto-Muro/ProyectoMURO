@@ -50,7 +50,7 @@ islproblems = [
     [8,8,8,8] # 2021
 ] 
 
-asyimgs = listdir("concursos/asy-imgs")
+asyimgs = listdir("ProyectoMURO/public_html/images/asy-imgs")
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Replace_all
@@ -293,7 +293,8 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
         dic["[Enunciadoproblema]"] = str(ProblemsList[pnum-1])
         dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum-1])
-        dic["[numproblema]"] = "problema " + problem
+        dic["[nomproblema]"] = problem
+        dic["[numproblema]"] = problem
         if contestname == "OMMEB": # Make OMMEB name
             problemname = ""
             for i in problem:
@@ -305,10 +306,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
                     problemname += " Problema "
                 else:
                     problemname += i
-            dic["[numproblema]"] = problemname
-
-        if contestname == "ISL": 
-            dic["[numproblema]"] = problem
+            dic["[nomproblema]"] = problemname
 
         problempage = replace_all(problempageraw, dic)
 

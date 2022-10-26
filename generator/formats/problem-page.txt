@@ -98,7 +98,7 @@
 
                               <!-- (Begin writing here) -->
                               <h3>
-                                  [concurso] [año] [numproblema]
+                                  [concurso] [año] [nomproblema]
                               </h3>
                               <div class="alert-secondary alert">
                                   [Enunciadoproblema]
