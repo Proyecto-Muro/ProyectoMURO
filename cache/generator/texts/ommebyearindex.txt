@@ -1,8 +1,0 @@
-<div id="col2container">
-<a href="./#Nivel1"><h3>Nivel 1 Individual</h3></a>
-<a href="./#Nivel1Equipos"><h3>Nivel 1 Equipos</h3></a>
-<a href="./#Nivel2"><h3>Nivel 2 Individual</h3></a>
-<a href="./#Nivel2Equipos"><h3>Nivel 2 Equipos</h3></a>
-<a href="./#Nivel3"><h3>Nivel 3 Individual</h3></a>
-<a href="./#Nivel3Equipos"><h3>Nivel 3 Equipos</h3></a>
-</div>

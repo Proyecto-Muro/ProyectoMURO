@@ -1,6 +1,0 @@
-<p>
-  La Olimpiada Mexicana de Matemáticas Femenil (OMMFem) es una olimpiada femenil de matemáticas. Comenzó en 2021, y consiste en dos exámenes de 4.5 horas, con 3 problemas cada uno. Hay dos niveles, el primero resuleve los problemas 1, 2, 3, 5, 6, y 7, mientras que el segundo resuelve los problemas 2, 3, 4, 6, 7, y 8. <a href="https://primeraommfemenil.wordpress.com/">Sitio oficial</a>
-<br>
-<hr>
-
-
