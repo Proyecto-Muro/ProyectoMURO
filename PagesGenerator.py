@@ -9,7 +9,7 @@
 from os import listdir
 from info import pages_list, contestinfo, islproblems
 
-# Formats and lists import
+# Formats and lists
 
 asyimgs = listdir("ProyectoMURO/public_html/images/asy-imgs")
 
@@ -115,19 +115,15 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
     ProblemsList = []
     ProblemsListLatex = []
-    ProblemText = ""
-    ProblemTextLatex = ""
-    ProblemPosition = "1"
-    SolProb = ""
     dic = {
-        "[Enunciadoproblema]": str(ProblemText),
-        "[EnunciadoLatexproblema]": str(ProblemTextLatex),
+        "[Enunciadoproblema]": "",
+        "[EnunciadoLatexproblema]": "",
         "[concurso]": str(contestname),
         "[año]": str(year),
-        "[numproblema]": str(ProblemPosition),
+        "[numproblema]": "1",
         "[añoantes]": r'<a href="./../' + str(year - 1) + r'">◄</a>',
         "[añodespues]": r'<a href="./../' + str(year + 1) + r'">►</a>',
-        "[SolucionProblema]": SolProb,
+        "[SolucionProblema]": "",
         "[YearIndexExtra]": ""
     }
 
