@@ -28,7 +28,7 @@
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
       
       <meta charset="utf-8">
-      <title>OIM 2021/3 - Proyecto MURO</title>
+      <title>PAGMO 2022/1 - Proyecto MURO</title>
       <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
     
@@ -91,32 +91,40 @@
 
                           <h1 id="pagetitle"> 
                               <a href="./../">
-                               OIM<!-- Page Title -->
+                               PAGMO<!-- Page Title -->
                               </a>
                           </h1>
                           <div class="entrywrap">
 
                               <!-- (Begin writing here) -->
                               <h3>
-                                  OIM 2021 3
+                                  PAGMO 2022 1
                               </h3>
                               <div class="alert-secondary alert">
-                                  Sea $a_1, a_2, a_3, \cdots$ una sucesión de enteros positivos y sea $b_1, b_2, b_3, \cdots$ la sucesión de números reales dada por
-\[ b_n = \frac{a_1a_2 \cdots a_n}{a_1 + a_2 + \cdots a_n}, n \geq 1 \]
-Demuestre que si entre cada millón de términos consecutivos de la sucesión $b_1, b_2, b_3, \cdots$ existe al menos uno que es entero, entonces existe algún $k$ tal que $b_k > 2021^{2021}$.
+                                  Leticia tiene un tablero de $9\times 9$ casillas. Se dice que dos casillas son amigas si comparten un lado o si están en una misma columna, pero en extremos opuestos, o si están en una misma fila, pero en extremos opuestos. De esta forma, cada casilla tiene exactamente $4$ casillas amigas. Leticia va a pintar cada casilla de uno de tres colores: verde, azul o rojo. Una vez que todas las casillas estñen pintadas, en cada casilla se va a escribir un número, siguiendo las siguientes reglas:
+<ul>
+<li> Si la casilla es verde, se escribe la cantidad de casillas rojas amigas más dos veces la cantidad de casillas azules amigas.</li>
+<li> Si la casilla es roja, se escribe la cantidad de casillas azules amigas más dos veces la cantidad de casillas verdes amigas.</li>
+<li> Si la casilla es azul, se escribe la cantidad de casillas verdes amigas más dos veces la cantidad de casillas rojas amigas.</li>
+</ul>
+Encuentra el máximo valor posible de la suma de los números asignados a las casillas que Leticia puede obtener, sabiendo que ella puede escoger la coloración de las casillas del tablero.
 
                               </div>
                               <button class="button" onclick=
                               "copyEvent(`
-                              Sea $a_1, a_2, a_3, \\cdots$ una sucesión de enteros positivos y sea $b_1, b_2, b_3, \\cdots$ la sucesión de números reales dada por
-\\[ b_n = \\frac{a_1a_2 \\cdots a_n}{a_1 + a_2 + \\cdots a_n}, n \\geq 1 \\]
-Demuestre que si entre cada millón de términos consecutivos de la sucesión $b_1, b_2, b_3, \\cdots$ existe al menos uno que es entero, entonces existe algún $k$ tal que $b_k > 2021^{2021}$.
+                              Leticia tiene un tablero de $9\\times 9$ casillas. Se dice que dos casillas son amigas si comparten un lado o si están en una misma columna, pero en extremos opuestos, o si están en una misma fila, pero en extremos opuestos. De esta forma, cada casilla tiene exactamente $4$ casillas amigas. Leticia va a pintar cada casilla de uno de tres colores: verde, azul o rojo. Una vez que todas las casillas estñen pintadas, en cada casilla se va a escribir un número, siguiendo las siguientes reglas:
+ \\begin{itemize} 
+ \\item  Si la casilla es verde, se escribe la cantidad de casillas rojas amigas más dos veces la cantidad de casillas azules amigas.
+ \\item  Si la casilla es roja, se escribe la cantidad de casillas azules amigas más dos veces la cantidad de casillas verdes amigas.
+ \\item  Si la casilla es azul, se escribe la cantidad de casillas verdes amigas más dos veces la cantidad de casillas rojas amigas.
+ \\end{itemize} 
+Encuentra el máximo valor posible de la suma de los números asignados a las casillas que Leticia puede obtener, sabiendo que ella puede escoger la coloración de las casillas del tablero.
 
                               `)"
                               >Copiar LaTeX</button> 
                               <hr>
-                               • <a href="./sol3.html">Solución</a><br>
-                               • <a href="./">Regreso a OIM 2021</a><br>
+                               • <a href="./sol1.html">Solución</a><br>
+                               • <a href="./">Regreso a PAGMO 2022</a><br>
                               
                               <!-- (End writing here) -->
 
