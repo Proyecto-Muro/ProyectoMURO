@@ -136,15 +136,6 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # -----------------------------------------------------------------------------------------------------------------
     # This section adds the problem statements to the dictionary
 
-    PlistDot = listdir("concursos/%s/%s/enunciados" % (contestname, year))
-    PlistDot.sort()
-    Plist = []
-    for i in PlistDot: # To avoid dotfiles like .DS_Store
-        if i[0]!= ".":
-            Plist.append(str(i)[:-4])
-
-    # Contest check
-
     # Make list of problems: Level 1-3, Problem 1-15, Team 1-8. Example: n3p12, n1e5
     if contestname == "OMMEB":
         Plist = []
@@ -162,6 +153,15 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         for i in range(4): 
             for j in range(areas[i]):
                 Plist.append(letters[i]+str(j+1))
+
+    # List for other contests
+    else:
+        PlistDot = listdir("concursos/%s/%s/enunciados" % (contestname, year))
+        PlistDot.sort()
+        Plist = []
+        for i in PlistDot: # To avoid dotfiles like .DS_Store
+            if i[0]!= ".":
+                Plist.append(str(i)[:-4])      
 
     for problem in Plist:
 
