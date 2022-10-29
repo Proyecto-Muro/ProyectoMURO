@@ -146,7 +146,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
                 Plist.append("n%se%s"%(i,j))
 
     # Make list of ISL problems
-    if contestname == "ISL":
+    elif contestname == "ISL":
         Plist = []
         letters = ["A", "C", "G", "N"]
         areas = islproblems[year - 1998]
