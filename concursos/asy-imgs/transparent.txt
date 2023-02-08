@@ -1,1 +1,1 @@
-for x in *; do convert $x -transparent white $x; done;
+for x in *.png; do convert $x -transparent white $x; done; for x in *; do cp $x ../../ProyectoMURO/public_html/images/asy-imgs/; done;

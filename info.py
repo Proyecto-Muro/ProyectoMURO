@@ -4,17 +4,15 @@
 
 pages_list = [
     ["index", "Movimiento Unificador de Recursos Olímpicos", "/", 1],
-    ["inicio", "Página de Inicio", "./inicio.html", 1],
-    ["recursos", "Recursos de Olimpiada", "./recursos.html", 1],
-    ["sobrenosotros", "Sobre Nosotros", "./sobrenosotros.html", 1],
+    ["inicio", "Página de Inicio", "/inicio.html", 1],
+    ["sobrenosotros", "Sobre Nosotros", "/sobrenosotros.html", 1],
     ["test", "Test", "/test.html", 1],
     ["404", "404 Page Not Found", "/", 1],
-    ["Geometria", "Geometría", "./", 2],
-    ["Numeros", "Teoría de Números", "./", 2],
-    ["Combinatoria", "Combinatoria", "./", 2],
-    ["Algebra", "Álgebra", "./", 2],
-    ["Miscelaneo", "Misceláneo", "./", 2],
-    ["otrosconcursos", "Otros Concursos", "./", 2]
+    ["otrosconcursos", "Otros Concursos", "/otrosconcursos.html", 1],
+    ["wiki", "Wiki de Olimpiada", "./", 2],
+    ["wiki/acronimos", "Acrónimos de Olimpiada", "./acronimos.html",1],
+    ["wiki/recursos", "Recursos de Olimpiada", "./recursos.html", 1]
+    #["lista", "Generador de Listas", "./", 2]
 ]
 
 # contestinfo: This list has information on each contest. 
@@ -23,7 +21,7 @@ pages_list = [
 contestinfo = [
     ["IMO", 1959, 2022, [1980]],       # 0
     ["OMCC", 1999, 2021, []],          # 1
-    ["OMM", 1987, 2021, []],           # 2
+    ["OMM", 1987, 2022, []],           # 2
     ["EGMO", 2012, 2022, []],          # 3
     ["OIM", 1985, 2021, [1986]],       # 4
     ["APMO", 1989, 2022, []],          # 5
@@ -31,8 +29,10 @@ contestinfo = [
     ["PAGMO", 2021, 2022, []],         # 7
     ["OMMFem", 2021, 2021, []],        # 8
     ["ISL", 1998, 2021, []],           # 9
-    ["OMMEB", 2017, 2022, []]          # 10
-    #["IWYMIC", 1999, 2022, [2020]]        # 11
+    ["OMMEB", 2017, 2022, []],         # 10
+    ["MXTST", 2020, 2023, []]          # 11
+    #["IWYMIC", 1999, 2022, [2020]]    # 12
+
 ]
 
 # islproblems: number of problems per area [A,C,G,N]

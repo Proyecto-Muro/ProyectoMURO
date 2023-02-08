@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+
+  <head>
+
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet" type="text/css"/>
+
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script>
+      
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>Proyecto MURO</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  
+    
+  <body> 
+      <div class="container">
+
+
+          <object align="right">
+            <br>
+            <label class="switch">
+             <input type="checkbox">
+            <span class="slider"> </span>
+            </label>
+        </object> 
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                          
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+          
+
+
+          <div>
+              <div class="row" id="sub-placeholder"> </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+              
+
+          </div>
+
+
+          <div id="content", class="row">
+
+
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./">
+                               Generador de Listas
+                              </a>
+                              
+                          </h1>
+                          <div class="entrywrap">
+                            <p>Aquí podrás crear listas de problemas y compartirlas con los demás. Solo agrega los problemas que quieras, y pon un autor y título.</p>
+                            <p>Autor: <input type="text"></p>
+                            <p>Título: <input type="text"></p>
+                            <div>
+                                <p>Agregar Problemas:</p>
+                                <datalist id="suggestions">
+                                    <option>20IMO2</option>
+                                    <option>20OMM2</option>
+                                </datalist>
+                                <input  autoComplete="on" list="suggestions"/> 
+                                <button class="button" onclick="">Agregar</button> 
+                            </div>
+                            <br>
+                            <p><small>El formato para los IDs de problemas es: 
+                                Últimos dos dígitos del año, acrónimo del
+                                concurso, número de problema. Por ejemplo, 
+                                <b>20IMO2</b>. Para consultar los acrónimos de 
+                                concursos, visita la página de 
+                                <a href="wiki/acronimos.html">acrónimos</a>. De igual 
+                                manera, puedes encontrar los IDs en el link de 
+                                el problema que quieres agregar.
+                            </small></p>
+                            <hr>
+                            <p>Problemas agregados:</p>
+                            <ul>
+                                <li>20OMM2</li>
+                            </ul>
+
+
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src = scripts/main.js></script>
+      
+      
+  </body>
+</html>

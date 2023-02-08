@@ -21,7 +21,7 @@ def htmltotex(text):
 	return replace_all(text,replacedict)
 
 counter=0
-contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM", "PAGMO", "OMMFem", "OMMEB"]
+contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM", "PAGMO", "OMMFem", "OMMEB", "MXTST"]
 for i in contestlist:
 	for j in os.listdir("concursos/"+i):
 		if j[0]!=".":
@@ -37,3 +37,6 @@ for i in contestlist:
 							file.write(ftex)
 
 print("Problems in database: " + str(counter))
+cwd = os.getcwd()
+print(f"Current Working Directory: {cwd}")
+

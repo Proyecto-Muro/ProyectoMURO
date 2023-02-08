@@ -1,0 +1,3 @@
+<p> Aquí podrás encontrar varios acrónimos que se usan en la olimpiada.
+<hr>
+<h3> Concursos <h3>

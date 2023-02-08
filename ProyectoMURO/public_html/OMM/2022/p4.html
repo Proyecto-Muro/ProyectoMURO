@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+
+<!-- AAAAAAAAA -->
+
+
+<html>
+    
+  <!-- HEAD -->
+  <head>
+      <!--Example style: <link href="" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/styles/style.css" rel="stylesheet" type="text/css"/>
+      
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script>
+
+      <!-- MathJax Script -->
+      <script>
+          MathJax = {
+              tex: {
+                  inlineMath: [['$', '$']]
+              }
+          };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+      <meta charset="utf-8">
+      <title>OMM 2022/4 - Proyecto MURO</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+    
+    
+  <body> 
+      <div class="container">
+
+          <!-- PAGE HEADER -->
+          <object align="right">
+            <br>
+            <label class="switch">
+             <input type="checkbox">
+            <span class="slider"> </span>
+            </label>
+        </object> 
+          <div>
+              <div class="row align-items-center">
+                  <div class="col-12">
+                      <div id="header">
+                          <div id="header-placeholder"></div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  $(function(){
+                      $("#header-placeholder").load("/header.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE SUBTITLE -->
+          <div>
+              <div class="row" id="sub-placeholder"> 
+
+              </div>
+              <script>
+                  $(function(){
+                      $("#sub-placeholder").load("/subtitle.html");
+                  });
+              </script>
+          </div>
+
+          <!-- PAGE CONTENT -->
+          <div id="content" class="row">
+
+              <!-- NAVIGATION MENU -->
+              <div class ="col-12 col-md-3 order-md-last pl-md-1" id="nav-placeholder">
+                  
+              </div>
+              <script>
+                  $(function(){
+                      $("#nav-placeholder").load("/nav.html");
+                  });
+              </script>
+
+              <!-- CONTENT-->
+              <div class="col-12 col-md-9 order-md-first pr-md-2">
+                  <div id="main">
+                      <div class="entry">
+
+                          <h1 id="pagetitle"> 
+                              <a href="./../">
+                               OMM<!-- Page Title -->
+                              </a>
+                          </h1>
+                          <div class="entrywrap">
+
+                              <!-- (Begin writing here) -->
+                              <h3>
+                                  OMM 2022 4
+                              </h3>
+                              <div class="alert-secondary alert">
+                                  Sea $n$ un entero positivo. En un jardín de $n\times n$ cuyos lados dan al Norte, Sur, Este y Oeste, se va a construir una fuente usando plataformas de $1\times 1$ que cubran todo el jardín. Ana colocará las plataformas todas a diferentes alturas. Después, Beto pondrá salidas de agua en algunas de las plataformas. El agua de cada plataforma puede bajar a las plataformas contiguas (hacia el Norte, Sur, Este y Oeste) que tengan menor altura que la plataforma de donde viene el agua, siguiendo su flujo siempre que pueda dirigirse a plataformas de menor altura. El objetivo de Beto es que el agua llegue a todas las plataformas. ¿Cuál es el menor número de salidas de agua que Beto necesita tener disponibles a fin de garantizar que podrá lograr su objetivo, sin importar cómo Ana haya acomodado las plataformas?
+                              </div>
+                              <button class="button" onclick=
+                              "copyEvent(`
+                              Sea $n$ un entero positivo. En un jardín de $n\\times n$ cuyos lados dan al Norte, Sur, Este y Oeste, se va a construir una fuente usando plataformas de $1\\times 1$ que cubran todo el jardín. Ana colocará las plataformas todas a diferentes alturas. Después, Beto pondrá salidas de agua en algunas de las plataformas. El agua de cada plataforma puede bajar a las plataformas contiguas (hacia el Norte, Sur, Este y Oeste) que tengan menor altura que la plataforma de donde viene el agua, siguiendo su flujo siempre que pueda dirigirse a plataformas de menor altura. El objetivo de Beto es que el agua llegue a todas las plataformas. ¿Cuál es el menor número de salidas de agua que Beto necesita tener disponibles a fin de garantizar que podrá lograr su objetivo, sin importar cómo Ana haya acomodado las plataformas?
+                              `)"
+                              >Copiar LaTeX</button> 
+                              <hr>
+                               • <a href="./sol4.html">Solución</a><br>
+                               • <a href="./">Regreso a OMM 2022</a><br>
+                              
+                              <!-- (End writing here) -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- SCRIPTS -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src = /scripts/main.js></script>
+  </body>
+</html>

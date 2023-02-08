@@ -5,7 +5,6 @@
 # ---------------------------------------------------------------------------------------------------------------------
 # Imports
 
-
 from os import listdir
 from info import pages_list, contestinfo, islproblems
 
@@ -66,6 +65,25 @@ def GenProbDivISL(problem):
 
     return str(problemdiv)
 
+def GenProbDivMXTST(problem):
+    if len(problem) == 3:
+        problemname = "Examen " + problem[0] + ", Problema " + problem[2]
+    else:
+        problemname = "Examen " + problem[0:2] + ", Problema " + problem[3]
+    puid = problem
+    problemdiv = '''<h3><a href="./{0}.html">{1}</a></h3>\n
+    <div class="alert-secondary alert" id=\"'''.format(problem, problemname) + puid + '''\">\n[Enunciado{0}]\n</div>\n
+    <button class="button" onclick=
+    "copyEvent(`
+    [EnunciadoLatex{0}]
+    `)"
+    >Copiar LaTeX</button>
+    '''.format(problem, problemname)
+    if problem[-1] == "4":
+        problemdiv = problemdiv + "<hr>"
+
+    return str(problemdiv)
+
 def GenProbDivOMMEB(problem):
     problemname = ""
     puid = ""
@@ -103,6 +121,7 @@ def GenProbDivOMMEB(problem):
         problemdiv = "<hr>" + problemdiv
     return str(problemdiv)
 
+
 # ---------------------------------------------------------------------------------------------------------------------
 # htmlproblems
 # This function converts all .tex files in the directory to .html files with the appropriate format.
@@ -126,6 +145,9 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         "[SolucionProblema]": "",
         "[YearIndexExtra]": ""
     }
+
+    if contestname == "MXTST": # Change name
+        dic["[concurso]"] = "Selectivos México"
 
     # This is to remove the arrows for first and last years.
     if ismax:
@@ -153,6 +175,13 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         for i in range(4): 
             for j in range(areas[i]):
                 Plist.append(letters[i]+str(j+1))
+
+    # Make list of MXTST problems: Exam-ProblemNumber. Example: 1-2, 7-4, 12-3
+    elif contestname == "MXTST":
+        Plist = []
+        for i in range(1,16):
+            for j in range(1,5):
+                Plist.append(str(i)+"-"+str(j))
 
     # List for other contests
     else:
@@ -208,13 +237,13 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
     # Here we create a dummy dict to add the number of problems, use GenProbDiv
     # This is to account for contests with different number of problems
 
-    if contestname not in ["ISL", "OMMEB"]: # OMMEB/ISL check
+    if contestname not in ["ISL", "OMMEB", "MXTST"]: # OMMEB/ISL/MXTST check
         enunciadostring = ""
         for pnum in range(len(Plist)):
             enunciadostring += GenProbDiv(pnum + 1)
         enunciadosdict = {"[Enunciados]": enunciadostring}
 
-    elif contestname == "OMMEB": #OMMEB
+    elif contestname == "OMMEB": # OMMEB
         enunciadostring = ""
         for problem in Plist:
             enunciadostring += GenProbDivOMMEB(problem)
@@ -222,13 +251,19 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
 
         dic["[YearIndexExtra]"] = ommebyearindex 
 
-    elif contestname == "ISL": #ISL
+    elif contestname == "ISL": # ISL
         enunciadostring = ""
         for problem in Plist:
             enunciadostring += GenProbDivISL(problem)
         enunciadosdict = {"[Enunciados]": enunciadostring} 
 
         dic["[YearIndexExtra]"] = islyearindex
+
+    elif contestname == "MXTST": # MX TST
+        enunciadostring = ""
+        for problem in Plist:
+            enunciadostring += GenProbDivMXTST(problem)
+        enunciadosdict = {"[Enunciados]": enunciadostring} 
 
     # Here we replace the GenProbDiv
     index1 = replace_all(indexrawyear, enunciadosdict)
@@ -257,6 +292,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
         dic["[EnunciadoLatexproblema]"] = str(ProblemsListLatex[pnum-1])
         dic["[nomproblema]"] = problem
         dic["[numproblema]"] = problem
+
         if contestname == "OMMEB": # Make OMMEB name
             problemname = ""
             for i in problem:
@@ -270,12 +306,19 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
                     problemname += i
             dic["[nomproblema]"] = problemname
 
+        if contestname == "MXTST": # Make MX TST name
+            if len(problem) == 3:
+                problemname = "Examen " + problem[0] + ", Problema " + problem[2]
+            else:
+                problemname = "Examen " + problem[0:2] + ", Problema " + problem[3]
+            dic["[nomproblema]"] = problemname
+
         problempage = replace_all(problempageraw, dic)
 
         # Create link to add to file, write
         linkprob = "ProyectoMURO/public_html/{0}/{1}/p{2}.html".format(str(contestname), str(year), problem)
 
-        if contestname in ["OMMEB", "ISL"]: # OMMEB/ISL
+        if contestname in ["OMMEB", "ISL", "MXTST"]: # OMMEB/ISL
             linkprob = "ProyectoMURO/public_html/{0}/{1}/{2}.html".format(str(contestname), str(year), problem)
 
         with open(linkprob, "w") as f:
@@ -346,6 +389,9 @@ def ReloadContestText():
             "[NotaOmitido]": ""
         }
 
+        if concurso == "MXTST": # Change name
+            dic["[concurso]"] = "Selectivos México"
+
         # Add note at bottom if a contest year was ommited
         if len(i[3]) != 0:
             dic["[NotaOmitido]"]="<p><i>Nota: </i> El concurso no se llevó a cabo en los años marcados con *.</p>"
@@ -404,6 +450,9 @@ def NoContest(contestname, year, ismin=False, ismax=False):
         "[añodespues]": r'<a href="./../' + str(year + 1) + r'">►</a>'
     }
 
+    if contestname == "MXTST": # Change name
+        dic["[concurso]"] = "Selectivos México"
+
     # This is to remove the arrows for first and last years.
     if ismax:
         dic["[añodespues]"]="" 
@@ -415,8 +464,6 @@ def NoContest(contestname, year, ismin=False, ismax=False):
     indexlink = "ProyectoMURO/public_html/{0}/{1}/index.html".format(str(contestname),str(year))
     with open(indexlink, "w") as f:
         f.write(index)
-
-
 
 # ---------------------------------------------------------------------------------------------------------------------
 # ReloadPages

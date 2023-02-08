@@ -1,0 +1,24 @@
+                            <p>Work in progress</p>
+                            <p>Autor: <input type="text"></p>
+                            <p>Título: <input type="text"></p>
+                            <div>
+                                <p>Agregar Problemas:</p>
+                                <datalist id="suggestions">
+                                    <option>20IMO2</option>
+                                    <option>20OMM2</option>
+                                </datalist>
+                                <input  autoComplete="on" list="suggestions"/> 
+                                <button class="button" onclick="">Agregar</button> 
+                            </div>
+                            <p><small>El formato para los problemas es: 
+                                Últimos dos dígitos del año, acrónimo del
+                                concurso, número de problema. Por ejemplo, 
+                                <b>20IMO2</b>. Para consultar los acrónimos de 
+                                concursos, visita la página de 
+                                <a href="/acronimos.html">acrónimos</a>.
+                            </small></p>
+                            <hr>
+                            <p>Problemas agregados:</p>
+                            <ul>
+                                <li>20OMM2</li>
+                            </ul>

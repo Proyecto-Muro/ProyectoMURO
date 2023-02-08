@@ -22,6 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
+/*
+const btn = document.querySelector('.switch input');
+
+const theme = document.querySelector("#theme-link");
+
+
+btn.addEventListener("click", function() {
+if (theme.getAttribute("href") == "/styles/light-theme.css") {
+
+    theme.href = "/styles/dark-theme.css";
+
+} else {
+
+    theme.href = "/styles/light-theme.css";
+}
+});
+*/
 function copyEvent(latex) {
     navigator.clipboard.writeText(latex);
     window.getSelection().removeAllRanges();
