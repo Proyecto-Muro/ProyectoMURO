@@ -1,3 +1,4 @@
 <p>
 	 La Olimpiada Iberoamericana de Matemáticas (OIM) es una olimpiada internacional. Se lleva a cabo desde 1985, y participan 4 estudiantes por país. Consiste en dos exámenes de 4.5 horas, con 3 problemas cada uno. 
 </p>
+<hr>

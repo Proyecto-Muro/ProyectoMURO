@@ -7,31 +7,30 @@
 <html>
     
 
-  <head>
+    <head>
 
-      <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="/styles/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/styles/style.css" rel="stylesheet" type="text/css"/>
 
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script>
-      
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script> 
 
-      <!-- MathJax Script -->
-      <script>
-          MathJax = {
-              tex: {
-                  inlineMath: [['$', '$']]
-              }
-          };
-      </script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-      
-      <meta charset="utf-8">
-      <title>Proyecto MURO</title>
-      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  </head>
+        <!-- MathJax Script -->
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$']]
+                }
+            };
+        </script>
+
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        
+        <meta charset="utf-8">
+        <title>Proyecto MURO</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    </head>
   
     
   <body> 
@@ -123,11 +122,17 @@
                             </small></p>
                             <hr>
                             <p>Problemas agregados:</p>
-                            <ul>
-                                <li>20OMM2</li>
-                            </ul>
+                            <ul id = "lista"></ul>
 
+                            
 
+                            <button class = "button" onclick="
+                                document.getElementById('lista').innerHTML += '<li>' + '13EGMO2' + '</li>';
+                                ">
+                                Test
+                            </button>
+
+                            
 
                           </div>
                       </div>
@@ -138,8 +143,13 @@
       
 
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      <script src = scripts/main.js></script>
+      <script src = /scripts/main.js></script>
+      <script src = /scripts/problemas.js></script>
+    <!--<script>
+        for(let puid in problemas){
+            document.getElementById('suggestions').innerHTML += '<object>' + puid + '</object>';
+        }
+    </script>-->
       
       
   </body>

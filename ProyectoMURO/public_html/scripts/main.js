@@ -43,3 +43,5 @@ function copyEvent(latex) {
     navigator.clipboard.writeText(latex);
     window.getSelection().removeAllRanges();
 } 
+
+
