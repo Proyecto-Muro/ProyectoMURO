@@ -1,0 +1,63 @@
+\documentclass[11pt]{book}
+\usepackage{muromm}
+\usepackage[inline]{asymptote}
+
+\usepackage[Sonny]{fncychap} % fancy chapters
+\ChTitleVar{\huge}
+
+\usepackage[tocflat]{tocstyle} % TOC generation
+\usetocstyle{standard}
+
+\usepackage{titlesec} % section customization
+
+
+\titleformat{\section}[block]{\Large\bfseries}{\thesection.}{0.5em}{}
+
+\pagestyle{fancy}
+%\lfoot{\sffamily\bfseries\hyperlink{tabla}{Índice}}
+
+%HyperSETUP
+\hypersetup{
+    colorlinks= true,
+    urlcolor= cyan,
+    linkcolor= purpleLinks,
+    citecolor=red,
+    pdftitle={muromm},
+    bookmarks = true,
+    pdfpagemode = FullScreen,
+}
+
+\begin{document}
+
+\title{Manifiesto Universal de Recursos para la Olimpiada Mexicana de Matemáticas}
+\author{Diego Caballero Ricaurte, Proyecto MURO}
+\date{2023}
+
+\maketitle
+\null\vfill
+\begin{center}
+    \includegraphics{images/muro.png}
+\end{center}
+\null\vfill
+
+\hypertarget{tabla}{\tableofcontents}
+
+\include{chap/intro.tex}
+
+\include{chap/alg.tex}
+
+\include{chap/combi.tex}
+
+\include{chap/geo.tex}
+
+\include{chap/tdn.tex}
+
+\include{chap/misc.tex}
+
+\include{chap/problemas.tex}
+
+\include{chap/soluciones.tex}
+
+\include{chap/apendice.tex}
+
+\end{document}

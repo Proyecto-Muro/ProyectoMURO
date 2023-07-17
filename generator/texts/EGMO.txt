@@ -1,7 +1,7 @@
 
 <p>
   <span style="float:left;padding:10px;">
-    <img src="/images/EGMOLOGO.png" alt="EGMO-Logo" height="150">
+    <img src="/images/EGMOLogo.png" alt="EGMOLogo" height="150">
   </span>
 </p>
 <p>

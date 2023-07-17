@@ -1,0 +1,219 @@
+
+
+Introducción
+
+	Objetivo de ProyectoMURO
+
+	Qué es este libro
+		autores y colaboradores
+
+	Conceptos Básicos
+		
+
+
+Álgebra
+
+	Manipulación algebráica
+		factorización y expansión
+		factorizaciones comunes
+		exponentes
+		sumas (gauss)
+		series y progresiones geométricas y ariméticas
+		binomio de newton
+		secuencias, fibonacci
+
+	Polinomios 
+		qué es un polinomio
+		vieta
+		divisibilidad
+		factorización
+		raíces racionales
+
+	Funcionales
+
+		Funciones 
+			qué es una función
+			inyectivas
+			suryectivas
+			suprayectivas
+
+		Trucos
+			Sustituciones útiles
+			Cancelación de f's
+			Truco de involución
+			Cauchy
+
+		Paso a paso para resolver funcionales
+			ejemplificar trucos
+
+	Desigualdades
+
+		MA-MG
+		Cauchy-Schwartz
+
+		muchos ejemplos
+
+	Números complejos?
+
+
+Combinatoria
+
+	Conteo 
+		combinaciones y permutaciones
+		factoriales
+		X en Y
+		binomio de newton/triangulo de pascal
+		casillas
+		doble conteo
+		recursión
+		otros teoremas
+
+	Invarianza
+		tableros
+		coloraciones
+		monovarianzas
+
+	Juegos Combinatorios
+		estrategias ganadoras
+		reflejar
+		invarianza
+
+	Teoría de Gráficas
+
+		Definiciones
+			gráfica
+			vértice
+			arista
+			grado
+			ciclo
+			árbol
+			complemento
+			conexo
+			plana
+
+		Doble Conteo II
+
+		Cosas útiles
+			V-E+F=2
+
+		Problemas
+			ramsey
+
+	Geocombi
+		envolvente convexa
+
+
+Geometría
+
+	Ángulos y Líneas
+		propiedades generales
+		suma angulos triangulo = 180
+		paralelas
+		suma de ángulos internos de un polígono
+		bisectrices, mediatrices y perpendiculares
+
+	Triángulos I
+		semejanza y congruencia
+		alturas, medianas, bisectrices
+		circuncírculo, incírculo
+		incentro, circuncentro, ortocentro, gravicentro
+		homotecia
+	
+	Cuadriláteros Cíclicos
+		ángulos inscritos y semi-inscritos, tangentes
+		arcos iguales
+		suma opuestos 180
+		potencia
+		ptolomeo
+		
+	Cómo resolver problemas de geometría
+		ejemplos de paso a paso, mostrar:
+		- pasar ángulos
+		- encontrar cíclicos
+		- sí y solo sí
+		- "besos" de ideas
+		- sublemas
+
+	Triángulos II
+		ceva y menelao
+		homotecia y rotohomotecia
+		configuración incentro/excentro
+		configuración HM (9 puntos, Humpty, Queue, etc)
+
+	Proyectiva
+		razón cruzada
+		proyección
+		haz armónico
+		polos y polares
+		brocard, pascal
+
+	Inversión?
+
+
+Teoría de Números
+	
+	Módulos, divisibilidad y primos
+		divisibilidad, residuos
+		primos y factorización 
+		teorema fundamental de aritmética
+		propiedades de mcd, algoritmo de euclides, bezout
+		aritmética modular
+		teorema chino del residuo
+
+	Exponentes
+		vp
+		pequeño teorema de fermat
+		inversos modulares
+		órdenes
+		raíces primitivas
+		residuos cuadráticos
+		lifting
+
+	Otros Teoremas
+		zsigmondy
+		dirichlet
+		reciprocidad cuadrática
+		fermat navidad?
+
+
+Problemas/Soluciones
+
+	Problemas misceláneos
+		poner ~50 problemas de dificultadoes I a IV: 
+			I) estatal 
+			II) omm 1/4, centro 1/2/4/5
+			III) omm 2/3/5/6, centro 3/6, imo/egmo 1/4
+			IV) imo/egmo 2/3/5/6
+
+	OMM (todos)Problemas/Soluciones
+
+	Problemas misceláneos
+		poner ~50 problemas de dificultadoes I a IV: 
+			I) estatal 
+			II) omm 1/4, centro 1/2/4/5
+			III) omm 2/3/5/6, centro 3/6, imo/egmo 1/4
+			IV) imo/egmo 2/3/5/6
+
+	OMM (todos)
+
+
+Misceláneo
+	
+	Tips para exámenes
+		diagramas geometría
+		intentar todos los problemas
+
+	Entrenamiento
+		sugerencias de concursos/problemas
+		libros
+		aops
+
+
+Apéndice
+	notación y definiciones
+	índice
+	agradecimientos y colaboradores
+	bibliografía
+
+
+

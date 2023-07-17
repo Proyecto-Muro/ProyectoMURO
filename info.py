@@ -11,7 +11,9 @@ pages_list = [
     ["otrosconcursos", "Otros Concursos", "/otrosconcursos.html", 1],
     ["wiki", "Wiki de Olimpiada", "./", 2],
     ["wiki/acronimos", "Acrónimos de Olimpiada", "./acronimos.html",1],
-    ["wiki/recursos", "Recursos de Olimpiada", "./recursos.html", 1]
+    #["wiki/recursos", "Recursos de Olimpiada", "./recursos.html", 1],
+    ["recursos", "Recursos de Olimpiada", "/recursos.html", 1],
+    ["licencia", "Licencia", "/licencia.html", 1]
     #["lista", "Generador de Listas", "./", 2]
 ]
 
@@ -22,12 +24,12 @@ contestinfo = [
     ["IMO", 1959, 2022, [1980]],       # 0
     ["OMCC", 1999, 2021, []],          # 1
     ["OMM", 1987, 2022, []],           # 2
-    ["EGMO", 2012, 2022, []],          # 3
+    ["EGMO", 2012, 2023, []],          # 3
     ["OIM", 1985, 2021, [1986]],       # 4
     ["APMO", 1989, 2022, []],          # 5
     ["RMM", 2008, 2021, []],           # 6
     ["PAGMO", 2021, 2022, []],         # 7
-    ["OMMFem", 2021, 2021, []],        # 8
+    ["OMMFem", 2022, 2022, []],        # 8
     ["ISL", 1998, 2021, []],           # 9
     ["OMMEB", 2017, 2022, []],         # 10
     ["MXTST", 2020, 2023, []]          # 11
