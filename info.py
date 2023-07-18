@@ -3,37 +3,37 @@
 # pages_list: Extra pages generated
 
 pages_list = [
-    ["index", "Movimiento Unificador de Recursos Olímpicos", "/", 1],
-    ["inicio", "Página de Inicio", "/inicio.html", 1],
-    ["sobrenosotros", "Sobre Nosotros", "/sobrenosotros.html", 1],
-    ["test", "Test", "/test.html", 1],
-    ["404", "404 Page Not Found", "/", 1],
-    ["otrosconcursos", "Otros Concursos", "/otrosconcursos.html", 1],
-    ["wiki", "Wiki de Olimpiada", "./", 2],
-    ["wiki/acronimos", "Acrónimos de Olimpiada", "./acronimos.html",1],
-    #["wiki/recursos", "Recursos de Olimpiada", "./recursos.html", 1],
-    ["recursos", "Recursos de Olimpiada", "/recursos.html", 1],
-    ["licencia", "Licencia", "/licencia.html", 1]
-    #["lista", "Generador de Listas", "./", 2]
+    ['index', 'Movimiento Unificador de Recursos Olímpicos', '/', 1],
+    ['inicio', 'Página de Inicio', '/inicio.html', 1],
+    ['test', 'Test', '/test.html', 1],
+    ['404', '404 Page Not Found', '/', 1],
+    ['otrosconcursos', 'Otros Concursos', '/otrosconcursos.html', 1],
+    ['wiki', 'Wiki de Olimpiada', './', 2],
+    ['wiki/acronimos', 'Acrónimos de Olimpiada', './acronimos.html',1],
+    #['wiki/recursos', 'Recursos de Olimpiada', './recursos.html', 1],
+    ['recursos', 'Recursos de Olimpiada', '/recursos.html', 1],
+    ['licencia', 'Licencia', '/licencia.html', 1],
+    ['agradecimientos', 'Agradecimientos y Colaboradores', '/agradecimientos.html', 1]
+    #['lista', 'Generador de Listas', './', 2]
 ]
 
 # contestinfo: This list has information on each contest. 
 # Format: [contest name (str), first contest year (int), last contest year (int), years omitted (list)]
 
 contestinfo = [
-    ["IMO", 1959, 2022, [1980]],       # 0
-    ["OMCC", 1999, 2021, []],          # 1
-    ["OMM", 1987, 2022, []],           # 2
-    ["EGMO", 2012, 2023, []],          # 3
-    ["OIM", 1985, 2021, [1986]],       # 4
-    ["APMO", 1989, 2022, []],          # 5
-    ["RMM", 2008, 2021, []],           # 6
-    ["PAGMO", 2021, 2022, []],         # 7
-    ["OMMFem", 2022, 2022, []],        # 8
-    ["ISL", 1998, 2021, []],           # 9
-    ["OMMEB", 2017, 2022, []],         # 10
-    ["MXTST", 2020, 2023, []]          # 11
-    #["IWYMIC", 1999, 2022, [2020]]    # 12
+    ['IMO', 1959, 2023, [1980]],       # 0
+    ['OMCC', 1999, 2023, []],          # 1
+    ['OMM', 1987, 2022, []],           # 2
+    ['EGMO', 2012, 2023, []],          # 3
+    ['OIM', 1985, 2022, [1986]],       # 4
+    ['APMO', 1989, 2022, []],          # 5
+    ['RMM', 2008, 2021, []],           # 6
+    ['PAGMO', 2021, 2022, []],         # 7
+    ['OMMFem', 2022, 2023, []],        # 8
+    ['ISL', 1998, 2021, []],           # 9
+    ['OMMEB', 2017, 2022, []],         # 10
+    ['MXTST', 2020, 2023, []]          # 11
+    #['IWYMIC', 1999, 2022, [2020]]    # 12
 
 ]
 

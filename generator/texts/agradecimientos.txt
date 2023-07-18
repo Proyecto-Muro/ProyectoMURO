@@ -1,0 +1,13 @@
+<p>
+	Esta es una lista de personas que han ayudado a que ProyectoMURO sea una realidad, ya sea con traducciones, sugerencias, el sitio web, o cualquier otra cosa. Agradecemos muchísimo el apoyo de todos para crear una plataforma libre que promueve el aprendizaje de las matemáticas.
+</p>
+<ul>
+	<li>Diego Caballero </li>
+	<li>Juan Pérez Mondragón</li>
+	<li>Mateo Latapí </li>
+	<li>Carlos Martínez</li>
+	<li>Ana</li>
+	<li>Denisse y César</li>
+	<li>Ezra Guerrero</li>
+	<li>Tomás Cantú</li>
+</ul>
