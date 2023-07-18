@@ -98,17 +98,24 @@
                               
                           </h1>
                           <div class="entrywrap">
-                            <p>Aquí podrás crear listas de problemas y compartirlas con los demás. Solo agrega los problemas que quieras, y pon un autor y título.</p>
-                            <p>Autor: <input type="text"></p>
-                            <p>Título: <input type="text"></p>
+                            <p>Aquí podrás crear listas de problemas y compartirlas con los demás. Solo agrega los problemas que quieras, y pon un autor y título. 
+                                Cuando acabes, presiona el botón de "Copiar Lista" para copiar el LaTeX de tu lista. Para generar un pdf, hacerlo en línea 
+                                con <a href = 'https://www.overleaf.com/'> Overleaf</a>. Únicamente hay que presionar en "proyecto nuevo", pegar la lista, y luego compilar.
+                            </p>
+                            <p>Autor: <input type="text" id = "author"></p>
+                            <p>Título: <input type="text" id = "title"></p>
                             <div>
                                 <p>Agregar Problemas:</p>
                                 <datalist id="suggestions">
-                                    <option>20IMO2</option>
-                                    <option>20OMM2</option>
+
                                 </datalist>
-                                <input  autoComplete="on" list="suggestions"/> 
-                                <button class="button" onclick="">Agregar</button> 
+                                <input  autoComplete="on" list="suggestions" id="pselection"/> 
+                                <button class="button" onclick="
+                                var puid = document.getElementById('pselection').value;
+                                document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemas[puid] + '</li>';
+                                MathJax.typeset();
+                                plist.push(puid)"
+                                >Agregar</button> 
                             </div>
                             <br>
                             <p><small>El formato para los IDs de problemas es: 
@@ -124,12 +131,30 @@
                             <p>Problemas agregados:</p>
                             <ul id = "lista"></ul>
 
-                            
-
-                            <button class = "button" onclick="
-                                document.getElementById('lista').innerHTML += '<li>' + '13EGMO2' + '</li>';
-                                ">
-                                Test
+                            <br>
+                            <button class = "button" onclick = "
+                            listdocument += '\\documentclass[11pt]{scrartcl}\n';
+                            listdocument += '\\usepackage{amsmath}\n';
+                            listdocument += '\\title{' + document.getElementById('title').value + '}\n';
+                            listdocument += '\\author{' + document.getElementById('author').value + '}\n';
+                            listdocument += '\\begin{document}\n';
+                            listdocument += '\\maketitle\n';
+                            listdocument += '\\section{Problemas}\n';
+                            listdocument += '\\begin{enumerate}\n';
+                            for (var i = 0; i < plist.length; i++){
+                                listdocument += '    \\item ' + problemas[plist[i]] + '(' + plist[i] + ')\n';
+                            }
+                            listdocument += '\\end{enumerate}\n';
+                            listdocument += '\\end{document}';
+                            navigator.clipboard.writeText(listdocument);
+                            window.getSelection().removeAllRanges()
+                            ">
+                                Copiar Lista
+                            </button>
+                            <button class = "button" onclick = "
+                            document.getElementById('lista').innerHTML = ''
+                            ">
+                                Borrar Lista
                             </button>
 
                             
@@ -145,11 +170,14 @@
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script src = /scripts/main.js></script>
       <script src = /scripts/problemas.js></script>
-    <!--<script>
-        for(let puid in problemas){
-            document.getElementById('suggestions').innerHTML += '<object>' + puid + '</object>';
-        }
-    </script>-->
+        <script>
+            for(let puid in problemas){
+                document.getElementById('suggestions').innerHTML += '<option>' + puid + '</option>';
+            }
+            var plist = []
+            var listdocument = ''
+        </script>
+
       
       
   </body>

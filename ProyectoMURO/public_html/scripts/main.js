@@ -39,6 +39,7 @@ if (theme.getAttribute("href") == "/styles/light-theme.css") {
 }
 });
 */
+
 function copyEvent(latex) {
     navigator.clipboard.writeText(latex);
     window.getSelection().removeAllRanges();
