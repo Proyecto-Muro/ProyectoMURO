@@ -48,23 +48,4 @@ def NewContest(name, year, problemnum = 6):
             f.write('')
             f.close
 
-
-'''
-        for k in Plist:
-            if not os.path.exists("concursos/%s/%s/enunciados/%s.html"%(year, k)):
-                fp=open("concursos/%s/%s/%s.html"%(year, k),"w")
-                htext=""
-                fp.write(htext)
-                fp.close
-            if not os.path.exists("ISL/%s/sol%s.html"%(j, k)):
-                fp=open("ISL/%s/sol%s.html"%(year, k),"w")
-                htext=""
-                fp.write(htext)
-                fp.close
-
-
-        fp=open("ISL/%s/index.html"%(year),"w")
-        htext=""
-        fp.write(htext)
-        fp.close
-'''
+# NewContest('OMCC', 2023)
