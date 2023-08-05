@@ -4,7 +4,7 @@
 <ul>
 	<li>Diego Caballero </li>
 	<li>Juan Pérez Mondragón</li>
-	<li>Mateo Latapí </li>
+	<li>Mateo</li>
 	<li>Carlos Martínez</li>
 	<li>Ana</li>
 	<li>Denisse y César</li>

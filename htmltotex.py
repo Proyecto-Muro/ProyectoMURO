@@ -62,4 +62,6 @@ print("Problems in database: " + str(counter))
 with open('concursos/problemas.json', 'w') as f:
     json.dump(probdict, f, ensure_ascii=False, indent=4)
 
+os.system('cp concursos/problemas.json ProyectoMURO/public_html/scripts/problemas.js')
+
 

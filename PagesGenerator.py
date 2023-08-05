@@ -121,7 +121,6 @@ def GenProbDivOMMEB(problem):
         problemdiv = "<hr>" + problemdiv
     return str(problemdiv)
 
-
 # ---------------------------------------------------------------------------------------------------------------------
 # htmlproblems
 # This function converts all .tex files in the directory to .html files with the appropriate format.

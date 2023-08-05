@@ -68,9 +68,3 @@ def NewContest(name, year, problemnum = 6):
         fp.write(htext)
         fp.close
 '''
-
-NewContest('IMO', 2023)
-NewContest('OIM', 2022)
-NewContest('OMMFem', 2023, 8)
-NewContest('OMCC', 2022)
-NewContest('OMCC', 2023)
