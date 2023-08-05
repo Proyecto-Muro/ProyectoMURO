@@ -221,7 +221,7 @@ def htmlproblems(contestname, year, ismax=False, ismin=False):
             # Add image html to problem 
             # print("Image found:" + pstring)
             imgstr = "\n"+r'<p>' + r'<img src="/images/asy-imgs/{0}" alt="{0}" height="100" class="center"></p>'.format(pstring)
-            imgstr += r'<button class="button"><a href="/images/asy-imgs/{0}" download="{0}"Descargar Imagen</a></button>'.format(pstring)
+            imgstr += r'<button class="button"><a href="/images/asy-imgs/{0}" download="{0}">Descargar Imagen</a></button>'.format(pstring)
             EnunciadoProblema += imgstr
             
         # Add entries to dict
