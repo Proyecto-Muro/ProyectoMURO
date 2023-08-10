@@ -1,0 +1,229 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[sexy]{evan}
+
+
+\begin{document}
+\title{Números complejos en geometría}
+\date{Mayo 2022}
+\author{Tomás Cantú, Diego Caballero}
+\maketitle
+
+
+
+
+
+
+\section{Cosas básicas}
+Un número complejo se puede ver de la forma $a+bi$ con $a, b \in \mathbb R$ y $i$ un número tal que $i^2=-1$.
+
+Algebraicamente, se pueden sumar y multiplicar complejos como cualquier binomio:
+\begin{align*}
+    (a+bi)+(c+di) &= (a+c)+(b+d)i \\
+    (a+bi)(c+di) &=(ac-bd)+(ad+bc)i 
+\end{align*}
+Geométricamente, se pueden ver los complejos como puntos en el plano, como vectores, o como rotomotecias. Asociamos el complejo $z=a+bi$ al punto $(a, b)$, al vector $\tiny{\begin{bmatrix} a \\b  \end{bmatrix}}$ y a la rotomotecia de centro $(0, 0)$ que manda $(0, 1) \rightarrow (a, b)$. 
+
+Cualquier complejo $z$ se puede expresar de la forma $z=re^{i\theta}$, donde $r, \theta \in \mathbb{R}$ son la magnitud y el ángulo del vector asociado. Si expresamos $z=a+bi$, vemos que $r=\sqrt{a^2+b^2}$ y $\theta=\arctan{\frac ba}$. La fórmula de Euler relaciona la forma polar y la forma cartesiana: 
+$$e^{i\theta}=\cos(\theta)+i\sin\theta$$ Observa que $e^{i\theta}$ siempre tiene magnitud igual a 1.
+$r, \theta$ se representan a veces como
+\begin{align*}
+    r &=\abs{z}\\
+   \theta &=\arg{z}
+\end{align*}
+
+Con la forma polar, observemos que el complejo $z=re^{i\theta}$ representa la rotomotecia con centro en el complejo $0$ y que tiene razón $r$ y ángulo $\theta$. 
+Geométricamente, la suma de complejos equivale a la suma de vectores: sumar por un complejo $a+bi$ es una traslación de $a$ unidades a la derecha y $b$ unidades hacia arriba. La multiplicación equivale a una rotomotecia. Es decir, multiplicar $x$ por $z$ equivale a estirar $x$ por $\abs{z}$ y luego girarlo $\arg{z}$. Observa que al multiplicar dos complejos, las magnitudes se multiplican y los ángulos se suman: $$z_1z_2=r_1e^{i\theta_1}r_2e^{i\theta_2}=r_1r_2e^{i(\theta_1+\theta_2)}$$. 
+
+Para un número complejo $z$, el conjugado de $z=a+bi$ se expresa como $\overline z = a-bi$, y es la reflexión de $z$ por la recta real. Observa que sacar conjugados se comporta bonito respecto a las operaciones básicas: 
+\begin{align*}
+    \overline{y+z} &=\overline{y}+\overline{z} \\
+    \overline{y-z} &=\overline{y}-\overline{z} \\
+    \overline{yz} &= \overline{y}\cdot \overline{z} \\
+    \overline{(y/z)} &=\overline y / \overline z
+\end{align*}
+Además, hay una relación entre la magnitud de un complejo y su conjugado: $$\abs{z}^2=z\overline z$$
+
+\section{Cosas fáciles de sacar}
+\begin{enumerate}
+    \item \textbf{Puntos medios}: El punto medio $M$ de $PQ$ es $m=\frac{p+q}{2}$
+    \item \textbf{Reflexión sobre un punto}: De manera similar, la reflexión $A'$ de $A$ sobre $B$ es $a' = 2b-a$.
+    \item \textbf{Reflexión sobre el origen}: La reflexión de $z$ sobre el origen es $-z$.
+\end{enumerate}
+
+\section{Círculo unitario}
+    El círculo unitario es útil porque sus puntos tienen propiedades que simplifican muchas fórmulas. Si $z$ está en el círculo unitario, cumple lo siguiente
+    \begin{enumerate}
+        \item $\abs{z}=1$
+        \item $\overline z =\frac{1}{z}$
+        \item $z=e^{i\theta}$ para algún ángulo $\theta$
+    \end{enumerate}
+
+\section{Formulas útiles}
+
+Generalmente, las fórmulas son fáciles de aplicar cuando la mayoría o todos los puntos están sobre el círculo unitario. Por esto, es esencial elegir el mejor arreglo posible antes de hacer cuentas.
+
+\subsection{Rectas y perpendiculares}
+
+\begin{lemma}[Perpendicularidad]
+Sean $A,B,C,D$ puntos distintos. Las rectas $AB$ y $CD$ son perpendiculares si y solo si $\frac{d-c}{b-a}\in i\RR$, es decir, 
+\[\frac{d-c}{b-a} + \overline{\left(\frac{d-c}{b-a}\right)} = 0.\]
+Esto sucede porque queremos que $90^{\circ}=\arg(d-c) - \arg(b-a) = \arg\left(\frac{d-c}{b-a}\right)$, que es equivalente a $\frac{d-c}{b-a}\in i\RR$. 
+
+Si $A, B, C, D$ están sobre la circunferencia unitaria, $AB\perp CD$ si y solo si $ab+cd = 0$.
+\end{lemma}
+
+\begin{lemma}[Colinealidad]
+Sean $A$, $B$, $C$ puntos distintos en el plano. Entonces, $A$, $B$, y $C$ son colineales si y solo si $\frac{c-a}{c-b}\in \RR$, es decir:
+\[\frac{c-a}{c-b} = \overline{\left(\frac{c-a}{c-b}\right)}.\]
+\end{lemma}
+
+\begin{lemma}[Reflexión respecto a un segmento]
+La reflexión $W$ de $Z$ sobre la recta $AB$ tiene la ecuación
+\[w = \frac{(a-b)\overline{z}+\overline{a}b-a\overline{b}}{\overline{a}-\overline{b}}.\]
+En particular, si $A$ y $B$ están sobre la circunferencia unitaria, tenemos que 
+\[w = a+b-ab\overline{z}.\]
+\end{lemma}
+
+\begin{lemma}[Pie de perpendicular]
+Sean $A$ y $B$ puntos sobre el círculo unitario, y $Z$ otro punto en el plano complejo. Por el lema anterior, el pie de perpendicular de $Z$ a $AB$ es 
+\[\frac{1}{2}(a+b+z-ab\overline{z}).\]
+\end{lemma}
+
+\begin{lemma}[Intersección de dos rectas]
+Sean $A$, $B$, $C$ y $D$ puntos en el plano complejo. Sea $P$ la intersección de $AB$ y $CD$. entonces, 
+\[p = \frac{(\overline ab-a\overline b)(c-d)-(a-b)(\overline cd-c\overline d)}{(\overline a-\overline b)(c-d)-(a-b)(\overline c-\overline d)}.\]
+Generalmente esta fórmula es muy difícil de usar a menos que algún punto sea 0, o muchos de ellos estén sobre la circunferencia unitaria.
+
+Si $A$, $B$, $C$, $D$ están sobre la circunferencia unitaria, entonces
+\[p = \frac{(c+d)ab-cd(a+b)}{ab-cd}.\]
+Esta fórmula se puede utilizar aún cuando $A = B$ o $C = D$, creando así tangentes al círculo unitario.
+\end{lemma}
+
+\subsection{Triángulos}
+Para un triángulo $ABC$ tal que el círculo unitario es su circuncírculo, los centros están dados por
+\begin{enumerate}
+    \item \textbf{Circuncentro}: 0,
+    \item \textbf{Gravicentro}: $\frac{1}{3} (a+b+c)$. En general, el gravicentro $G$ de $P_1P_1 \cdots P_k$es el promedio de los puntos. $g=\frac 1n \sum_{i=1}^k p_i$.\footnote{Esta condición sirve para cualquier triángulo, no debe estar en el círculo unitario.}
+    \item \textbf{Centro de nueve puntos}: $\frac{1}{2}  (a+b+c)$
+    \item \textbf{Ortocentro}: $a+b+c$
+\end{enumerate}
+
+\begin{lemma}[Incentro]
+Sea $ABC$ un triángulo con vértices en el círculo unitario. Entonces, existen números complejos $x,y,z$ tales que 
+\[a = x^2,\quad b = y^2,\quad c = z^2.\]
+Sean $D, E, F$ los puntos medios de los arcos  $BC, CA, AB$, respectivamente. Entonces, 
+\[d = -yz,\quad e = -zx,\quad f = -xy.\]
+Como $I$ es el ortocentro de $DEF$, su ecuación es $j = -(xy+yz+xz)$ \footnote{Usamos $j$ para el incentro, porque $i$ se confundiría con la unidad imaginaria.}
+\end{lemma}
+
+\begin{lemma}[Área de un triángulo]
+El área de un triángulo $ABC$ (con $A,B,C$ en contra del sentido de las manecillas del reloj visto desde arriba) es: 
+\[ \frac{i}{4} \begin{vmatrix}a & \overline{a} & 1\\ b & \overline{b} & 1\\ c & \overline{c} & 1\end{vmatrix}.\]
+También, $A$, $B$ y $C$ son colineales si y solo si este determinante es 0. A veces, es más fácil usar esta fórmula que la de colinealidad.
+\end{lemma}
+
+\begin{lemma}[Circuncentro]
+Sean $X, Y, Z$ puntos en el plano. El circuncentro $O$ de $\bigtriangleup XYZ$ es
+\[o = \begin{vmatrix}x & x\overline x & 1\\ y & y\overline y & 1\\ z & z\overline z & 1\end{vmatrix}\div\begin{vmatrix}x &\overline x & 1\\y & \overline y & 1\\ z & \overline z & 1\end{vmatrix}.\]
+Es buena idea trasladar primero el plano para que $z=0$ y luego aplicar la fórmula. Si $x' = x-z$, y $y' = y-z$, tenemos que 
+\[o -z = \frac{x'y'(\overline{x'}-\overline{y'})}{\overline{x'}y'-x'\overline{y'}}.\] 
+\end{lemma}
+
+\begin{lemma}[Semejanza]
+Dos triángulos $ABC$ y $XYZ$ son semejantes si y solo si
+\[\begin{vmatrix}a & x & 1\\b & y & 1\\ c & z & 1\end{vmatrix} = 0.\]
+\end{lemma}
+
+\subsection{Círculos}
+
+La debilidad de los números complejos son los problemas con más de dos círculos. Aún así, hay maneras de lidiar con ellos.
+\begin{lemma}[Cíclicos]
+Sean $A$, $B$, $C$, $D$ puntos distintos. Entonces, $ABCD$ es cíclico si y solo si 
+\[\left(\frac{c-a}{c-b}\right)\div\left(\frac{d-a}{d-b}\right)\in \RR.\]
+Esto sucede ya que $ABCD$ es cíclico si y solo si $\angle{ABC} = \angle{ADC} \iff \arg\left(\frac{b-a}{b-c}\right)=\arg\left(\frac{c-a}{d-c}\right)\iff \left(\frac{c-a}{c-b}\right)\div\left(\frac{d-a}{d-b}\right)\in \RR.$
+\end{lemma}
+
+\begin{lemma}[Intersección de tangentes]
+Sea $P$ la intersección de las tangentes al círculo unitario en dos puntos $A$ y $B$. Por el Lema 3.5, 
+\[p = \frac{2ab}{a+b}.\]
+Esta fórmula se conoce como la fórmula del cono de helado, y es muy útil.
+\end{lemma}
+
+\begin{lemma}[Rotomotecia]
+    Si $W$ es un punto en el plano complejo, entonces una rotomotecia $f$ del plano complejo con centro en $W$ se puede escribir de la forma 
+    \[f(z) = \alpha(z-w)+w,\]
+    donde $\alpha$ es un número complejo. Podemos pensar que $z-w$ es una traslación del plano en la que el punto $w$ va al origen, y al multiplicar por $\alpha$, rotamos el plano $\arg\alpha$ y hacemos una homotecia de razón $\lvert\alpha\rvert$. Luego, al sumar $w$ de nuevo, $w$ regresa a su lugar original, y el resto de los puntos mantienen la rotomotecia.
+\end{lemma}
+
+\begin{lemma}[Centro de rotomotecia]
+    Sea $Y$ el centro de rotomotecia que manda $AB$ a $CD$. Entonces, 
+    \[y = \frac{ad-bc}{a+d-b-c}.\]
+    Sea $X$ el punto de intersección de $AC$ y $BD$. Podemos interpretar el resultado de otra manera: la intersección de los circuncírculos de $ABX$ y $CDX$ es $Y$.
+    
+    Entonces, esta fórmula sirve para calcular la intersección de dos círculos en algunos casos.
+\end{lemma}
+
+\begin{lemma}[Punto sobre una cuerda]
+    Un punto $P$ sobre la cuerda $AB$ del círculo unitario cumple 
+    \[p+ab\overline p = a+b.\]
+\end{lemma}
+
+\begin{lemma}[Segunda intersección al círculo unitario]
+    Si $A$ es un punto del círculo unitario y $B$ es un punto que no está en el círculo unitario, entonces la segunda intersección de $AB$ con el círculo unitario es 
+    \[\frac{a-b}{a\overline b-1}.\]
+    Esta fórmula se deriva de la anterior.
+\end{lemma}
+
+\section{Resolviendo problemas con números complejos}
+
+Resolver problemas con números complejos generalmente es un proceso de dos partes. Primero, debemos elegir nuestro círculo unitario, y luego calcular los puntos del problema para llegar a la conclusión. 
+
+Aunque no lo parezca, la parte más importante es la primera. Mientras mejor sea nuestra elección del círculo unitario y variables, menos cuentas debemos hacer. Para un ejemplo claro de esto, tomamos dos soluciones de un mismo problema de la shortlist:\\
+
+\textbf{ISL 2016 G4:} Sea $ABC$ un triángulo con $AB=AC\neq BC$ y sea $I$ su incentro. $BI$ corta a $AC$ en $D$, y la perpendicular por $D$ a $AC$ corta a $AI$ en $E$. Demuestra que la reflexión de $I$ por $AC$ está sobre el circuncírculo de $BDE$.\\
+
+Existen dos maneras de resolver este problema con números complejos, una "fácil" y otra difícil. \\
+
+\textbf{Solución 1, Evan Chen}: La manera "fácil" es tomar al incírculo de $ABC$ como el círculo unitario (digamos $\omega$. Sean $P$, $Q$ y $R$ los puntos de tangencia de $\omega$ con $BC, CA$ y $AB$, respectivamente. Entonces, podemos asumir que $p = 1$, y $\overline q = r$. Esto hace que $ABC$ sea un triángulo isósceles (¿Por qué?). Luego, podemos calcular $B$ mediante el Lema 4.11, y tomar puntos $U$ y $V$ que sean las intersecciones de $BI$ con $\omega$, que cumplen $u = -v$, y $uv = -pr$ (por el Lema 4.6). De esto, podemos calcular $D = UV\cap QQ$, usando el Lema 4.5. Vemos que $ED \perp DQ$, entonces podemos usar el lema de perpendicularidad para encontrar $E$. Luego, $I'$, la reflexión de $I$ por $Q$ es $2q$, entonces tenemos todos los puntos. Aplicando el Lema 4.10 a $BDEI'$, podemos concluir. 
+
+\textbf{Solución 2, usuario yayups}: Si usamos el circuncírculo de $ABC$ como el círculo unitario, la solución es más o menos similar, pero las cuentas son más complicadas, ya que la construcción involucra la intersección de $BI$ con $AC$ (aunque podemos evitar esto usando el punto medio del arco $AC$ en vez de $I$, para usar la versión fácil del Lema 4.5). \\
+
+En fin, ambas soluciones requiren bastantes cuentas, pero la primera es más fácil:
+
+
+Solución 1: https://artofproblemsolving.com/community/c6h1480714p8639402
+
+Solución 2: https://artofproblemsolving.com/community/c6h1480714p11198213
+
+\section{Problemas :D}
+\begin{enumerate}
+    \item Sea $ABC$ un triángulo con circuncentro $O$. $X, Y, Z$ son las reflexiones de $O$ sobre $BC, CA, AB$. Demuestra que $AX, BY, CZ$ concurren.
+    \item Sea $ABCD$ un cuadrilátero cíclico. Sean $H_A, H_B, H_C, HD$ los ortocentros de $BCD, ACD, ABD, ABC$. Demuestra que $AH_A, BH_B, CH_C, DH_D$ concurren.
+    \item  Sean $BCDE, CAFG, ABHI$ cuadrados construidos exteriormente sobre los lados de $\triangle ABC$. Sean $P, Q$ tales que $CDPG$ y $BEQH$ son paralelogramos. Demuestra que $\triangle APQ$ es isósceles y rectángulo.
+    \item Sean $ABC$ y $PQR$ dos triángulos cualesquiera, y sean $L, M, N$ los puntos medios de $AP, BQ, CR$ respectivamente. Demuestra que los gravicentros de $ABC, PQR, LMN$ son colineales. 
+    \item Sea $A_1A_2A_3A_4$ un cuadrilátero cíclico. Sea $\Omega_j$ la circunferencia de los nueve puntos de $A_{j-1}A_jA_{j+1}$ para $j=1, 2, 3, 4 \pmod 4$. Prueba que $\Omega_1$, $\Omega_2$, $\Omega_3$, $\Omega_4$ tienen un punto en común.
+    \item (Napoleón) Sea $ABC$ un triángulo. Se construyen triángulos equiláteros $XBA$, $YCB$, $ZAC$ con centros $O_C, O_A, O_B$ hacia afuera del triángulo. Demuestra que $O_CO_AO_B$ es equilátero y su centro es el gravicentro de $ABC$.
+    \item Demuestra que un triángulo $ABC$ es equilátero si y solo si $a^2+b^2+c^2=ab+bc+ca$
+    \item Sean $E, F, G, H$ los puntos medios de los lados $AB, BC, CD, DA$ de un cuadrilátero convexo $ABCD$. Prueba que $AB$ y $CD$ son perpendiculares si y solo si $BC^2+AD^2=2(EG^2+FH^2)$
+   \item (Recta de Simson) Sea $ABC$ un triángulo con circuncentro $\omega$. Sea $P$ un punto arbitrario sobre $\omega$, y $X$, $Y$, $Z$ los pies de altura de $P$ a $BC$, $CA$, $AB$, respectivamente.
+   Sea $H$ el ortocentro de $ABC$. Muestra que el punto medio de $PH$, $X, Y,$ y $Z$ son colineales.
+   \item Sea $ABC$ un triángulo con incentro $I$. Prueba que las rectas de Euler de los triángulos $AIB, BIC, CIA, ABC$ concurren
+   \item Sea $A_1A_2 \dots A_n$ un polígono regular inscrito en un círculo con centro $O$ y radio $R$. Sea $M$ un punto cualquiera. Demuestra que $$\sum_{k=1}^n MA^2_k=n(OM^2+R^2)$$
+   \item Sea $ABCD$ un cuadrilátero con incírculo $\omega$. Prueba que los puntos medios de $AC$ y $BD$ y el centro de $\omega$ son colineales.
+   \item Sea $O$ el circuncentro de $ABC$. Una recta $\ell$ por $O$ corta a $AB, AC$ en $X, Y$ respectivamente. $M, N$ son los puntos medios de $BY, CX$. Demuestra que $\angle MON = \angle BAC$
+   \item Sea $ABC$ un triángulo acutángulo con $AB>BC$ y $AC>BC$. Sean $O, H$ el circuncentro y ortocentro del triángulo. El circuncírculo de $AHC$ interseca a $AB$ en $A, M$. El circuncírculo de $AHB$ intersecta a $AC$ en $A, N$. Demuestra que el circuncentro del triángulo $MNH$ está en $OH$. 
+\end{enumerate}
+
+\section {Problemas X.X}
+Estos problemas requiren más experiencia, pero se pueden resolver con complejos.
+
+\begin{enumerate}
+    \item Los puntos $ A_{1}$, $ B_{1}$, $ C_{1}$ se escogen sobre los lados $ BC$, $ CA$, $ AB$ del triángulo $ ABC$ respectivamente. Los ciruncírculos de los triángulos $ AB_{1}C_{1}$, $ BC_{1}A_{1}$, $ CA_{1}B_{1}$ cortan al circuncírculo de $ ABC$ de nuevo en $ A_{2}$, $ B_{2}$, $ C_{2}$ respectivamente ($ A_{2}\neq A, B_{2}\neq B, C_{2}\neq C$). Los puntos $ A_{3}$, $ B_{3}$, $ C_{3}$ son las reflexiones de $ A_{1}$, $ B_{1}$, $ C_{1}$ respecto a los puntos medios de $ BC$, $ CA$, $ AB$ respectivamente. Demuestra que los triángulos $ A_{2}B_{2}C_{2}$ y $ A_{3}B_{3}C_{3}$ son semejantes.
+    \item Sea $ABC$ un triángulo con $AB = AC \neq BC$ y sea $I$ su incentro. $BI$ corta a $AC$ en $D$, y la perpendicular por $D$ a $AC$ corta a $AI$ en $E$. Demuestra que la reflexión de $I$ por $AC$ está sobre el circuncírculo de $BDE$.
+    \item Sea $T$ un punto dentro del triángulo $ABC$. Sean $A_1$, $B_1, C_1$ las reflexiones de $T$ por $BC$, $CA$, $AB$, respectivamente. Sea $\Omega$ el circuncírculo de $A_1B_1C_1$. Las rectas $A_1T$, $B_1T, C_1T$ cortan a $\Omega$ por segunda vez en $A_2$, $B_2, C_2$, respectivamente. Demuestra que $AA_2$, $BB_2$, $CC_2$ se cortan sobre $\Omega$.
+    \item Sea $ABC$ un triángulo acutángulo de circuncírculo $\Gamma$. Sea $\ell$ una recta tangente a $\Gamma$, y sean $\ell_a, \ell_b$, $\ell_c$ las reflexiones de $\ell$ por $BC$, $CA$ y $AB$, respectivamente. Demuestra que el circuncírculo del triángulo formado por $\ell_a, \ell_b$, $\ell_c$ es tangente a $\Gamma$.
+    \item Sea $ABC$ un triángulo acutángulo con circuncírculo $\Omega$. Las bisectrices de $\angle B$ y $\angle C$ cortan a $\Omega$ de nuevo en $M$ y $N$ y se cortan en $I$. Sean $M'$ y $N'$ las reflexiones de $M$ y $N$ por $AC$ y $AB$. Prueba que el circuncentro de $IM'N'$ está sobre la altura desde $A$ sobre $BC$.
+    \item Sea $ ABCD$ un cuadrilátero convexo. Las mediatrices de $ AB$ y $ CD$ se cortan en $ Y$. Sea $ X$ un punto dentro de $ ABCD$ tal que $ \measuredangle ADX = \measuredangle BCX < 90^{\circ}$ y $ \measuredangle DAX = \measuredangle CBX < 90^{\circ}$. Demuestra que $ \measuredangle AYB = 2\cdot\measuredangle ADX$.
+    \item Sean $ AH_1, BH_2, CH_3$ las alturas del triángulo acutángulo $ ABC$. Su incírculo corta a los lados $ BC, AC$ y $ AB$ en $ T_1, T_2$ y $ T_3$ respectivamente. Considera las reflexiones de $ H_1H_2, H_2H_3$ y $ H_3H_1$ respecto a las rectas $ T_1T_2, T_2T_3$ y $ T_3T_1$ respectivamente. Demuestra que dichas imágenes forman un triángulo con vértices sobre el incírculo de $ ABC$.
+\end{enumerate}
+\end{document}

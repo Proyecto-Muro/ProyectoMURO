@@ -1,0 +1,130 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[sexy]{style}
+
+\begin{document}
+\title{"La Hack"}
+\date{Junio 2022}
+\author{Diego Caballero}
+\maketitle
+
+\section{Introducción}
+    Observa los siguientes problemas. ¿Qué tienen en común?
+    \begin{enumerate}[i)]
+        \item $P$ es un punto dentro del triángulo $ABC$ tal que $\angle PBC = 30^{\circ}$, $\angle PBA = 8^{\circ}$, y $\angle PAB = \angle PAC = 22^{\circ}$. Encuentra $\angle APC$.
+
+        \item En el triángulo $ABC$, $\angle CAB = 18^{\circ}$, $\angle BCA = 24 ^{\circ}$. $E$ es el punto en el segmento $CA$ tal que $\angle CEB = 60^{\circ}$ y $F$ es un punto en el segmento $AB$ tal que $\angle AEF = 60^{\circ}$. Encuentra $\angle BFC$.
+
+        \item En el cuadrilátero convexo $ABCD$, $\angle ABD = 16^{\circ}$, $\angle DBC = 48^{\circ}$, $\angle BCA = 58^{\circ}$, y $\angle ACD = 30^{\circ}$. Encuentra $\angle ADB$.
+    \end{enumerate}
+
+    Todos estos problemas son un poco similares. Te dan unos cuantos ángulos aleatorios, y te piden otro. Una vez que haces el dibujo e intentas pasar ángulos, verás que tienes dos ángulos que no logras relacionar. Existen dos maneras de resolver este tipo de problemas. La manera "moralmente correcta" de resolver estos problemas es crear un "trazo mágico", como una bisectriz, un cíclico, un isósceles o un paralelogramo, y buscar otras relaciones (otro cíclico o isósceles, un incentro o un excentro) para encontrar el ángulo pedido.
+
+    \textbf{Pero aquí no somos personas morales.} Sabemos que los puntos están bien definidos, y existe una única respuesta al problema. Para encontrarla, usaremos relaciones trigonométricas, junto con "La Hack"\footnote{Honestamente, no sé cuál es el nombre real de este teorema, ni a quién se le ocurrió resolver estos problemas así. Hace varios años me lo enseñaron con ese nombre, entonces así lo llamaré.}, un teorema para regresar de trigo a ángulos.
+
+\section{Lemas y Teoremas}
+    A continuación, los teoremas que serán útiles para usar "La Hack":
+
+    \begin{theorem}[Ley de Senos]
+        Sea $ABC$ un triángulo en el plano. Entonces,
+        \[\frac{BC}{\sin\angle A}=\frac{CA}{\sin\angle B}=\frac{AB}{\sin\angle C}=2R,\]
+        donde $R$ es el circunradio de $ABC$.
+    \end{theorem}
+    Este teorema es útil para convertir de lados a ángulos y viceversa. Dos aplicaciones de Ley de Senos son los siguientes teoremas:
+    \begin{theorem}[Teorema de la Bisectriz Generalizado]
+        Sea $ABC$ un triángulo y $D$ un punto en el segmento $BC$. Versión 1, razones de lados:
+        \[\frac{BD}{DC}=\frac{AB}{AC}\cdot\frac{\sin\angle BAD}{\sin\angle DAC}.\] 
+        Versión 2, trigonométrica:
+        \[\frac{BD}{DC}=\frac{\sin\angle ACB}{\sin\angle CBA}\cdot\frac{\sin\angle BAD}{\sin\angle DAC}.\] La segunda versión sucede porque $\frac{AB}{AC}=\frac{\sin\angle ACB}{\sin\angle CBA}$, por Ley de Senos.
+    \end{theorem}
+
+    \begin{theorem}[Ceva Trigonométrico]
+        Sea $P$ un punto dentro del triángulo $ABC$. Entonces,
+        \[\frac{\sin\angle BAP}{\sin\angle PAC}\cdot\frac{\sin\angle ACP}{\sin\angle PCB}\cdot\frac{\sin\angle CBP}{\sin\angle PBA}=1.\]
+        Podemos demostrar esto aplicando Ley de Senos a los triángulos $APB$, $BPC$, y $CPA$.
+    \end{theorem} 
+
+    También, algunos datos de senos y cosenos que serán útiles:
+    \begin{enumerate}[a)]
+        \item $\sin(\alpha)=\sin(180^{\circ}-\alpha)$,
+        \item $\sin(\alpha)=\cos(90^{\circ}-\alpha)$, y $\cos(\alpha)=\sin(90^{\circ}-\alpha)$, 
+        \item $\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)$,
+        \item $\sin(30^{\circ})=\frac 12$.
+    \end{enumerate}
+
+\section{"La Hack"}
+
+    Sean $ABC$ y $XYZ$ dos triángulos en el plano tales que los ángulos $\angle ABC = \alpha$, $\angle BCA = \beta$, $\angle XYZ = \gamma$, $\angle YZX = \omega$ cumplen $\alpha + \beta = \gamma + \omega$, y
+    \[\frac{\sin\alpha}{\sin\beta}=\frac{\sin\gamma}{\sin\omega}.\]
+    Por Ley de Senos, $\frac{AB}{AC}=\frac{XY}{XZ}$. También, $\alpha + \beta = \gamma + \omega\implies\angle CAB = \angle ZXY$. Por criterio de Lado-Ángulo-Lado, los triángulos $ABC$ y $XYZ$ son semejantes, y $\alpha = \gamma$, $\beta = \omega$.
+
+    \begin{theorem}["La Hack"]
+        Sean $\alpha, \beta, \gamma, \omega$ ángulos tales que $\alpha + \beta = \gamma + \omega<180^{\circ}$, y
+        \[\frac{\sin\alpha}{\sin\beta}=\frac{\sin\gamma}{\sin\omega}.\]
+        Entonces, $\alpha = \gamma$, $\beta = \omega$.
+    \end{theorem}
+
+    Por ejemplo, para encontrar un ángulo $x$ tal que 
+    \[\frac{\sin (x)}{\sin (140^{\circ}-x)}=\frac{\sin 40^{\circ}}{\sin 100^{\circ}},\]
+    aplicamos "La Hack", y obtenemos que $x = 40^{\circ}$. Con esto, nos deshacemos de los ángulos arbitrarios que aparecen en los problemas de trazos mágicos. El objetivo de usar "La Hack" es manipular las razones trigonométricas que obtenemos de Ceva Trigonométrico o Bisectriz Generalizada, para encontrar el ángulo que nos piden. A continuación, mostraré las soluciones de los problemas del inicio.
+
+\section{Ejemplos}
+
+    Existen tres diferentes tipos de problemas: un triángulo con un punto en su interior, un cuadrilátero con diagonales, o un triángulo con dos puntos sobre sus lados. Todos se resuelven de manera similar:
+
+    \begin{enumerate}[i)] 
+        \item (Triángulo con punto) $P$ es un punto dentro del triángulo $ABC$ tal que $\angle PBC = 30^{\circ}$, $\angle PBA = 8^{\circ}$, y $\angle PAB = \angle PAC = 22^{\circ}$. Encuentra $\angle APC$.
+
+        \begin{soln} 
+            Sea $x=\angle PCA$. Entonces, $\angle PCB= 98^{\circ}-x$. Aplicando Ceva Trigonométrico al triángulo $ABC$, obtenemos:
+            \begin{align*}
+                \frac{\sin (98^{\circ}-x)}{\sin x}\cdot \frac{\sin 22^{\circ}}{\sin 22^{\circ}}\cdot \frac{\sin 8^{\circ}}{\sin 30^{\circ}}=1\\
+                \implies \frac{\sin (98^{\circ}-x)}{\sin x}=\frac{\sin 30^{\circ}}{\sin 8^{\circ}}=\frac{1}{2\sin 8^{\circ}}.\\
+            \end{align*}
+            Como $\sin 16^{\circ} = 2\sin 8^{\circ}\cos 8^{\circ}$, entonces $\frac{1}{2\sin 8^{\circ}}=\frac{\cos 8^{\circ}}{\sin 16^{\circ}}=\frac{\sin 82^{\circ}}{\sin 16^{\circ}}$:
+            \begin{align*}
+                \implies \frac{\sin (98^{\circ}-x)}{\sin x}=\frac{\sin 82^{\circ}}{\sin 16^{\circ}}.
+            \end{align*}
+            Vemos que $98^{\circ}-x+x=82^{\circ}+16^{\circ}$, entonces por "La Hack", $x=16^{\circ}$. El problema nos pide \[\angle APC = 180^{\circ}-\angle PCA - \angle CAP = 180^{\circ}-22^{\circ}-16^{\circ} = \boxed{142^{\circ}}.\]
+        \end{soln}
+
+        \item (Triángulo con puntos sobre los lados) En el triángulo $ABC$, $\angle CAB = 18^{\circ}$, $\angle BCA = 24 ^{\circ}$. $E$ es el punto en el segmento $CA$ tal que $\angle CEB = 60^{\circ}$ y $F$ es un punto en el segmento $AB$ tal que $\angle AEF = 60^{\circ}$. Encuentra $\angle BFC$.
+
+        \begin{soln} 
+            Primero, veamos que $\angle FEB = 60^{\circ}$, $\angle ABC = 138^{\circ}$, y $\angle EBA = 42^{\circ}$. Si encontramos $\angle FCB$, podremos encontrar $\angle BFC$, entonces sea $x = \angle FCB$ y $\angle ACF = 24^{\circ}-x$. Aplicamos Bisectriz Generalizada (segunda versión) sobre los triángulos $AEB$ y $ACB$ (sobre el lado $AB$):
+            \begin{align*}
+                \frac{\sin 42^{\circ}}{\sin 18^{\circ}}\cdot\frac{\sin 60^{\circ}}{\sin 60^{\circ}}=\frac{AF}{FB}&=\frac{\sin 138^{\circ}}{\sin 18^{\circ}}\cdot\frac{\sin (24^{\circ}-x)}{\sin x}\\
+                \implies \frac{\sin (24^{\circ}-x)}{\sin x} &= \frac{\sin 42^{\circ}}{\sin 138^{\circ}} = \frac{\sin 42^{\circ}}{\sin 42^{\circ}}=1=\frac{\sin 12^{\circ}}{\sin 12^{\circ}}.
+            \end{align*}
+            Entonces $x = 12^{\circ}$, por "La Hack". El problema nos pide
+            \[\angle BFC = 180^{\circ}-\angle FCB - \angle CBF = 180^{\circ}-138^{\circ}-12^{\circ} = \boxed{30^{\circ}}.\]
+        \end{soln}
+
+        \item (Cuadrilátero con diagonales) En el cuadrilátero convexo $ABCD$, $\angle ABD = 16^{\circ}$, $\angle DBC = 48^{\circ}$, $\angle BCA = 58^{\circ}$, y $\angle ACD = 30^{\circ}$. Encuentra $\angle ADB$.
+
+        \begin{soln}
+            Este problema es similar al anterior, solo hay que trazar el triángulo externo: Sea $E$ la intersección de $AB$ y $CD$. Notemos que $\angle DEB = 28^{\circ}$, y $\angle BDE = 136^{\circ}$. Sea $x=\angle ADB$, y $\angle EDA = 136^{\circ}-x$. Aplicamos Bisectriz Generalizada a los triángulos $BED$ y $BEC$, sobre el lado $EB$:
+            \begin{align*}
+                \frac{\sin28^{\circ}}{\sin16^{\circ}}\cdot\frac{\sin x}{\sin (136^{\circ}-x)}&=\frac{BA}{AE} = \frac{\sin28^{\circ}}{\sin64^{\circ}}\cdot\frac{\sin58^{\circ}}{\sin30^{\circ}}\\
+                \implies \frac{\sin x}{\sin (136^{\circ}-x)}&=\frac{\sin16^{\circ}}{\sin64^{\circ}}\cdot\frac{\sin58^{\circ}}{\sin30^{\circ}}=\frac{\sin16^{\circ}}{2\sin32^{\circ}\cos32^{\circ}}\cdot\frac{\sin58^{\circ}}{\frac12}\\
+                &=\frac{\sin16^{\circ}\sin58^{\circ}}{\sin32^{\circ}\sin58^{\circ}}=\frac{\sin16^{\circ}}{\sin32^{\circ}}=\frac{\sin16^{\circ}}{2\sin16^{\circ}\cos16^{\circ}}\\
+                &=\frac{\sin30^{\circ}}{\sin74^{\circ}}=\frac{\sin30^{\circ}}{\sin106^{\circ}}.
+            \end{align*}
+            Como $x+136^{\circ}-x=30^{\circ}+106^{\circ}$, aplicamos "La Hack", y obtenemos $x=30^{\circ}$. Entonces, $\angle ADB = 30^{\circ}$.
+        \end{soln}
+    \end{enumerate}
+
+\section{Problemas}
+
+    \begin{enumerate}
+        \item (IWYMIC Individual P14, 2009) $P$ es un punto dentro del triángulo $ABC$ tal que $\angle PBC = 30^{\circ}$, $\angle PBA = 8^{\circ}$, y $\angle PAB = \angle PAC = 22^{\circ}$. Encuentra $\angle APC$.
+        \item (IWYMIC Individual P11, 2010) $P$ es un punto en el triángulo $ABC$ tal que $\angle ABP = 20^{\circ}$, $\angle PBC = 10^{\circ}$, $\angle ACP = 20^{\circ}$, y $\angle PCB = 30^{\circ}$. Encuentra $\angle CAP$.
+        \item (IWYMIC Equipos P7, 2010) En el cuadrilátero convexo $ABCD$, $\angle ABD = 16^{\circ}$, $\angle DBC = 48^{\circ}$, $\angle BCA = 58^{\circ}$, y $\angle ACD = 30^{\circ}$. Encuentra $\angle ADB$.
+        \item (IWYMIC Individual P15, 2012) Sea $ABC$ un triángulo con $\angle A = 90 ^{\circ}$, y $\angle B = 20^{\circ}$. Sean $E$ y $F$ puntos en $AC$ y $AB$, respectivamente, tales que $\angle ABE = 10^{\circ}$, y $\angle ACF = 30^{\circ}$. Encuentra $\angle CFE$.
+        \item (IWYMIC Equipos P4, 2013) En el triángulo $ABC$, $\angle A = 40^{\circ}$, y $\angle B = 60^{\circ}$. La bisectriz de $\angle A$ corta a $BC$ en $D$, y $F$ es el punto en el segmento $AB$ tal que $\angle ADF  = 30^{\circ}$. Encuentra $\angle DFC$.
+        \item (IWYMIC Individual P3, 2014) En el triángulo $ABC$, $\angle CAB = 18^{\circ}$, $\angle BCA = 24 ^{\circ}$. $E$ es el punto en el segmento $CA$ tal que $\angle CEB = 60^{\circ}$ y $F$ es un punto en el segmento $AB$ tal que $\angle AEF = 60^{\circ}$. Encuentra $\angle BFC$.
+        \item (IWYMIC Equipos P9, 2014) En el cuadrilátero $ABCD$, $\angle BDA = 10^{\circ}$, $\angle ABD = \angle DBC = 20^{\circ}$, y $\angle BCA = 40^{\circ}$. Encuentra $\angle BDC$.
+        \item Sea $ABC$ un triángulo isósceles con $AB=AC$ y $\angle BAC = 100^{\circ}$. Sea $P$ un punto en el interior del triángulo tal que $\angle CBP = 35^{\circ}$, y $\angle PCB = 30^{\circ}$. Encuentra $\angle BAP$.
+        \item Sea $ABC$ un triángulo con $\angle CBA = 16^{\circ}$ y $\angle ACB = 28^{\circ}$. Sean $P$ y $Q$ puntos en $BC$ y $AB$ tales que $\angle BAP = 44^{\circ}$ y $\angle QBC = 14^{\circ}$. Encuentra $\angle PQC$.
+    \end{enumerate}
+
+\end{document}
