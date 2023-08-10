@@ -48,4 +48,4 @@ def NewContest(name, year, problemnum = 6):
             f.write('')
             f.close
 
-# NewContest('OMCC', 2023)
+NewContest('PAGMO', 2023)
