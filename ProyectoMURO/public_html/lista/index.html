@@ -137,6 +137,8 @@
                             listdocument += '\\usepackage{amsmath}\n';
                             listdocument += '\\title{' + document.getElementById('title').value + '}\n';
                             listdocument += '\\author{' + document.getElementById('author').value + '}\n';
+                            listdocument += '\\def\\gt{>}\n';
+                            listdocument += '\\def\\lt{<}\n';
                             listdocument += '\\begin{document}\n';
                             listdocument += '\\maketitle\n';
                             listdocument += '\\section{Problemas}\n';
