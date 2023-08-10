@@ -66,4 +66,10 @@ with open('concursos/problemas.json', 'w') as f:
 
 os.system('cp concursos/problemas.json ProyectoMURO/public_html/scripts/problemas.js')
 
+text = "problemas = " + open('ProyectoMURO/public_html/scripts/problemas.js', "r").read()
+with open('ProyectoMURO/public_html/scripts/problemas.js', 'w') as f:
+	f.write(text)
+
+
+
 

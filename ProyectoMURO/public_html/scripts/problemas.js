@@ -1,4 +1,4 @@
-{
+problemas = {
     "13EGMO2": "Determine todos los enteros $m$ para los que el cuadrado $m \\times m$ se puede diseccionar en cinco rectángulos, cuyas longitudes de los lados son los enteros $1,2,3,\\ldots,10$ en algún orden.",
     "13EGMO3": "Sea $n$ un entero positivo.\n\n(a) Demostrar que existe un conjunto $S$ de $6n$ enteros positivos diferentes entre sí, tal que el mínimo común múltiplo de dos elementos cualesquiera de $S$ no es mayor que $32n^2$.\n\n(b) Demostrar que todo conjunto $T$ de $6n$ enteros positivos distintos por pares contiene dos elementos cuyo mínimo común múltiplo es mayor que $9n^2$.",
     "13EGMO1": "El lado $BC$ del triángulo $ABC$ se prolonga más allá de $C$ hasta $D$ de modo que $CD = BC$. El lado $CA$ se prolonga más allá de $A$ hasta $E$ de modo que $AE = 2CA$. Demostrar que, si $AD=BE$, el triángulo $ABC$ es rectángulo.",
