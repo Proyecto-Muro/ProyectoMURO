@@ -17,8 +17,10 @@ replacedict = {
 	"</ol>": r" \end{enumerate} ",
 	"<li>": r" \item ",
 	"</li>": "",
-	"<i>": r"\emph{",
-	"</i>": r"}"
+	"<i>": r"\textit{",
+	"</i>": r"}",
+	"<b>": r"\textbf{",
+	"</b>": r"}"
 }
 
 def htmltotex(text):
