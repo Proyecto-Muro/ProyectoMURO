@@ -99,11 +99,23 @@
                                   OMMFem 2023 4
                               </h3>
                               <div class="alert-secondary alert">
-                                  
+                                  Se tiene una función $g$ tal que para todo entero $n$:
+\[g(n) = \begin{cases}  1  & \text{si } n\geq 1 \\  0  & \text{si } n\leq 0 \end{cases}\]
+También se tiene una función $f$ que cumple lo siguiente para todos los enteros $n \geq 0$ y $m \geq 0$:
+
+\[f(0,m)= 0,\]
+\[f(n+1,m)=\left(1-g(m)+g(m)\cdot g(m-1-f(n,m))\right)\cdot\left(1+f(n,m)\right).\]
+Encuentra todas las posibles funciones f que cumplen estas condiciones. Es decir, encuentra todas las asignaciones $f (m, n)$ que cumplen las propiedades de arriba para todos los enteros $n \geq 0$ y $m \geq 0$.
                               </div>
                               <button class="button" onclick=
                               "copyEvent(`
-                              
+                              Se tiene una función $g$ tal que para todo entero $n$:
+\\[g(n) = \\begin{cases}  1  & \\text{si } n\\geq 1 \\\\  0  & \\text{si } n\\leq 0 \\end{cases}\\]
+También se tiene una función $f$ que cumple lo siguiente para todos los enteros $n \\geq 0$ y $m \\geq 0$:
+
+\\[f(0,m)= 0,\\]
+\\[f(n+1,m)=\\left(1-g(m)+g(m)\\cdot g(m-1-f(n,m))\\right)\\cdot\\left(1+f(n,m)\\right).\\]
+Encuentra todas las posibles funciones f que cumplen estas condiciones. Es decir, encuentra todas las asignaciones $f (m, n)$ que cumplen las propiedades de arriba para todos los enteros $n \\geq 0$ y $m \\geq 0$.
                               `)"
                               >Copiar LaTeX</button> 
                               <hr>

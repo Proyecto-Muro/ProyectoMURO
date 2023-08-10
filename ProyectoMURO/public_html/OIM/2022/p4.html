@@ -109,7 +109,13 @@ Para cada $n$, determinar el menor entero $k$ para el que existe una coloración
                               </div>
                               <button class="button" onclick=
                               "copyEvent(`
-                              
+                              Sea $n\\gt 2$ un entero positivo. Se tiene una fila horizontal de $n$ casillas donde cada casilla está pintada de azul o rojo. Decimos que un bloque es una secuencia de casillas consecutivas del mismo color. Arepito en cangrejo está inicialmente parado en la primera casilla, en el extremo izquierdo de la fila. En cada turno, él cuenta la cantidad $m$ de casillas pertenecientes al bloque más grande que contiene la casilla en la que está, y hace una de la siguientes acciones:
+ \\begin{itemize} 
+ \\item  Si la casilla en la que está es azul y hay al menos $m$ casillas a la derecha de él, arepito se mueve $m$ casillas hacia la derecha;
+ \\item  Si la casilla en la que está es roja y hay al menos $m$ casillas a la izquierda de él, arepito se mueve $m$ casillas hacia la izquierda;
+ \\item  En cualquier otro caso, se queda en la misma casilla y no se mueve más.
+ \\end{itemize} 
+Para cada $n$, determinar el menor entero $k$ para el que existe una coloración inicial de la fila con $k$ casillas azules para la que Arepito puede llegar a la última casilla, en el extremo derecho de la fila.
                               `)"
                               >Copiar LaTeX</button> 
                               <hr>
