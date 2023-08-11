@@ -148,7 +148,7 @@
                             plist.pop();
                             document.getElementById('lista').innerHTML = ''
                             for (var i = 0; i < plist.length; i++){
-                                document.getElementById('lista').innerHTML += problemashtml[plist[i]];
+                                document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemashtml[plist[i]] + '</li>';
                             }
                             ">
                                 Borrar Último Problema
