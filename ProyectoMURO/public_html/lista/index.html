@@ -112,7 +112,7 @@
                                 <input  autoComplete="on" list="suggestions" id="pselection"/> 
                                 <button class="button" onclick="
                                 var puid = document.getElementById('pselection').value;
-                                document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemas[puid] + '</li>';
+                                document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemashtml[puid] + '</li>';
                                 MathJax.typeset();
                                 plist.push(puid)"
                                 >Agregar</button> 
@@ -163,6 +163,7 @@
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script src = /scripts/main.js></script>
       <script src = /scripts/problemas.js></script>
+      <script src = /scripts/problemashtml.js></script>
         <script>
             for(let puid in problemas){
                 document.getElementById('suggestions').innerHTML += '<option>' + puid + '</option>';
