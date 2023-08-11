@@ -133,21 +133,11 @@
 
                             <br>
                             <button class = "button" onclick = "
-                            listdocument += '\\documentclass[11pt]{scrartcl}\n';
-                            listdocument += '\\usepackage{amsmath}\n';
-                            listdocument += '\\title{' + document.getElementById('title').value + '}\n';
-                            listdocument += '\\author{' + document.getElementById('author').value + '}\n';
-                            listdocument += '\\def\\gt{>}\n';
-                            listdocument += '\\def\\lt{<}\n';
-                            listdocument += '\\begin{document}\n';
-                            listdocument += '\\maketitle\n';
-                            listdocument += '\\section{Problemas}\n';
-                            listdocument += '\\begin{enumerate}\n';
+                            listdocument += '\\documentclass[11pt]{scrartcl}\n\\usepackage{amsmath}\n\\title{' + document.getElementById('title').value + '}\n\\author{' + document.getElementById('author').value + '}\n\\def\\gt{>}\n\\def\\lt{<}\n\\begin{document}\n\\maketitle\n\\section{Problemas}\n\\begin{enumerate}\n';
                             for (var i = 0; i < plist.length; i++){
                                 listdocument += '    \\item ' + problemas[plist[i]] + '(' + plist[i] + ')\n';
                             }
-                            listdocument += '\\end{enumerate}\n';
-                            listdocument += '\\end{document}';
+                            listdocument += '\\end{enumerate}\n\\end{document}';
                             navigator.clipboard.writeText(listdocument);
                             window.getSelection().removeAllRanges()
                             ">
