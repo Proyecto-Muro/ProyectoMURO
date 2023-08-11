@@ -150,13 +150,13 @@
                             for (var i = 0; i < plist.length; i++){
                                 document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemashtml[plist[i]] + '</li>';
                             }
+                            MathJax.typeset();
                             ">
                                 Borrar Último Problema
                             </button>
                             <button class = "button" onclick = "
                             document.getElementById('lista').innerHTML = '';
                             plist = [];
-                            MathJax.typeset();
                             ">
                                 Borrar Lista
                             </button>
