@@ -145,6 +145,15 @@
                                 Copiar Lista
                             </button>
                             <button class = "button" onclick = "
+                            plist.pop();
+                            document.getElementById('lista').innerHTML = ''
+                            for (var i = 0; i < plist.length; i++){
+                                document.getElementById('lista').innerHTML += problemashtml[plist[i]];
+                            }
+                            ">
+                                Borrar Último Problema
+                            </button>
+                            <button class = "button" onclick = "
                             document.getElementById('lista').innerHTML = '';
                             plist = []
                             ">
