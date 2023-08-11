@@ -27,6 +27,7 @@ def htmltotex(text):
 	return replace_all(text,replacedict)
 
 probdict = {}
+htmlprobdict = {}
 
 counter=0
 contestlist = ["APMO", "EGMO", "IMO", "ISL", "OIM", "OMCC", "OMM", "RMM", "PAGMO", "OMMFem", "OMMEB", "MXTST"]
@@ -49,6 +50,7 @@ for contest in contestlist:
 
 						# Add to dict
 						probdict[puid] = ftex
+						htmlprobdict[puid] = fhtml
 						
 						testempty = open("concursostex/%s/%s/enunciados/%s"%(contest,year,problem), "r").read()
 						if testempty =="":
@@ -64,10 +66,19 @@ print("Problems in database: " + str(counter))
 with open('concursos/problemas.json', 'w') as f:
     json.dump(probdict, f, ensure_ascii=False, indent=4)
 
+with open('concursos/problemashtml.json', 'w') as f:
+    json.dump(htmlprobdict, f, ensure_ascii=False, indent=4)
+
 os.system('cp concursos/problemas.json ProyectoMURO/public_html/scripts/problemas.js')
+os.system('cp concursos/problemashtml.json ProyectoMURO/public_html/scripts/problemashtml.js')
+
 
 text = "problemas = " + open('ProyectoMURO/public_html/scripts/problemas.js', "r").read()
 with open('ProyectoMURO/public_html/scripts/problemas.js', 'w') as f:
+	f.write(text)
+
+text = "problemashtml = " + open('ProyectoMURO/public_html/scripts/problemashtml.js', "r").read()
+with open('ProyectoMURO/public_html/scripts/problemashtml.js', 'w') as f:
 	f.write(text)
 
 
