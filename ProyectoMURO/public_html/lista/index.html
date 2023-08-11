@@ -112,9 +112,11 @@
                                 <input  autoComplete="on" list="suggestions" id="pselection"/> 
                                 <button class="button" onclick="
                                 var puid = document.getElementById('pselection').value;
-                                document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemashtml[puid] + '</li>';
-                                MathJax.typeset();
-                                plist.push(puid)"
+                                if(puid in problemashtml){
+                                    document.getElementById('lista').innerHTML += '<li>' + puid + ': ' + problemashtml[puid] + '</li>';
+                                    MathJax.typeset();
+                                    plist.push(puid)
+                                }"
                                 >Agregar</button> 
                             </div>
                             <br>
